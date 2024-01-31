@@ -1,0 +1,920 @@
+[
+  {
+    "day 1": [
+      {
+        "meal type": "breakfast",
+        "meal time": "9:00",
+        "beverage": "Water",
+        "main course": [
+          {
+            "name": "egg",
+            "quantity": {
+              "measure": "8",
+              "unit": "count"
+            },
+            "allergies": {
+              "id": "0x3eb1",
+              "category": [
+                "eggs"
+              ],
+              "ref": [
+                "https://farrp.unl.edu/informalleggs"
+              ],
+              "details": ""
+            },
+            "alternative": "",
+            "quality_characteristic": "",
+            "image": "./images/deviled-eggs-with-smoked-salmon-and-capers/ingredients/01_eggs.jpeg"
+          },
+          {
+            "name": "mayyonnaise",
+            "quantity": {
+              "measure": "",
+              "unit": "cup"
+            },
+            "allergies": {
+              "id": "",
+              "category": "",
+              "ref": "",
+              "details": ""
+            },
+            "alternative": "",
+            "quality_characteristic": "",
+            "image": "./images/deviled-eggs-with-smoked-salmon-and-capers/ingredients/02_mayyonnaise.webp"
+          },
+          {
+            "name": "sour cream",
+            "quantity": {
+              "measure": "1",
+              "unit": "tbsp"
+            },
+            "allergies": {
+              "id": "",
+              "category": "",
+              "ref": "",
+              "details": ""
+            },
+            "alternative": "",
+            "quality_characteristic": "",
+            "image": "./images/deviled-eggs-with-smoked-salmon-and-capers/ingredients/03_sourcream.jpeg"
+          },
+          {
+            "name": "lemon juice",
+            "quantity": {
+              "measure": "1",
+              "unit": "tbsp"
+            },
+            "allergies": {
+              "id": "",
+              "category": "",
+              "ref": "",
+              "details": ""
+            },
+            "alternative": "",
+            "quality_characteristic": "fresh",
+            "image": "./images/deviled-eggs-with-smoked-salmon-and-capers/ingredients/04_freshlemonjuice.png"
+          },
+          {
+            "name": "salmon",
+            "quantity": {
+              "measure": "1",
+              "unit": "oz"
+            },
+            "allergies": {
+              "id": "0xe465",
+              "category": [
+                "fish"
+              ],
+              "ref": [
+                "https://farrp.unl.edu/informallfish"
+              ],
+              "details": ""
+            },
+            "alternative": "",
+            "quality_characteristic": "smoked and finely chopped",
+            "image": "./images/deviled-eggs-with-smoked-salmon-and-capers/ingredients/05_salmon.jpeg"
+          },
+          {
+            "name": "scallions",
+            "quantity": {
+              "measure": "2",
+              "unit": "tbsp"
+            },
+            "allergies": {
+              "id": "",
+              "category": "",
+              "ref": "",
+              "details": ""
+            },
+            "alternative": "",
+            "quality_characteristic": "finely chopped",
+            "image": "./images/deviled-eggs-with-smoked-salmon-and-capers/ingredients/06_choppedscallions.jpeg"
+          },
+          {
+            "name": "capers",
+            "quantity": {
+              "measure": "1",
+              "unit": "tbsp"
+            },
+            "allergies": {
+              "id": "",
+              "category": "",
+              "ref": "",
+              "details": ""
+            },
+            "alternative": "",
+            "quality_characteristic": "finely chopped",
+            "image": "./images/deviled-eggs-with-smoked-salmon-and-capers/ingredients/07_caperschopped.jpeg"
+          },
+          {
+            "name": "salt",
+            "quantity": {
+              "measure": "",
+              "unit": ""
+            },
+            "allergies": {
+              "id": "",
+              "category": "",
+              "ref": "",
+              "details": ""
+            },
+            "alternative": "",
+            "quality_characteristic": "",
+            "image": "./images/deviled-eggs-with-smoked-salmon-and-capers/ingredients/08_salt.webp"
+          },
+          {
+            "name": "pepper",
+            "quantity": {
+              "measure": "",
+              "unit": ""
+            },
+            "allergies": {
+              "id": "",
+              "category": "",
+              "ref": "",
+              "details": ""
+            },
+            "alternative": "",
+            "quality_characteristic": "",
+            "image": "./images/deviled-eggs-with-smoked-salmon-and-capers/ingredients/09_pepper.webp"
+          }
+        ],
+        "side": ""
+      },
+      {
+        "meal type": "lunch",
+        "meal time": "13:00",
+        "beverage": "Coke",
+        "main course": [
+          {
+            "original_text": "Fill a large saucepan with the eggs and water to cover the eggs entirely.\u00a0 Cover.\u00a0 Heat eggs over high heat until boiling.\u00a0 Once water has boiled, turn off water and leave pot covered.\u00a0 Allow eggs to sit in the just boiled water for 7 minutes.\u00a0 Once 7 minutes have passed, drain water and refill pot with cold water.\u00a0 Allow eggs to cool in the cold water.\u00a0 Once eggs are cool enough to handle, carefully peel eggs.\u00a0 (This is why a few extra eggs helps, because sometimes you mess up and don\u2019t make a smooth peel.)",
+            "input_condition": [
+              ""
+            ],
+            "task": [
+              {
+                "action_name": "",
+                "output_quality": [
+                  ""
+                ],
+                "background_knowledge": {
+                  "tool": [
+                    ""
+                  ],
+                  "failure": [
+                    ""
+                  ]
+                }
+              }
+            ],
+            "output_condition": [
+              ""
+            ],
+            "modality": {
+              "image": [
+                "",
+                ""
+              ],
+              "video": " "
+            }
+          },
+          {
+            "original_text": "Cut each egg in half.\u00a0 Carefully remove yolks and place them in a bowl and set whites on a work surface.\u00a0 Once all yolks have been removed, mash them with a fork.\u00a0 Add mayonnaise, sour cream and lemon juice.\u00a0 Mix until consistency is cream.\u00a0 Add salmon, scallions, and capers.\u00a0 Mix.\u00a0 Salt and pepper to taste.\u00a0 (Definitely do NOT add much salt as capers and salmon are salty.)",
+            "input_condition": [
+              ""
+            ],
+            "task": [
+              {
+                "action_name": "",
+                "output_quality": [
+                  ""
+                ],
+                "background_knowledge": {
+                  "tool": [
+                    ""
+                  ],
+                  "failure": [
+                    ""
+                  ]
+                }
+              }
+            ],
+            "output_condition": [
+              ""
+            ],
+            "modality": {
+              "image": [
+                "",
+                ""
+              ],
+              "video": " "
+            }
+          },
+          {
+            "original_text": "Carefully scoop egg yolk mixture into each hollow of the white.\u00a0 I used a disher to do so, some people use a pastry bag for a more perfect look, but I found that the disher worked just fine.\u00a0 Serve immediately, or cover and chill until needed.",
+            "input_condition": [
+              ""
+            ],
+            "task": [
+              {
+                "action_name": "",
+                "output_quality": [
+                  ""
+                ],
+                "background_knowledge": {
+                  "tool": [
+                    ""
+                  ],
+                  "failure": [
+                    ""
+                  ]
+                }
+              }
+            ],
+            "output_condition": [
+              ""
+            ],
+            "modality": {
+              "image": [
+                "./images/deviled-eggs-with-smoked-salmon-and-capers/deviled-eggs-with-smoked-salmon-and-capers_4_2.jpg"
+              ],
+              "video": " "
+            }
+          }
+        ],
+        "side": [
+          {
+            "original_text": "Fill a large saucepan with the eggs and water to cover the eggs entirely.\u00a0 Cover.\u00a0 Heat eggs over high heat until boiling.\u00a0 Once water has boiled, turn off water and leave pot covered.\u00a0 Allow eggs to sit in the just boiled water for 7 minutes.\u00a0 Once 7 minutes have passed, drain water and refill pot with cold water.\u00a0 Allow eggs to cool in the cold water.\u00a0 Once eggs are cool enough to handle, carefully peel eggs.\u00a0 (This is why a few extra eggs helps, because sometimes you mess up and don\u2019t make a smooth peel.)",
+            "input_condition": [
+              ""
+            ],
+            "task": [
+              {
+                "action_name": "",
+                "output_quality": [
+                  ""
+                ],
+                "background_knowledge": {
+                  "tool": [
+                    ""
+                  ],
+                  "failure": [
+                    ""
+                  ]
+                }
+              }
+            ],
+            "output_condition": [
+              ""
+            ],
+            "modality": {
+              "image": [
+                "",
+                ""
+              ],
+              "video": " "
+            }
+          },
+          {
+            "original_text": "Cut each egg in half.\u00a0 Carefully remove yolks and place them in a bowl and set whites on a work surface.\u00a0 Once all yolks have been removed, mash them with a fork.\u00a0 Add mayonnaise, sour cream and lemon juice.\u00a0 Mix until consistency is cream.\u00a0 Add salmon, scallions, and capers.\u00a0 Mix.\u00a0 Salt and pepper to taste.\u00a0 (Definitely do NOT add much salt as capers and salmon are salty.)",
+            "input_condition": [
+              ""
+            ],
+            "task": [
+              {
+                "action_name": "",
+                "output_quality": [
+                  ""
+                ],
+                "background_knowledge": {
+                  "tool": [
+                    ""
+                  ],
+                  "failure": [
+                    ""
+                  ]
+                }
+              }
+            ],
+            "output_condition": [
+              ""
+            ],
+            "modality": {
+              "image": [
+                "",
+                ""
+              ],
+              "video": " "
+            }
+          },
+          {
+            "original_text": "Carefully scoop egg yolk mixture into each hollow of the white.\u00a0 I used a disher to do so, some people use a pastry bag for a more perfect look, but I found that the disher worked just fine.\u00a0 Serve immediately, or cover and chill until needed.",
+            "input_condition": [
+              ""
+            ],
+            "task": [
+              {
+                "action_name": "",
+                "output_quality": [
+                  ""
+                ],
+                "background_knowledge": {
+                  "tool": [
+                    ""
+                  ],
+                  "failure": [
+                    ""
+                  ]
+                }
+              }
+            ],
+            "output_condition": [
+              ""
+            ],
+            "modality": {
+              "image": [
+                "./images/deviled-eggs-with-smoked-salmon-and-capers/deviled-eggs-with-smoked-salmon-and-capers_4_2.jpg"
+              ],
+              "video": " "
+            }
+          }
+        ]
+      },
+      {
+        "meal type": "dinner",
+        "meal time": "20:00",
+        "beverage": "Coke",
+        "main course": [
+          {
+            "name": "egg",
+            "quantity": {
+              "measure": "8",
+              "unit": "count"
+            },
+            "allergies": {
+              "id": "0x3eb1",
+              "category": [
+                "eggs"
+              ],
+              "ref": [
+                "https://farrp.unl.edu/informalleggs"
+              ],
+              "details": ""
+            },
+            "alternative": "",
+            "quality_characteristic": "",
+            "image": "./images/deviled-eggs-with-smoked-salmon-and-capers/ingredients/01_eggs.jpeg"
+          },
+          {
+            "name": "mayyonnaise",
+            "quantity": {
+              "measure": "",
+              "unit": "cup"
+            },
+            "allergies": {
+              "id": "",
+              "category": "",
+              "ref": "",
+              "details": ""
+            },
+            "alternative": "",
+            "quality_characteristic": "",
+            "image": "./images/deviled-eggs-with-smoked-salmon-and-capers/ingredients/02_mayyonnaise.webp"
+          },
+          {
+            "name": "sour cream",
+            "quantity": {
+              "measure": "1",
+              "unit": "tbsp"
+            },
+            "allergies": {
+              "id": "",
+              "category": "",
+              "ref": "",
+              "details": ""
+            },
+            "alternative": "",
+            "quality_characteristic": "",
+            "image": "./images/deviled-eggs-with-smoked-salmon-and-capers/ingredients/03_sourcream.jpeg"
+          },
+          {
+            "name": "lemon juice",
+            "quantity": {
+              "measure": "1",
+              "unit": "tbsp"
+            },
+            "allergies": {
+              "id": "",
+              "category": "",
+              "ref": "",
+              "details": ""
+            },
+            "alternative": "",
+            "quality_characteristic": "fresh",
+            "image": "./images/deviled-eggs-with-smoked-salmon-and-capers/ingredients/04_freshlemonjuice.png"
+          },
+          {
+            "name": "salmon",
+            "quantity": {
+              "measure": "1",
+              "unit": "oz"
+            },
+            "allergies": {
+              "id": "0xe465",
+              "category": [
+                "fish"
+              ],
+              "ref": [
+                "https://farrp.unl.edu/informallfish"
+              ],
+              "details": ""
+            },
+            "alternative": "",
+            "quality_characteristic": "smoked and finely chopped",
+            "image": "./images/deviled-eggs-with-smoked-salmon-and-capers/ingredients/05_salmon.jpeg"
+          },
+          {
+            "name": "scallions",
+            "quantity": {
+              "measure": "2",
+              "unit": "tbsp"
+            },
+            "allergies": {
+              "id": "",
+              "category": "",
+              "ref": "",
+              "details": ""
+            },
+            "alternative": "",
+            "quality_characteristic": "finely chopped",
+            "image": "./images/deviled-eggs-with-smoked-salmon-and-capers/ingredients/06_choppedscallions.jpeg"
+          },
+          {
+            "name": "capers",
+            "quantity": {
+              "measure": "1",
+              "unit": "tbsp"
+            },
+            "allergies": {
+              "id": "",
+              "category": "",
+              "ref": "",
+              "details": ""
+            },
+            "alternative": "",
+            "quality_characteristic": "finely chopped",
+            "image": "./images/deviled-eggs-with-smoked-salmon-and-capers/ingredients/07_caperschopped.jpeg"
+          },
+          {
+            "name": "salt",
+            "quantity": {
+              "measure": "",
+              "unit": ""
+            },
+            "allergies": {
+              "id": "",
+              "category": "",
+              "ref": "",
+              "details": ""
+            },
+            "alternative": "",
+            "quality_characteristic": "",
+            "image": "./images/deviled-eggs-with-smoked-salmon-and-capers/ingredients/08_salt.webp"
+          },
+          {
+            "name": "pepper",
+            "quantity": {
+              "measure": "",
+              "unit": ""
+            },
+            "allergies": {
+              "id": "",
+              "category": "",
+              "ref": "",
+              "details": ""
+            },
+            "alternative": "",
+            "quality_characteristic": "",
+            "image": "./images/deviled-eggs-with-smoked-salmon-and-capers/ingredients/09_pepper.webp"
+          }
+        ],
+        "side": ""
+      }
+    ]
+  },
+  {
+    "day 2": [
+      {
+        "meal type": "breakfast",
+        "meal time": "9:00",
+        "beverage": "Milkshake",
+        "main course": [
+          {
+            "original_text": "Fill a large saucepan with the eggs and water to cover the eggs entirely.\u00a0 Cover.\u00a0 Heat eggs over high heat until boiling.\u00a0 Once water has boiled, turn off water and leave pot covered.\u00a0 Allow eggs to sit in the just boiled water for 7 minutes.\u00a0 Once 7 minutes have passed, drain water and refill pot with cold water.\u00a0 Allow eggs to cool in the cold water.\u00a0 Once eggs are cool enough to handle, carefully peel eggs.\u00a0 (This is why a few extra eggs helps, because sometimes you mess up and don\u2019t make a smooth peel.)",
+            "input_condition": [
+              ""
+            ],
+            "task": [
+              {
+                "action_name": "",
+                "output_quality": [
+                  ""
+                ],
+                "background_knowledge": {
+                  "tool": [
+                    ""
+                  ],
+                  "failure": [
+                    ""
+                  ]
+                }
+              }
+            ],
+            "output_condition": [
+              ""
+            ],
+            "modality": {
+              "image": [
+                "",
+                ""
+              ],
+              "video": " "
+            }
+          },
+          {
+            "original_text": "Cut each egg in half.\u00a0 Carefully remove yolks and place them in a bowl and set whites on a work surface.\u00a0 Once all yolks have been removed, mash them with a fork.\u00a0 Add mayonnaise, sour cream and lemon juice.\u00a0 Mix until consistency is cream.\u00a0 Add salmon, scallions, and capers.\u00a0 Mix.\u00a0 Salt and pepper to taste.\u00a0 (Definitely do NOT add much salt as capers and salmon are salty.)",
+            "input_condition": [
+              ""
+            ],
+            "task": [
+              {
+                "action_name": "",
+                "output_quality": [
+                  ""
+                ],
+                "background_knowledge": {
+                  "tool": [
+                    ""
+                  ],
+                  "failure": [
+                    ""
+                  ]
+                }
+              }
+            ],
+            "output_condition": [
+              ""
+            ],
+            "modality": {
+              "image": [
+                "",
+                ""
+              ],
+              "video": " "
+            }
+          },
+          {
+            "original_text": "Carefully scoop egg yolk mixture into each hollow of the white.\u00a0 I used a disher to do so, some people use a pastry bag for a more perfect look, but I found that the disher worked just fine.\u00a0 Serve immediately, or cover and chill until needed.",
+            "input_condition": [
+              ""
+            ],
+            "task": [
+              {
+                "action_name": "",
+                "output_quality": [
+                  ""
+                ],
+                "background_knowledge": {
+                  "tool": [
+                    ""
+                  ],
+                  "failure": [
+                    ""
+                  ]
+                }
+              }
+            ],
+            "output_condition": [
+              ""
+            ],
+            "modality": {
+              "image": [
+                "./images/deviled-eggs-with-smoked-salmon-and-capers/deviled-eggs-with-smoked-salmon-and-capers_4_2.jpg"
+              ],
+              "video": " "
+            }
+          }
+        ],
+        "side": ""
+      },
+      {
+        "meal type": "lunch",
+        "meal time": "13:00",
+        "beverage": "Milkshake",
+        "main course": [
+          {
+            "original_text": "Fill a large saucepan with the eggs and water to cover the eggs entirely.\u00a0 Cover.\u00a0 Heat eggs over high heat until boiling.\u00a0 Once water has boiled, turn off water and leave pot covered.\u00a0 Allow eggs to sit in the just boiled water for 7 minutes.\u00a0 Once 7 minutes have passed, drain water and refill pot with cold water.\u00a0 Allow eggs to cool in the cold water.\u00a0 Once eggs are cool enough to handle, carefully peel eggs.\u00a0 (This is why a few extra eggs helps, because sometimes you mess up and don\u2019t make a smooth peel.)",
+            "input_condition": [
+              ""
+            ],
+            "task": [
+              {
+                "action_name": "",
+                "output_quality": [
+                  ""
+                ],
+                "background_knowledge": {
+                  "tool": [
+                    ""
+                  ],
+                  "failure": [
+                    ""
+                  ]
+                }
+              }
+            ],
+            "output_condition": [
+              ""
+            ],
+            "modality": {
+              "image": [
+                "",
+                ""
+              ],
+              "video": " "
+            }
+          },
+          {
+            "original_text": "Cut each egg in half.\u00a0 Carefully remove yolks and place them in a bowl and set whites on a work surface.\u00a0 Once all yolks have been removed, mash them with a fork.\u00a0 Add mayonnaise, sour cream and lemon juice.\u00a0 Mix until consistency is cream.\u00a0 Add salmon, scallions, and capers.\u00a0 Mix.\u00a0 Salt and pepper to taste.\u00a0 (Definitely do NOT add much salt as capers and salmon are salty.)",
+            "input_condition": [
+              ""
+            ],
+            "task": [
+              {
+                "action_name": "",
+                "output_quality": [
+                  ""
+                ],
+                "background_knowledge": {
+                  "tool": [
+                    ""
+                  ],
+                  "failure": [
+                    ""
+                  ]
+                }
+              }
+            ],
+            "output_condition": [
+              ""
+            ],
+            "modality": {
+              "image": [
+                "",
+                ""
+              ],
+              "video": " "
+            }
+          },
+          {
+            "original_text": "Carefully scoop egg yolk mixture into each hollow of the white.\u00a0 I used a disher to do so, some people use a pastry bag for a more perfect look, but I found that the disher worked just fine.\u00a0 Serve immediately, or cover and chill until needed.",
+            "input_condition": [
+              ""
+            ],
+            "task": [
+              {
+                "action_name": "",
+                "output_quality": [
+                  ""
+                ],
+                "background_knowledge": {
+                  "tool": [
+                    ""
+                  ],
+                  "failure": [
+                    ""
+                  ]
+                }
+              }
+            ],
+            "output_condition": [
+              ""
+            ],
+            "modality": {
+              "image": [
+                "./images/deviled-eggs-with-smoked-salmon-and-capers/deviled-eggs-with-smoked-salmon-and-capers_4_2.jpg"
+              ],
+              "video": " "
+            }
+          }
+        ],
+        "side": ""
+      },
+      {
+        "meal type": "dinner",
+        "meal time": "20:00",
+        "beverage": "Water",
+        "main course": "",
+        "side": ""
+      }
+    ]
+  },
+  {
+    "day 3": [
+      {
+        "meal type": "breakfast",
+        "meal time": "9:00",
+        "beverage": "Wine",
+        "main course": "deviled-eggs-with-smoked-salmon-and-capers",
+        "side": "deviled-eggs-with-smoked-salmon-and-capers"
+      },
+      {
+        "meal type": "lunch",
+        "meal time": "13:00",
+        "beverage": "Wine",
+        "main course": "",
+        "side": "deviled-eggs-with-smoked-salmon-and-capers"
+      },
+      {
+        "meal type": "dinner",
+        "meal time": "20:00",
+        "beverage": "Coke",
+        "main course": [
+          {
+            "name": "egg",
+            "quantity": {
+              "measure": "8",
+              "unit": "count"
+            },
+            "allergies": {
+              "id": "0x3eb1",
+              "category": [
+                "eggs"
+              ],
+              "ref": [
+                "https://farrp.unl.edu/informalleggs"
+              ],
+              "details": ""
+            },
+            "alternative": "",
+            "quality_characteristic": "",
+            "image": "./images/deviled-eggs-with-smoked-salmon-and-capers/ingredients/01_eggs.jpeg"
+          },
+          {
+            "name": "mayyonnaise",
+            "quantity": {
+              "measure": "",
+              "unit": "cup"
+            },
+            "allergies": {
+              "id": "",
+              "category": "",
+              "ref": "",
+              "details": ""
+            },
+            "alternative": "",
+            "quality_characteristic": "",
+            "image": "./images/deviled-eggs-with-smoked-salmon-and-capers/ingredients/02_mayyonnaise.webp"
+          },
+          {
+            "name": "sour cream",
+            "quantity": {
+              "measure": "1",
+              "unit": "tbsp"
+            },
+            "allergies": {
+              "id": "",
+              "category": "",
+              "ref": "",
+              "details": ""
+            },
+            "alternative": "",
+            "quality_characteristic": "",
+            "image": "./images/deviled-eggs-with-smoked-salmon-and-capers/ingredients/03_sourcream.jpeg"
+          },
+          {
+            "name": "lemon juice",
+            "quantity": {
+              "measure": "1",
+              "unit": "tbsp"
+            },
+            "allergies": {
+              "id": "",
+              "category": "",
+              "ref": "",
+              "details": ""
+            },
+            "alternative": "",
+            "quality_characteristic": "fresh",
+            "image": "./images/deviled-eggs-with-smoked-salmon-and-capers/ingredients/04_freshlemonjuice.png"
+          },
+          {
+            "name": "salmon",
+            "quantity": {
+              "measure": "1",
+              "unit": "oz"
+            },
+            "allergies": {
+              "id": "0xe465",
+              "category": [
+                "fish"
+              ],
+              "ref": [
+                "https://farrp.unl.edu/informallfish"
+              ],
+              "details": ""
+            },
+            "alternative": "",
+            "quality_characteristic": "smoked and finely chopped",
+            "image": "./images/deviled-eggs-with-smoked-salmon-and-capers/ingredients/05_salmon.jpeg"
+          },
+          {
+            "name": "scallions",
+            "quantity": {
+              "measure": "2",
+              "unit": "tbsp"
+            },
+            "allergies": {
+              "id": "",
+              "category": "",
+              "ref": "",
+              "details": ""
+            },
+            "alternative": "",
+            "quality_characteristic": "finely chopped",
+            "image": "./images/deviled-eggs-with-smoked-salmon-and-capers/ingredients/06_choppedscallions.jpeg"
+          },
+          {
+            "name": "capers",
+            "quantity": {
+              "measure": "1",
+              "unit": "tbsp"
+            },
+            "allergies": {
+              "id": "",
+              "category": "",
+              "ref": "",
+              "details": ""
+            },
+            "alternative": "",
+            "quality_characteristic": "finely chopped",
+            "image": "./images/deviled-eggs-with-smoked-salmon-and-capers/ingredients/07_caperschopped.jpeg"
+          },
+          {
+            "name": "salt",
+            "quantity": {
+              "measure": "",
+              "unit": ""
+            },
+            "allergies": {
+              "id": "",
+              "category": "",
+              "ref": "",
+              "details": ""
+            },
+            "alternative": "",
+            "quality_characteristic": "",
+            "image": "./images/deviled-eggs-with-smoked-salmon-and-capers/ingredients/08_salt.webp"
+          },
+          {
+            "name": "pepper",
+            "quantity": {
+              "measure": "",
+              "unit": ""
+            },
+            "allergies": {
+              "id": "",
+              "category": "",
+              "ref": "",
+              "details": ""
+            },
+            "alternative": "",
+            "quality_characteristic": "",
+            "image": "./images/deviled-eggs-with-smoked-salmon-and-capers/ingredients/09_pepper.webp"
+          }
+        ],
+        "side": ""
+      }
+    ]
+  }
+]

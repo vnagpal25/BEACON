@@ -1,0 +1,15 @@
+{
+    "Condition": "Healthy",
+    "meal_schedule": [
+        {"meal": "breakfast", "time": "9:00"},
+        {"meal": "lunch", "time": "13:00"},
+        {"meal": "dinner", "time": "20:00"}
+    ],
+    "meal_config": {
+        "Beverage": "",
+        "Main Course": "",
+        "Dessert": ""
+    },
+    "time_period": 1,
+    "recommendations_per_day": 3
+}

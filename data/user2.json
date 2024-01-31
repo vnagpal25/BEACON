@@ -1,0 +1,7 @@
+{
+    "Condition": "Diabetic",
+    "meal_schedule":["lunch": "10:00", "dinner": '19:00'],
+    "meal_config":{"Beverage" : "", "Main Course" : "", "Dessert" : ""},
+    "time_period": 3,
+    "recommendations_per_day": 2
+}

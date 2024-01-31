@@ -1,0 +1,5038 @@
+{
+	"recipe-ids": {
+		"1": {
+			"recipe_name": "egg-drop-chicken-noodle-soup",
+			"ingredients": [{
+				"name": "chicken broth",
+				"quantity": {
+					"measure": "4",
+					"unit": "cups"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/egg-drop-chicken-noodle-soup/ingredients/chicken-broth.jpeg"
+			}, {
+				"name": "water",
+				"quantity": {
+					"measure": "1.5",
+					"unit": "cups"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/egg-drop-chicken-noodle-soup/ingredients/1-5cupwater.jpeg"
+			}, {
+				"name": "soy sauce",
+				"quantity": {
+					"measure": "3",
+					"unit": "tbsp"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/egg-drop-chicken-noodle-soup/ingredients/soysauce.jpeg"
+			}, {
+				"name": "garlic cloves",
+				"quantity": {
+					"measure": "3",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "smashes",
+				"image": "./images/egg-drop-chicken-noodle-soup/ingredients/smashgarlicclove.jpeg"
+			}, {
+				"name": "ginger",
+				"quantity": {
+					"measure": "0.5",
+					"unit": "teaspoon"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "grounded",
+				"image": "./images/egg-drop-chicken-noodle-soup/ingredients/groundedginger.jpeg"
+			}, {
+				"name": "rice noodles",
+				"quantity": {
+					"measure": "4",
+					"unit": "ounces"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "pad thai noodles",
+				"quality_characteristic": "broken into 3-inch pieces",
+				"image": "./images/egg-drop-chicken-noodle-soup/ingredients/Rice-Noodle-Rice-Vermicelli-Bun-Tuoi.jpg"
+			}, {
+				"name": "cornstarch",
+				"quantity": {
+					"measure": "2",
+					"unit": "tbsp"
+				},
+				"allergies": {
+					"id": "0x6cb",
+					"category": ["Maize"],
+					"ref": ["https://farrp.unl.edu/informallcerealsgrains"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/egg-drop-chicken-noodle-soup/ingredients/cornstarch.jpeg"
+			}, {
+				"name": "egg",
+				"quantity": {
+					"measure": "2",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "0x3eb1",
+					"category": ["eggs"],
+					"ref": ["https://farrp.unl.edu/informalleggs"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "lightly beaten",
+				"image": "./images/egg-drop-chicken-noodle-soup/ingredients/lightlybeatenegg.jpeg"
+			}, {
+				"name": "chicken",
+				"quantity": {
+					"measure": "1.5",
+					"unit": "cups"
+				},
+				"allergies": {
+					"id": "0xb74d",
+					"category": ["meat"],
+					"ref": ["https://farrp.unl.edu/informallothers", "https://www.healthline.com/nutrition/foods/pork", "https://www.healthline.com/health/allergies/most-uncommon-food-allergies#red-meat"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "cooked, shredded",
+				"image": "./images/egg-drop-chicken-noodle-soup/ingredients/shreddedcookedchicken.jpg"
+			}, {
+				"name": "scallions",
+				"quantity": {
+					"measure": "3",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "thinly sliced, optional",
+				"image": "./images/egg-drop-chicken-noodle-soup/ingredients/thinlyslicedscallions.jpeg"
+			}],
+			"prep_time": "10 minutes",
+			"cook_time": "15 minutes",
+			"serves": "5",
+			"instructions": [{
+				"original_text": "Beat the egg well.Egg drop soup is noted for its strands of shredded egg. To achieve this characteristic look and texture, make sure you blend the egg mixture well, and stir it slowly into the broth.",
+				"input_condition": ["have_egg", "have_chicken_broth"],
+				"task": [{
+					"action_name": "Beat the egg well",
+					"output_quality": ["Make sure it is free from shredded egg strands.", "Egg mixture should be well blended."],
+					"background_knowledge": {
+						"tool": ["For beating egg"],
+						"failure": ["Egg shell fell into the bowl"]
+					}
+				}, {
+					"action_name": "Stir it into the chicken broth.",
+					"output_quality": [],
+					"background_knowledge": {
+						"tool": [],
+						"failure": ["Egg shell fell into the bowl"]
+					}
+				}],
+				"output_condition": ["have_egg_chicken_broth_mixture"],
+				"modality": {
+					"image": ["./images/egg-drop-chicken-noodle-soup/egg-drop-chicken-noodle-soup_2_0.jpg ", "./images/egg-drop-chicken-noodle-soup/egg-drop-chicken-noodle-soup_2_1.jpg "],
+					"video": " "
+				}
+			}, {
+				"original_text": "Shred the chicken",
+				"input_condition": ["have_chicken"],
+				"task": [{
+					"action_name": "Shred the chicken",
+					"output_quality": [],
+					"background_knowledge": {
+						"tool": ["Shredder tool needed"],
+						"failure": ["Shredder not present"]
+					}
+				}],
+				"output_condition": ["have_shredded_chicken"],
+				"modality": {
+					"image": ["./images/egg-drop-chicken-noodle-soup/egg-drop-chicken-noodle-soup_3_0.jpg "],
+					"video": " "
+				}
+			}, {
+				"original_text": "Bring the broth, water, soy sauce, garlic and ginger to a boil over medium-high heat in a medium-size saucepan. Reduce heat to medium and cook broth mixture for 10 minutes.",
+				"input_condition": ["have_egg_chicken_broth_mixture", "have_water", "have_soy_sauce", "have_garlic", "have_ginger", "have_mediumsize_saucepan"],
+				"task": [{
+					"action_name": "Boil broth, water, soy sauce, garlic and ginger",
+					"output_quality": ["Maintain medium-high heat", "Preferable utensil - medium-size saucepan", "Cook for 10 minutes."],
+					"background_knowledge": {
+						"tool": ["medium size saucepan"],
+						"failure": ["overcooked broth", "burnt the mixture", "undercooked broth"]
+					}
+				}],
+				"output_condition": ["have_cooked_broth_mixture"],
+				"modality": {
+					"image": ["./images/egg-drop-chicken-noodle-soup/egg-drop-chicken-noodle-soup_4_0.jpg "],
+					"video": " "
+				}
+			}, {
+				"original_text": "Meanwhile, stir together the cornstarch and 2 tablespoons water in a small bowl. Mix it well.Whisk into broth and cook for 1 minute or until thickened.",
+				"input_condition": ["have_cornstarch", "have_water", "have_cooked_broth_mixture", "have_bowl"],
+				"task": [{
+					"action_name": "Stir cornstarch and 2 tbsp water.",
+					"output_quality": ["Use a whisker to mix well."],
+					"background_knowledge": {
+						"tool": [],
+						"failure": ["cornstart is not mixed well", "overused cornstarch"]
+					}
+				}, {
+					"action_name": "Cook this mixture for 1 minute",
+					"output_quality": ["Or until thickened."],
+					"background_knowledge": {
+						"tool": ["mixing bowl", "whisker"],
+						"failure": ["overcooked broth"]
+					}
+				}],
+				"output_condition": ["have_broth_with_cornstarch"],
+				"modality": {
+					"image": ["./images/egg-drop-chicken-noodle-soup/egg-drop-chicken-noodle-soup_5_0.jpg ", "./images/egg-drop-chicken-noodle-soup/egg-drop-chicken-noodle-soup_5_1.jpg "],
+					"video": " "
+				}
+			}, {
+				"original_text": "Remove the garlic cloves with a slotted spoon. Now add noodles to pot. Cook for 4 minutes till the noodles are cooked.",
+				"input_condition": ["have_broth_with_cornstarch", "have_noodles", "have_pot"],
+				"task": [{
+					"action_name": "Remove garlic cloves from the broth",
+					"output_quality": ["Use a slotted spoon to do it efficiently."],
+					"background_knowledge": {
+						"tool": ["Slotted Spoon"],
+						"failure": []
+					}
+				}, {
+					"action_name": "Boil noodles in a pot",
+					"output_quality": ["Cook for 4 minutes."],
+					"background_knowledge": {
+						"tool": ["Pot"],
+						"failure": ["overcooked noodles"]
+					}
+				}],
+				"output_condition": ["have_boiled_noodles", "have_cooked_broth_mixture_without_garlic"],
+				"modality": {
+					"image": ["./images/egg-drop-chicken-noodle-soup/egg-drop-chicken-noodle-soup_6_0.jpg "],
+					"video": " "
+				}
+			}, {
+				"original_text": "Stir the soup so it is moving in a circular direction. Drizzle beaten egg into hot broth, stirring constantly.",
+				"input_condition": ["have_boiled_noodles", "have_cooked_broth_mixture_without_garlic", "have_raw_egg"],
+				"task": [{
+					"action_name": "Add noodles to the broth.",
+					"output_quality": ["Stir the soup."],
+					"background_knowledge": {
+						"tool": [],
+						"failure": []
+					}
+				}, {
+					"action_name": "Beat a raw egg into the broth",
+					"output_quality": ["Keep stirring constantly."],
+					"background_knowledge": {
+						"tool": [],
+						"failure": ["did not stir well", "egg coagulated"]
+					}
+				}],
+				"output_condition": ["have_egg_chicken_noodle_soup"],
+				"modality": {
+					"image": ["./images/egg-drop-chicken-noodle-soup/egg-drop-chicken-noodle-soup_7_0.jpg ", "./images/egg-drop-chicken-noodle-soup/egg-drop-chicken-noodle-soup_7_1.jpg"],
+					"video": " "
+				}
+			}, {
+				"original_text": "Remove from the heat; stir in onion and chicken. Serve it hot.",
+				"input_condition": ["have_egg_chicken_noodle_soup", "have_onion", "have_chicken"],
+				"task": [{
+					"action_name": "Remove from the heat.",
+					"output_quality": [],
+					"background_knowledge": {
+						"tool": [],
+						"failure": ["Overcooked", "Burnt"]
+					}
+				}, {
+					"action_name": "Stir in onion and chicken.",
+					"output_quality": ["Serve hot."],
+					"background_knowledge": {
+						"tool": [],
+						"failure": ["Onion missing"]
+					}
+				}],
+				"output_condition": ["recipe_complete"],
+				"modality": {
+					"image": ["./images/egg-drop-chicken-noodle-soup/egg-drop-chicken-noodle-soup_8_0.jpg", "./images/egg-drop-chicken-noodle-soup/egg-drop-chicken-noodle-soup_8_1.jpg", "./images/egg-drop-chicken-noodle-soup/egg-drop-chicken-noodle-soup_8_2.jpg"],
+					"video": " "
+				}
+			}]
+		},
+		"2": {
+			"recipe_name": "my-scotch-eggs",
+			"ingredients": [{
+				"name": "eggs",
+				"quantity": {
+					"measure": "6",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "0x23b8",
+					"category": ["eggs"],
+					"ref": ["https://farrp.unl.edu/informalleggs"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "hard boiled",
+				"image": "./images/my-scotch-eggs/ingredients/hardboiledeggs.jpeg"
+			}, {
+				"name": "bacon",
+				"quantity": {
+					"measure": "6",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "cooked and drained",
+				"image": "./images/my-scotch-eggs/ingredients/cookeddrainedbacon.jpeg"
+			}, {
+				"name": "American Cheese",
+				"quantity": {
+					"measure": "6",
+					"unit": "slice"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/my-scotch-eggs/ingredients/americancheese.jpeg"
+			}, {
+				"name": "spray",
+				"quantity": {
+					"measure": "1",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "non-stick",
+				"image": "./images/my-scotch-eggs/ingredients/nonstickcookingspray.jpeg"
+			}, {
+				"name": "corn muffin",
+				"quantity": {
+					"measure": "1",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/my-scotch-eggs/ingredients/cornmuffin.jpeg"
+			}, {
+				"name": "all purpose flour",
+				"quantity": {
+					"measure": "0.25",
+					"unit": "cups"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/my-scotch-eggs/ingredients/allpurposeflour.jpeg"
+			}, {
+				"name": "corn meal",
+				"quantity": {
+					"measure": "0.75",
+					"unit": "cups"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/my-scotch-eggs/ingredients/cornmeal.jpeg"
+			}, {
+				"name": "sugar",
+				"quantity": {
+					"measure": "0.25",
+					"unit": "cups"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/my-scotch-eggs/ingredients/sugar.jpeg"
+			}, {
+				"name": "baking powder",
+				"quantity": {
+					"measure": "2",
+					"unit": "tbps"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/my-scotch-eggs/ingredients/bakingpowder.jpeg"
+			}, {
+				"name": "salt",
+				"quantity": {
+					"measure": "0.0625",
+					"unit": "tbsp"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/my-scotch-eggs/ingredients/salt.jpeg"
+			}, {
+				"name": "milk",
+				"quantity": {
+					"measure": "1",
+					"unit": "cup"
+				},
+				"allergies": {
+					"id": "0xbdd6",
+					"category": ["cows milk"],
+					"ref": ["http://research.bmh.manchester.ac.uk/informall/allergenic-food/?foodid=5000"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/my-scotch-eggs/ingredients/milk.jpeg"
+			}, {
+				"name": "vegetable oil",
+				"quantity": {
+					"measure": "1",
+					"unit": "cup"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/my-scotch-eggs/ingredients/vegetableoil.jpeg"
+			}, {
+				"name": "egg",
+				"quantity": {
+					"measure": "1",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "0x3eb1",
+					"category": ["eggs"],
+					"ref": ["https://farrp.unl.edu/informalleggs"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/my-scotch-eggs/ingredients/egg.jpeg"
+			}, {
+				"name": "pepper",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "fresh, cracked",
+				"image": "./images/my-scotch-eggs/ingredients/freshcrackedpepper.jpeg"
+			}, {
+				"name": "parsley",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "0x8b9d",
+					"category": ["leaves"],
+					"ref": ["https://farrp.unl.edu/informallspicesherbs"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/my-scotch-eggs/ingredients/parsley.jpg"
+			}],
+			"prep_time": "",
+			"cook_time": "",
+			"serves": "",
+			"instructions": [{
+				"original_text": "Put your eggs into a pan of lukewarm water and sprinkle a little salt in the pan. Put on high heat and allow eggs to come to a rolling boil. Once eggs come to a boil, turn off the burner, set timer on 15 minutes, and allow eggs to sit. Once done, rinse the eggs and shell them. Set eggs aside.",
+				"input_condition": ["have_egg"],
+				"task": [{
+					"action_name": "Put eggs into a pan of lukewarm water with a little salt",
+					"output_quality": ["Put on high heat", "allow eggs to come to a rolling boil."],
+					"background_knowledge": {
+						"tool": ["pan", "burner"],
+						"failure": ["Extra boiled eggs"]
+					}
+				}, {
+					"action_name": "Turn off the burner",
+					"output_quality": ["Right after eggs come to a boil"],
+					"background_knowledge": {
+						"tool": [],
+						"failure": []
+					}
+				}, {
+					"action_name": "Allow eggs to sit for 15 minutes",
+					"output_quality": ["Make sure the burner is turned off"],
+					"background_knowledge": {
+						"tool": [],
+						"failure": []
+					}
+				}, {
+					"action_name": "Rinse and shell the egg",
+					"output_quality": [],
+					"background_knowledge": {
+						"tool": [],
+						"failure": []
+					}
+				}],
+				"output_condition": ["have_drained_shelled_egg"],
+				"modality": {
+					"image": ["./images/my-scotch-eggs/my-scotch-eggs_2_0.jpg"],
+					"video": " "
+				}
+			}, {
+				"original_text": "I like to cut the bacon with cooking scissors before cooking, but you can just crumble the bacon after it's done cooking. Once the bacon is cooked, drain on paper towels and set aside.",
+				"input_condition": ["have_bacon"],
+				"task": [{
+					"action_name": "Cut bacon",
+					"output_quality": ["Use cooking scissors."],
+					"background_knowledge": {
+						"tool": ["cooking scissors"],
+						"failure": []
+					}
+				}, {
+					"action_name": "Cook Bacon",
+					"output_quality": [],
+					"background_knowledge": {
+						"tool": [],
+						"failure": []
+					}
+				}, {
+					"action_name": "Crumble Bacon",
+					"output_quality": ["Make sure the bacon is cooked"],
+					"background_knowledge": {
+						"tool": [],
+						"failure": []
+					}
+				}, {
+					"action_name": "Drain bacon",
+					"output_quality": ["Use paper towels to drain."],
+					"background_knowledge": {
+						"tool": [],
+						"failure": []
+					}
+				}],
+				"output_condition": ["have_cooked_crumbled_drained_bacon"],
+				"modality": {
+					"image": ["./images/my-scotch-eggs/my-scotch-eggs_3_0.jpg"],
+					"video": " "
+				}
+			}, {
+				"original_text": "Preheat oven to 400 degrees.Combine all the dry ingredients then add the milk, egg, and oil until just blended but don't over-mix.",
+				"input_condition": ["have_egg", "have_milk", "have_dry_ingredients"],
+				"task": [{
+					"action_name": "Preheat Oven to 400 degrees",
+					"output_quality": [],
+					"background_knowledge": {
+						"tool": ["oven"],
+						"failure": []
+					}
+				}, {
+					"action_name": "Combine all dry ingredients",
+					"output_quality": [],
+					"background_knowledge": {
+						"tool": [],
+						"failure": []
+					}
+				}, {
+					"action_name": "Add milk, egg, and oil",
+					"output_quality": ["Make sure it is just blended", "Do not over mix"],
+					"background_knowledge": {
+						"tool": [],
+						"failure": ["overmixed mixture"]
+					}
+				}],
+				"output_condition": ["have_dry_milk_egg_oil_blend"],
+				"modality": {
+					"image": ["./images/my-scotch-eggs/my-scotch-eggs_4_0.jpg"],
+					"video": ""
+				}
+			}, {
+				"original_text": "Spray a large muffin pan liberally with non-stick cooking spray. Fill each muffin cup about half full with corn muffin batter. Sprinkle bacon pieces on top of corn muffin batter. Place a boiled egg on top of the bacon. Sprinkle fresh cracked pepper and salt on top of the egg.",
+				"input_condition": ["have_cooking_spray", "have_corn_muffin_batter", "have_drained_shelled_egg", "have_bacon", "have_pepper", "have_salt"],
+				"task": [{
+					"action_name": "Cooking Spray on Large Muffin Pan",
+					"output_quality": ["Spray the pan liberally"],
+					"background_knowledge": {
+						"tool": ["muffin pan", "cooking spray"],
+						"failure": []
+					}
+				}, {
+					"action_name": "Fill half muffin cup with batter",
+					"output_quality": ["Make sure to fill the cup half full"],
+					"background_knowledge": {
+						"tool": ["muffin cup", "something to fill batter into the cup"],
+						"failure": []
+					}
+				}, {
+					"action_name": "Sprinkle bacon pieces on the batter",
+					"output_quality": ["Sprinkle the pieces on the muffin batter in the cup"],
+					"background_knowledge": {
+						"tool": [],
+						"failure": []
+					}
+				}, {
+					"action_name": "Place boiled egg on bacon",
+					"output_quality": [],
+					"background_knowledge": {
+						"tool": [],
+						"failure": []
+					}
+				}, {
+					"action_name": "Sprinkle pepper and salt on the egg",
+					"output_quality": ["Make sure the pepper is freshly cracked"],
+					"background_knowledge": {
+						"tool": [],
+						"failure": []
+					}
+				}],
+				"output_condition": ["have_filled_muffin_cups"],
+				"modality": {
+					"image": ["./images/my-scotch-eggs/my-scotch-eggs_5_0.jpg"],
+					"video": " "
+				}
+			}, {
+				"original_text": "Bake your assembled Scotch Eggs at 400 degrees. Check them at ten minutes, they should be plumped up but not browned at the edges.You can put cheese on at this point and cook another five minutes, if you plan to eat them immediately.Or continue to cook another five mintues without the cheese if you intend on cooking them in advance and re-heating them later in the microwave.",
+				"input_condition": ["have_scotch_egg", "have_milk", "have_dry_ingredients"],
+				"task": [{
+					"action_name": "Bake Scotch eggs at 400 degree",
+					"output_quality": ["Make sure the eggs are assembled"],
+					"background_knowledge": {
+						"tool": ["oven"],
+						"failure": []
+					}
+				}, {
+					"action_name": "Check the eggs in 10 minutes",
+					"output_quality": ["Eggs should be plumped up", "Edges shouldn\u00e2\u20ac\u2122t be browned"],
+					"background_knowledge": {
+						"tool": [],
+						"failure": []
+					}
+				}, {
+					"action_name": "Put cheese and Cook for 5 minutes",
+					"output_quality": ["Put cheese on the egg"],
+					"background_knowledge": {
+						"tool": [],
+						"failure": []
+					}
+				}],
+				"output_condition": ["have_cooked_cheese_egg"],
+				"modality": {
+					"image": ["./images/my-scotch-eggs/my-scotch-eggs_6_0.jpg"],
+					"video": " "
+				}
+			}, {
+				"original_text": "Once the Scotch Eggs are done, allow them to cool in the muffin pan for a few minutes. Run a knife around the edge of each muffin and pop each muffin out gently. Sprinkle fresh cracked pepper, salt and parsley over each egg.Enjoy your Scotch Egg!",
+				"input_condition": ["have_scotch_eggs"],
+				"task": [{
+					"action_name": "Cool in the muffin pan",
+					"output_quality": ["Make sure the scotch eggs are done"],
+					"background_knowledge": {
+						"tool": ["muffin pan"],
+						"failure": []
+					}
+				}, {
+					"action_name": "Pop Muffin Out using a knife",
+					"output_quality": ["Run knife around the edge", "Perform the process gently"],
+					"background_knowledge": {
+						"tool": [],
+						"failure": ["pop the muffin when eggs are hot"]
+					}
+				}, {
+					"action_name": "Sprinkle pepper, salt, and parsley",
+					"output_quality": ["Make sure pepper is freshly cracked"],
+					"background_knowledge": {
+						"tool": [],
+						"failure": []
+					}
+				}],
+				"output_condition": ["have_scotch_egg"],
+				"modality": {
+					"image": ["./images/my-scotch-eggs/my-scotch-eggs_7_0.jpg"],
+					"video": " "
+				}
+			}]
+		},
+		"3": {
+			"recipe_name": "egg-in-an-avocado-hole",
+			"ingredients": [{
+				"name": "egg",
+				"quantity": {
+					"measure": "2",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "0x3eb1",
+					"category": ["eggs"],
+					"ref": ["https://farrp.unl.edu/informalleggs"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/egg-in-an-avocado-hole/ingredients/01_egg.jpeg"
+			}, {
+				"name": "avocado",
+				"quantity": {
+					"measure": "1",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "0x1641",
+					"category": ["Fruits"],
+					"ref": ["https://farrp.unl.edu/informallfruit"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/egg-in-an-avocado-hole/ingredients/02_avacado.jpeg"
+			}, {
+				"name": "salt",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/egg-in-an-avocado-hole/ingredients/03_salt.jpeg"
+			}, {
+				"name": "pepper",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/egg-in-an-avocado-hole/ingredients/04_pepper.webp"
+			}, {
+				"name": "kale strips",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/egg-in-an-avocado-hole/ingredients/05_kalestrips.jpeg"
+			}, {
+				"name": "bacon",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/egg-in-an-avocado-hole/ingredients/06_bacon.jpeg"
+			}, {
+				"name": "chives",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/egg-in-an-avocado-hole/ingredients/07_chives.jpeg"
+			}, {
+				"name": "cheese",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "0x667",
+					"category": ["cows milk"],
+					"ref": ["http://research.bmh.manchester.ac.uk/informall/allergenic-food/?foodid=5000"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/egg-in-an-avocado-hole/ingredients/08_cheese.jpeg"
+			}, {
+				"name": "hot sauce",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "./images/egg-in-an-avocado-hole/ingredients/09_hotsauce.jpeg",
+				"image": "./images/egg-in-an-avocado-hole/ingredients/09_hotsauce.jpeg"
+			}],
+			"prep_time": "",
+			"cook_time": "",
+			"serves": "",
+			"instructions": [{
+				"original_text": "Turn your oven on to 425 F.While it's heating up you can prepare your avocado. Start by slicing your avocado in half lengthwise. Remove the pit and compost it. Using your spoon, gently scrape and scoop out a small portion of the hole left by the pit in your avocado. This will allow you to fit more egg into your avocado half.",
+				"input_condition": ["have_oven", "have_avocado"],
+				"task": [{
+					"action_name": "Turn your oven on to 425 F",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": ["oven"],
+						"failure": [""]
+					}
+				}, {
+					"action_name": "Slice avacoda in half lengthwise",
+					"output_quality": ["Using a spoon, gently scrape out the small portion of the hole left by the pit"],
+					"background_knowledge": {
+						"tool": ["knife", "spoon"],
+						"failure": [""]
+					}
+				}],
+				"output_condition": ["have_sliced_pitted_avocado", "have_oven_preheated"],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Crack your eggs into a bowl. Using a regular teaspoon or tablespoon, gently scoop one of your yolks out of the bowl and place it into one of your avocado halves. Fill the remainder of the space in your avocado with egg white. Repeat with the second egg and avocado half.",
+				"input_condition": ["have_eggs"],
+				"task": [{
+					"action_name": "Crack eggs into a bowl",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": ["bowl"],
+						"failure": [""]
+					}
+				}, {
+					"action_name": "Scoop out the yolk and place in one avocado half.",
+					"output_quality": ["Use a tablespoon or teaspoon to scoop out the yolk"],
+					"background_knowledge": {
+						"tool": ["knife", "spoon"],
+						"failure": [""]
+					}
+				}],
+				"output_condition": ["have_eggs_in_avocado"],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Place your freshly egged avocado halves in a small baking dish. You'll want your avocados to be fairly snug so that they don't tip over letting the egg run out of the center. I've found that my bread loaf baking dish is perfect for most larger avocados. If you need to find a smaller vessel or use tin foil to secure your avocados from rolling. Bake your Egg in an Avocado Hole for 15-20 minutes at 425F depending on your oven and how well done you like your eggs. Once baked to your preferred egg doneness, remove your baking dish from the oven and allow the avocados to cool for roughly a minute before removing them from the dish.",
+				"input_condition": ["have_eggs"],
+				"task": [{
+					"action_name": "Place egged avocado halves in a baking dish",
+					"output_quality": ["bread load baking dish works", "can use a tin foil to prevent the avocados from rolling"],
+					"background_knowledge": {
+						"tool": ["baking dish"],
+						"failure": [""]
+					}
+				}, {
+					"action_name": "Put the baking dish in the oven for 15-20 minutes at 425 F",
+					"output_quality": ["Adjust the time as per your egg doneness preference"],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}, {
+					"action_name": "Let the avocados cool for a minute in the baking dish after removing from the oven.",
+					"output_quality": [],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": ["have_baked_eggs_in_avocado"],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Salt and pepper to taste.Top with your favorite garnishes. I listed a few of mine in step 1 in the Ingredients section, but get creative!",
+				"input_condition": ["have_salt", "have_pepper"],
+				"task": [{
+					"action_name": "Add salt and pepper to taste.",
+					"output_quality": ["can use any garnishes"],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": ["have_garnished_recipe"],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Serve with some fresh fruit and enjoy! Some people also like them served with toast so they can spread the buttery avocado and delicious yolk on a crunchy piece of toast.",
+				"input_condition": ["if_have_fruits", "if_have_toast"],
+				"task": [{
+					"action_name": "Can be served with fresh fruit and toast",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": ["recipe_complete"],
+				"modality": {
+					"image": ["./images/egg-in-an-avocado-hole/egg-in-an-avocado-hole_6_0.jpg", ""],
+					"video": " "
+				}
+			}]
+		},
+		"4": {
+			"recipe_name": "delicious-chocolate-bark-recipe",
+			"ingredients": [{
+				"name": "butter",
+				"quantity": {
+					"measure": "0.5",
+					"unit": "pound"
+				},
+				"allergies": {
+					"id": "0x1c80",
+					"category": ["cows milk"],
+					"ref": ["http://research.bmh.manchester.ac.uk/informall/allergenic-food/?foodid=5000"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/delicious-chocolate-bark-recipe/ingredients/01_butter.jpeg"
+			}, {
+				"name": "brown sugar",
+				"quantity": {
+					"measure": "1/4",
+					"unit": "cup"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/delicious-chocolate-bark-recipe/ingredients/02_brownsugar.jpeg"
+			}, {
+				"name": "white sugar",
+				"quantity": {
+					"measure": "1/4",
+					"unit": "cup"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "granulated",
+				"image": "./images/delicious-chocolate-bark-recipe/ingredients/03_whitesugar.jpeg"
+			}, {
+				"name": "graham crackers",
+				"quantity": {
+					"measure": "0.5",
+					"unit": "box"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/delicious-chocolate-bark-recipe/ingredients/04_grahamcrackers.jpeg"
+			}, {
+				"name": "chocolate chips",
+				"quantity": {
+					"measure": "2",
+					"unit": "cups"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "semi-sweet",
+				"image": "./images/delicious-chocolate-bark-recipe/ingredients/05_chocolatechips.jpeg"
+			}],
+			"prep_time": "",
+			"cook_time": "",
+			"serves": "",
+			"instructions": [{
+				"original_text": "Preheat your oven to 350 degrees F. Take your cookie sheet and line it with aluminum foil. Make sure all the sides have a little bit of excess so that none of the butter mixture will leak out later. Then take your graham crackers and arrange them on the bottom of the pan, breaking up the last few in order to fit.",
+				"input_condition": ["have_oven", "have_cooke_sheet", "have_aluminum foil", "have_graham_crackers"],
+				"task": [{
+					"action_name": "Preheat oven to 350 F",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}, {
+					"action_name": "Line cookie sheet with aluminum foil",
+					"output_quality": ["make sure to have excess aluminum foil on the side to prevent leaking of butter"],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}, {
+					"action_name": "Arrange graham crakcers on the bottom of the pan",
+					"output_quality": ["breaking the graham crackers helps in fitting them in the pan"],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": ["have_layered_graham_crackers"],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Melt the butter in your medium sauce pan over medium heat. Once the butter has all melted add your 1/4 cup brown sugar and 1/4 cup white sugar. Stir the mixture together and bring it to a boil. Once boiling, reduce the heat and let the mixture bubble for 4 minutes, then remove from heat. Proceed to next step",
+				"input_condition": ["have_medium_sauce_pan", "have_butter", "have_brown_sugar", "have_white_sugar"],
+				"task": [{
+					"action_name": "Melt the butter in medium sauce pan over medium heat",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": ["medium sauce pan"],
+						"failure": [""]
+					}
+				}, {
+					"action_name": "Add brown sugar and white sugar to the melted butter",
+					"output_quality": ["make sure all the butter has melted"],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}, {
+					"action_name": "Bring the mixture to a boil",
+					"output_quality": ["lower the heat when the mixture is boiling and let it bubble for 4 minutes"],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": ["have_butter_mixture"],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Pour the butter/sugar mixture over the graham crackers on the cookie sheet and spread evenly. Bake in the oven for 8 minutes.",
+				"input_condition": ["have_butter_mixture", "have_layered_graham_crackers"],
+				"task": [{
+					"action_name": "Pour the butter/sugar mixture over the graham crackers on the cookie sheet",
+					"output_quality": ["spread the mixture evenly"],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}, {
+					"action_name": "Bake in the oven for 8 minutes",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": ["have_baked_cookie_mixture"],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Remove from the oven after baking and let rest until the bubbling disappears. Sprinkle the 2 cups of chocolate chips evenly on top. Wait for 2 minutes for the chocolate to melt, then take a spatula and spread the chocolate into an even layer. Now you can add any toppings you desire and press them lightly into the chocolate so the stay on.",
+				"input_condition": ["have_chocolate_chips"],
+				"task": [{
+					"action_name": "Remove from the oven after baking",
+					"output_quality": ["rest until bubbling disappears"],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}, {
+					"action_name": "Sprinkle 2 cups of chocolate chips on top",
+					"output_quality": ["Wait for the chocolate to melt which usually takes 2 minutes and spread it into a layer"],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}, {
+					"action_name": "Press toppings of choice into the chocolate layer",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": ["have_added_toppings"],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Cool to room temperature, then refrigerate for 2 hours. Peel the foil from the chilled bark and break into pieces however large you like, 2-inch irregular pieces is a good size. Your bark is now ready to be devoured, refrigerate any leftovers if there are any! Notes: Personally i think the bark is best after it has been refrigerated over night, but this is not required.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "Cool to room temperature, then refrigerate for 2 hours",
+					"output_quality": ["rest until bubbling disappears"],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}, {
+					"action_name": "Break the bark into pieces after removing the foil",
+					"output_quality": ["2 inch pieces of irregular size is good", "tastes best when the bark is refrigerated over night."],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": ["have_bark_pieces"],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Cool to room temperature, then refrigerate for 2 hours. Peel the foil from the chilled bark and break into pieces however large you like, 2-inch irregular pieces is a good size. Your bark is now ready to be devoured, refrigerate any leftovers if there are any! Notes: Personally i think the bark is best after it has been refrigerated over night, but this is not required.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "Cool to room temperature, then refrigerate for 2 hours",
+					"output_quality": ["rest until bubbling disappears"],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}, {
+					"action_name": "Break the bark into pieces after removing the foil",
+					"output_quality": ["2 inch pieces of irregular size is good", "tastes best when the bark is refrigerated over night."],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": ["recipe_complete"],
+				"modality": {
+					"image": ["./images/delicious-chocolate-bark-recipe/delicious-chocolate-bark-recipe_6_0.jpg", "./images/delicious-chocolate-bark-recipe/delicious-chocolate-bark-recipe_6_1.jpg"],
+					"video": " "
+				}
+			}]
+		},
+		"5": {
+			"recipe_name": "bacon-candy",
+			"ingredients": [{
+				"name": "Yellow and Green M&M",
+				"quantity": {
+					"measure": "1",
+					"unit": "bag"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/eggs-and-bacon-candy/ingredients/01_mnm.jpeg"
+			}, {
+				"name": "White Chocolate Chips",
+				"quantity": {
+					"measure": "1",
+					"unit": "bag"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/eggs-and-bacon-candy/ingredients/02_whitechocolatechips.jpeg"
+			}, {
+				"name": "Mini Pretzel sticks",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/eggs-and-bacon-candy/ingredients/03_minipretzelsticks.jpeg"
+			}],
+			"prep_time": "",
+			"cook_time": "",
+			"serves": "",
+			"instructions": [{
+				"original_text": "First you'll need to take the parchment paper and lay it out on the pan.",
+				"input_condition": ["have_parchment_paper", "have_pan"],
+				"task": [{
+					"action_name": "Lay the parchment paper on the pan",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": ["pan", "parchment paper"],
+						"failure": [""]
+					}
+				}],
+				"output_condition": ["have_parchment_paper_on_pan"],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Now set up the pretzels in groups of 3 and equally spread them out in rows and columns.",
+				"input_condition": ["have_pretzels"],
+				"task": [{
+					"action_name": "Set up pretzels in groups of 3",
+					"output_quality": ["Spread them out in rows and columns"],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": ["have_pretzels_organised"],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Open up a bag of M and M's and sort the yellow and green M and M's from the other colors that way you can make Regular eggs and bacon or green eggs and ham.",
+				"input_condition": ["have_m_and_m"],
+				"task": [{
+					"action_name": "Sort yellow and green M and M's from the bag",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": ["have_sorted_m_and_m"],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "To make the candy egg whites, take the bag of white chocolate and dump it in a microwave safe bowls, next heat it for 20 seconds. Then stir it, heat it for another 20 seconds, and stir it. Put it in the microwave for another 20 seconds and stir, if the white chocolate is still not melted then put it for another 20 seconds and stir then it should be done.",
+				"input_condition": ["have_white_chocolate"],
+				"task": [{
+					"action_name": "Heat white chocolate in microwave safe bowls for 20 seconds",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": ["microwave_safe_bowl"],
+						"failure": [""]
+					}
+				}, {
+					"action_name": "Heat for another 20 seconds after stirring the white chocolate",
+					"output_quality": ["continue the process two more times if the white chocolate does not melt"],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": ["have_metled_white_chocolate"],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "The last step is to add all the ingredients together, Take a normal spoon and put about a dollop of white chocolate on each 3 pretzels. Take your time because the white chocolate will take a while to cool off. Then put the yellow or green M and M's or both on top of the white chocolate. After this is done you'll have to wait a while, if you want them to cool off quicker and be stable than put the candy (if on a pan) in your freezer for about 10 minutes and take them out.",
+				"input_condition": ["have_white_chocolate"],
+				"task": [{
+					"action_name": "Put a dallop of white chocolate using a spoon on 3 pretzels",
+					"output_quality": ["take your time as the white chocolate takes time to cool"],
+					"background_knowledge": {
+						"tool": ["microwave_safe_bowl"],
+						"failure": [""]
+					}
+				}, {
+					"action_name": "Put the M&Ms as per liking on the 3 pretzels",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}, {
+					"action_name": "Wait a while for them to cool",
+					"output_quality": ["can also be put in the freezer for 10 minutes to cool quicker"],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": ["recipe_complete"],
+				"modality": {
+					"image": ["./images/eggs-and-bacon-candy/eggs-and-bacon-candy_6_0.jpg"],
+					"video": " "
+				}
+			}]
+		},
+		"6": {
+			"recipe_name": "bacon-and-egg-pie",
+			"ingredients": [{
+				"name": "puff pastry",
+				"quantity": {
+					"measure": "2",
+					"unit": "sheets"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/bacon-and-egg-pie/ingredients/01_puffpastry.jpeg"
+			}, {
+				"name": "bacon",
+				"quantity": {
+					"measure": "6",
+					"unit": "slices"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "cooked (fried or grilled)",
+				"image": "./images/bacon-and-egg-pie/ingredients/02_cookedbacon.jpeg"
+			}, {
+				"name": "eggs",
+				"quantity": {
+					"measure": "8",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "0x23b8",
+					"category": ["eggs"],
+					"ref": ["https://farrp.unl.edu/informalleggs"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "reserve one yolk for brushing the pastry",
+				"image": "./images/bacon-and-egg-pie/ingredients/03_eggs.jpeg"
+			}, {
+				"name": "milk",
+				"quantity": {
+					"measure": "4",
+					"unit": "tsp"
+				},
+				"allergies": {
+					"id": "0xbdd6",
+					"category": ["cows milk"],
+					"ref": ["http://research.bmh.manchester.ac.uk/informall/allergenic-food/?foodid=5000"],
+					"details": ""
+				},
+				"alternative": "4 tsp double cream",
+				"quality_characteristic": "",
+				"image": "./images/bacon-and-egg-pie/ingredients/04_milk.jpeg"
+			}, {
+				"name": "onion",
+				"quantity": {
+					"measure": "1",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "not too big",
+				"image": "./images/bacon-and-egg-pie/ingredients/05_onion.jpeg"
+			}, {
+				"name": "parsley",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "0x8b9d",
+					"category": ["leaves"],
+					"ref": ["https://farrp.unl.edu/informallspicesherbs"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/bacon-and-egg-pie/ingredients/06_parsley.jpeg"
+			}],
+			"prep_time": "",
+			"cook_time": "",
+			"serves": "",
+			"instructions": [{
+				"original_text": "Chop onion and the parsley. Whisk eggs putting one yolk to the side. Whisk in the milk. Mix the parsley and onion in with the egg mixture.",
+				"input_condition": ["have_onion", "have_parsley", "have_eggs", "have_milk"],
+				"task": [{
+					"action_name": "Whisk eggs putting one yolk to the side in the milk",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": ["whisker"],
+						"failure": [""]
+					}
+				}, {
+					"action_name": "Add chopped onion and parsley in the egg mixture",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": ["have_egg_mixture"],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Cut the rinds of the bacon (if it's shoulder bacon) and chop.\nCook the bacon lightly and add to eggy mix.",
+				"input_condition": ["have_bacon", "have_egg_mixture"],
+				"task": [{
+					"action_name": "Cut the rinds of bacon (if it's shoulder bacon)",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": ["whisker"],
+						"failure": [""]
+					}
+				}, {
+					"action_name": "Chop the bacon",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}, {
+					"action_name": "Cook the bacon lightly",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}, {
+					"action_name": "Add bacon to the egg mixture",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": ["have_bacon_in_egg_mixture"],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Grease your pie tray and layer with pastry. Then prick your bottom with a fork. Pour eggy mix in. Brush the edges with the egg yolk. Pop the top on and brush with more yolk. Yolk is the secret to good looking pies.",
+				"input_condition": ["have_pie_tray", "have_pastry", ""],
+				"task": [{
+					"action_name": "Grease the pie tray",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": ["pie tray"],
+						"failure": [""]
+					}
+				}, {
+					"action_name": "Layer the pie tray with pastry",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}, {
+					"action_name": "Prick the bottom of the pastry with a fork",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}, {
+					"action_name": "Pour in the egg mixture",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}, {
+					"action_name": "Brush edges with egg yolk",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}, {
+					"action_name": "Pop the pastry top on the mixture",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}, {
+					"action_name": "Brush more yolk on the pastry top",
+					"output_quality": ["brushing yolk is the secret to good looking pies"],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": ["have_pie_tray_prepared"],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "It goes into the oven at 350F for 20mins. Then check it's not burning. The edges will cook faster, so as they brown up nice put tinfoil over for the rest of the time in the oven. It will need about 40mins total. The first pic has nicely browned edges but a very raw centre, so i popped the tinfoil on. The cooked pie should have a nice bump in the middle. When you stab it with a knife, it should come out clean.",
+				"input_condition": ["have_bacon", "have_egg_mixture"],
+				"task": [{
+					"action_name": "Put the pie tray in the oven at 350F for 20 mins",
+					"output_quality": ["check it is not burning"],
+					"background_knowledge": {
+						"tool": ["whisker"],
+						"failure": [""]
+					}
+				}, {
+					"action_name": "Cover the edges with tinfoil once they become brown",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}, {
+					"action_name": "A total of 40 mins is needed for perfect pies",
+					"output_quality": ["cooked pie should have a bump in the center", "a knife stabbed in the pie's center should come out clean"],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": ["recipe_complete"],
+				"modality": {
+					"image": ["./images/bacon-and-egg-pie/bacon-and-egg-pie_6_0.jpg", "./images/bacon-and-egg-pie/bacon-and-egg-pie_6_1.jpg"],
+					"video": " "
+				}
+			}]
+		},
+		"7": {
+			"recipe_name": "how-to-make-egg-salad",
+			"ingredients": [{
+				"name": "eggs",
+				"quantity": {
+					"measure": "10",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "0x23b8",
+					"category": ["eggs"],
+					"ref": ["https://farrp.unl.edu/informalleggs"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "approx 1 week old",
+				"image": "./images/how-to-make-egg-salad/ingredients/01_egg.jpeg"
+			}, {
+				"name": "mayonnaise",
+				"quantity": {
+					"measure": "1/2",
+					"unit": "cup"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/how-to-make-egg-salad/ingredients/02_mayyonnaise.jpeg"
+			}, {
+				"name": "mustard",
+				"quantity": {
+					"measure": "1/4",
+					"unit": "cup"
+				},
+				"allergies": {
+					"id": "0x32e7",
+					"category": ["Seeds"],
+					"ref": ["https://farrp.unl.edu/informallseeds"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/how-to-make-egg-salad/ingredients/03_mustard.jpeg"
+			}, {
+				"name": "salt",
+				"quantity": {
+					"measure": "1/2",
+					"unit": "tsp"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/how-to-make-egg-salad/ingredients/04_salt.jpeg"
+			}, {
+				"name": "pepper",
+				"quantity": {
+					"measure": "1/4",
+					"unit": "tsp"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/how-to-make-egg-salad/ingredients/05_pepper.webp"
+			}],
+			"prep_time": "",
+			"cook_time": "",
+			"serves": "6",
+			"instructions": [{
+				"original_text": "First, take your raw eggs, and place them in a large saucepan with water filled up about two inches. Bring quickly to a boil, and then remove pan from heat, and let the eggs finish cooking in the hot water for about another 15 minutes. For more details see: How to Make Hard Boiled Eggs, which is a recipe I found helpful, or see this helpful instructable: Easy Hard Boiled Eggs.",
+				"input_condition": ["have_eggs"],
+				"task": [{
+					"action_name": "Boil raw eggs in a large saucepan with water filled up about two inches",
+					"output_quality": ["Remove pan from heat when water starts boiling"],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}, {
+					"action_name": "Leave the eggs in hot water to finish cooking",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": ["have_boiled_eggs"],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "When eggs are almost done through their rest/cook time, create an ice-bath in a large bowl. When eggs are done cooking, dunk them immediately into the ice bath. From the ice bowl, pick them out to peel them.",
+				"input_condition": ["have_boiled_eggs"],
+				"task": [{
+					"action_name": "When eggs are almost done through their rest/cook time, create an ice-bath in a large bowl.",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}, {
+					"action_name": "When eggs are done cooking, dunk them immediately into the ice bath.",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}, {
+					"action_name": "From the ice bowl, pick them out to peel them.",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": ["have_peeled_eggs"],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "When eggs are almost done through their rest/cook time, create an ice-bath in a large bowl. When eggs are done cooking, dunk them immediately into the ice bath. From the ice bowl, pick them out to peel them.",
+				"input_condition": ["have_boiled_eggs"],
+				"task": [{
+					"action_name": "When eggs are almost done through their rest/cook time, create an ice-bath in a large bowl.",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}, {
+					"action_name": "When eggs are done cooking, dunk them immediately into the ice bath.",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}, {
+					"action_name": "From the ice bowl, pick them out to peel them.",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": ["have_peeled_eggs"],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "After the eggs have been peeled, place each into a wire egg-cutter, and cut one way, then flip egg around, and cut perpendicularly to your last cut. This will make your egg nicely diced.",
+				"input_condition": ["have_peeled_eggs"],
+				"task": [{
+					"action_name": "Cut peeled eggs one way using a wire egg-cutter",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": ["wire egg-cutter"],
+						"failure": [""]
+					}
+				}, {
+					"action_name": "Flip egg around",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}, {
+					"action_name": "Cut perpendicular to your last cut",
+					"output_quality": ["nicely diced eggs"],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": ["have_diced_eggs"],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Once your eggs have been nicely diced, throw all of them into a large bowl. Throw in the mayonnaise, mustard, salt, and pepper. Mix thoroughly until combined.",
+				"input_condition": ["have_diced_eggs"],
+				"task": [{
+					"action_name": "Mix diced eggs, mayonnaise, mustard, salt, papper in a bowl until combined",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": ["have_eggs_mixture"],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Now you have a nice bowl of flavorful, protein-packed egg salad. This can be put in lettuce wraps, in between two pieces of bread as a sandwich, eaten with crackers, or just consumed completely by itself. Enjoy!",
+				"input_condition": ["have_eggs_mixture"],
+				"task": [{
+					"action_name": "This protein-packed egg salad can be consumed as is, or can be put in lettuce wraps, in between two pieces of bread as a sandwich, or eaten with crackers",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": ["recipe_complete"],
+				"modality": {
+					"image": ["./images/how-to-make-egg-salad/how-to-make-egg-salad_6_0.jpg"],
+					"video": " "
+				}
+			}]
+		},
+		"8": {
+			"recipe_name": "peekaboo-sugar-eggs",
+			"ingredients": [{
+				"name": "granulated sugar",
+				"quantity": {
+					"measure": "4",
+					"unit": "cup"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/peekaboo-sugar-eggs/ingredients/01_granulatedsugar.jpeg"
+			}, {
+				"name": "powdered sugar",
+				"quantity": {
+					"measure": "3/4",
+					"unit": "cup1"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/peekaboo-sugar-eggs/ingredients/02_powderedsugar.jpeg"
+			}, {
+				"name": "egg white",
+				"quantity": {
+					"measure": "1",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "meringue powder",
+				"quality_characteristic": "",
+				"image": "./images/peekaboo-sugar-eggs/ingredients/03_eggwhite.jpeg"
+			}, {
+				"name": "food color",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/peekaboo-sugar-eggs/ingredients/04_foodcolor.jpeg"
+			}],
+			"prep_time": "",
+			"cook_time": "",
+			"serves": "",
+			"instructions": [{
+				"original_text": "Moistening and coloring:\nIn a small bowl, mix the egg white with food coloring until the color is evenly distributed and the egg is frothy. Err on the darker side with your dye, because the color will become lighter when mixed with the granulated sugar. Next, pour the egg white/color mixture into all four cups of granulated sugar with 3/4 cup of powdered sugar. Stir until all of the liquid is incorporated evenly. At first, it may seem that there's not enough liquid, but keep stirring and all of the sugar will be damp.\nThe mixture should be moist enough that you can squeeze it into a ball that holds it's shape, but very dry and sandy.",
+				"input_condition": ["have_egg", "have_food_color", "have_powdered_sugar", "have_granulated_sugar"],
+				"task": [{
+					"action_name": "Mix the egg white with the food color",
+					"output_quality": ["color be evenly distributed", "egg should be frothy"],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}, {
+					"action_name": "pour the egg white/color mixture into all four cups of granulated sugar with 3/4 cup of powdered sugar",
+					"output_quality": ["Stir until all of the liquid is incorporated evenly", "Stir until all of the liquid is incorporated evenly", "The mixture should be moist enough that you can squeeze it into a ball that holds it's shape, but very dry and sandy."],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": ["have_colored_sugar"],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Mold the egg:\nFill your egg mold with the sugar mixture, pressing it down firmly to create a smooth, gap-free shape.\nI used molds made especially for creating sugar eggs. The 6-inch mold cost $4.00 and the four-inch version was $2.25, but you can create your own molds with dollar-store plastic eggs or other shapes you find.\nScrape a straight edge across the top of the mold to even it out. Place a cookie sheet on top of your open mold top and flip it over quickly to release the sugar egg half onto the cookie sheet. It should pop out easily.Dry the egg:\nThe halves can be left to air dry for an hour or two, or bake them at about 200 degrees for 20 minutes. This time can vary depending on the size of your mold and the wetness of the sugar, you're looking for a hard outer crust and a soft, scoop-able center to the egg halves.",
+				"input_condition": ["have_colored_sugar", ""],
+				"task": [{
+					"action_name": "Mix the egg white with the food color",
+					"output_quality": ["color be evenly distributed", "egg should be frothy"],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}, {
+					"action_name": "pour the egg white/color mixture into all four cups of granulated sugar with 3/4 cup of powdered sugar",
+					"output_quality": ["Stir until all of the liquid is incorporated evenly", "Stir until all of the liquid is incorporated evenly", "The mixture should be moist enough that you can squeeze it into a ball that holds it's shape, but very dry and sandy."],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": ["have_colored_sugar"],
+				"modality": {
+					"image": ["./images/peekaboo-sugar-eggs/peekaboo-sugar-eggs_6_5.jpg"],
+					"video": " "
+				}
+			}]
+		},
+		"9": {
+			"recipe_name": "egg-bundles",
+			"ingredients": [{
+				"name": "egg",
+				"quantity": {
+					"measure": "1",
+					"unit": "count"
+				},
+				"allergies": {
+					"id": "0x3eb1",
+					"category": ["eggs"],
+					"ref": ["https://farrp.unl.edu/informalleggs"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/egg-bundles/ingredients/01_eggs.jpeg"
+			}, {
+				"name": "oil",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/egg-bundles/ingredients/02_oil.jpeg"
+			}, {
+				"name": "salt",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/egg-bundles/ingredients/03_salt.webp"
+			}, {
+				"name": "pepper",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/egg-bundles/ingredients/04_pepper.webp"
+			}, {
+				"name": "ham",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/egg-bundles/ingredients/05_ham.jpeg"
+			}, {
+				"name": "mushroom",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "0x3b8f",
+					"category": ["Vegetables"],
+					"ref": ["https://farrp.unl.edu/informallvegetables"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/egg-bundles/ingredients/06_mushroom.jpeg"
+			}, {
+				"name": "cheese",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "0x667",
+					"category": ["cows milk"],
+					"ref": ["http://research.bmh.manchester.ac.uk/informall/allergenic-food/?foodid=5000"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "dices",
+				"image": "./images/egg-bundles/ingredients/07_parmesancheese.jpeg"
+			}, {
+				"name": "capers",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/egg-bundles/ingredients/08_capers.jpeg"
+			}, {
+				"name": "shrimp",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "0xad3c",
+					"category": ["shellfish"],
+					"ref": ["https://farrp.unl.edu/informallcrushellfish", "https://farrp.unl.edu/informallmollshellfish"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/egg-bundles/ingredients/09_shrimp.webp"
+			}],
+			"prep_time": "",
+			"cook_time": "",
+			"serves": "",
+			"instructions": [{
+				"original_text": "first, you will have to spread a few drops of oil on the plastic wrap (did it with my finger, if you have a brush dedicated to this in your kitchen, use it...)\ncut the ham into tiny bits (you can add cheese, mushrooms or whatever you can gather around the kitchen)\nthen set the plastic wrap over the empty cup and put the ingredients inside. The oil with prevent it from getting stuck to the plastic and will make the whole stuff much easier to unpack.\nthen break your egg inside with salt, pepper, spices, herbs, try!!!",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": " I tried string, knots, zip ties and clamps.\nto me, clamps are the most convenient way to close it because they are reusable and fast to put on with one hand.\nif you wish to realise bigger bundles, you should consider using zipties......pretty efficient.\ntry to make it boil for 3 to 4 minutes, in order to keep the center soft and delicious..............",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "you did it...\nI like those little bundles, try different ingredients, enjoy, and remember, it looks much more better for real than in photos!!!!!!!",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["./images/egg-bundles/egg-bundles_4_0.jpg"],
+					"video": " "
+				}
+			}]
+		},
+		"10": {
+			"recipe_name": "cadbury-creme-egg-rolls",
+			"ingredients": [{
+				"name": "eggs",
+				"quantity": {
+					"measure": "84",
+					"unit": "count"
+				},
+				"allergies": {
+					"id": "0x23b8",
+					"category": ["eggs"],
+					"ref": ["https://farrp.unl.edu/informalleggs"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "cadbury creme",
+				"image": "./images/cadbury-creme-egg-rolls/ingredients/01_eggs.jpeg"
+			}, {
+				"name": "coconut",
+				"quantity": {
+					"measure": "0.5",
+					"unit": "cup"
+				},
+				"allergies": {
+					"id": "0xbc89",
+					"category": ["tree nuts"],
+					"ref": ["https://farrp.unl.edu/informalltreenuts"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "flaked",
+				"image": "./images/cadbury-creme-egg-rolls/ingredients/02_coconut.webp"
+			}, {
+				"name": "crescent rolls",
+				"quantity": {
+					"measure": "8",
+					"unit": "count"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "clear",
+				"image": "./images/cadbury-creme-egg-rolls/ingredients/03_crescentrools.jpeg"
+			}],
+			"prep_time": "",
+			"cook_time": "",
+			"serves": "",
+			"instructions": [{
+				"original_text": "Unroll the crescent rolls, and divide into 8 perforated portions. Ignore the triangle shape, and mush each one into a ball. Using a rolling pin, roll the dough as thin as it will go without seeming like it will break.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Place some coconut on top of the rolled dough.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Grab your eggs. Cut each one in half, so that you have 8 equal portions. You'll coarsely chop each portion, using one per egg roll. Place the coarsely chopped portion on top of the coconut on each crescent roll.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Roll up the tasty morsels as if they were burritos. The picture illustrates the process.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Heat up the oil. Once you think it's hot, test it by tossing a little crumb of crescent dough inside. If it starts bubbling furiously, you're good to go. Pop one of your rolled egg rolls into the hot oil. Fry until golden on all sides.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Remove from the frying pan and set on paper towels to blot excess oil. Enjoy while still warm.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["./images/cadbury-creme-egg-rolls/cadbury-creme-egg-rolls_7_0.jpg"],
+					"video": " "
+				}
+			}]
+		},
+		"11": {
+			"recipe_name": "mini-egg-pie",
+			"ingredients": [{
+				"name": "eggs",
+				"quantity": {
+					"measure": "1",
+					"unit": "count"
+				},
+				"allergies": {
+					"id": "0x23b8",
+					"category": ["eggs"],
+					"ref": ["https://farrp.unl.edu/informalleggs"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/mini-egg-pie/ingredients/01_egg.jpeg"
+			}, {
+				"name": "onion",
+				"quantity": {
+					"measure": "1",
+					"unit": "count"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "slice",
+				"image": "./images/mini-egg-pie/ingredients/02_onionslice.jpeg"
+			}, {
+				"name": "oil",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/mini-egg-pie/ingredients/03_oil.jpeg"
+			}, {
+				"name": "salt",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/mini-egg-pie/ingredients/04_salt.webp"
+			}, {
+				"name": "pepper",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/mini-egg-pie/ingredients/05_pepper.webp"
+			}],
+			"prep_time": "",
+			"cook_time": "",
+			"serves": "",
+			"instructions": [{
+				"original_text": "Slice the onion towards one of the ends so that it forms a small bowl. \u00a0This will be your \"pie crust\"I successfully used the medium and large slice in this photo. \u00a0The small slice would not have contained an entire egg.The salt and pepper will be for the topping. \u00a0You could substitute cayenne pepper, curry powder, rosemary, or other spices.\u00a0\u00a0",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "1. Pour a small amount of oil into the pan to keep the onion from sticking.\n2. Turn burner on at low-medium heat.\n3. Place the onion in the pan with the large circle touching the pan.\n4. Cook for about 2 minutes until the bottom of the onion is turning slightly brown.\n5. Flip the onion over so that you will be able to crack the egg into it.People aren't kiddng when they say cooking times vary by oven. \u00a0I have a gas stove that heats quickly. \u00a0You don't want your burner turned on so high that the oil is splashing out of the pan. \u00a0It's pretty obvious when the bottom has turned brown.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "1. Crack the egg into the onionYou may choose to try to remove the white above the yolk with a paper towel or fork. This makes the yellow more\u00a0noticeable\u00a0on the top of the finished product.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "1. Add a teaspoon of water to the pan and place a lid over the pan.\u00a0If you do not use the lid method, it takes a long time for the egg to cook. \u00a0The lid and water are highly recommended so that the bottom doesn't get overdone.2. Continue heating over low-medium heat for about 5-6 minutes, until the top of the egg white has changed to opaque white and looks done.3. Remove egg from pan.There may be a little egg that leaks out of the onion crust. \u00a0When I scoop the onion out of the pan, the small amount of egg white that spilled stays in the pan and the egg pi(e) is ready to plate.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "1. Place pi(e) on plate and add cracked pepper and salt to the top.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["./images/mini-egg-pie/mini-egg-pie_5_0.jpg"],
+					"video": " "
+				}
+			}]
+		},
+		"12": {
+			"recipe_name": "2-ingredient-avocado-egg-salad",
+			"ingredients": [{
+				"name": "hass avacado",
+				"quantity": {
+					"measure": "0.5",
+					"unit": "count"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "ripe",
+				"image": "./images/2-ingredient-avocado-egg-salad/ingredients/01_avacado.jpeg"
+			}, {
+				"name": "egg",
+				"quantity": {
+					"measure": "1",
+					"unit": "count"
+				},
+				"allergies": {
+					"id": "0x3eb1",
+					"category": ["eggs"],
+					"ref": ["https://farrp.unl.edu/informalleggs"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "hard-boiled",
+				"image": "./images/2-ingredient-avocado-egg-salad/ingredients/02_egg.jpeg"
+			}],
+			"prep_time": "",
+			"cook_time": "",
+			"serves": "",
+			"instructions": [{
+				"original_text": "Using the fork mash the egg into a paste like consistency.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Remove avocado from the peel (I used a spoon for this). Turn the avocado over and cut it into cubes (I did vertical strips and then horizontal.)",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Also add salt and pepper to taste.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "This is a good serving size for one sandwich or a snack!",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["./images/2-ingredient-avocado-egg-salad/2-ingredient-avocado-egg-salad_5_1.jpg"],
+					"video": " "
+				}
+			}]
+		},
+		"13": {
+			"recipe_name": "how-to-make-egg-omelettes",
+			"ingredients": [{
+				"name": "eggs",
+				"quantity": {
+					"measure": "4",
+					"unit": "count"
+				},
+				"allergies": {
+					"id": "0x23b8",
+					"category": ["eggs"],
+					"ref": ["https://farrp.unl.edu/informalleggs"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/how-to-make-egg-omelettes/ingredients/01_egg.jpeg"
+			}, {
+				"name": "salt",
+				"quantity": {
+					"measure": "sprinkle",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/how-to-make-egg-omelettes/ingredients/02_salt.webp"
+			}, {
+				"name": "pepper",
+				"quantity": {
+					"measure": "sprinkle",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/how-to-make-egg-omelettes/ingredients/03_pepper.webp"
+			}, {
+				"name": "water",
+				"quantity": {
+					"measure": "1",
+					"unit": "tbsp"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/how-to-make-egg-omelettes/ingredients/04_water.jpeg"
+			}, {
+				"name": "butter",
+				"quantity": {
+					"measure": "1",
+					"unit": "tbsp"
+				},
+				"allergies": {
+					"id": "0x1c80",
+					"category": ["cows milk"],
+					"ref": ["http://research.bmh.manchester.ac.uk/informall/allergenic-food/?foodid=5000"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "cold cubbed",
+				"image": "./images/how-to-make-egg-omelettes/ingredients/05_butter.jpeg"
+			}, {
+				"name": "ham",
+				"quantity": {
+					"measure": "0.25",
+					"unit": "cup"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "diced",
+				"image": "./images/how-to-make-egg-omelettes/ingredients/06_ham.jpeg"
+			}, {
+				"name": "cheese",
+				"quantity": {
+					"measure": "0.25",
+					"unit": "cup"
+				},
+				"allergies": {
+					"id": "0x667",
+					"category": ["cows milk"],
+					"ref": ["http://research.bmh.manchester.ac.uk/informall/allergenic-food/?foodid=5000"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "shredded",
+				"image": "./images/how-to-make-egg-omelettes/ingredients/07_cheese.webp"
+			}, {
+				"name": "bell pepper",
+				"quantity": {
+					"measure": "2",
+					"unit": "tbsp"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "diced",
+				"image": "./images/how-to-make-egg-omelettes/ingredients/08_bellpepper.jpeg"
+			}],
+			"prep_time": "",
+			"cook_time": "",
+			"serves": "2",
+			"instructions": [{
+				"original_text": "First, dice your slices of ham into thin little bits.Then shred your cheese.And lastly, dice the (frozen, or really cold) butter.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "First, dump your eggs into a medium sized bowl. Sprinkle in the salt and pepper, and pour in the tablespoon of water.Melt butter over medium heat on a nonstick pan. Beat your eggs thoroughly, about 10 seconds.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Add the cubed butter to the egg mixture, and whip for another 15 seconds on high.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Pour the egg butter mixture into the heated pan, and let it spread across the pan, and cook for 10 seconds. Then push a bit of the side of the circle towards the center, and let raw mixture fill it's place. Use a nonstick spatula for this. Keep going around the circumference of the egg mixture in the pan, pushing towards the center, and letting the uncooked egg slid into its place. Soon you'll have a mostly cooked circle of egg.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Sprinkle the ham, shredded cheese, and optional bell pepper over one half of the egg circle. Carefully fold the unfilled layer over your fillings, as shown. Mine got a bit messed up...",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Grasp the handle of the skillet, and flip the omelette out onto a plate to serve.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Serve fresh and warm.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["./images/how-to-make-egg-omelettes/how-to-make-egg-omelettes_8_0.jpg"],
+					"video": " "
+				}
+			}]
+		},
+		"14": {
+			"recipe_name": "bunny-egg-salad",
+			"ingredients": [{
+				"name": "salad",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "left over",
+				"image": "./images/bunny-egg-salad/ingredients/01_leftoveresalad.jpeg"
+			}, {
+				"name": "pepper corns",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/bunny-egg-salad/ingredients/02_peppercorns.jpeg"
+			}, {
+				"name": "sprinkle for eyes",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/bunny-egg-salad/ingredients/03_eyesprinkle.jpeg"
+			}, {
+				"name": "sprinkle for mouth",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "heart-shaped",
+				"image": "./images/bunny-egg-salad/ingredients/04_sprinklemouth.jpeg"
+			}, {
+				"name": "sprinkle for nose",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/bunny-egg-salad/ingredients/05_nosesprinkle.webp"
+			}, {
+				"name": "egg",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "0x3eb1",
+					"category": ["eggs"],
+					"ref": ["https://farrp.unl.edu/informalleggs"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "boiled",
+				"image": "./images/bunny-egg-salad/ingredients/06_egg.jpeg"
+			}],
+			"prep_time": "",
+			"cook_time": "",
+			"serves": "",
+			"instructions": [{
+				"original_text": "\n\tPeel the eggs.\n\tYou can cut the eggs in half or just trim off a thin section from the back of the egg to cut the shape of the ears.\u00a0\n\t\u00a0",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "\n\tCarve the ears as shown.\n\tPoke the eyes with the skewer. ( not necessary if you use sprinkles)",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "\n\tAdd the pepper corn eyes or use sprinkles.\n\tAdd a round pink sprinkle nose.\n\tAdd a sprinkle heart shaped mouth.\n\tUsing the black food marker draw eyebrows and whiskers.\n\tPlace him on top of the salad!\u00a0\n\tIsn't he cute?\u00a0\n\t\u00a0\n\tI have not been able to find the food grade markers in my area so I used black paste food coloring but I think markers would be easier to use.\u00a0\n\t\u00a0",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "\n\tI hope this has inspired you to make your kids a bunny salad in their lunch box. Add a little note that says some bunny loves you and it will surely put a smile on their face!\u00a0\n\tIn closing I would like to thank our instructables company, sponsors, authors, readers, and members; for making this community a great success! Many hours and hard work has been put into making this place the best DIY on the Internet. I hope your day shines and thanks for stopping by!\n\tSunshiine",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["./images/bunny-egg-salad/bunny-egg-salad_5_1.jpg"],
+					"video": " "
+				}
+			}]
+		},
+		"15": {
+			"recipe_name": "deviled-egg-salad",
+			"ingredients": [{
+				"name": "egg",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "0x3eb1",
+					"category": ["eggs"],
+					"ref": ["https://farrp.unl.edu/informalleggs"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/deviled-egg-salad/ingredients/01_egg.jpeg"
+			}, {
+				"name": "mayo",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/deviled-egg-salad/ingredients/02_mayo.jpeg"
+			}, {
+				"name": "mustard",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "0x32e7",
+					"category": ["Seeds"],
+					"ref": ["https://farrp.unl.edu/informallseeds"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/deviled-egg-salad/ingredients/03_mustard.jpeg"
+			}, {
+				"name": "vinegar",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/deviled-egg-salad/ingredients/04_vinegar.jpeg"
+			}, {
+				"name": "salt",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/deviled-egg-salad/ingredients/05_salt.webp"
+			}, {
+				"name": "salad kit",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "romaine lettuce / croutons / Parmesan cheese",
+				"image": "./images/deviled-egg-salad/ingredients/06_saladkit.png"
+			}],
+			"prep_time": "",
+			"cook_time": "",
+			"serves": "",
+			"instructions": [{
+				"original_text": "First, hard boil the eggs in a pot of water for at least 10 minutes. Afterwards, crack the shells and peel them off. I recommend that you rinse the eggs in warm water, and cracking the shells with a spoon gently. Also, make sure that you rinse off any shells that might get on the eggs.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "\n\tCarve the ears as shown.\n\tPoke the eyes with the skewer. ( not necessary if you use sprinkles)",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "From there, use a spoon to transfer the yolks in another small bowl, and add the following:about 2 tbsp mayo1.5 tsp mustard1/8 tsp saltabout 1 to 2 tbsp vinegar",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Now, grab your spoon and scoop out the yolk mixture and refill each egg shell.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "To make the salad, fill a large bowl with rinsed out lettuce.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Grab your deviled eggs that you've made earlier and arrange them on your bed of lettuce.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Finally, finish it off with any type of salad toppings you already have. I dressed up mine with croutons, Parmesan cheese, and ranch dressing. You can also add sliced tomatoes, onions, or whatever vegetables you have. I didn't have any of those, but that's an optional step that you can do to personalize your own deviled egg salad.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "This dish reminds me of going back to the good ol' days of snacking on this at diners and coffee shops. This staple with really make a great summertime meal or anytime that you want!",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["./images/deviled-egg-salad/deviled-egg-salad_9_2.jpg"],
+					"video": " "
+				}
+			}]
+		},
+		"16": {
+			"recipe_name": "dinosaur-inspired-by-mikeasaurus",
+			"ingredients": [{
+				"name": "Jell-O",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "pineapple",
+				"image": "./images/dinosaur-egg-inspired-by-mikeasaurus/ingredients/01_jello.jpeg"
+			}, {
+				"name": "avacado",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "with lot of bumps and character",
+				"image": "./images/dinosaur-egg-inspired-by-mikeasaurus/ingredients/02_avacado.jpeg"
+			}, {
+				"name": "avacado dip",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/dinosaur-egg-inspired-by-mikeasaurus/ingredients/03_avacadodip.jpeg"
+			}, {
+				"name": "chips",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/dinosaur-egg-inspired-by-mikeasaurus/ingredients/04_chips.jpeg"
+			}, {
+				"name": "lettuce",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "0x37f8",
+					"category": ["Vegetables"],
+					"ref": ["https://farrp.unl.edu/informallvegetables"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/dinosaur-egg-inspired-by-mikeasaurus/ingredients/05_lettuce.jpeg"
+			}, {
+				"name": "parsley",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "0x8b9d",
+					"category": ["leaves"],
+					"ref": ["https://farrp.unl.edu/informallspicesherbs"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/dinosaur-egg-inspired-by-mikeasaurus/ingredients/06_parsley.jpeg"
+			}, {
+				"name": "carrot",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "0x17fc",
+					"category": ["Vegetables"],
+					"ref": ["https://farrp.unl.edu/informallvegetables"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "tops",
+				"image": "./images/dinosaur-egg-inspired-by-mikeasaurus/ingredients/07_carrot.jpeg"
+			}, {
+				"name": "mint",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/dinosaur-egg-inspired-by-mikeasaurus/ingredients/08_mint.jpeg"
+			}],
+			"prep_time": "",
+			"cook_time": "",
+			"serves": "",
+			"instructions": [{
+				"original_text": "Wash: Avocados, greenery, paint mixer, and dinosaurs.Dry with a lint free towel.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Jell-0:Follow the instructions for making Jell-0.Set aside while you cut the avocados.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Method:  Cut the avocados as shown but be sure to leave the stem in place or you will have a hole and the Jell-O will leak out.  Remove the inside and place in a bowl.  Completely clean the inside of the avocados making sure there is no residue and dry.  If you do not wish to use\u00a0a dinosaur,\u00a0you can cut the avocado like the last picture instead.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Fill:Place the avocado skin in a small bowl and support it against the side of the bowl, you may need a small lid to secure it.Ladle the Jell-0 into the egg filling it to the top.Place it in the refrigerator to chill until it firms up a bit.Remove the egg from the refrigerator and position the dinosaur inside as shown.Put it in the refrigerator until it is firm.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Avocado Dip:  Make your favorite avocado dip using the power drill with the paint ( stir ) attachment.  Mix until well incorporated.  Place the egg in a bowl and fill it 3/4 of the way.  Insert the dinosaur and position as you like.  I cut a sliver of a tomato to place inside the dinosaurs mouth.  Add more dip and level off and wipe any dip off the sides of the egg\u00a0with a paper towel.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Decorating the plate:  Arrange the dinosaur eggs on a plate adding the greenery\u00a0or chips.  You can stick the mint in the back of the dinosaur to give it a jungle appearance, we like it better that way.  You may notice that I did not use the best avocados. I used the ripest ones because\u00a0I had to test the idea and I thought they turned out very nicely. The best ones \u00a0were not ripe enough.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Penolopy suggested using ferns or frons as a background for the egg. You could make a card with a picture of a fron or fern and stick it behind the egg. Oh that would be pretty. I hope this inspires you to try and make these. They did not take that long to make if you already have the dip\u00a0or Jell-0 made. I am entering these into 2 contest, \u00a0if you love it please vote top right when the vote button is available;\u00a0thanks in advance.  \u00a0  I wish to thank Instructables, our sponsors, contributors, and all my visitors for making this a great place to share. Thanks for stopping by and do have a safe and happy SPRING!!  sunshine  \u00a0",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["./images/dinosaur-egg-inspired-by-mikeasaurus/dinosaur-egg-inspired-by-mikeasaurus_8_1.jpg"],
+					"video": " "
+				}
+			}]
+		},
+		"17": {
+			"recipe_name": "bacon-asparagus-and-egg-bake",
+			"ingredients": [{
+				"name": "bacon",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/bacon-asparagus-and-egg-bake/ingredients/01_bacon.jpeg"
+			}, {
+				"name": "asparagus",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "0x822",
+					"category": ["Vegetables"],
+					"ref": ["https://farrp.unl.edu/informallvegetables"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/bacon-asparagus-and-egg-bake/ingredients/02_asparagus.jpeg"
+			}, {
+				"name": "egg",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "0x3eb1",
+					"category": ["eggs"],
+					"ref": ["https://farrp.unl.edu/informalleggs"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/bacon-asparagus-and-egg-bake/ingredients/03_egg.jpeg"
+			}, {
+				"name": "cheese",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "0x667",
+					"category": ["cows milk"],
+					"ref": ["http://research.bmh.manchester.ac.uk/informall/allergenic-food/?foodid=5000"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "garlic parmesan",
+				"image": "./images/bacon-asparagus-and-egg-bake/ingredients/04_parmesancheese.jpeg"
+			}, {
+				"name": "black pepper",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "ground",
+				"image": "./images/bacon-asparagus-and-egg-bake/ingredients/05_blackpepper.jpeg"
+			}],
+			"prep_time": "",
+			"cook_time": "",
+			"serves": "",
+			"instructions": [{
+				"original_text": "The amount of bacon you will use is dependent on your size of baking dish and serving size. Line the bottom of your dish with bacon; overlapping the strips is okay. Cook the bacon for about 10 minutes and then remove the dish from the oven. Remove the bacon from the dish and put it aside, but keep the bacon fat reserved in the bottom of the dish. While the bacon is cooking, chop the garlic to the size of your liking, and wash and break off the ends of your asparagus.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": [""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Add the asparagus and chopped garlic to the bacon fat in the dish, tossing them to coat. Return the baking dish to the oven for about 10 minutes.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Remove the dish from the oven.Remove the asparagus and some garlic, placing it to the side. Add the bacon to the dish, followed by the asparagus and garlic. Crack the eggs over the asparagus (the amount of eggs is up to your liking), and return the dish to the oven for about 5-7 minutes, or until the eggs are set. You don't want the yolks to be hard cooked, but you also don't want runny whites. Try not to crack your yolks like I did.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Remove the dish from the oven, and add Parmesan cheese if desired. Feast and enjoy!",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["./images/bacon-asparagus-and-egg-bake/bacon-asparagus-and-egg-bake_5_0.jpg"],
+					"video": " "
+				}
+			}]
+		},
+		"18": {
+			"recipe_name": "how-to-make-chinese-egg-tarts",
+			"ingredients": [{
+				"name": "puff pastry sheet",
+				"quantity": {
+					"measure": "1",
+					"unit": "count"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/how-to-make-chinese-egg-tarts/ingredients/01_puffpastrysheets.jpeg"
+			}, {
+				"name": "sugar",
+				"quantity": {
+					"measure": "0.3",
+					"unit": "cup"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "granulated",
+				"image": "./images/how-to-make-chinese-egg-tarts/ingredients/02_sugargranulated.jpeg"
+			}, {
+				"name": "water",
+				"quantity": {
+					"measure": "2.5",
+					"unit": "oz"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "hot",
+				"image": "./images/how-to-make-chinese-egg-tarts/ingredients/03_hotwater.jpeg"
+			}, {
+				"name": "egg",
+				"quantity": {
+					"measure": "2",
+					"unit": "count"
+				},
+				"allergies": {
+					"id": "0x3eb1",
+					"category": ["eggs"],
+					"ref": ["https://farrp.unl.edu/informalleggs"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "large",
+				"image": "./images/how-to-make-chinese-egg-tarts/ingredients/04_largeegg.jpeg"
+			}, {
+				"name": "milk",
+				"quantity": {
+					"measure": "0.5",
+					"unit": "cup"
+				},
+				"allergies": {
+					"id": "0xbdd6",
+					"category": ["cows milk"],
+					"ref": ["http://research.bmh.manchester.ac.uk/informall/allergenic-food/?foodid=5000"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/how-to-make-chinese-egg-tarts/ingredients/05_milk.jpeg"
+			}, {
+				"name": "vanilla extract",
+				"quantity": {
+					"measure": "0.25",
+					"unit": "tsp"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/how-to-make-chinese-egg-tarts/ingredients/06_vanillaextract.jpeg"
+			}, {
+				"name": "salt",
+				"quantity": {
+					"measure": "1",
+					"unit": "pinch"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/how-to-make-chinese-egg-tarts/ingredients/07_salt.webp"
+			}],
+			"prep_time": "",
+			"cook_time": "",
+			"serves": "",
+			"instructions": [{
+				"original_text": "Before you start making the egg tarts, be sure to thaw the frozen puff pastry dough for about 20 minutes and also butter the pans that you are using. After, unfold the sheet and cut out large enough circles to fit into your pans. I used individual pans that were a little large compared to a usual egg tart, so I cut 4 circles on the one sheet. Lay the circles of dough onto the tin and press the dough down. Poke holes on the bottom with a fork. Also, preheat the oven at 350 degrees Fahrenheit.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Now it's time to make the filling!First combine the hot water and the sugar. Mix until all the sugar dissolves, and then set it aside to let cool. In another bowl, combine the eggs, milk, vanilla extract, and salt and whisk until smooth. Then, combine the two mixtures together. After, use a strainer and strain the mixture twice. This is the secret to making sure that the filling is smooth and silky :)Pour the mixture (generously!) into each of the prepared tins.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Put the egg tarts in the oven and bake for about 30 minutes. You know when they are done when the filling stops jiggling and the crust is a nice golden brown color. Egg tarts are definitely a great dessert to have at anytime, but I love them with tea or after some delicious dim sum. Enjoy these delicious treats (and make sure to let your friends and family have a bite :)Happy baking!",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["./images/how-to-make-chinese-egg-tarts/how-to-make-chinese-egg-tarts_4_3.jpg"],
+					"video": " "
+				}
+			}]
+		},
+		"19": {
+			"recipe_name": "egg-filled-bread-roll",
+			"ingredients": [{
+				"name": "egg",
+				"quantity": {
+					"measure": "2",
+					"unit": "count"
+				},
+				"allergies": {
+					"id": "0x3eb1",
+					"category": ["eggs"],
+					"ref": ["https://farrp.unl.edu/informalleggs"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/egg-filled-bread-roll/ingredients/01_egg.jpeg"
+			}, {
+				"name": "tomato",
+				"quantity": {
+					"measure": "1",
+					"unit": "count"
+				},
+				"allergies": {
+					"id": "0x972a",
+					"category": ["Fruits"],
+					"ref": ["https://farrp.unl.edu/informallfruit"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/egg-filled-bread-roll/ingredients/02_tomato.jpeg"
+			}, {
+				"name": "red onion",
+				"quantity": {
+					"measure": "1",
+					"unit": "count"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/egg-filled-bread-roll/ingredients/03_redonion.webp"
+			}, {
+				"name": "green chilli",
+				"quantity": {
+					"measure": "3",
+					"unit": "count"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/egg-filled-bread-roll/ingredients/04_greenchilli.jpeg"
+			}, {
+				"name": "bread",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "0x6b65",
+					"category": ["other"],
+					"ref": ["https://farrp.unl.edu/informalleggs", "https://farrp.unl.edu/allergenic-foods-and-their-allergens-links-informall", "https://www.healthline.com/health/allergies/wheat#causes", "https://www.healthline.com/nutrition/foods/wheat"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "slices",
+				"image": "./images/egg-filled-bread-roll/ingredients/05_breadslices.jpeg"
+			}, {
+				"name": "salt",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/egg-filled-bread-roll/ingredients/06_salt.webp"
+			}, {
+				"name": "red chilli powder",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/egg-filled-bread-roll/ingredients/07_redchillipowder.jpeg"
+			}, {
+				"name": "oil",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/egg-filled-bread-roll/ingredients/08_oil.jpeg"
+			}],
+			"prep_time": "",
+			"cook_time": "",
+			"serves": "",
+			"instructions": [{
+				"original_text": "As the great Chef Gordon Ramsay says, keep everything ready before you turn on the stove. So in this case, clean and chop all the veggies. Finely chop all the onions. Cut the tomatoes into fairly small sizes and keep it aside.Now, slice the chilies horizontally into small pieces. Keep all the vegetables ready and it's time to turn on the stove.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "For the egg burji, heat some oil in a pan. Once the oil is heated, add in the chopped onions. Saute it till the onions turn golden brown in color. Next add the tomatoes and saute it till it is cooked.Now add in 1 Tbsp of salt and 1 Tbsp of Chili Powder. Mix it well and it's time to break in some eggs.Break two eggs into the mixture and scrub it till the eggs are scrambled and mixed properly with the veggies. If the egg sticks to the pan too much, add another Teaspoons of oil. Once the contents in the pan is properly mixed, the burji is done.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "For rolling the bread, cut out the crust from the bread and flatten it a little using a rolling pin. Also prepare a small amount of corn flour slurry (Corn flour and water) for attaching the ends of the bread. Now add 1 scoop of egg burji and roll the bread over it. To make the ends of the bread stick to each other, use the corn flour slurry. Coat the ends of the bread with it and gently press them together.Now it's time to roast the bread.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "On a shallow pan, add about 2 Tablespoons of oil and heat it up. Once the oil is heated, drop in the rolled bread into the pan. After one side is roasted to golden brown in color, flip it over and do the same for the other side. Once both the sides of the bread are properly roasted, the recipe is done. You can add extra oil if you want more crisp on the bread.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Transfer the toasted bread on to a serving plate. You can top it with some fresh coriander leaves. You can also serve it with a few slices of lemon. If you have some extra egg burji left, serve it along with the roll. This would be one of the most perfect snack a person can have.Bon Apetit !!",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["./images/egg-filled-bread-roll/egg-filled-bread-roll_6_1.jpg","./images/egg-filled-bread-roll/egg-filled-bread-roll_6_2.jpg"],
+					"video": " "
+				}
+			}]
+		},
+		"20": {
+			"recipe_name": "chocolate-peanut-butter",
+			"ingredients": [{
+				"name": "peanut butter candy",
+				"quantity": {
+					"measure": "18-20",
+					"unit": "count"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "chocolate covered",
+				"image": "./images/chocolate-peanut-butter-eggs/ingredients/01_chocolatecoveredpeanutbuttercandy.jpeg"
+			}, {
+				"name": "peanut butter",
+				"quantity": {
+					"measure": "2",
+					"unit": "cups"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/chocolate-peanut-butter-eggs/ingredients/02_peanutbutter.jpeg"
+			}, {
+				"name": "sugar",
+				"quantity": {
+					"measure": "2",
+					"unit": "cups"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "powdered",
+				"image": "./images/chocolate-peanut-butter-eggs/ingredients/03_powderedsugar.jpeg"
+			}, {
+				"name": "vanilla",
+				"quantity": {
+					"measure": "2",
+					"unit": "tsp"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/chocolate-peanut-butter-eggs/ingredients/04_vanilla.jpeg"
+			}, {
+				"name": "butter",
+				"quantity": {
+					"measure": "0.5",
+					"unit": "cup"
+				},
+				"allergies": {
+					"id": "0x1c80",
+					"category": ["cows milk"],
+					"ref": ["http://research.bmh.manchester.ac.uk/informall/allergenic-food/?foodid=5000"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/chocolate-peanut-butter-eggs/ingredients/05_butter.jpeg"
+			}, {
+				"name": "chocolate",
+				"quantity": {
+					"measure": "12",
+					"unit": "oz"
+				},
+				"allergies": {
+					"id": "0x386e",
+					"category": ["other"],
+					"ref": ["https://farrp.unl.edu/informalleggs", "https://farrp.unl.edu/allergenic-foods-and-their-allergens-links-informall", "https://www.healthline.com/health/allergies/wheat#causes", "https://www.healthline.com/nutrition/foods/wheat"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "melting",
+				"image": "./images/chocolate-peanut-butter-eggs/ingredients/06_meltingchocolate.jpeg"
+			}],
+			"prep_time": "",
+			"cook_time": "",
+			"serves": "",
+			"instructions": [{
+				"original_text": "Place the choloate in your chocolate melter. if you don't have one you can melt your chocolate in the microwave. In a microwaveable bowl melt the butter and peanut butter. About 1 minute. Mix well.Next, add the vanilla and powered sugar and mix well.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Shape the Peanut butter filling into an egg shape or whatever shape you want. My daughter's helped with this part ;)Place the Peanut butter filling onto a cookie sheet covered with parchment paper. Place them in the freezer for 15 minutes.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Drop the hard Peanut butter filling into the melted chocolate and cover. Remove, it from the melted choolate. Tap the candy lightly on the side of the bowl to remove excess chocolate. Place back on parchment paper and place back into freezer for 10 minutes. Enjoy!",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["./images/chocolate-peanut-butter-eggs/chocolate-peanut-butter-eggs_4_3.jpg"],
+					"video": " "
+				}
+			}]
+		},
+		"21": {
+			"recipe_name": "supremely-spicy-scrambled-eggs",
+			"ingredients": [{
+				"name": "eggs",
+				"quantity": {
+					"measure": "8",
+					"unit": "count"
+				},
+				"allergies": {
+					"id": "0x23b8",
+					"category": ["eggs"],
+					"ref": ["https://farrp.unl.edu/informalleggs"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/supremely-spicy-scrambled-eggs/ingredients/01_eggs.jpeg"
+			}, {
+				"name": "onion",
+				"quantity": {
+					"measure": "1",
+					"unit": "count"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "large",
+				"image": "./images/supremely-spicy-scrambled-eggs/ingredients/02_largeonion.jpeg"
+			}, {
+				"name": "tomato",
+				"quantity": {
+					"measure": "1",
+					"unit": "count"
+				},
+				"allergies": {
+					"id": "0x972a",
+					"category": ["Fruits"],
+					"ref": ["https://farrp.unl.edu/informallfruit"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "large",
+				"image": "./images/supremely-spicy-scrambled-eggs/ingredients/03_largetomato.webp"
+			}, {
+				"name": "turmeric",
+				"quantity": {
+					"measure": "2",
+					"unit": "tsp"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "powder",
+				"image": "./images/supremely-spicy-scrambled-eggs/ingredients/04_turmericpowder.jpeg"
+			}, {
+				"name": "cumin",
+				"quantity": {
+					"measure": "2",
+					"unit": "tsp"
+				},
+				"allergies": {
+					"id": "0x8fad",
+					"category": ["Seeds"],
+					"ref": ["https://farrp.unl.edu/informallseeds"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "powder",
+				"image": "./images/supremely-spicy-scrambled-eggs/ingredients/05_cuminpowder.jpeg"
+			}, {
+				"name": "corriander",
+				"quantity": {
+					"measure": "2",
+					"unit": "tsp"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "powder",
+				"image": "./images/supremely-spicy-scrambled-eggs/ingredients/06_corrianderpowder.jpeg"
+			}, {
+				"name": "red chilli",
+				"quantity": {
+					"measure": "2",
+					"unit": "tsp"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "powder",
+				"image": "./images/supremely-spicy-scrambled-eggs/ingredients/07_redchillipowder.jpeg"
+			}, {
+				"name": "salt",
+				"quantity": {
+					"measure": "1",
+					"unit": "tsp"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/supremely-spicy-scrambled-eggs/ingredients/08_salt.webp"
+			}, {
+				"name": "pepper",
+				"quantity": {
+					"measure": "1",
+					"unit": "tsp"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/supremely-spicy-scrambled-eggs/ingredients/09_pepper.webp"
+			}, {
+				"name": "oil",
+				"quantity": {
+					"measure": "4",
+					"unit": "tbsp"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "vegetable",
+				"image": ""
+			}, {
+				"name": "butter",
+				"quantity": {
+					"measure": "1",
+					"unit": "tbsp"
+				},
+				"allergies": {
+					"id": "0x1c80",
+					"category": ["cows milk"],
+					"ref": ["http://research.bmh.manchester.ac.uk/informall/allergenic-food/?foodid=5000"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": ""
+			}, {
+				"name": "bread",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "0x6b65",
+					"category": ["other"],
+					"ref": ["https://farrp.unl.edu/informalleggs", "https://farrp.unl.edu/allergenic-foods-and-their-allergens-links-informall", "https://www.healthline.com/health/allergies/wheat#causes", "https://www.healthline.com/nutrition/foods/wheat"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": ""
+			}, {
+				"name": "tomato ketchup",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": ""
+			}],
+			"prep_time": "",
+			"cook_time": "",
+			"serves": "",
+			"instructions": [{
+				"original_text": "Begin by ensuring your knife is not dull. Then move onto chopping the onions and tomatoes into small squares. Look at the picture above if you need a reference for the approximate size that your ingredients should be cut to.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Note: Get a big bowl if this your first time trying to whisk eggs.Start with cracking the eggs in a bowl. Grab the egg from the tip and the bottom.   Grab a knife and crack the egg slightly.    Once you see a crack, grab the eggs by the crack and pry it open into the bowl.    If you see any egg shells, use the fork to fish it out. Whisk the eggs. Grab a fork and slightly poke the egg yolks.    Stir slowly in a clockwise direction.   This will cause the egg yolks to break and easily blend in with the egg white.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Place frying pan on the burner.  Turn the burner on and set it to medium or at 6.   Pour your 4 tablespoon of vegetable oil onto the pan.   Move the frying pan around to spread the oil evenly to the pan.   Wait until the pan is hot. WARNING: Oil and pan will be very hot so be careful when handling the pan.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Place the onions in the pan.  Let them cook in the pan until they are translucent.    Add tomatoes to the pan.   Add 1 teaspoon salt.   Add 1 teaspoon pepper.   Add 2 tablespoons of the masala mix we prepared earlier.   Use spatula to combine and mix the ingredients together.    Pour the eggs into the pan.  Note: Add more salt, pepper, or masala based on your taste.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Scramble the eggs in the pan using the spatula and try to remove any clumps from the masala. Keep stirring the eggs till you can see small chunks of eggs and all of the egg white is cooked. TURN OFF the stove and remove the pan from the hot burner when you are finished.Note: This process might take approximately 4 - 6 mins, so be patient and keep stirring every few seconds.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "After you finish cooking your eggs, take a spoon and get a small amount of the eggs to taste. At this point you can add more salt and pepper to suit your taste.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Place the eggs onto a clean plate. Can serve with bread and/or ketchup. Personally, I like to put ketchup on my eggs to add a deeper tomato flavor and cool off the eggs.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["./images/supremely-spicy-scrambled-eggs/supremely-spicy-scrambled-eggs_8_0.jpg"],
+					"video": " "
+				}
+			}]
+		},
+		"22": {
+			"recipe_name": "peekaboo-sugar",
+			"ingredients": [{
+				"name": "sugar",
+				"quantity": {
+					"measure": "4",
+					"unit": "cups"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "granulated",
+				"image": "./images/peekaboo-sugar-eggs/ingredients/01_granulatedsugar.jpeg"
+			}, {
+				"name": "sugar",
+				"quantity": {
+					"measure": "0.75",
+					"unit": "cup"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "powdered",
+				"image": "./images/peekaboo-sugar-eggs/ingredients/02_powderedsugar.jpeg"
+			}, {
+				"name": "egg",
+				"quantity": {
+					"measure": "1",
+					"unit": "count"
+				},
+				"allergies": {
+					"id": "0x3eb1",
+					"category": ["eggs"],
+					"ref": ["https://farrp.unl.edu/informalleggs"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "white",
+				"image": "./images/peekaboo-sugar-eggs/ingredients/03_eggwhite.jpeg"
+			}, {
+				"name": "food coloring",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/peekaboo-sugar-eggs/ingredients/04_foodcolor.jpeg"
+			}],
+			"prep_time": "",
+			"cook_time": "",
+			"serves": "",
+			"instructions": [{
+				"original_text": "Moistening and coloring:\nIn a small bowl, mix the egg white with food coloring until the color is evenly distributed and the egg is frothy. Err on the darker side with your dye, because the color will become lighter when mixed with the granulated sugar.\nNext, pour the egg white/color mixture into all four cups of granulated sugar with 3/4 cup of powdered sugar. Stir until all of the liquid is incorporated evenly. At first, it may seem that there's not enough liquid, but keep stirring and all of the sugar will be damp.\nThe mixture should be moist enough that you can squeeze it into a ball that holds it's shape, but very dry and sandy.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Mold the egg:\nFill your egg mold with the sugar mixture, pressing it down firmly to create a smooth, gap-free shape.\nI used molds made especially for creating sugar eggs. The 6-inch mold cost $4.00 and the four-inch version was $2.25, but you can create your own molds with dollar-store plastic eggs or other shapes you find.\nScrape a straight edge across the top of the mold to even it out. Place a cookie sheet on top of your open mold top and flip it over quickly to release the sugar egg half onto the cookie sheet. It should pop out easily.Dry the egg:\nThe halves can be left to air dry for an hour or two, or bake them at about 200 degrees for 20 minutes. This time can vary depending on the size of your mold and the wetness of the sugar, you're looking for a hard outer crust and a soft, scoop-able center to the egg halves.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Hollow the halves:\nWhen you take your egg halves out of the oven, you'll have a hard shell on the outside of the egg, but the inside will still be soft sugar. Carefully tap through the sugar crust on the flat side of the eggs and scoop out the soft sugar inside until it's 1/2 to 1/4 inch thick. (Choose the thickness based on the sturdiness of your egg.)\nThis process is similar to hollowing out a pumpkin for carving, just scrape a spoon gently around the interior of the egg. Most of the time, the soft sugar will fall right out. Sometimes, you'll hit a drier spot which will require a little careful whittling with your knife.Carve the window:\nUsing the tip of a small blade (a paring knife or pocket knife), carefully poke out the center of one egg half and carve an oval-shaped hole. This will be the window into the egg's interior.\nLet your egg dry again in the 200-degree oven for an hour, or on a counter overnight. The egg will become much harder -- like ceramic -- and easier to handle. This makes it much more difficult to carve, so make sure you've finished your shaping first. (If you need to make some major changes after the second drying, a Dremel tool is a handy secret weapon.)",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Mix the royal icing:\nNow we'll need a batch of royal icing. Combine one pound of powdered sugar with 1/4 cup of meringue powder (available at craft stores) in a mixing bowl. Add 1/2 cup of warm water a little bit at a time and use a hand or stand mixer to combine. For our purposes, we're looking for a thick royal icing which will maintain shapes and dry quickly. It will hold stiff peaks in the bowl.Decorate the inside of the egg:\nIf you're going to create a scene inside your egg, work on it while your egg is in two pieces. The world is your oyster when it comes to decorating. Colored royal icing can be set into any shape (For more complex shapes, pipe the item onto a practice surface, let it dry, then anchor it into the egg with wet icing). Coconut shreds dyed green look just like grass. Marshmallows snipped with scissors naturally make rabbit ear shapes, and the sticky exposed interior holds pink sugar for ear-like coloring.\nIn my version, I created a hollow egg filled with jelly beans into which I set a printed bunny, so I fused two empty halves. You can also \"glue\" a piece of fabric or felt into the egg for a unique treat box. (Photos of those versions in the final step.)Fuse the egg halves:\nUsing a piping bag or a sandwich bag with the tip snipped off, pipe a generous line of royal icing around the edge of one egg half. Place the second half on top and line them up to match. Icing may squeeze out of the edge. Simply wipe it off with your finger or a paper towel. This seam will be covered, so don't worry about the line.\nIf you don't have a piping bag set, you can use that trusty sandwich bag, or simply buy the fancy tips for a piping set for about a dollar each at a craft store. Set the tip into your snipped bag and you get all of the same patterns for a fraction of the cost.\nAnd now it's time for our familiar refrain. Say it with me... \"Let it dry!\" Royal icing will dry very hard if given a little time. We're already starting with a stiff mixture, so you might be ready to move on in just a few minutes. A damp paper towel or plastic wrap on the surface of your royal icing bowl will keep the remaining icing from drying out.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Cover the seams:\nPipe a few practice lines to test which patterns will look good as well as cover the seam around the egg. I used an up-and-over motion for this piping, but stars, dots, and straight lines will work too. Any errors can be wiped off the egg and redone while the icing is wet.\nPipe one large line around the main seam and a smaller decorative line around the \"window.\"Decorate the exterior:\nYou now have a basic egg which can be dressed up in many ways. I chose stars with yellow sugar pearls set into them. Use whatever you have around to add color and texture... sanding sugar, dragees, candies, etc. A young child might like their name piped onto the egg, while an adult may enjoy a motif personal to their interests, like music notes.\nIf you did not create a scene inside the egg, you can choose to fill it with treats instead. This version is filled with jelly beans and a printed bunny cutout. Chocolates, jelly beans, pastel M&Ms, or even silk flowers set into dry oasis would work as a gift or centerpiece. I know a certain teenager who wouldn't turn down an iTunes gift card tucked into a homemade sugar egg...Storage:\nThe finished egg does not need refrigeration, but it should be kept dry. Sugar and royal icing don't spoil easily, so wrapped in plastic, the egg should keep indefinitely. I kept a plastic-wrapped sugar egg saved for two decades!",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["./images/peekaboo-sugar-eggs/peekaboo-sugar-eggs_6_5.jpg"],
+					"video": " "
+				}
+			}]
+		},
+		"23": {
+			"recipe_name": "eggs-and-bacon-the-perfect-quick-paleo-meal",
+			"ingredients": [{
+				"name": "egg",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "0x3eb1",
+					"category": ["eggs"],
+					"ref": ["https://farrp.unl.edu/informalleggs"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "fresh",
+				"image": "./images/eggs-and-bacon-the-perfect-quick-paleo-meal/ingredients/01_egg.jpeg"
+			}, {
+				"name": "bacon",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/eggs-and-bacon-the-perfect-quick-paleo-meal/ingredients/02_bacon.jpeg"
+			}, {
+				"name": "spinach",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "organic",
+				"image": "./images/eggs-and-bacon-the-perfect-quick-paleo-meal/ingredients/03_spinach.webp"
+			}],
+			"prep_time": "",
+			"cook_time": "",
+			"serves": "",
+			"instructions": [{
+				"original_text": "When we processed the bacon last Fall, we added maple syrup that we made from our own maple trees. This was added to the brine solution and gives the bacon a yumminess that you have to experience to understand.Fry four pieces in the pan, but keep the grease. It would be a shame to discard that loveliness.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "After removing the bacon, we throw a lot of spinach in the pan that still has that grease. The spinach will wilt down to a fraction of it's volume, concentrating all the vitamins and minerals and soaking up some of the bacon grease. A little bit of salt and pepper.Next, in go the two eggs we just got from the hens. Look how orange those yolks are! After a second, we scramble things up a bit. But don't let the eggs cook too much. We like 'em nice and runny!Then combine with the spinach.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Combine with a glass of raw milk and you have a healthy (mostly) paleo, definitely low-carb meal.I've entered this Instructable in the egg and bacon contests. If you like it, please vote! And remember, if you know where your food comes from, you will live a long and healthy life!",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["./images/eggs-and-bacon-the-perfect-quick-paleo-meal/eggs-and-bacon-the-perfect-quick-paleo-meal_4_0.jpg"],
+					"video": " "
+				}
+			}]
+		},
+		"24": {
+			"recipe_name": "bakedfriedpan-fried-scotch-egg",
+			"ingredients": [{
+				"name": "egg",
+				"quantity": {
+					"measure": "4",
+					"unit": "count"
+				},
+				"allergies": {
+					"id": "0x3eb1",
+					"category": ["eggs"],
+					"ref": ["https://farrp.unl.edu/informalleggs"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "boiled",
+				"image": "./images/bakedfriedpan-fried-scotch-egg/ingredients/01_boiledegg.jpeg"
+			}, {
+				"name": "sausage",
+				"quantity": {
+					"measure": "3",
+					"unit": "count"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "Italian",
+				"image": "./images/bakedfriedpan-fried-scotch-egg/ingredients/02_italiansausage.jpeg"
+			}, {
+				"name": "flour",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "0x96da",
+					"category": ["other"],
+					"ref": ["https://farrp.unl.edu/informalleggs", "https://farrp.unl.edu/allergenic-foods-and-their-allergens-links-informall", "https://www.healthline.com/health/allergies/wheat#causes", "https://www.healthline.com/nutrition/foods/wheat"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/bakedfriedpan-fried-scotch-egg/ingredients/03_flour.jpeg"
+			}, {
+				"name": "egg mixture",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/bakedfriedpan-fried-scotch-egg/ingredients/04_eggmixture.jpeg"
+			}, {
+				"name": "breadcrumbs",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/bakedfriedpan-fried-scotch-egg/ingredients/05_breadcrumbs.jpeg"
+			}],
+			"prep_time": "",
+			"cook_time": "",
+			"serves": "",
+			"instructions": [{
+				"original_text": "This is a closer look about how I deal with my raw sausages. You take off the skin and put herbs you like (I used a little bit Italian seasoning and some dry thyme), then mix them well.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "If you have yours handy, you can skip this step. However if you don't have them with you (or just want a better taste), I encourage you to make your own at home. Tear some sliced bread, put Italian seasoning and garlic salt with it in the mixture/food processor, then blend them to small crumbs. Then bake it at 375\u00b0F for 10 minutes until it's crispy and brown. Store it airtight when it's cool and Viola! You got your own breadcrumbs now!",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Put some of the sausage meat on the plastic wrap, then put the egg in the middle of it. You can shape the egg with the wrap of course, but damp fingers would do a much better job. If the egg is not in a perfect shape, it's all right, after you cover it with flour it would be much easier to shape. There is a technique, the dry hand wet hand method, which means that you only use one hand to deal with all the dry ingredients (flour and bread crumbs) and use the other for wet ingredients (egg mixture), so that the countertop won't be a total mess when you finish the coating~",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "You also want to coat the egg in the egg mixture and then the breadcrumbs as well. You can put them in the fridge at this moment and cook them the next morning, or cook them right away if you can't resist the good looking eggs like I did. There are 3 ways to cook it:1. Fry (most delicious but of course highest in calorie): Fry them with 350\u00b0F oil for about 5-6 minutes (a bit longer it you take them out of the fridge). The yolk should be still runny and it made a perfect sauce for the egg.2. Bake (lowest fat but there won't be any runny yolk): Bake at 400\u00b0F for about 20-25 mins would do the job (just when the sausage is fully cooked). 3. Pan fried + Bake (a balance which I chose to use): You can pan fry them with a tiny amount of oil in the pan and then transfer them into the oven, 350\u00b0F for about 10-15 minutes. The yolk is not runny but softer than just bake the whole thing.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "It goes well with greens and salads, and can be great breakfast too (you can just throw a prepared scotch egg into the oven and when you finished your washing the breakfast is ready)!Follow my website YuesFoodStory.com for more recipes (most of them are still in Chinese tho, I will try to translate them as soon as I have time)~~ Hope you will enjoy this recipe!",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["./images/bakedfriedpan-fried-scotch-egg/bakedfriedpan-fried-scotch-egg_6_1.jpg"],
+					"video": " "
+				}
+			}]
+		},
+		"25": {
+			"recipe_name": "deviled-eggs-with-smoked-salmon-and-capers",
+			"ingredients": [{
+				"name": "egg",
+				"quantity": {
+					"measure": "8",
+					"unit": "count"
+				},
+				"allergies": {
+					"id": "0x3eb1",
+					"category": ["eggs"],
+					"ref": ["https://farrp.unl.edu/informalleggs"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/deviled-eggs-with-smoked-salmon-and-capers/ingredients/01_eggs.jpeg"
+			}, {
+				"name": "mayyonnaise",
+				"quantity": {
+					"measure": "",
+					"unit": "cup"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/deviled-eggs-with-smoked-salmon-and-capers/ingredients/02_mayyonnaise.webp"
+			}, {
+				"name": "sour cream",
+				"quantity": {
+					"measure": "1",
+					"unit": "tbsp"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/deviled-eggs-with-smoked-salmon-and-capers/ingredients/03_sourcream.jpeg"
+			}, {
+				"name": "lemon juice",
+				"quantity": {
+					"measure": "1",
+					"unit": "tbsp"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "fresh",
+				"image": "./images/deviled-eggs-with-smoked-salmon-and-capers/ingredients/04_freshlemonjuice.png"
+			}, {
+				"name": "salmon",
+				"quantity": {
+					"measure": "1",
+					"unit": "oz"
+				},
+				"allergies": {
+					"id": "0xe465",
+					"category": ["fish"],
+					"ref": ["https://farrp.unl.edu/informallfish"],
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "smoked and finely chopped",
+				"image": "./images/deviled-eggs-with-smoked-salmon-and-capers/ingredients/05_salmon.jpeg"
+			}, {
+				"name": "scallions",
+				"quantity": {
+					"measure": "2",
+					"unit": "tbsp"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "finely chopped",
+				"image": "./images/deviled-eggs-with-smoked-salmon-and-capers/ingredients/06_choppedscallions.jpeg"
+			}, {
+				"name": "capers",
+				"quantity": {
+					"measure": "1",
+					"unit": "tbsp"
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "finely chopped",
+				"image": "./images/deviled-eggs-with-smoked-salmon-and-capers/ingredients/07_caperschopped.jpeg"
+			}, {
+				"name": "salt",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/deviled-eggs-with-smoked-salmon-and-capers/ingredients/08_salt.webp"
+			}, {
+				"name": "pepper",
+				"quantity": {
+					"measure": "",
+					"unit": ""
+				},
+				"allergies": {
+					"id": "",
+					"category": "",
+					"ref": "",
+					"details": ""
+				},
+				"alternative": "",
+				"quality_characteristic": "",
+				"image": "./images/deviled-eggs-with-smoked-salmon-and-capers/ingredients/09_pepper.webp"
+			}],
+			"prep_time": "",
+			"cook_time": "",
+			"serves": "",
+			"instructions": [{
+				"original_text": "Fill a large saucepan with the eggs and water to cover the eggs entirely.\u00a0 Cover.\u00a0 Heat eggs over high heat until boiling.\u00a0 Once water has boiled, turn off water and leave pot covered.\u00a0 Allow eggs to sit in the just boiled water for 7 minutes.\u00a0 Once 7 minutes have passed, drain water and refill pot with cold water.\u00a0 Allow eggs to cool in the cold water.\u00a0 Once eggs are cool enough to handle, carefully peel eggs.\u00a0 (This is why a few extra eggs helps, because sometimes you mess up and don\u2019t make a smooth peel.)",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Cut each egg in half.\u00a0 Carefully remove yolks and place them in a bowl and set whites on a work surface.\u00a0 Once all yolks have been removed, mash them with a fork.\u00a0 Add mayonnaise, sour cream and lemon juice.\u00a0 Mix until consistency is cream.\u00a0 Add salmon, scallions, and capers.\u00a0 Mix.\u00a0 Salt and pepper to taste.\u00a0 (Definitely do NOT add much salt as capers and salmon are salty.)",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["", ""],
+					"video": " "
+				}
+			}, {
+				"original_text": "Carefully scoop egg yolk mixture into each hollow of the white.\u00a0 I used a disher to do so, some people use a pastry bag for a more perfect look, but I found that the disher worked just fine.\u00a0 Serve immediately, or cover and chill until needed.",
+				"input_condition": [""],
+				"task": [{
+					"action_name": "",
+					"output_quality": [""],
+					"background_knowledge": {
+						"tool": [""],
+						"failure": [""]
+					}
+				}],
+				"output_condition": [""],
+				"modality": {
+					"image": ["./images/deviled-eggs-with-smoked-salmon-and-capers/deviled-eggs-with-smoked-salmon-and-capers_4_2.jpg"],
+					"video": " "
+				}
+			}]
+		}
+	}
+}
