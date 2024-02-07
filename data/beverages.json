@@ -1,0 +1,104 @@
+{
+  "beverage_ids": {
+    "1": {
+      "name": "Coffee",
+      "additionalInfo": ""
+    },
+    "2": {
+      "name": "Tea",
+      "additionalInfo": ""
+    },
+    "3": {
+      "name": "Orange Juice",
+      "additionalInfo": ""
+    },
+    "4": {
+      "name": "Cola",
+      "additionalInfo": ""
+    },
+    "5": {
+      "name": "Water",
+      "additionalInfo": ""
+    },
+    "6": {
+      "name": "Milk",
+      "additionalInfo": ""
+    },
+    "7": {
+      "name": "Smoothie",
+      "additionalInfo": ""
+    },
+    "8": {
+      "name": "Lemonade",
+      "additionalInfo": ""
+    },
+    "9": {
+      "name": "Iced Tea",
+      "additionalInfo": ""
+    },
+    "10": {
+      "name": "Hot Chocolate",
+      "additionalInfo": ""
+    },
+    "11": {
+      "name": "Apple Juice",
+      "additionalInfo": ""
+    },
+    "12": {
+      "name": "Pepsi",
+      "additionalInfo": ""
+    },
+    "13": {
+      "name": "Cappuccino",
+      "additionalInfo": ""
+    },
+    "14": {
+      "name": "Green Tea",
+      "additionalInfo": ""
+    },
+    "15": {
+      "name": "Ginger Ale",
+      "additionalInfo": ""
+    },
+    "16": {
+      "name": "Iced Coffee",
+      "additionalInfo": ""
+    },
+    "17": {
+      "name": "Chai Latte",
+      "additionalInfo": ""
+    },
+    "18": {
+      "name": "Cranberry Juice",
+      "additionalInfo": ""
+    },
+    "19": {
+      "name": "Sprite",
+      "additionalInfo": ""
+    },
+    "20": {
+      "name": "Hot Tea",
+      "additionalInfo": ""
+    },
+    "21": {
+      "name": "Fruit Punch",
+      "additionalInfo": ""
+    },
+    "22": {
+      "name": "Almond Milk",
+      "additionalInfo": ""
+    },
+    "23": {
+      "name": "Coconut Water",
+      "additionalInfo": ""
+    },
+    "24": {
+      "name": "Espresso",
+      "additionalInfo": ""
+    },
+    "25": {
+      "name": "Tomato Juice",
+      "additionalInfo": ""
+    }
+  }
+}
