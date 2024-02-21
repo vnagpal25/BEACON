@@ -13,17 +13,17 @@ class MealRecommender:
 
     def ReadInputs(self):
         # Read R3 dataset
-        with open('../data/recipe_repn.json', 'r') as file:
+        with open('../items_data/recipe_repn.json', 'r') as file:
             recipes = json.load(file)
             recipes = recipes['recipe-ids']   
         
         # Read Beverages dataset
-        with open('../data/beverages.json', 'r') as file:
+        with open('../items_data/beverages.json', 'r') as file:
             beverages = json.load(file)
             beverages = beverages['beverage_ids']
             
         # Read user request
-        with open(f'../data/{self.user}', 'r') as file:
+        with open(f'../user_input_data/{self.user}', 'r') as file:
             user_request = json.load(file)
 
         return recipes, beverages, user_request
@@ -83,5 +83,5 @@ class MealRecommender:
     def WriteMealRecs(self, meal_plan):
         # Write meal plan to json
         self.user
-        with open(f'../data/recommendation_{self.user}', 'w') as file:
+        with open(f'../recommendations/recommendation_{self.user}', 'w') as file:
             json.dump(meal_plan, file)
