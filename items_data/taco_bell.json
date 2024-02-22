@@ -1,0 +1,413 @@
+{
+  "recipe-ids": {
+    "2": {
+      "recipe_name": "taco-bell-cheesy-gordita-crunch-copycat",
+      "ingredients": [
+        {
+          "name": "Taco Bell Taco Seasoning",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "Spicy Ranch Sauce",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "Gorditas",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "flour tortillas",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "Ground beef",
+          "quantity": {
+            "measure": "1",
+            "unit": "lb"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "Hard taco shells",
+          "quantity": {
+            "measure": "6",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "Gordita flour tortillas",
+          "quantity": {
+            "measure": "6",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "flour tortillas",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "Shredded cheddar cheese",
+          "quantity": {
+            "measure": "1",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "Colby Jack or Mexican blend",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "Shredded iceberg lettuce",
+          "quantity": {
+            "measure": "1",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "Diced tomato",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        }
+      ],
+      "prep_time": "10 minutes",
+      "cook_time": "20 minutes",
+      "serves": "6 Gorditas",
+      "instructions": [
+        {
+          "original_text": "Make the Taco Bell Taco Seasoning by combining all the seasoning ingredients in a bowl until well mixed.",
+          "input_condition": [],
+          "task": [
+            {
+              "action_name": "Make Taco Bell Taco Seasoning",
+              "output_quality": [
+                "Ensure all seasoning ingredients are well mixed in a bowl."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": []
+              }
+            }
+          ],
+          "output_condition": [
+            "have_taco_bell_taco_seasoning"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Make the taco meat by cooking ground beef with the taco seasoning. Remove from heat and place it in a bowl.",
+          "input_condition": [
+            "have_taco_bell_taco_seasoning",
+            "have_ground_beef"
+          ],
+          "task": [
+            {
+              "action_name": "Cook taco meat",
+              "output_quality": [
+                "Stir in the taco seasoning.",
+                "Remove cooked beef from heat and place it in a bowl."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Skillet"
+                ],
+                "failure": []
+              }
+            }
+          ],
+          "output_condition": [
+            "have_cooked_taco_meat"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Prepare the gorditas by covering each with shredded cheddar cheese and melting in the oven. Place them on a taco stand and add a hard taco shell inside each. Scoop taco meat into the center.",
+          "input_condition": [
+            "have_cooked_taco_meat",
+            "have_gorditas",
+            "have_hard_taco_shells"
+          ],
+          "task": [
+            {
+              "action_name": "Cover gorditas with shredded cheddar cheese and melt in the oven.",
+              "output_quality": [
+                "Place them on a taco stand."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Oven",
+                  "Taco stand"
+                ],
+                "failure": [
+                  "Over-melted cheese"
+                ]
+              }
+            },
+            {
+              "action_name": "Place hard taco shell inside each gordita.",
+              "output_quality": [
+                "Scoop taco meat into the center."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": []
+              }
+            }
+          ],
+          "output_condition": [
+            "have_gorditas_with_taco_meat"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Make the Spicy Ranch Sauce by combining all the ranch ingredients and whisking until well mixed.",
+          "input_condition": [],
+          "task": [
+            {
+              "action_name": "Make Spicy Ranch Sauce",
+              "output_quality": [
+                "Ensure all ranch ingredients are well mixed."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Mixing bowl",
+                  "Whisk"
+                ],
+                "failure": []
+              }
+            }
+          ],
+          "output_condition": [
+            "have_spicy_ranch_sauce"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Put it all together by adding spicy ranch sauce on top of taco meat, shredded lettuce on top of the sauce, and finally, topping with diced tomato and more shredded cheese.",
+          "input_condition": [
+            "have_spicy_ranch_sauce",
+            "have_gorditas_with_taco_meat",
+            "have_shredded_lettuce",
+            "have_diced_tomato",
+            "have_more_shredded_cheese"
+          ],
+          "task": [
+            {
+              "action_name": "Put it all together",
+              "output_quality": [
+                "Add spicy ranch sauce on top of taco meat.",
+                "Place shredded lettuce on top of the sauce.",
+                "Top with diced tomato and more shredded cheese."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": []
+              }
+            }
+          ],
+          "output_condition": [
+            "have_cheesy_gordita_crunch_tacos"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Serve immediately and enjoy!",
+          "input_condition": [
+            "have_cheesy_gordita_crunch_tacos"
+          ],
+          "task": [
+            {
+              "action_name": "Serve and enjoy",
+              "output_quality": [
+                "Serve the cheesy gordita crunch tacos immediately."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": []
+              }
+            }
+          ],
+          "output_condition": [],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Storage: Once made, the tacos will need to be eaten immediately. However, you can store the taco meat for up to three days in the refrigerator. You can store the ranch sauce in the refrigerator for up to a week. The taco seasoning can be stored for up to a month.",
+          "input_condition": [
+            "have_cheesy_gordita_crunch_tacos",
+            "have_taco_meat",
+            "have_spicy_ranch_sauce",
+            "have_taco_seasoning"
+          ],
+          "task": [
+            {
+              "action_name": "Storage",
+              "output_quality": [
+                "Tacos should be eaten immediately.",
+                "Taco meat can be stored for up to three days in the refrigerator.",
+                "Ranch sauce can be stored in the refrigerator for up to a week.",
+                "Taco seasoning can be stored for up to a month."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": []
+              }
+            }
+          ],
+          "output_condition": [],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Tips: Although this recipe is very easy to make, I have a couple of tips that will help you make it even better and even more easily. When cutting your tomato, use an extremely sharp knife so you get diced tomato instead of crushed. Use full-fat mayonnaise and sour cream to make the tastiest possible spicy ranch sauce.",
+          "input_condition": [
+            "have_cheesy_gordita_crunch_tacos"
+          ],
+          "task": [
+            {
+              "action_name": "Tips",
+              "output_quality": [
+                "Use an extremely sharp knife when cutting tomato to get diced tomato instead of crushed.",
+                "Use full-fat mayonnaise and sour cream to make the tastiest spicy ranch sauce."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Sharp knife"
+                ],
+                "failure": []
+              }
+            }
+          ],
+          "output_condition": [],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "FAQ: Do you have questions about this copycat Taco Bell cheesy gordita crunch? Here are some of the most commonly asked questions about this cheesy gordita crunch recipe. Can I refrigerate these gorditas? I don't recommend it. The shell will get soggy. What is a gordita? It's a thick, soft corn tortilla. Is this an authentic Mexican dish? Absolutely not. It's a Taco Bell copycat, and strictly speaking, nothing at Taco Bell is authentic. It's still good, though!",
+          "input_condition": [
+            "have_cheesy_gordita_crunch_tacos"
+          ],
+          "task": [
+            {
+              "action_name": "FAQ",
+              "output_quality": [
+                "Commonly asked questions about cheesy gordita crunch recipe:",
+                "Can I refrigerate these gorditas? I don't recommend it. The shell will get soggy.",
+                "What is a gordita? It's a thick, soft corn tortilla.",
+                "Is this an authentic Mexican dish? Absolutely not. It's a Taco Bell copycat, and strictly speaking, nothing at Taco Bell is authentic. It's still good, though!"
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": []
+              }
+            }
+          ],
+          "output_condition": [],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        }
+      ]
+    }
+  }
+}
