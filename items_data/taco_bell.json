@@ -1,6 +1,6 @@
 {
   "recipe-ids": {
-    "2": {
+    "26": {
       "recipe_name": "cheesy-gordita-crunch-copycat",
       "ingredients": [
         {
@@ -11,17 +11,13 @@
           },
           "allergies": {
             "id": "0xb74d",
-            "category": [
-              "meat"
-            ],
-            "ref": [
-              "https://www.healthline.com/nutrition/foods/pork",
-              "https://www.healthline.com/health/allergies/most-uncommon-food-allergies#red-meat"
-            ],
+            "category": ["meat"],
+            "ref": ["https://www.healthline.com/nutrition/foods/pork", "https://www.healthline.com/health/allergies/most-uncommon-food-allergies#red-meat"],
             "details": ""
           },
           "alternative": "",
-          "quality_characteristic": ""
+          "quality_characteristic": "",
+          "image": "https://example.com/ground_beef_image.jpg"
         },
         {
           "name": "Hard Taco Shells",
@@ -36,7 +32,8 @@
             "details": ""
           },
           "alternative": "",
-          "quality_characteristic": ""
+          "quality_characteristic": "",
+          "image": "https://example.com/hard_taco_shells_image.jpg"
         },
         {
           "name": "Gordita Flour Tortillas",
@@ -51,7 +48,8 @@
             "details": ""
           },
           "alternative": "",
-          "quality_characteristic": ""
+          "quality_characteristic": "",
+          "image": "https://example.com/gordita_flour_tortillas_image.jpg"
         },
         {
           "name": "shredded cheddar cheese",
@@ -61,16 +59,13 @@
           },
           "allergies": {
             "id": "",
-            "category": [
-              "Dairy"
-            ],
-            "ref": [
-              "https://www.healthline.com/nutrition/milk-allergy-symptoms#milk-allergy"
-            ],
+            "category": ["Dairy"],
+            "ref": ["https://www.healthline.com/nutrition/milk-allergy-symptoms#milk-allergy"],
             "details": ""
           },
           "alternative": "8 oz",
-          "quality_characteristic": ""
+          "quality_characteristic": "",
+          "image": "https://example.com/shredded_cheddar_cheese_image.jpg"
         },
         {
           "name": "shredded iceberg lettuce",
@@ -85,7 +80,8 @@
             "details": ""
           },
           "alternative": "",
-          "quality_characteristic": ""
+          "quality_characteristic": "",
+          "image": "https://example.com/shredded_iceberg_lettuce_image.jpg"
         },
         {
           "name": "tomato",
@@ -95,16 +91,13 @@
           },
           "allergies": {
             "id": "",
-            "category": [
-              "Nightshade Vegetables"
-            ],
-            "ref": [
-              "https://www.healthline.com/nutrition/nightshade-vegetables#solanine"
-            ],
+            "category": ["Nightshade Vegetables"],
+            "ref": ["https://www.healthline.com/nutrition/nightshade-vegetables#solanine"],
             "details": ""
           },
           "alternative": "diced",
-          "quality_characteristic": ""
+          "quality_characteristic": "",
+          "image": "https://example.com/tomato_image.jpg"
         },
         {
           "name": "olive oil",
@@ -114,22 +107,19 @@
           },
           "allergies": {
             "id": "0x7f2",
-            "category": [
-              "Olive"
-            ],
-            "ref": [
-              "https://www.foodallergy.org/living-food-allergies/food-allergy-essentials/common-allergens/olive"
-            ],
+            "category": ["Olive"],
+            "ref": ["https://www.foodallergy.org/living-food-allergies/food-allergy-essentials/common-allergens/olive"],
             "details": ""
           },
           "alternative": "",
-          "quality_characteristic": ""
+          "quality_characteristic": "",
+          "image": "https://example.com/olive_oil_image.jpg"
         },
         {
-          "name": "Copycat Taco Bell Taco Seasoning",
+          "ingredient_name": "chili powder",
           "quantity": {
-            "measure": "",
-            "unit": ""
+            "measure": "1",
+            "unit": "teaspoon"
           },
           "allergies": {
             "id": "",
@@ -138,13 +128,14 @@
             "details": ""
           },
           "alternative": "",
-          "quality_characteristic": "1 teaspoon chili powder, 1 teaspoon cumin, ½ teaspoon smoked paprika, ½ teaspoon coriander, ½ teaspoon garlic powder, ½ teaspoon minced onion, ¼ teaspoon sugar"
+          "quality_characteristic": "",
+          "image": "https://example.com/chili_powder_image.jpg"
         },
         {
-          "name": "Jalapeno Ranch Sauce",
+          "ingredient_name": "cumin",
           "quantity": {
-            "measure": "",
-            "unit": ""
+            "measure": "1",
+            "unit": "teaspoon"
           },
           "allergies": {
             "id": "",
@@ -153,12 +144,238 @@
             "details": ""
           },
           "alternative": "",
-          "quality_characteristic": "½ cup sour cream, ¼ cup mayonnaise, 1 tablespoon hot sauce, ½ teaspoon garlic powder, 1 teaspoon dried dill weed, ¼ teaspoon black pepper, ¼ teaspoon onion powder, ¼ teaspoon dried parsley, ¼ teaspoon kosher salt"
+          "quality_characteristic": "",
+          "image": "https://example.com/cumin_image.jpg"
+        },
+        {
+          "ingredient_name": "smoked paprika",
+          "quantity": {
+            "measure": "½",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "https://example.com/smoked_paprika_image.jpg"
+        },
+        {
+          "ingredient_name": "coriander",
+          "quantity": {
+            "measure": "½",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "https://example.com/coriander_image.jpg"
+        },
+        {
+          "ingredient_name": "garlic powder",
+          "quantity": {
+            "measure": "½",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "https://example.com/garlic_powder_image.jpg"
+        },
+        {
+          "ingredient_name": "minced onion",
+          "quantity": {
+            "measure": "½",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "https://example.com/minced_onion_image.jpg"
+        },
+        {
+          "ingredient_name": "sugar",
+          "quantity": {
+            "measure": "¼",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "https://example.com/sugar_image.jpg"
+        },
+        {
+          "ingredient_name": "sour cream",
+          "quantity": {
+            "measure": "½",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "",
+            "category": ["Dairy"],
+            "ref": ["https://www.healthline.com/nutrition/milk-allergy-symptoms#milk-allergy"],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "https://example.com/sour_cream_image.jpg"
+        },
+        {
+          "ingredient_name": "mayonnaise",
+          "quantity": {
+            "measure": "¼",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "0x7f2",
+            "category": ["Olive"],
+            "ref": ["https://www.foodallergy.org/living-food-allergies/food-allergy-essentials/common-allergens/olive"],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "https://example.com/mayonnaise_image.jpg"
+        },
+        {
+          "ingredient_name": "hot sauce",
+          "quantity": {
+            "measure": "1",
+            "unit": "tablespoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "https://example.com/hot_sauce_image.jpg"
+        },
+        {
+          "ingredient_name": "garlic powder",
+          "quantity": {
+            "measure": "½",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "https://example.com/garlic_powder_image.jpg"
+        },
+        {
+          "ingredient_name": "dried dill weed",
+          "quantity": {
+            "measure": "1",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "https://example.com/dried_dill_weed_image.jpg"
+        },
+        {
+          "ingredient_name": "black pepper",
+          "quantity": {
+            "measure": "¼",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "https://example.com/black_pepper_image.jpg"
+        },
+        {
+          "ingredient_name": "onion powder",
+          "quantity": {
+          "measure": "¼",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "https://example.com/onion_powder_image.jpg"
+        },
+        {
+          "ingredient_name": "dried parsley",
+          "quantity": {
+            "measure": "¼",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "https://example.com/dried_parsley_image.jpg"
+        },
+        {
+          "ingredient_name": "kosher salt",
+          "quantity": {
+            "measure": "¼",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": ["Salt"],
+            "ref": ["https://www.healthline.com/nutrition/how-much-sodium-per-day#recommendations"],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "https://example.com/kosher_salt_image.jpg"
         }
+        
       ],
       "prep_time": "10 minutes",
       "cook_time": "20 minutes",
-      "serves": "6 Gorditas",
+      "serves": "6",
       "instructions": [
         {
           "original_text": "Preheat the oven to 375*",
@@ -183,33 +400,58 @@
         },
         {
           "original_text": "Heat a skillet over medium-high heat. Add olive oil and swirl to coat the pan. Add the ground beef and break apart. Once halfway cooked, stir in the taco seasoning. Remove from heat and place into a bowl.",
-          "input_condition": [
-            "oven_preheated"
-          ],
-          "task": [
+          "input_condition": ["oven_preheated", "have_olive_oil", "have_ground_beef", "have_chilli_powder", "have_cumin", "have_smoked_paprika", "have_coriander", "have_garlic_powder", "have_minced_onion", "have_sugar"],
+          "tasks": [
             {
-              "action_name": "Heat skillet, cook ground beef",
-              "output_quality": [
-                "Break apart beef.",
-                "Stir in taco seasoning.",
-                "Remove from heat and place in a bowl."
-              ],
+              "action_name": "Heat skillet",
+              "output_quality": ["Pan should be over medium-high heat."],
               "background_knowledge": {
-                "tool": [
-                  "Skillet",
-                  "Bowl"
-                ],
-                "failure": [
-                  "Overcooking beef",
-                  "Undercooking beef",
-                  "Taco seasoning not evenly mixed"
-                ]
+                "tool": ["Skillet"],
+                "failure": []
+              }
+            },
+            {
+              "action_name": "Add olive oil and swirl",
+              "output_quality": ["Coat the pan evenly."],
+              "background_knowledge": {
+                "tool": ["Olive oil"],
+                "failure": []
+              }
+            },
+            {
+              "action_name": "Add ground beef",
+              "output_quality": ["Break apart the beef."],
+              "background_knowledge": {
+                "tool": [],
+                "failure": ["Overcooking beef", "Undercooking beef"]
+              }
+            },
+            {
+              "action_name": "Stir in taco seasoning",
+              "output_quality": ["Ensure even distribution of seasoning"],
+              "background_knowledge": {
+                "tool": [],
+                "failure": ["Spices not evenly mixed"]
+              }
+            },
+            {
+              "action_name": "Remove from heat",
+              "output_quality": ["Beef should be halfway cooked."],
+              "background_knowledge": {
+                "tool": [],
+                "failure": ["Overcooking beef", "Undercooking beef"]
+              }
+            },
+            {
+              "action_name": "Place into a bowl",
+              "output_quality": [],
+              "background_knowledge": {
+                "tool": ["Bowl"],
+                "failure": []
               }
             }
           ],
-          "output_condition": [
-            "have_cooked_beef"
-          ],
+          "output_condition": ["have_cooked_beef"],
           "modality": {
             "image": [],
             "video": " "
@@ -259,13 +501,21 @@
         {
           "original_text": "Prepare the spicy ranch while the cheese is melting. Add all ingredients to a mixing bowl and whisk well to combine.",
           "input_condition": [
-            "have_melted_cheese_gorditas"
+            "have_sour_cream",
+            "have_mayonnaise",
+            "have_hot_sauce",
+            "have_garlic_powder",
+            "have_dried_dill_weed",
+            "have_black_pepper",
+            "have_onion_powder",
+            "have_dried_parsley",
+            "have_kosher_salt"
           ],
           "task": [
             {
               "action_name": "Prepare spicy ranch",
               "output_quality": [
-                "Whisk all ingredients well."
+                "All ingredients are mixed well."
               ],
               "background_knowledge": {
                 "tool": [
@@ -274,7 +524,8 @@
                 ],
                 "failure": [
                   "Overused mayonnaise",
-                  "Underused spices"
+                  "Underused spices",
+                  "Spices and mayonnaise not mixed together well"
                 ]
               }
             }
@@ -292,7 +543,11 @@
           "input_condition": [
             "have_melted_cheese_gorditas",
             "have_spicy_ranch",
-            "have_diced_tomato"
+            "have_diced_tomato",
+            "have_cooked_beef",
+            "have_hard_taco_shell",
+            "have_shredded_lettuce",
+            "have_cheese"
           ],
           "task": [
             {
@@ -321,31 +576,6 @@
                 "failure": [
                   "Uneven toppings"
                 ]
-              }
-            }
-          ],
-          "output_condition": [
-            "have_cheesy_gordita_crunch"
-          ],
-          "modality": {
-            "image": [],
-            "video": " "
-          }
-        },
-        {
-          "original_text": "Serve immediately and enjoy!",
-          "input_condition": [
-            "have_cheesy_gordita_crunch"
-          ],
-          "task": [
-            {
-              "action_name": "Serve",
-              "output_quality": [
-                "Enjoy!"
-              ],
-              "background_knowledge": {
-                "tool": [],
-                "failure": []
               }
             }
           ],
