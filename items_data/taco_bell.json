@@ -11,8 +11,13 @@
           },
           "allergies": {
             "id": "0xb74d",
-            "category": ["meat"],
-            "ref": ["https://www.healthline.com/nutrition/foods/pork", "https://www.healthline.com/health/allergies/most-uncommon-food-allergies#red-meat"],
+            "category": [
+              "meat"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/foods/pork",
+              "https://www.healthline.com/health/allergies/most-uncommon-food-allergies#red-meat"
+            ],
             "details": ""
           },
           "alternative": "",
@@ -59,8 +64,12 @@
           },
           "allergies": {
             "id": "",
-            "category": ["Dairy"],
-            "ref": ["https://www.healthline.com/nutrition/milk-allergy-symptoms#milk-allergy"],
+            "category": [
+              "Dairy"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/milk-allergy-symptoms#milk-allergy"
+            ],
             "details": ""
           },
           "alternative": "8 oz",
@@ -91,8 +100,12 @@
           },
           "allergies": {
             "id": "",
-            "category": ["Nightshade Vegetables"],
-            "ref": ["https://www.healthline.com/nutrition/nightshade-vegetables#solanine"],
+            "category": [
+              "Nightshade Vegetables"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/nightshade-vegetables#solanine"
+            ],
             "details": ""
           },
           "alternative": "diced",
@@ -107,8 +120,12 @@
           },
           "allergies": {
             "id": "0x7f2",
-            "category": ["Olive"],
-            "ref": ["https://www.foodallergy.org/living-food-allergies/food-allergy-essentials/common-allergens/olive"],
+            "category": [
+              "Olive"
+            ],
+            "ref": [
+              "https://www.foodallergy.org/living-food-allergies/food-allergy-essentials/common-allergens/olive"
+            ],
             "details": ""
           },
           "alternative": "",
@@ -235,8 +252,12 @@
           },
           "allergies": {
             "id": "",
-            "category": ["Dairy"],
-            "ref": ["https://www.healthline.com/nutrition/milk-allergy-symptoms#milk-allergy"],
+            "category": [
+              "Dairy"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/milk-allergy-symptoms#milk-allergy"
+            ],
             "details": ""
           },
           "alternative": "",
@@ -251,8 +272,12 @@
           },
           "allergies": {
             "id": "0x7f2",
-            "category": ["Olive"],
-            "ref": ["https://www.foodallergy.org/living-food-allergies/food-allergy-essentials/common-allergens/olive"],
+            "category": [
+              "Olive"
+            ],
+            "ref": [
+              "https://www.foodallergy.org/living-food-allergies/food-allergy-essentials/common-allergens/olive"
+            ],
             "details": ""
           },
           "alternative": "",
@@ -326,7 +351,7 @@
         {
           "ingredient_name": "onion powder",
           "quantity": {
-          "measure": "¼",
+            "measure": "¼",
             "unit": "teaspoon"
           },
           "allergies": {
@@ -363,15 +388,18 @@
           },
           "allergies": {
             "id": "",
-            "category": ["Salt"],
-            "ref": ["https://www.healthline.com/nutrition/how-much-sodium-per-day#recommendations"],
+            "category": [
+              "Salt"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/how-much-sodium-per-day#recommendations"
+            ],
             "details": ""
           },
           "alternative": "",
           "quality_characteristic": "",
           "image": "https://example.com/kosher_salt_image.jpg"
         }
-        
       ],
       "prep_time": "10 minutes",
       "cook_time": "20 minutes",
@@ -400,58 +428,95 @@
         },
         {
           "original_text": "Heat a skillet over medium-high heat. Add olive oil and swirl to coat the pan. Add the ground beef and break apart. Once halfway cooked, stir in the taco seasoning. Remove from heat and place into a bowl.",
-          "input_condition": ["oven_preheated", "have_olive_oil", "have_ground_beef", "have_chilli_powder", "have_cumin", "have_smoked_paprika", "have_coriander", "have_garlic_powder", "have_minced_onion", "have_sugar"],
+          "input_condition": [
+            "oven_preheated",
+            "have_olive_oil",
+            "have_ground_beef",
+            "have_chilli_powder",
+            "have_cumin",
+            "have_smoked_paprika",
+            "have_coriander",
+            "have_garlic_powder",
+            "have_minced_onion",
+            "have_sugar"
+          ],
           "tasks": [
             {
               "action_name": "Heat skillet",
-              "output_quality": ["Pan should be over medium-high heat."],
+              "output_quality": [
+                "Pan should be over medium-high heat."
+              ],
               "background_knowledge": {
-                "tool": ["Skillet"],
+                "tool": [
+                  "Skillet"
+                ],
                 "failure": []
               }
             },
             {
               "action_name": "Add olive oil and swirl",
-              "output_quality": ["Coat the pan evenly."],
+              "output_quality": [
+                "Coat the pan evenly."
+              ],
               "background_knowledge": {
-                "tool": ["Olive oil"],
+                "tool": [
+                  "Olive oil"
+                ],
                 "failure": []
               }
             },
             {
               "action_name": "Add ground beef",
-              "output_quality": ["Break apart the beef."],
+              "output_quality": [
+                "Break apart the beef."
+              ],
               "background_knowledge": {
                 "tool": [],
-                "failure": ["Overcooking beef", "Undercooking beef"]
+                "failure": [
+                  "Overcooking beef",
+                  "Undercooking beef"
+                ]
               }
             },
             {
               "action_name": "Stir in taco seasoning",
-              "output_quality": ["Ensure even distribution of seasoning"],
+              "output_quality": [
+                "Ensure even distribution of seasoning"
+              ],
               "background_knowledge": {
                 "tool": [],
-                "failure": ["Spices not evenly mixed"]
+                "failure": [
+                  "Spices not evenly mixed"
+                ]
               }
             },
             {
               "action_name": "Remove from heat",
-              "output_quality": ["Beef should be halfway cooked."],
+              "output_quality": [
+                "Beef should be halfway cooked."
+              ],
               "background_knowledge": {
                 "tool": [],
-                "failure": ["Overcooking beef", "Undercooking beef"]
+                "failure": [
+                  "Overcooking beef",
+                  "Undercooking beef"
+                ]
               }
             },
             {
               "action_name": "Place into a bowl",
               "output_quality": [],
               "background_knowledge": {
-                "tool": ["Bowl"],
+                "tool": [
+                  "Bowl"
+                ],
                 "failure": []
               }
             }
           ],
-          "output_condition": ["have_cooked_beef"],
+          "output_condition": [
+            "have_cooked_beef"
+          ],
           "modality": {
             "image": [],
             "video": " "
@@ -581,6 +646,373 @@
           ],
           "output_condition": [
             "recipe_complete"
+          ],
+          "modality": {
+            "image": [],
+            "video": " "
+          }
+        }
+      ]
+    },
+    "27": {
+      "recipe_name": "crunchwrap-supreme-copycat",
+      "ingredients": [
+        {
+          "name": "ground beef",
+          "quantity": {
+            "measure": "1",
+            "unit": "lb"
+          },
+          "allergies": {
+            "id": "0xb74d",
+            "category": [
+              "meat"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/foods/pork",
+              "https://www.healthline.com/health/allergies/most-uncommon-food-allergies#red-meat"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "https://example.com/ground_beef_image.jpg"
+        },
+        {
+          "name": "Flour Tortillas",
+          "quantity": {
+            "measure": "5",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "https://example.com/gordita_flour_tortillas_image.jpg"
+        },
+        {
+          "name": "Shredded Mexican Cheese Blend",
+          "quantity": {
+            "measure": "2",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "",
+            "category": [
+              "Dairy"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/milk-allergy-symptoms#milk-allergy"
+            ],
+            "details": ""
+          },
+          "alternative": "8 oz",
+          "quality_characteristic": "",
+          "image": "https://example.com/shredded_cheddar_cheese_image.jpg"
+        },
+        {
+          "name": "shredded iceberg lettuce",
+          "quantity": {
+            "measure": "1",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "https://example.com/shredded_iceberg_lettuce_image.jpg"
+        },
+        {
+          "name": "diced tomato",
+          "quantity": {
+            "measure": "1",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "",
+            "category": [
+              "Nightshade Vegetables"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/nightshade-vegetables#solanine"
+            ],
+            "details": ""
+          },
+          "alternative": "diced",
+          "quality_characteristic": "",
+          "image": "https://example.com/tomato_image.jpg"
+        },
+        {
+          "ingredient_name": "chili powder",
+          "quantity": {
+            "measure": "0.6",
+            "unit": "tablespoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "https://example.com/chili_powder_image.jpg"
+        },
+        {
+          "ingredient_name": "cumin",
+          "quantity": {
+            "measure": "1/3",
+            "unit": "tablespoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "https://example.com/cumin_image.jpg"
+        },
+        {
+          "ingredient_name": "garlic powder",
+          "quantity": {
+            "measure": "0.1",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "https://example.com/garlic_powder_image.jpg"
+        },
+        {
+          "ingredient_name": "onion powder",
+          "quantity": {
+            "measure": "0.2",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "https://example.com/minced_onion_image.jpg"
+        },
+        {
+          "ingredient_name": "black pepper",
+          "quantity": {
+            "measure": "0.6",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "https://example.com/black_pepper_image.jpg"
+        },
+        {
+          "ingredient_name": "dried oregano",
+          "quantity": {
+            "measure": "0.3",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "https://example.com/dried_parsley_image.jpg"
+        },
+        {
+          "ingredient_name": "salt",
+          "quantity": {
+            "measure": "0.3",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": [
+              "Salt"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/how-much-sodium-per-day#recommendations"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "https://example.com/kosher_salt_image.jpg"
+        },
+        {
+          "ingredient_name": "red pepper flakes",
+          "quantity": {
+            "measure": "0.2",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": [],
+            "ref": [],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "https://example.com/kosher_salt_image.jpg"
+        },
+        {
+          "ingredient_name": "water",
+          "quantity": {
+            "measure": "0.3",
+            "unit": "water"
+          },
+          "allergies": {
+            "id": "",
+            "category": [],
+            "ref": [],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "https://example.com/kosher_salt_image.jpg"
+        },
+        {
+          "ingredient_name": "nacho cheese sauce",
+          "quantity": {
+            "measure": "0.6",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "",
+            "category": [],
+            "ref": [],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "https://example.com/kosher_salt_image.jpg"
+        },
+        {
+          "ingredient_name": "tostadas",
+          "quantity": {
+            "measure": "4",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": [],
+            "ref": [],
+            "details": ""
+          },
+          "alternative": "2 cups tortilla chips",
+          "quality_characteristic": "",
+          "image": "https://example.com/kosher_salt_image.jpg"
+        },
+        {
+          "ingredient_name": "sour cream",
+          "quantity": {
+            "measure": "0.6",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "",
+            "category": [],
+            "ref": [],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "https://example.com/kosher_salt_image.jpg"
+        }
+      ],
+      "prep_time": "20 minutes",
+      "cook_time": "20 minutes",
+      "serves": "4",
+      "instructions": [
+        {
+          "original_text": "In a large skillet, cook ground beef over medium-high heat until no pink remains. Drain any excess fat.",
+          "input_condition": [
+            "have_ground_beef"
+          ],
+          "task": [
+            {
+              "action_name": "cook ground beef over medium-high heat until no pink remains",
+              "output_quality": [
+                "Beef should be cooked with no pink and excess oil drained"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "skillet"
+                ],
+                "failure": [
+                  "pink_meat",
+                  "burned_meat",
+                  "cooked_meat_with_excess_fat"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "non_pink_beef_no_excess_oil"
+          ],
+          "modality": {
+            "image": [],
+            "video": " "
+          }
+        },
+        {
+          "original_text": "Add ⅓ cup of water and taco seasoning to the skillet. Stir and simmer uncovered for 5 minutes or until thickened.",
+          "input_condition": [
+            "have_water",
+            "have_chill_powder",
+            "have_cumin",
+            "have_black_pepper",
+            "have_onion_powder",
+            "have_dried_oregano",
+            "have_salt",
+            "have_garlic_powder",
+            "have_red_pepper_flakes",
+            "have_cooked_beef"
+          ],
+          "tasks": [
+            {
+              "action_name": "Add water and chill powder, cumin, black pepper, onion powder, dried oregano, salt, garlic powder, and red pepper flakes to ground beef in skillet",
+              "output_quality": [
+                "Meat spice mixture should be thickened",
+                "Stir and cook uncovered for 5 minutes"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Skillet"
+                ],
+                "failure": []
+              }
+            }
+          ],
+          "output_condition": [
+            "have_thickened_spiced_beef"
           ],
           "modality": {
             "image": [],
