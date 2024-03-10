@@ -1018,6 +1018,292 @@
             "image": [],
             "video": " "
           }
+        },
+        {
+          "original_text": "Meanwhile, cut one of the flour tortillas into quarters. Use kitchen scissors or a knife to round the corners.",
+          "input_condition": [
+            "have_flour_tortillas",
+            "have_kitchen_scissors",
+            "have_knife"
+          ],
+          "tasks": [
+            {
+              "action_name": "Cut 1 flour tortilla into quarters",
+              "output_quality": [
+                "Flour tortilla should be in 4 quarters"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Scissor",
+                  "Knife"
+                ],
+                "failure": [
+                  "Flour tortilla is cut into less than 4 pieces",
+                  "Flour tortilla is cut into more than 4 pieces",
+                  "Flour tortilla is cut into 4 unequal pieces"
+                ]
+              }
+            },
+            {
+              "action_name": "Use kitchen scissors or a kinife to round the corners",
+              "output_quality": [
+                "4 quarters should have rounded corners"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Scissor",
+                  "Knife"
+                ],
+                "failure": [
+                  "Corners aren't rounded yet"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "have_rounded_flour_tortilla_quarters"
+          ],
+          "modality": {
+            "image": [],
+            "video": " "
+          }
+        },
+        {
+          "original_text": "Place the remaining four tortillas on a plate and cover them with a damp paper towel. Microwave them for 20-30 seconds or until they are warm.",
+          "input_condition": [
+            "have_flour_tortillas",
+            "have_paper_towel",
+            "have_microwave",
+            "have_plate"
+          ],
+          "tasks": [
+            {
+              "action_name": "Place the remaining flour tortillas on a plate",
+              "output_quality": [
+                "Flour tortillas should be on the plate"
+              ],
+              "background_knowledge": {
+                "tool": [
+                ],
+                "failure": [
+                  "Flour tortillas are not on the plate"
+                ]
+              }
+            },
+            {
+              "action_name": "Cover the flour tortillas with a damp paper towel",
+              "output_quality": [
+                "Flour tortillas should be covered with a damp paper towel"
+              ],
+              "background_knowledge": {
+                "tool": [
+                ],
+                "failure": [
+                  "Paper towel placed isn't damp",
+                  "Paper towel isn't placed on tortillas"
+                ]
+              }
+            },
+            {
+              "action_name": "Microwave them for 20-30 seconds or until they are warm",
+              "output_quality": [
+                "Microwaved for 20-30 seconds",
+                "Tortillas are warm"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Microwave"
+                ],
+                "failure": [
+                  "Tortillas aren't warm"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "have_rounded_flour_tortilla_quarters"
+          ],
+          "modality": {
+            "image": [],
+            "video": " "
+          }
+        },
+        {
+          "original_text": "Add ¼ cup ground beef to the center of each tortilla. Top with cheese sauce. Add tostada shell, sour cream, lettuce, tomato, and cheese blend.",
+          "input_condition": [
+            "have_cooked_ground_beef",
+            "have_tortillas",
+            "have_cheese_sauce",
+            "have_tostada_shell",
+            "have_sour_cream",
+            "have_lettuce",
+            "have_tomato",
+            "have_cheese_blend"
+          ],
+          "tasks": [
+            {
+              "action_name": "Add ¼ cup ground beef to the center of each tortilla.",
+              "output_quality": [
+                "Warm flour tortillas should have beef in center"
+              ],
+              "background_knowledge": {
+                "tool": [
+                ],
+                "failure": [
+                  "Beef is not on tortillas"
+                ]
+              }
+            },
+            {
+              "action_name": "Top with cheese sauce",
+              "output_quality": [
+                "Tortillas with beef should be covered with cheese sauce"
+              ],
+              "background_knowledge": {
+                "tool": [
+                ],
+                "failure": [
+                  "Cheese sauce is not on tortillas"
+                ]
+              }
+            },
+            {
+              "action_name": "Add tostada shell, sour cream, lettuce, tomato, and cheese blend",
+              "output_quality": [
+                "Tostada shell, sour cream, lettuce, tomato, and cheese blend are added"
+              ],
+              "background_knowledge": {
+                "tool": [
+                ],
+                "failure": [
+                  "Tostada shell, sour cream, lettuce, tomato, and cheese blend are not added"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "have_tortillas_with_filling_on_top"
+          ],
+          "modality": {
+            "image": [],
+            "video": " "
+          }
+        },
+        {
+          "original_text": "Place the quartered tortilla in the center and gently fold the larger tortilla around it to seal.",
+          "input_condition": [
+            "have_tortilla_with_filling",
+            "have_quartered_tortilla"
+          ],
+          "tasks": [
+            {
+              "action_name": "Place the quartered tortilla in the center",
+              "output_quality": [
+                "Filled tortilla should have quartered tortilla placed on top"
+              ],
+              "background_knowledge": {
+                "tool": [
+                ],
+                "failure": [
+                  "Quartered tortilla is not in filled tortilla"
+                ]
+              }
+            },
+            {
+              "action_name": "gently fold the larger tortilla around it to seal",
+              "output_quality": [
+                "Larger tortilla on bottom should be folded upwards to seal everything"
+              ],
+              "background_knowledge": {
+                "tool": [
+                ],
+                "failure": [
+                  "Tortilla rips",
+                  "Tortilla isn't folded"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "have_sealed_tortilla_with_filling"
+          ],
+          "modality": {
+            "image": [],
+            "video": " "
+          }
+        },
+        {
+          "original_text": "In a large skillet, heat 1 tablespoon of vegetable oil over medium heat.",
+          "input_condition": [
+            "have_vegetable_oil",
+            "have_skillet"
+          ],
+          "tasks": [
+            {
+              "action_name": "Heat 1 tablespoon of vegetable oil over medium heat",
+              "output_quality": [
+                "Vegetable oil should be heated"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Skillet"
+                ],
+                "failure": [
+                  "Oil is not heated"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "have_heated_oil"
+          ],
+          "modality": {
+            "image": [],
+            "video": " "
+          }
+        },
+        {
+          "original_text": "In batches, add the folded tortillas seam side down, to the skillet and cook until golden, about 3-4 minutes. Flip and cook the other side.",
+          "input_condition": [
+            "have_sealed_tortillas_with_filling"
+          ],
+          "tasks": [
+            {
+              "action_name": "Place sealed tortillas with filling, seam side down, to the skillet for 3-4 minutes or until golden brown",
+              "output_quality": [
+                "Seam side of sealed tortilla should be golden brown"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Skillet"
+                ],
+                "failure": [
+                  "Tortilla isn't golden brown on seam side"
+                ]
+              }
+            },
+            {
+              "action_name": "Flip and cook the other side for 3-4 minutes or until golden brown.",
+              "output_quality": [
+                "Other side of sealed tortilla should be golden brown"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Skillet"
+                ],
+                "failure": [
+                  "Tortilla isn't golden brown on other side"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "complete"
+          ],
+          "modality": {
+            "image": [],
+            "video": " "
+          }
         }
       ]
     }
