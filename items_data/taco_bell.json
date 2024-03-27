@@ -983,7 +983,7 @@
           }
         },
         {
-          "original_text": "Add ⅓ cup of water and taco seasoning to the skillet. Stir and simmer uncovered for 5 minutes or until thickened.",
+          "original_text": "Add ⅓ cup of water and taco seasoning to the skillet.",
           "input_condition": [
             "have_water",
             "have_chill_powder",
@@ -1000,14 +1000,32 @@
             {
               "action_name": "Add water and chill powder, cumin, black pepper, onion powder, dried oregano, salt, garlic powder, and red pepper flakes to ground beef in skillet",
               "output_quality": [
-                "Meat spice mixture should be thickened",
-                "Stir and cook uncovered for 5 minutes"
+                "Spice should be added"
               ],
               "background_knowledge": {
                 "tool": [
                   "Skillet"
                 ],
-                "failure": []
+                "failure": [
+                  "Spice is not added"
+                ]
+              }
+            },
+            {
+              "action_name": "Stir and simmer uncovered for 5 minutes or until thickened.",
+              "output_quality": [
+                "Meat spice mixture should be thickened",
+                "Meat spice mixture should be stirred for 5 minutes"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Skillet",
+                  "Stirring spoon"
+                ],
+                "failure": [
+                  "Meat spice mixture is cooked for less than 5 minutes",
+                  "Meat spice mixture is not thickened"
+                ]
               }
             }
           ],
@@ -1083,8 +1101,7 @@
                 "Flour tortillas should be on the plate"
               ],
               "background_knowledge": {
-                "tool": [
-                ],
+                "tool": [],
                 "failure": [
                   "Flour tortillas are not on the plate"
                 ]
@@ -1096,8 +1113,7 @@
                 "Flour tortillas should be covered with a damp paper towel"
               ],
               "background_knowledge": {
-                "tool": [
-                ],
+                "tool": [],
                 "failure": [
                   "Paper towel placed isn't damp",
                   "Paper towel isn't placed on tortillas"
@@ -1147,8 +1163,7 @@
                 "Warm flour tortillas should have beef in center"
               ],
               "background_knowledge": {
-                "tool": [
-                ],
+                "tool": [],
                 "failure": [
                   "Beef is not on tortillas"
                 ]
@@ -1160,8 +1175,7 @@
                 "Tortillas with beef should be covered with cheese sauce"
               ],
               "background_knowledge": {
-                "tool": [
-                ],
+                "tool": [],
                 "failure": [
                   "Cheese sauce is not on tortillas"
                 ]
@@ -1173,8 +1187,7 @@
                 "Tostada shell, sour cream, lettuce, tomato, and cheese blend are added"
               ],
               "background_knowledge": {
-                "tool": [
-                ],
+                "tool": [],
                 "failure": [
                   "Tostada shell, sour cream, lettuce, tomato, and cheese blend are not added"
                 ]
@@ -1202,8 +1215,7 @@
                 "Filled tortilla should have quartered tortilla placed on top"
               ],
               "background_knowledge": {
-                "tool": [
-                ],
+                "tool": [],
                 "failure": [
                   "Quartered tortilla is not in filled tortilla"
                 ]
@@ -1215,8 +1227,7 @@
                 "Larger tortilla on bottom should be folded upwards to seal everything"
               ],
               "background_knowledge": {
-                "tool": [
-                ],
+                "tool": [],
                 "failure": [
                   "Tortilla rips",
                   "Tortilla isn't folded"
@@ -1304,6 +1315,367 @@
             "image": [],
             "video": " "
           }
+        }
+      ]
+    },
+    "28": {
+      "recipe_name": "Taco Bell Quesadilla",
+      "ingredients": [
+        {
+          "name": "Mayo",
+          "quantity": {
+            "measure": "1/4",
+            "unit": "Cup"
+          }
+        },
+        {
+          "name": "Minced Pickled Jalapenos",
+          "quantity": {
+            "measure": "2",
+            "unit": "Tsp"
+          }
+        },
+        {
+          "name": "Pickled Jalapeno Juice",
+          "quantity": {
+            "measure": "2",
+            "unit": "Tsp"
+          }
+        },
+        {
+          "name": "Sugar",
+          "quantity": {
+            "measure": "2/3",
+            "unit": "Tsp"
+          }
+        },
+        {
+          "name": "Cumin",
+          "quantity": {
+            "measure": "1/2",
+            "unit": "Tsp"
+          }
+        },
+        {
+          "name": "Paprika",
+          "quantity": {
+            "measure": "1/2",
+            "unit": "Tsp"
+          }
+        },
+        {
+          "name": "Cayenne Pepper",
+          "quantity": {
+            "measure": "1/8",
+            "unit": "Tsp"
+          }
+        },
+        {
+          "name": "Garlic Powder",
+          "quantity": {
+            "measure": "1/8",
+            "unit": "Tsp"
+          }
+        },
+        {
+          "name": "Salt",
+          "quantity": {
+            "measure": "Dash",
+            "unit": ""
+          }
+        },
+        {
+          "name": "Chicken Breast",
+          "quantity": {
+            "measure": "1",
+            "unit": ""
+          }
+        },
+        {
+          "name": "Cheddar & Monterey Jack Cheese",
+          "quantity": {
+            "measure": "1",
+            "unit": "Cup"
+          }
+        },
+        {
+          "name": "American Cheese",
+          "quantity": {
+            "measure": "1",
+            "unit": "Slice"
+          }
+        },
+        {
+          "name": "Flour Tortillas",
+          "quantity": {
+            "measure": "2",
+            "unit": "(Burrito size)"
+          }
+        },
+        {
+          "name": "Vegetable Oil",
+          "quantity": {
+            "measure": "1 1/2",
+            "unit": "Tbsp"
+          }
+        }
+      ],
+      "prep_time": "10 minutes",
+      "cook_time": "15 minutes",
+      "serves": "2",
+      "instructions": [
+        {
+          "original_text": "Add all ingredients to a small bowl. Stir well to combine. Set aside.",
+          "input_condition": [
+            "have_mayo",
+            "have_jalapenos",
+            "have_jalapeno_juice",
+            "have_sugar",
+            "have_cumin",
+            "have_paprika",
+            "have_cayenee_powder",
+            "have_garlic_powder",
+            "have_salt"
+          ],
+          "task": [
+            {
+              "action_name": "Add all ingredients to a small bowl",
+              "output_quality": [
+                "Ingredients are in bowl"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Small Bowl"
+                ],
+                "failure": [
+                  "ingredients_not_in_bowl"
+                ]
+              }
+            },
+            {
+              "action_name": "Stir ingredients in bowl well",
+              "output_quality": [
+                "Ingredients are mixed well."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Small Bowl",
+                  "Stirring spoon"
+                ],
+                "failure": [
+                  "ingredients_not_mixed_well"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "have_quesadilla_sauce"
+          ]
+        },
+        {
+          "original_text": "Salt & pepper chicken breast on both sides. Heat 1 1/2 Tbsp of vegetable oil over medium-high heat in a skillet. Add chicken breast and cook until done (when internal temperature reaches 165 degrees F). Remove chicken from skillet and thinly slice.",
+          "input_condition": [
+            "have_chicken_breast",
+            "have_vegetable_oil"
+          ],
+          "task": [
+            {
+              "action_name": "Season Chicken Breast",
+              "output_quality": [
+                "Chicken breast has salt and pepper on both sides"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  ""
+                ],
+                "failure": [
+                  "Salt_pepper_not_on_chicken"
+                ]
+              }
+            },
+            {
+              "action_name": "Heat oil in a skillet",
+              "output_quality": [
+                "Oil is heated in skillet"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  ""
+                ],
+                "failure": [
+                  "Oil is not heated"
+                ]
+              }
+            },
+            {
+              "action_name": "Add chicken breast in oil and cook until internal temperature of 165 F is reached",
+              "output_quality": [
+                "Chicken breast is cooked with temperature 165 F"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "thermometer"
+                ],
+                "failure": [
+                  "Chicken doesn't reach 165 F"
+                ]
+              }
+            },
+            {
+              "action_name": "Remove chicken from skillet and thinly slice",
+              "output_quality": [
+                "Chicken is sliced"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Knife"
+                ],
+                "failure": [
+                  "Chicken is not sliced"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "have_cooked_sliced_chicken"
+          ]
+        },
+        {
+          "original_text": "Place tortilla on hot skillet. On one side of the tortilla, place 1/4 cup of the shredded cheese and 1/2 slice of American cheese. Place half of the chicken on top of the cheese.",
+          "input_condition": [
+            "have_tortilla",
+            "have_cheese",
+            "have_cooked_chicken"
+          ],
+          "task": [
+            {
+              "action_name": "Place tortilla on hot skillet",
+              "output_quality": [
+                "Tortilla on hot skillet"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  ""
+                ],
+                "failure": [
+                  "Tortilla not in skillet"
+                ]
+              }
+            },
+            {
+              "action_name": "To one side of the tortilla, add shredded cheese and a slice of american cheese",
+              "output_quality": [
+                "Cheese on one side of the tortilla"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  ""
+                ],
+                "failure": [
+                  "Cheese_not_on_tortilla",
+                  "Cheese_on_both_sides_of_tortilla"
+                ]
+              }
+            },
+            {
+              "action_name": "Place half of the chicken on top of the cheese",
+              "output_quality": [
+                "Chicken is placed on top of the cheese"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  ""
+                ],
+                "failure": [
+                  "Chicken_not_on_cheese"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "have_quesadilla"
+          ]
+        },
+        {
+          "original_text": " On the other side, spread about 1.5 tablespoons of the sauce. Fold tortilla over and press gently with your spatula. Cook until cheese is melted and bubbly, 2-4 minutes each side.",
+          "input_condition": [
+            "have_quesadilla_sauce",
+            "have_tortilla_with_chicken_and_cheese"
+          ],
+          "task": [
+            {
+              "action_name": "On empty side of tortilla, spread 1.5 tablespoons of quesadilla sauce",
+              "output_quality": [
+                "Tortilla has quesadilla sauce spread on empty side"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  ""
+                ],
+                "failure": [
+                  "Quesadilla_sauce_not_on_empty_side_of_tortilla"
+                ]
+              }
+            },
+            {
+              "action_name": "Fold tortilla over and press gently with your spatula",
+              "output_quality": [
+                "Tortilla is folded over"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Spatula"
+                ],
+                "failure": [
+                  "tortilla_not_folded over"
+                ]
+              }
+            },
+            {
+              "action_name": "Cook until cheese is melted and bubbly, 2-4 minutes each side.",
+              "output_quality": [
+                "Cook in skillet until cheese is melted and bubbly",
+                "Quesadilla is cooked for 2-4 minutes on each side"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Spatula"
+                ],
+                "failure": [
+                  "tortilla_not_cooked_for_two_to_four_minutes",
+                  "cheese_is_not_melted_and_bubbly"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "have_quesadilla"
+          ]
+        },
+        {
+          "original_text": "Use a pizza cutter to slice each quesadilla into 4 pieces.",
+          "input_condition": [
+            "have_quesadilla"
+          ],
+          "task": [
+            {
+              "action_name": "Slice Quesadilla",
+              "output_quality": [
+                "Quesadilla_is_sliced_in_4_equal_pieces"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Pizza Cutter"
+                ],
+                "failure": [
+                  "Uneven slices"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "recipe_complete"
+          ]
         }
       ]
     }
