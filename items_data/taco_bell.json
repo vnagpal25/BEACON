@@ -1319,7 +1319,7 @@
       ]
     },
     "28": {
-      "recipe_name": "Taco Bell Quesadilla",
+      "recipe_name": "quesadilla-copycat",
       "ingredients": [
         {
           "name": "Mayo",
@@ -1676,6 +1676,1024 @@
           "output_condition": [
             "recipe_complete"
           ]
+        }
+      ]
+    },
+    "29": {
+      "recipe_name": "bean-burrito-copycat",
+      "ingredients": [
+        {
+          "name": "refried beans",
+          "quantity": {
+            "measure": "2/3",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "finely shredded cheese",
+          "quantity": {
+            "measure": "4",
+            "unit": "heaping tablespoons"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "mexican or fiesta blend",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "yellow or white onion",
+          "quantity": {
+            "measure": "2",
+            "unit": "tablespoons"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "Taco sauce",
+          "quantity": {
+            "measure": "4",
+            "unit": "tablespoons"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "Taco Bell mild sauce",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "burrito sized flour tortillas",
+          "quantity": {
+            "measure": "2",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        }
+      ],
+      "prep_time": "10 minutes",
+      "cook_time": "",
+      "serves": "2",
+      "instructions": [
+        {
+          "original_text": "Add your refried beans to a small saucepan along with a couple tablespoons of water. Canned refried beans are usually pretty thick, so I like to thin mine out with a little water to make them more spreadable. How much water you use will depend on the consistency of your refried beans.",
+          "input_condition": [
+            "have_refried_beans",
+            "have_small_saucepan"
+          ],
+          "task": [
+            {
+              "action_name": "Add refried beans to the small saucepan",
+              "output_quality": [
+                "Refried beans should be in the saucepan."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Small Saucepan"
+                ],
+                "failure": [
+                  "Refried beans not in saucepan"
+                ]
+              }
+            },
+            {
+              "action_name": "Add a couple tablespoons of water to the saucepan with the refried beans",
+              "output_quality": [
+                "Water should be added to the refried beans in the saucepan."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Measuring Spoon"
+                ],
+                "failure": [
+                  "Insufficient water added",
+                  "Excessive water added"
+                ]
+              }
+            },
+            {
+              "action_name": "Mix the refried beans and water",
+              "output_quality": [
+                "Refried beans and water should be thoroughly mixed."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Spoon"
+                ],
+                "failure": [
+                  "Incomplete mixing"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "have_thinned_out_refried_beans"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Mix the beans and water together well and place over medium heat. Cook beans until piping hot, turn the heat off and let sit with the lid on while you are preparing your flour tortillas.",
+          "input_condition": [
+            "have_mixed_beans_with_water",
+            "have_medium_heat_source"
+          ],
+          "task": [
+            {
+              "action_name": "Mix beans and water together well",
+              "output_quality": [
+                "Beans and water should be thoroughly mixed."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Spoon"
+                ],
+                "failure": [
+                  "Incomplete mixing"
+                ]
+              }
+            },
+            {
+              "action_name": "Place mixed beans and water over medium heat",
+              "output_quality": [
+                "Beans should be placed over medium heat."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Beans not placed over heat"
+                ]
+              }
+            },
+            {
+              "action_name": "Cook beans until piping hot",
+              "output_quality": [
+                "Beans should be piping hot."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Beans not heated enough"
+                ]
+              }
+            },
+            {
+              "action_name": "Turn off the heat and let the beans sit with the lid on",
+              "output_quality": [
+                "Beans should sit with the lid on."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Lid"
+                ],
+                "failure": [
+                  "Beans not covered with lid"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "have_hot_beans_ready_for_serving"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Heat a large pan over medium heat and add your flour tortilla. You don’t need to use any cooking spray for this, you just want to heat the tortilla. Heat tortilla on both sides until hot. Remove tortilla from the pan and place on a plate or cutting board.",
+          "input_condition": [
+            "have_large_pan",
+            "have_flour_tortilla"
+          ],
+          "task": [
+            {
+              "action_name": "Heat large pan over medium heat",
+              "output_quality": [
+                "Pan should be heated over medium heat."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Large Pan"
+                ],
+                "failure": [
+                  "Pan not heated"
+                ]
+              }
+            },
+            {
+              "action_name": "Add flour tortilla to the pan",
+              "output_quality": [
+                "Tortilla should be placed in the pan."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Tortilla not placed in pan"
+                ]
+              }
+            },
+            {
+              "action_name": "Heat tortilla on both sides until hot",
+              "output_quality": [
+                "Tortilla should be hot on both sides."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Tortilla not heated enough on one or both sides"
+                ]
+              }
+            },
+            {
+              "action_name": "Remove tortilla from the pan",
+              "output_quality": [
+                "Tortilla should be removed from the pan."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Tortilla not removed from pan"
+                ]
+              }
+            },
+            {
+              "action_name": "Place tortilla on a plate or cutting board",
+              "output_quality": [
+                "Tortilla should be placed on a plate or cutting board."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Plate",
+                  "Cutting Board"
+                ],
+                "failure": [
+                  "Tortilla not placed on plate or cutting board"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "have_heated_flour_tortilla_ready_for_serving"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "If you want your cheese to be more melty, it’s important to move quickly while assembling your bean and cheese burrito so there isn’t much time for the refried beans or the tortilla to cool down.",
+          "input_condition": [
+            "have_refried_beans",
+            "have_flour_tortilla",
+            "want_melty_cheese"
+          ],
+          "task": [
+            {
+              "action_name": "Assemble bean and cheese burrito quickly",
+              "output_quality": [
+                "Refried beans and tortilla should not cool down much."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Refried beans or tortilla cool down significantly"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "have_assembled_bean_and_cheese_burrito"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Spread the middle of the tortilla with about 1/3 cup of the heated refried beans. Top with a handful of cheese, about 1 tablespoon of chopped onion and 1-2 tablespoons of the taco sauce. Fold the sides of your burrito in and carefully roll up. You can either enjoy immediately or let burrito cool for a few minutes, which will give the cheese a little more time to get melty. Enjoy with extra taco sauce, if desired!",
+          "input_condition": [
+            "have_heated_refried_beans",
+            "have_flour_tortilla",
+            "have_cheese",
+            "have_chopped_onion",
+            "have_taco_sauce"
+          ],
+          "task": [
+            {
+              "action_name": "Spread heated refried beans on the middle of the tortilla",
+              "output_quality": [
+                "Tortilla should be evenly spread with refried beans."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Refried beans unevenly spread on tortilla"
+                ]
+              }
+            },
+            {
+              "action_name": "Top with cheese, chopped onion, and taco sauce",
+              "output_quality": [
+                "Tortilla should be topped evenly with cheese, chopped onion, and taco sauce."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Uneven toppings on tortilla"
+                ]
+              }
+            },
+            {
+              "action_name": "Fold sides of the burrito in and carefully roll up",
+              "output_quality": [
+                "Burrito should be neatly folded and rolled up."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Burrito not folded or rolled up neatly"
+                ]
+              }
+            },
+            {
+              "action_name": "Enjoy immediately or let burrito cool for a few minutes",
+              "output_quality": [
+                "Burrito can be enjoyed immediately or allowed to cool for a few minutes."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Burrito not allowed to cool for a few minutes"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "have_prepared_bean_and_cheese_burrito"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        }
+      ]
+    },
+    "30": {
+      "recipe_name": "black-bean-chalupa-copycat",
+      "ingredients": [
+        {
+          "name": "oil",
+          "quantity": {
+            "measure": "1",
+            "unit": "tablespoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "yellow onion",
+          "quantity": {
+            "measure": "½",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "finely diced",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "red pepper",
+          "quantity": {
+            "measure": "½",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "finely diced",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "jalapeno pepper",
+          "quantity": {
+            "measure": "1",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "finely diced",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "black beans",
+          "quantity": {
+            "measure": "1",
+            "unit": "can"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "rinsed and drained",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "taco seasoning mix",
+          "quantity": {
+            "measure": "1",
+            "unit": "tablespoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "kosher salt",
+          "quantity": {
+            "measure": "½",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": [
+              "Salt"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/how-much-sodium-per-day#recommendations"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "water",
+          "quantity": {
+            "measure": "2",
+            "unit": "tablespoons"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "cilantro",
+          "quantity": {
+            "measure": "¼",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "finely chopped",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "mayonnaise",
+          "quantity": {
+            "measure": "½",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "",
+            "category": [
+              "Dairy"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/milk-allergy-symptoms#milk-allergy"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "garlic",
+          "quantity": {
+            "measure": "2",
+            "unit": "cloves"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "grated",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "white vinegar",
+          "quantity": {
+            "measure": "½",
+            "unit": "tablespoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "black pepper",
+          "quantity": {
+            "measure": "¼",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "ground cumin",
+          "quantity": {
+            "measure": "¼",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "onion powder",
+          "quantity": {
+            "measure": "¼",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "red chili powder",
+          "quantity": {
+            "measure": "¼",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "Kawan parathas",
+          "quantity": {
+            "measure": "6",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "lettuce",
+          "quantity": {
+            "measure": "1",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "finely chopped",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "tomatoes",
+          "quantity": {
+            "measure": "½",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "diced small",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "red onion",
+          "quantity": {
+            "measure": "¼",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "diced small",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "shredded Mexican cheese",
+          "quantity": {
+            "measure": "½",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "",
+            "category": [
+              "Dairy"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/milk-allergy-symptoms#milk-allergy"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        }
+      ],
+      "prep_time": "20 minutes",
+      "cook_time": "20 minutes",
+      "serves": "6",
+      "instructions":[
+        {
+          "original_text": "Combine all of the sauce ingredients in a bowl and whisk well. Refrigerate until ready to use.",
+          "input_condition": ["have_mayonnaise", "have_garlic_cloves", "have_white_vinegar", "have_black_pepper", "have_ground_cumin", "have_onion_powder", "have_red_chili_powder"],
+          "task": [
+            {
+              "action_name": "Combine sauce ingredients in a bowl",
+              "output_quality": [
+                "Sauce ingredients should be thoroughly mixed."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Whisk"
+                ],
+                "failure": [
+                  "Ingredients not mixed well"
+                ]
+              }
+            },
+            {
+              "action_name": "Refrigerate sauce until ready to use",
+              "output_quality": [
+                "Sauce should be refrigerated."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Sauce not refrigerated"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "have_prepared_baja_sauce"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Heat oil in a medium pan, add onion, red pepper, green pepper, jalapeno, and saute until the veggies start to soften about 5 minutes. Add beans, taco seasoning, salt, and mix well. Add water and mix. Lightly mash with a potato masher. Garnish with cilantro. Reserve the filling.",
+          "input_condition": [
+            "have_oil",
+            "have_onion",
+            "have_red_pepper",
+            "have_green_pepper",
+            "have_jalapeno",
+            "have_black_beans",
+            "have_taco_seasoning",
+            "have_salt",
+            "have_water"
+          ],
+          "task": [
+            {
+              "action_name": "Saute vegetables in oil until softened",
+              "output_quality": [
+                "Vegetables should be softened."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Pan"
+                ],
+                "failure": [
+                  "Vegetables not softened"
+                ]
+              }
+            },
+            {
+              "action_name": "Add beans, taco seasoning, salt, and water; mix well",
+              "output_quality": [
+                "Ingredients should be thoroughly mixed."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Ingredients not mixed well"
+                ]
+              }
+            },
+            {
+              "action_name": "Lightly mash filling with a potato masher",
+              "output_quality": [
+                "Filling should be lightly mashed."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Potato Masher"
+                ],
+                "failure": [
+                  "Filling not mashed"
+                ]
+              }
+            },
+            {
+              "action_name": "Garnish with cilantro",
+              "output_quality": [
+                "Filling should be garnished with cilantro."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Cilantro not garnished"
+                ]
+              }
+            },
+            {
+              "action_name": "Reserve the filling",
+              "output_quality": [
+                "Filling should be reserved for later use."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Filling not reserved"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "have_prepared_black_bean_filling"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Add Kawan paratha on a preheated skillet and cook about 80%. Repeat with the second paratha. Fold both in the middle to form a semi-circle and place in a preheated air fryer. Cook at 350 F for 5 minutes. Carefully take out the crispy air-fried paratha shells with a silicone spatula. Continue to cook and air fry the remaining parathas.",
+          "input_condition": [
+            "have_kawan_paratha",
+            "have_preheated_skillet",
+            "have_air_fryer"
+          ],
+          "task": [
+            {
+              "action_name": "Cook Kawan paratha on preheated skillet until 80% cooked",
+              "output_quality": [
+                "Paratha should be 80% cooked."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Skillet"
+                ],
+                "failure": [
+                  "Paratha not cooked to 80%"
+                ]
+              }
+            },
+            {
+              "action_name": "Fold parathas in the middle to form semi-circles and place in preheated air fryer",
+              "output_quality": [
+                "Parathas should be folded and placed in air fryer."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Air Fryer"
+                ],
+                "failure": [
+                  "Parathas not folded or placed in air fryer"
+                ]
+              }
+            },
+            {
+              "action_name": "Cook parathas in air fryer at 350 F for 5 minutes",
+              "output_quality": [
+                "Parathas should be cooked at 350 F for 5 minutes."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Parathas not cooked for 5 minutes"
+                ]
+              }
+            },
+            {
+              "action_name": "Carefully remove crispy air-fried paratha shells with a silicone spatula",
+              "output_quality": [
+                "Paratha shells should be carefully removed."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Silicone Spatula"
+                ],
+                "failure": [
+                  "Paratha shells not carefully removed"
+                ]
+              }
+            },
+            {
+              "action_name": "Continue to cook and air fry the remaining parathas",
+              "output_quality": [
+                "Remaining parathas should be cooked and air fried."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Remaining parathas not cooked or air fried"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "have_prepared_paratha_shells"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Take one of the folded parathas and evenly spread about ¼ cup of bean filling in the middle. Spread lettuce, tomatoes, onions, and cheese on top. Drizzle 1 to 2 tablespoons of sauce on top and serve.",
+          "input_condition": [
+            "have_folded_paratha",
+            "have_prepared_black_bean_filling",
+            "have_lettuce",
+            "have_tomatoes",
+            "have_onions",
+            "have_cheese",
+            "have_prepared_baja_sauce"
+          ],
+          "task": [
+            {
+              "action_name": "Evenly spread bean filling on the paratha",
+              "output_quality": [
+                "Bean filling should be evenly spread."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Bean filling not evenly spread"
+                ]
+              }
+            },
+            {
+              "action_name": "Spread lettuce, tomatoes, onions, and cheese on top",
+              "output_quality": [
+                "Lettuce, tomatoes, onions, and cheese should be evenly spread on top."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Toppings not evenly spread on top"
+                ]
+              }
+            },
+            {
+              "action_name": "Drizzle sauce on top",
+              "output_quality": [
+                "Sauce should be drizzled on top."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Sauce not drizzled on top"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "have_prepared_filled_paratha"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
         }
       ]
     }
