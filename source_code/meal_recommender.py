@@ -4,14 +4,17 @@ import random
 import json
 from meal_config import MealConfig
 from meal_info import MealInfo
-
+from metrics import Metric
 
 class MealRecommender:  
     # Personalized Recommender for Particular User
     def __init__(self, user):
         self.user = user
         self.recipe_set, self.beverage_set, self.user_request = self.ReadInputs()
+        
         self.recommendation = None
+        self.goodness_score = None
+
 
     def ReadInputs(self):
         # Read Taco Bell R3
@@ -93,3 +96,7 @@ class MealRecommender:
         # Write meal plan to json
         with open(f'../recommendations/recommendation_{self.user}', 'w') as file:
             json.dump(meal_plan, file)
+
+
+    def EvaluateRecs(self):
+        self.goodness_score = Metric.EvaluateMealRec(self.recommendation)
