@@ -102,12 +102,14 @@ class Coverage:
                         coverage_score += self.weights[meal_index] 
                     
                     else: # if the recommended food item doesn't fulfill the correct role, penalize
-                        coverage_score -= self.weights[meal_index] 
+                         coverage_score -= self.weights[meal_index] 
                 else:
                     # if the recommended food item is not in the food items, penalize for the food role that is incorrectly recommended for 
                     coverage_score -= self.weights[meal_index]  # if {'Beverage': 'cake'} is recommended, penalize coverage_score for the weight that is assigned to 'Beverage'
-            else:
-                coverage_score+=0 # coverage is not affected if a role is not included in the recommendation
+            # else:
+                # If the recommended food doesn't fulfill the role, penalize
+            #    coverage_score -= self.weights[self.meal_config.index(role)] # coverage is not affected if a role is not included in the recommendation
+                
 
             # Normalize the coverage score to be between 0 and 1
             # coverage_score = max(0, min(coverage_score, 1))
