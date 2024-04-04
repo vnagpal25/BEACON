@@ -3,6 +3,9 @@ class MealConfig:
     def __init__(self, config: list):
         self.config = config
     
+    def get_config(self):
+        return self.config
+
     def has_main_course(self):
         return "Main Course" in self.config
 

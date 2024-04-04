@@ -11,21 +11,29 @@ class MealRecommender:
     def __init__(self, user):
         self.user = user
         self.recipe_set, self.beverage_set, self.user_request = self.ReadInputs()
-        
+        self.recipe_names = self.GetRecipeNames()
+        self.beverage_names = self.GetBeverageNames()
+
+        self.time_period = 0
+        self.meal_configs = {}
+        self.recommendation_constraints = []
         self.recommendation = None
         self.goodness_score = None
+        self.config_score = None
+        self.dup_score = None
+        self.coverage_score = None
 
 
     def ReadInputs(self):
         # Read Taco Bell R3
         with open('../items_data/taco_bell.json', 'r') as file:
-            recipes = json.load(file)
-            recipes = recipes['recipe-ids']   
+            tb_recipes = json.load(file)
+            recipes = tb_recipes['recipe-ids']   
         
         # Read R3 dataset
         with open('../items_data/recipe_repn.json', 'r') as file:
-            file = json.load(file)
-            recipes = recipes | recipes
+            orig_r3_recipes = json.load(file)
+            recipes = recipes | orig_r3_recipes['recipe-ids']
 
         # Read Beverages dataset
         with open('../items_data/beverages.json', 'r') as file:
@@ -41,19 +49,19 @@ class MealRecommender:
 
     def RunMealRecStrat(self):
         # Runs Meal Recommendation Strategy to create personalized meal plan
-        rec_constraints = self.user_request['recommendation_constraints'] # [{'meal': 'breakfast'/'lunch'/'dinner', 'time': 'HH:MM'}']
-        amount_days = self.user_request['time_period']
+        self.recommendation_constraints = self.user_request['recommendation_constraints'] # [{'meal': 'breakfast'/'lunch'/'dinner', 'time': 'HH:MM'}']
+        self.time_period = self.user_request['time_period']
         
         # [[Days: {Meal Type, Meal {<Beverage><MainCourse><Side>, }}]]
         meal_plan = []
         
         # iterate over the number of days
-        for j in range(amount_days):
+        for j in range(self.time_period):
             # holds list of meals for day j
             meals = []
             
             # iterates over meal configuration for each day
-            for meal_info in rec_constraints:
+            for meal_info in self.recommendation_constraints:
                 meal_info = meal_info['meal_type']
                 
                 # Final Parsing on User Input
@@ -62,7 +70,8 @@ class MealRecommender:
                 
                 meal_config = meal_info['meal_config']
                 meal_config = MealConfig(meal_config)
-                
+                self.meal_configs[meal_name] = meal_config
+
                 meal_info = MealInfo(meal_name, meal_config, meal_time)
                                 
                 # To Write
@@ -71,13 +80,13 @@ class MealRecommender:
                 
                 # Random Method for Recommendation
                 if meal_info.meal_config.has_beverage():
-                    meal['Beverage'] = random.choice(list(self.beverage_set.keys()))
+                    meal['Beverage'] = self.beverage_names[random.choice(list(self.beverage_set.keys()))]
                 if meal_info.meal_config.has_main_course():
-                    meal["Main Course"] = random.choice(list(self.recipe_set.keys()))
+                    meal["Main Course"] = self.recipe_names[random.choice(list(self.recipe_set.keys()))]
                 if meal_info.meal_config.has_dessert():
-                    meal['Dessert'] = random.choice(list(self.recipe_set.keys()))
+                    meal['Dessert'] = self.recipe_names[random.choice(list(self.recipe_set.keys()))]
                 if meal_info.meal_config.has_side():
-                    meal['Side'] = random.choice(list(self.recipe_set.keys()))
+                    meal['Side'] = self.recipe_names[random.choice(list(self.recipe_set.keys()))]
 
                 meals.append(meal)
             
@@ -99,4 +108,21 @@ class MealRecommender:
 
 
     def EvaluateRecs(self):
-        self.goodness_score = Metric.EvaluateMealRec(self.recommendation)
+        goodness_calculator = Metric(config_weight=1, duplicates_weight=1, coverages_weight=1)
+        self.goodness_score, self.config_score, self.dup_score, self.coverage_score = goodness_calculator.EvaluateMealRec(meal_plan = self.recommendation, time_period=self.time_period, \
+                                                                  meal_configs=self.meal_configs, rec_constraints=self.recommendation_constraints, \
+                                                                  bev_names = self.GetBeverageNames(), recipe_names = self.GetRecipeNames())
+        
+
+    def GetBeverageNames(self):    
+        beverage_names = {}
+        for id, drink in self.beverage_set.items():
+          beverage_names[id] = drink['name']
+        return beverage_names
+    
+
+    def GetRecipeNames(self):
+        recipe_names = {}
+        for id, recipe in self.recipe_set.items():
+          recipe_names[id] = recipe['recipe_name']
+        return recipe_names
