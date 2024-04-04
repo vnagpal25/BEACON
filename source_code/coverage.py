@@ -93,10 +93,9 @@ class Coverage:
         # Iterate over the roles in the meal configuration
         for role in self.meal_config:
             if role in meal_recommendation:  # if the role is satisfied in the recommendation
+                meal_index=self.meal_config.index(role)
                 if meal_recommendation[role] in self.food_items:  # if the recced item is within the annotated food items
                         
-                    meal_index=self.meal_config.index(role) # 0
-                    
                     # if the recommended food item fulfills the role (i.e., weight is 1)
                     if self.food_items[meal_recommendation[role]][meal_index] == 1:   
                         coverage_score += self.weights[meal_index] 
@@ -115,19 +114,3 @@ class Coverage:
         """Return the coverage score.
         """
         return self.coverage
-"""# Example usage:
-meal = ['beverage', 'main course', 'side dish', 'dessert']
-
-recommendation = {'main course': 'omelet', 'side dish': 'salad', 'dessert': 'cake'}
-recommendation = ['omelet', 'salad', 'cake']  # Example recommendation
-
-coverage_score = calc_coverage(meal, recommendation)
-print("Coverage score:", coverage_score)
-
-'omelet': [0, 1, 1, 0],  # Example: omelet can be a main course and a side dish
-            'salad': [0, 1, 1, 0],
-            'cake':[0, 0, 0, 1],
-            'tea':[1, 0, 0, 0]
-            # Add more foods and their roles here
-        }
-"""
