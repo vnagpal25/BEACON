@@ -34,17 +34,34 @@ class User_Constraints:
         """Return the number of user-defined constraints."""
         return self.num_constraints
 
-    def define_constraints(self, constraints: list):
-        """Define the user configuration.
+    def add_new_constraint(self, constraint: str, value: int):
+        """Add a new constraint to the user configuration.
 
         Args:
-            constraints (list): List of user-defined constraints.
+            constraint (str): New constraint to be added.
+            value (int): Value of the new constraint. -1: No, 0: Neutral, 1: Yes.
         """
-        if len(constraints) != self.num_constraints:
-            raise Exception(
-                "Number of constraints must match the number of user-defined constraints."
+        if constraint not in self.constraints:
+            self.constraints[constraint] = value
+            self.num_constraints += 1
+        else:
+            warnings.warn(
+                "Constraint already exists in the current configuration. Please use 'define_constraints' to update the existing constraint."
             )
-        self.constraints = constraints
+
+    def define_constraints(self, constraints: dict):
+        """Define user constraints.
+
+        Args:
+            constraints (dict): Dictionary mapping constraints to their corresponding values. -1: No, 0: Neutral, 1: Yes.
+        """
+        for i in constraints:
+            if i in self.constraints:
+                self.constraints[i] = constraints[i]
+            else:
+                warnings.warn(
+                    "Constraint does not exist in the current configuration. Please use 'add_new_constraint' to add a new constraint."
+                )
 
     def get_constraints(self):
         """Return user configuration."""
@@ -67,3 +84,60 @@ class User_Constraints:
     def get_annotated_food_items(self):
         """Return annotated food items."""
         return self.food_items
+
+    def calc_configuration_score(self, hard_constraints=False):
+        """
+        Calculate the configuration score based on user constraints.
+
+        This function computes a score indicating how well the recommended meal configuration adheres to user preferences. When calculating the score, two types of constraints are considered: hard constraints and soft constraints.
+
+        - Hard Constraints: These are strict requirements set by the user. For instance, if the user specifies they do not want dairy in their meal, any inclusion of dairy will penalize the score. Conversely, if they explicitly request dairy, the absence of it will result in a penalty.
+
+        - Soft Constraints: These are preferences that are considered but are not strictly enforced. For instance, if the user is neutral or positive towards a preference, any inclusion/absence of that preference will NOT penalize the score. It is only when the user has a strictly negative preference that the score is affected.
+
+        (By default, a hard constraint pertains to items like dairy, meat, and/or nuts that the user does not want in their meal.)
+
+        The 'hard_constraints' flag determines whether to consider hard constraints (True) or soft constraints (False) when calculating the score.
+
+        Example scenarios:
+        1. If 'HasDairy' is set to 0 or 1 and 'hard_constraints' is False, the presence or absence of dairy will not affect the score.
+        2. If 'HasDairy' is set to 1 and 'hard_constraints' is True, the score will be penalized if the recommended meal does not contain dairy.
+
+        """
+
+        # Make note of total number of constraints that the user has specified
+        total_constraints = 0
+        violated_constraints = 0
+
+        for item in self.food_items:  # 'food_item'
+            for constraint in self.constraints:  # 'HasDairy'
+                total_constraints += 1
+
+                # Check if the 'unwanted meal item' constraint is present in the annotated food items
+                if (
+                    self.constraints[constraint] == -1
+                    and constraint in self.food_items[item]
+                ):
+                    violated_constraints += 1  # Hard requirement has been violated, user does not want this in their meal
+
+                # Check if hard constraints are to be considered and if the constraint is not satisfied
+                if hard_constraints == True:
+                    if (
+                        self.constraints[constraint] == 1
+                        and constraint not in self.food_items[item]
+                    ):
+                        violated_constraints += 1  # Hard requirement has been violated, user wants this in their meal
+
+                # Check if soft constraints are to be considered and if the constraint is not satisfied
+                if hard_constraints == False:
+                    if (
+                        self.constraints[constraint] == 1
+                        or self.constraints[constraint] == 0
+                    ):
+                        violated_constraints += 0  # Does not matter whether the constraint with '+1' value is satisfied or not
+
+        # Calculate the configuration score
+        self.config_score = 1 - (violated_constraints / total_constraints)
+
+        # Return the configuration score
+        return self.config_score
