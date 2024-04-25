@@ -110,7 +110,7 @@ class User_Constraints:
         """Return annotated food items."""
         return self.food_items
 
-    def calc_configuration_score(self, hard_constraints=False):
+    def calc_config_score(self, hard_constraints=False):
         """
         Calculate the configuration score based on user constraints.
 
@@ -165,4 +165,8 @@ class User_Constraints:
         self.config_score = 1 - (violated_constraints / total_constraints)
 
         # Return the configuration score
+        return self.config_score
+
+    def get_config_score(self):
+        """Return the configuration score."""
         return self.config_score
