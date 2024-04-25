@@ -135,7 +135,7 @@ class User_Constraints:
         violated_constraints = []
 
         # Make a note of recommended meal items and their annotations
-        meal_rec_annotations= {}
+        meal_rec_annotations = {}
         for role in meal_recommendation:
             item = meal_recommendation[role]
             if item not in self.food_items:
@@ -146,11 +146,19 @@ class User_Constraints:
         all_annotations = []
         for item in meal_rec_annotations:
             all_annotations += meal_rec_annotations[item]
-            
+
         # Verify if user-specified constraints are present in the provided meal recommendation
         for i in self.constraints:
-            
-            
+
+            # If the user specified that they do not want a certain item in their meal but it is present in the recommendation (regardless of whether hard_constraints==True/False)
+            if self.constraints[i] == -1 and i in all_annotations:
+                violated_constraints.append(i)
+
+            # If the user specified that they want a certain item in their meal but it is not present in the recommendation (hard_constraints=True)
+            if hard_constraints == True:
+                if self.constraints[i] == 1 and i not in all_annotations:
+                    violated_constraints.append(i)
+
         # Calculate the configuration score
         self.config_score = 1 - (len(violated_constraints) / total_constraints)
 
