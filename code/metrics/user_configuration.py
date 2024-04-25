@@ -1,3 +1,6 @@
+import warnings
+
+
 class User_Constraints:
 
     # Define the user configuration (e.g., HasDairy, HasMeat, HasNuts)
@@ -12,6 +15,9 @@ class User_Constraints:
 
     # Annotated food items
     food_items = {}
+
+    # Calculate the configuration score
+    config_score = 0
 
     def __init__(self):
         print("Class initiated")
@@ -43,3 +49,21 @@ class User_Constraints:
     def get_constraints(self):
         """Return user configuration."""
         return self.constraints
+
+    def add_annotated_food_items(self, annotated_food: dict):
+        """Annotate food items with dairy, meat, or nuts.
+
+        Args:
+            annotated_food (dict): Dictionary mapping food items to their corresponding roles. If using default configuration, the annotated food items should be in the form of 'food_item': ['HasDairy', 'HasMeat', 'HasNuts'].
+
+        """
+        for i in annotated_food:
+            if any(role not in self.constraints for role in annotated_food[i]):
+                warnings.warn(
+                    "Annotated food items contain possibly new constraints that are not defined in the current configuration."
+                )
+            self.food_items[i] = annotated_food[i]
+
+    def get_annotated_food_items(self):
+        """Return annotated food items."""
+        return self.food_items
