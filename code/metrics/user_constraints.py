@@ -140,6 +140,7 @@ class User_Constraints:
             item = meal_recommendation[role]
             if item not in self.food_items:
                 meal_rec_annotations[item] = []
+                continue
             meal_rec_annotations[item] = self.food_items[item]
 
         # Combine all the annotations for the recommended meal items
