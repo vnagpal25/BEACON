@@ -110,7 +110,7 @@ class User_Constraints:
         """Return annotated food items."""
         return self.food_items
 
-    def calc_config_score(self, hard_constraints=False):
+    def calc_config(self, meal_recommendation, hard_constraints=False):
         """
         Calculate the configuration score based on user constraints.
 
@@ -130,43 +130,33 @@ class User_Constraints:
 
         """
 
-        # Make note of total number of constraints that the user has specified
-        total_constraints = 0
-        violated_constraints = 0
+        # Make note of total number of constraints that the user has specified and how many are violated
+        total_constraints = self.num_constraints
+        violated_constraints = []
 
-        for item in self.food_items:  # 'food_item'
-            for constraint in self.constraints:  # 'HasDairy'
-                total_constraints += 1
+        # Make a note of recommended meal items and their annotations
+        meal_rec_annotations= {}
+        for role in meal_recommendation:
+            item = meal_recommendation[role]
+            if item not in self.food_items:
+                meal_rec_annotations[item] = []
+            meal_rec_annotations[item] = self.food_items[item]
 
-                # Check if the 'unwanted meal item' constraint is present in the annotated food items
-                if (
-                    self.constraints[constraint] == -1
-                    and constraint in self.food_items[item]
-                ):
-                    violated_constraints += 1  # Hard requirement has been violated, user does not want this in their meal
-
-                # Check if hard constraints are to be considered and if the constraint is not satisfied
-                if hard_constraints == True:
-                    if (
-                        self.constraints[constraint] == 1
-                        and constraint not in self.food_items[item]
-                    ):
-                        violated_constraints += 1  # Hard requirement has been violated, user wants this in their meal
-
-                # Check if soft constraints are to be considered and if the constraint is not satisfied
-                if hard_constraints == False:
-                    if (
-                        self.constraints[constraint] == 1
-                        or self.constraints[constraint] == 0
-                    ):
-                        violated_constraints += 0  # Does not matter whether the constraint with '+1' value is satisfied or not
-
+        # Combine all the annotations for the recommended meal items
+        all_annotations = []
+        for item in meal_rec_annotations:
+            all_annotations += meal_rec_annotations[item]
+            
+        # Verify if user-specified constraints are present in the provided meal recommendation
+        for i in self.constraints:
+            
+            
         # Calculate the configuration score
-        self.config_score = 1 - (violated_constraints / total_constraints)
+        self.config_score = 1 - (len(violated_constraints) / total_constraints)
 
         # Return the configuration score
         return self.config_score
 
-    def get_config_score(self):
+    def get_config(self):
         """Return the configuration score."""
         return self.config_score
