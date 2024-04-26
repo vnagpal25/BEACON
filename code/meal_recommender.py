@@ -1,4 +1,9 @@
+
+from config import root_dir
+
 # TODO document all methods inputs/outupts
+import sys
+sys.path.append('metrics')
 
 import random
 import json
@@ -25,8 +30,9 @@ class MealRecommender:
 
 
     def ReadInputs(self):
+        root = root_dir()
         # Read Taco Bell R3
-        with open('../items_data/taco_bell.json', 'r') as file:
+        with open(f'{root}/items_data/taco_bell.json', 'r') as file:
             tb_recipes = json.load(file)
             recipes = tb_recipes['recipe-ids']   
         

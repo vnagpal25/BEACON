@@ -1,1 +1,77 @@
-[{"day 1": [{"meal_name": "breakfast", "meal_time": "9:00", "Beverage": "Coconut Water", "Main Course": "2-ingredient-avocado-egg-salad"}, {"meal_name": "lunch", "meal_time": "13:00", "Beverage": "Green Tea", "Main Course": "bean-burrito-copycat", "Side": "peekaboo-sugar"}, {"meal_name": "dinner", "meal_time": "20:00", "Beverage": "Tea", "Main Course": "how-to-make-egg-omelettes", "Dessert": "black-bean-chalupa-copycat", "Side": "bakedfriedpan-fried-scotch-egg"}]}, {"day 2": [{"meal_name": "breakfast", "meal_time": "9:00", "Beverage": "Fruit Punch", "Main Course": "crunchwrap-supreme-copycat"}, {"meal_name": "lunch", "meal_time": "13:00", "Beverage": "Chai Latte", "Main Course": "cadbury-creme-egg-rolls", "Side": "bunny-egg-salad"}, {"meal_name": "dinner", "meal_time": "20:00", "Beverage": "Green Tea", "Main Course": "eggs-and-bacon-the-perfect-quick-paleo-meal", "Dessert": "chocolate-peanut-butter", "Side": "quesadilla-copycat"}]}, {"day 3": [{"meal_name": "breakfast", "meal_time": "9:00", "Beverage": "Tea", "Main Course": "2-ingredient-avocado-egg-salad"}, {"meal_name": "lunch", "meal_time": "13:00", "Beverage": "Tea", "Main Course": "my-scotch-eggs", "Side": "chocolate-peanut-butter"}, {"meal_name": "dinner", "meal_time": "20:00", "Beverage": "Sprite", "Main Course": "deviled-eggs-with-smoked-salmon-and-capers", "Dessert": "deviled-eggs-with-smoked-salmon-and-capers", "Side": "dinosaur-inspired-by-mikeasaurus"}]}]
+[
+  {
+    "day 1": [
+      {
+        "meal_name": "breakfast",
+        "meal_time": "9:00",
+        "Beverage": "Tea",
+        "Main Course": "2-ingredient-avocado-egg-salad"
+      },
+      {
+        "meal_name": "lunch",
+        "meal_time": "13:00",
+        "Beverage": "Tomato Juice",
+        "Main Course": "how-to-make-chinese-egg-tarts",
+        "Side": "crunchwrap-supreme-copycat"
+      },
+      {
+        "meal_name": "dinner",
+        "meal_time": "20:00",
+        "Beverage": "Tea",
+        "Main Course": "bacon-and-egg-pie",
+        "Dessert": "egg-drop-chicken-noodle-soup",
+        "Side": "black-bean-chalupa-copycat"
+      }
+    ]
+  },
+  {
+    "day 2": [
+      {
+        "meal_name": "breakfast",
+        "meal_time": "9:00",
+        "Beverage": "Iced Tea",
+        "Main Course": "bean-burrito-copycat"
+      },
+      {
+        "meal_name": "lunch",
+        "meal_time": "13:00",
+        "Beverage": "Chai Latte",
+        "Main Course": "chocolate-peanut-butter",
+        "Side": "cadbury-creme-egg-rolls"
+      },
+      {
+        "meal_name": "dinner",
+        "meal_time": "20:00",
+        "Beverage": "Ginger Ale",
+        "Main Course": "egg-drop-chicken-noodle-soup",
+        "Dessert": "peekaboo-sugar-eggs",
+        "Side": "egg-in-an-avocado-hole"
+      }
+    ]
+  },
+  {
+    "day 3": [
+      {
+        "meal_name": "breakfast",
+        "meal_time": "9:00",
+        "Beverage": "Chai Latte",
+        "Main Course": "how-to-make-egg-omelettes"
+      },
+      {
+        "meal_name": "lunch",
+        "meal_time": "13:00",
+        "Beverage": "Smoothie",
+        "Main Course": "dinosaur-inspired-by-mikeasaurus",
+        "Side": "bakedfriedpan-fried-scotch-egg"
+      },
+      {
+        "meal_name": "dinner",
+        "meal_time": "20:00",
+        "Beverage": "Chai Latte",
+        "Main Course": "chocolate-peanut-butter",
+        "Dessert": "supremely-spicy-scrambled-eggs",
+        "Side": "supremely-spicy-scrambled-eggs"
+      }
+    ]
+  }
+]

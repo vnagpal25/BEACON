@@ -7,17 +7,24 @@ class Metric:
         self.config_score_weight = config_weight
         self.duplicates_weight = duplicates_weight
         self.coverages_weight = coverages_weight
+        self.score_breakdown = {}
+
 
     def EvaluateMealRec(self, time_period=None, meal_plan=None, meal_configs=None, rec_constraints=None, bev_names=None, recipe_names=None):
         # Checks if Meal Config is satisfied, a number between 0 and 1
-
         config_quality_score = self.ConfigScore(
             meal_plan, time_period, rec_constraints)
+        
+        
         duplicates_score = self.NumDuplicates(meal_plan)
+        
+        
         coverage_score = self.CoverageScore(
             meal_plan, meal_configs, bev_names, recipe_names)
+        
         return (self.config_score_weight * config_quality_score + self.duplicates_weight * duplicates_score + self.coverages_weight * coverage_score) / 3, \
             config_quality_score, duplicates_score, coverage_score
+
 
     def ConfigScore(self, meal_plan_, time_period, rec_constraints):
         score = 0
@@ -45,32 +52,37 @@ class Metric:
                 total_possible_score += 1
         return score / total_possible_score
 
+
     def NumDuplicates(self, meal_plan_):
-        violations = 0
-        total_chances = 0
-        for i, day_plan in enumerate(meal_plan_, 1):
-            day_plan = day_plan[f'day {i}']
-            food_items = set()
-            bev_items = set()
+        dup_scorer = DuplicateScore()
+        return dup_scorer.recommendation_score(meal_plan_)
+        
+        # return 0
+        # violations = 0
+        # total_chances = 0
+        # for i, day_plan in enumerate(meal_plan_, 1):
+        #     day_plan = day_plan[f'day {i}']
+        #     food_items = set()
+        #     bev_items = set()
 
-            for meal in day_plan:
+        #     for meal in day_plan:
 
-                if 'Beverage' in meal:
-                    if meal['Beverage'] in bev_items:
-                        violations += 1
-                    total_chances += 1
-                    bev_items.add(meal['Beverage'])
-                for food_key in ['Main Course', 'Dessert', 'Side']:
-                    if food_key in meal:
-                        if meal[food_key] in food_items:
-                            violations += 1
-                        total_chances += 1
-                        food_items.add(meal[food_key])
-        return violations / total_chances
+        #         if 'Beverage' in meal:
+        #             if meal['Beverage'] in bev_items:
+        #                 violations += 1
+        #             total_chances += 1
+        #             bev_items.add(meal['Beverage'])
+        #         for food_key in ['Main Course', 'Dessert', 'Side']:
+        #             if food_key in meal:
+        #                 if meal[food_key] in food_items:
+        #                     violations += 1
+        #                 total_chances += 1
+        #                 food_items.add(meal[food_key])
+        # return violations / total_chances
+
 
     def CoverageScore(self, meal_plan_, meal_configs, bev_names, recipe_names):
         coverages = []
-        # iterating over whole recommendation
         for i, day_plan in enumerate(meal_plan_, 1):
             day_plan = day_plan[f'day {i}']
 
@@ -107,7 +119,7 @@ class Metric:
                 # calculate coverage for recommended meal
                 coverage_calculator.calc_coverage(meal)
                 coverage_score = coverage_calculator.get_coverage()
-                coverages.append(coverage_score)
+                coverages.append(coverage_score if coverage_score >= 0 else 0)
 
         # TODO, return average of coverages
         return sum(coverages)/len(coverages)
