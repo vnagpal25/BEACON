@@ -125,3 +125,5 @@ class Coverage:
     def get_coverage(self):
         """Return the coverage score."""
         return self.coverage
+
+    

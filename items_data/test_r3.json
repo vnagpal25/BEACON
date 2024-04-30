@@ -1,0 +1,1493 @@
+{
+  "recipe-ids": {
+    "1": {
+      "recipe_name": "egg-drop-chicken-noodle-soup",
+      "ingredients": [
+        {
+          "name": "chicken broth",
+          "quantity": {
+            "measure": "4",
+            "unit": "cups"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "./images/egg-drop-chicken-noodle-soup/ingredients/chicken-broth.jpeg"
+        },
+        {
+          "name": "water",
+          "quantity": {
+            "measure": "1.5",
+            "unit": "cups"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "./images/egg-drop-chicken-noodle-soup/ingredients/1-5cupwater.jpeg"
+        },
+        {
+          "name": "soy sauce",
+          "quantity": {
+            "measure": "3",
+            "unit": "tbsp"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "./images/egg-drop-chicken-noodle-soup/ingredients/soysauce.jpeg"
+        },
+        {
+          "name": "garlic cloves",
+          "quantity": {
+            "measure": "3",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "smashes",
+          "image": "./images/egg-drop-chicken-noodle-soup/ingredients/smashgarlicclove.jpeg"
+        },
+        {
+          "name": "ginger",
+          "quantity": {
+            "measure": "0.5",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "grounded",
+          "image": "./images/egg-drop-chicken-noodle-soup/ingredients/groundedginger.jpeg"
+        },
+        {
+          "name": "rice noodles",
+          "quantity": {
+            "measure": "4",
+            "unit": "ounces"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "pad thai noodles",
+          "quality_characteristic": "broken into 3-inch pieces",
+          "image": "./images/egg-drop-chicken-noodle-soup/ingredients/Rice-Noodle-Rice-Vermicelli-Bun-Tuoi.jpg"
+        },
+        {
+          "name": "cornstarch",
+          "quantity": {
+            "measure": "2",
+            "unit": "tbsp"
+          },
+          "allergies": {
+            "id": "0x6cb",
+            "category": [
+              "Maize"
+            ],
+            "ref": [
+              "https://farrp.unl.edu/informallcerealsgrains"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "./images/egg-drop-chicken-noodle-soup/ingredients/cornstarch.jpeg"
+        },
+        {
+          "name": "egg",
+          "quantity": {
+            "measure": "2",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "0x3eb1",
+            "category": [
+              "eggs"
+            ],
+            "ref": [
+              "https://farrp.unl.edu/informalleggs"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "lightly beaten",
+          "image": "./images/egg-drop-chicken-noodle-soup/ingredients/lightlybeatenegg.jpeg"
+        },
+        {
+          "name": "chicken",
+          "quantity": {
+            "measure": "1.5",
+            "unit": "cups"
+          },
+          "allergies": {
+            "id": "0xb74d",
+            "category": [
+              "meat"
+            ],
+            "ref": [
+              "https://farrp.unl.edu/informallothers",
+              "https://www.healthline.com/nutrition/foods/pork",
+              "https://www.healthline.com/health/allergies/most-uncommon-food-allergies#red-meat"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "cooked, shredded",
+          "image": "./images/egg-drop-chicken-noodle-soup/ingredients/shreddedcookedchicken.jpg"
+        },
+        {
+          "name": "scallions",
+          "quantity": {
+            "measure": "3",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "thinly sliced, optional",
+          "image": "./images/egg-drop-chicken-noodle-soup/ingredients/thinlyslicedscallions.jpeg"
+        }
+      ],
+      "hasDairy":false,
+      "hasMeat":true,
+      "hasNuts":false,
+      "prep_time": "10 minutes",
+      "cook_time": "15 minutes",
+      "serves": "5",
+      "instructions": [
+        {
+          "original_text": "Beat the egg well.Egg drop soup is noted for its strands of shredded egg. To achieve this characteristic look and texture, make sure you blend the egg mixture well, and stir it slowly into the broth.",
+          "input_condition": [
+            "have_egg",
+            "have_chicken_broth"
+          ],
+          "task": [
+            {
+              "action_name": "Beat the egg well",
+              "output_quality": [
+                "Make sure it is free from shredded egg strands.",
+                "Egg mixture should be well blended."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "For beating egg"
+                ],
+                "failure": [
+                  "Egg shell fell into the bowl"
+                ]
+              }
+            },
+            {
+              "action_name": "Stir it into the chicken broth.",
+              "output_quality": [],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Egg shell fell into the bowl"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "have_egg_chicken_broth_mixture"
+          ],
+          "modality": {
+            "image": [
+              "./images/egg-drop-chicken-noodle-soup/egg-drop-chicken-noodle-soup_2_0.jpg ",
+              "./images/egg-drop-chicken-noodle-soup/egg-drop-chicken-noodle-soup_2_1.jpg "
+            ],
+            "video": " "
+          }
+        },
+        {
+          "original_text": "Shred the chicken",
+          "input_condition": [
+            "have_chicken"
+          ],
+          "task": [
+            {
+              "action_name": "Shred the chicken",
+              "output_quality": [],
+              "background_knowledge": {
+                "tool": [
+                  "Shredder tool needed"
+                ],
+                "failure": [
+                  "Shredder not present"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "have_shredded_chicken"
+          ],
+          "modality": {
+            "image": [
+              "./images/egg-drop-chicken-noodle-soup/egg-drop-chicken-noodle-soup_3_0.jpg "
+            ],
+            "video": " "
+          }
+        },
+        {
+          "original_text": "Bring the broth, water, soy sauce, garlic and ginger to a boil over medium-high heat in a medium-size saucepan. Reduce heat to medium and cook broth mixture for 10 minutes.",
+          "input_condition": [
+            "have_egg_chicken_broth_mixture",
+            "have_water",
+            "have_soy_sauce",
+            "have_garlic",
+            "have_ginger",
+            "have_mediumsize_saucepan"
+          ],
+          "task": [
+            {
+              "action_name": "Boil broth, water, soy sauce, garlic and ginger",
+              "output_quality": [
+                "Maintain medium-high heat",
+                "Preferable utensil - medium-size saucepan",
+                "Cook for 10 minutes."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "medium size saucepan"
+                ],
+                "failure": [
+                  "overcooked broth",
+                  "burnt the mixture",
+                  "undercooked broth"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "have_cooked_broth_mixture"
+          ],
+          "modality": {
+            "image": [
+              "./images/egg-drop-chicken-noodle-soup/egg-drop-chicken-noodle-soup_4_0.jpg "
+            ],
+            "video": " "
+          }
+        },
+        {
+          "original_text": "Meanwhile, stir together the cornstarch and 2 tablespoons water in a small bowl. Mix it well.Whisk into broth and cook for 1 minute or until thickened.",
+          "input_condition": [
+            "have_cornstarch",
+            "have_water",
+            "have_cooked_broth_mixture",
+            "have_bowl"
+          ],
+          "task": [
+            {
+              "action_name": "Stir cornstarch and 2 tbsp water.",
+              "output_quality": [
+                "Use a whisker to mix well."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "cornstart is not mixed well",
+                  "overused cornstarch"
+                ]
+              }
+            },
+            {
+              "action_name": "Cook this mixture for 1 minute",
+              "output_quality": [
+                "Or until thickened."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "mixing bowl",
+                  "whisker"
+                ],
+                "failure": [
+                  "overcooked broth"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "have_broth_with_cornstarch"
+          ],
+          "modality": {
+            "image": [
+              "./images/egg-drop-chicken-noodle-soup/egg-drop-chicken-noodle-soup_5_0.jpg ",
+              "./images/egg-drop-chicken-noodle-soup/egg-drop-chicken-noodle-soup_5_1.jpg "
+            ],
+            "video": " "
+          }
+        },
+        {
+          "original_text": "Remove the garlic cloves with a slotted spoon. Now add noodles to pot. Cook for 4 minutes till the noodles are cooked.",
+          "input_condition": [
+            "have_broth_with_cornstarch",
+            "have_noodles",
+            "have_pot"
+          ],
+          "task": [
+            {
+              "action_name": "Remove garlic cloves from the broth",
+              "output_quality": [
+                "Use a slotted spoon to do it efficiently."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Slotted Spoon"
+                ],
+                "failure": []
+              }
+            },
+            {
+              "action_name": "Boil noodles in a pot",
+              "output_quality": [
+                "Cook for 4 minutes."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Pot"
+                ],
+                "failure": [
+                  "overcooked noodles"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "have_boiled_noodles",
+            "have_cooked_broth_mixture_without_garlic"
+          ],
+          "modality": {
+            "image": [
+              "./images/egg-drop-chicken-noodle-soup/egg-drop-chicken-noodle-soup_6_0.jpg "
+            ],
+            "video": " "
+          }
+        },
+        {
+          "original_text": "Stir the soup so it is moving in a circular direction. Drizzle beaten egg into hot broth, stirring constantly.",
+          "input_condition": [
+            "have_boiled_noodles",
+            "have_cooked_broth_mixture_without_garlic",
+            "have_raw_egg"
+          ],
+          "task": [
+            {
+              "action_name": "Add noodles to the broth.",
+              "output_quality": [
+                "Stir the soup."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": []
+              }
+            },
+            {
+              "action_name": "Beat a raw egg into the broth",
+              "output_quality": [
+                "Keep stirring constantly."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "did not stir well",
+                  "egg coagulated"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "have_egg_chicken_noodle_soup"
+          ],
+          "modality": {
+            "image": [
+              "./images/egg-drop-chicken-noodle-soup/egg-drop-chicken-noodle-soup_7_0.jpg ",
+              "./images/egg-drop-chicken-noodle-soup/egg-drop-chicken-noodle-soup_7_1.jpg"
+            ],
+            "video": " "
+          }
+        },
+        {
+          "original_text": "Remove from the heat; stir in onion and chicken. Serve it hot.",
+          "input_condition": [
+            "have_egg_chicken_noodle_soup",
+            "have_onion",
+            "have_chicken"
+          ],
+          "task": [
+            {
+              "action_name": "Remove from the heat.",
+              "output_quality": [],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Overcooked",
+                  "Burnt"
+                ]
+              }
+            },
+            {
+              "action_name": "Stir in onion and chicken.",
+              "output_quality": [
+                "Serve hot."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Onion missing"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "recipe_complete"
+          ],
+          "modality": {
+            "image": [
+              "./images/egg-drop-chicken-noodle-soup/egg-drop-chicken-noodle-soup_8_0.jpg",
+              "./images/egg-drop-chicken-noodle-soup/egg-drop-chicken-noodle-soup_8_1.jpg",
+              "./images/egg-drop-chicken-noodle-soup/egg-drop-chicken-noodle-soup_8_2.jpg"
+            ],
+            "video": " "
+          }
+        }
+      ]
+    },
+    "2": {
+      "recipe_name": "my-scotch-eggs",
+      "ingredients": [
+        {
+          "name": "eggs",
+          "quantity": {
+            "measure": "6",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "0x23b8",
+            "category": [
+              "eggs"
+            ],
+            "ref": [
+              "https://farrp.unl.edu/informalleggs"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "hard boiled",
+          "image": "./images/my-scotch-eggs/ingredients/hardboiledeggs.jpeg"
+        },
+        {
+          "name": "bacon",
+          "quantity": {
+            "measure": "6",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "cooked and drained",
+          "image": "./images/my-scotch-eggs/ingredients/cookeddrainedbacon.jpeg"
+        },
+        {
+          "name": "American Cheese",
+          "quantity": {
+            "measure": "6",
+            "unit": "slice"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "./images/my-scotch-eggs/ingredients/americancheese.jpeg"
+        },
+        {
+          "name": "spray",
+          "quantity": {
+            "measure": "1",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "non-stick",
+          "image": "./images/my-scotch-eggs/ingredients/nonstickcookingspray.jpeg"
+        },
+        {
+          "name": "corn muffin",
+          "quantity": {
+            "measure": "1",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "./images/my-scotch-eggs/ingredients/cornmuffin.jpeg"
+        },
+        {
+          "name": "all purpose flour",
+          "quantity": {
+            "measure": "0.25",
+            "unit": "cups"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "./images/my-scotch-eggs/ingredients/allpurposeflour.jpeg"
+        },
+        {
+          "name": "corn meal",
+          "quantity": {
+            "measure": "0.75",
+            "unit": "cups"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "./images/my-scotch-eggs/ingredients/cornmeal.jpeg"
+        },
+        {
+          "name": "sugar",
+          "quantity": {
+            "measure": "0.25",
+            "unit": "cups"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "./images/my-scotch-eggs/ingredients/sugar.jpeg"
+        },
+        {
+          "name": "baking powder",
+          "quantity": {
+            "measure": "2",
+            "unit": "tbps"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "./images/my-scotch-eggs/ingredients/bakingpowder.jpeg"
+        },
+        {
+          "name": "salt",
+          "quantity": {
+            "measure": "0.0625",
+            "unit": "tbsp"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "./images/my-scotch-eggs/ingredients/salt.jpeg"
+        },
+        {
+          "name": "milk",
+          "quantity": {
+            "measure": "1",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "0xbdd6",
+            "category": [
+              "cows milk"
+            ],
+            "ref": [
+              "http://research.bmh.manchester.ac.uk/informall/allergenic-food/?foodid=5000"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "./images/my-scotch-eggs/ingredients/milk.jpeg"
+        },
+        {
+          "name": "vegetable oil",
+          "quantity": {
+            "measure": "1",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "./images/my-scotch-eggs/ingredients/vegetableoil.jpeg"
+        },
+        {
+          "name": "egg",
+          "quantity": {
+            "measure": "1",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "0x3eb1",
+            "category": [
+              "eggs"
+            ],
+            "ref": [
+              "https://farrp.unl.edu/informalleggs"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "./images/my-scotch-eggs/ingredients/egg.jpeg"
+        },
+        {
+          "name": "pepper",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "fresh, cracked",
+          "image": "./images/my-scotch-eggs/ingredients/freshcrackedpepper.jpeg"
+        },
+        {
+          "name": "parsley",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "0x8b9d",
+            "category": [
+              "leaves"
+            ],
+            "ref": [
+              "https://farrp.unl.edu/informallspicesherbs"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "./images/my-scotch-eggs/ingredients/parsley.jpg"
+        }
+      ],
+      "hasDairy":true,
+      "hasMeat":true,
+      "hasNuts":false,
+      "prep_time": "",
+      "cook_time": "",
+      "serves": "",
+      "instructions": [
+        {
+          "original_text": "Put your eggs into a pan of lukewarm water and sprinkle a little salt in the pan. Put on high heat and allow eggs to come to a rolling boil. Once eggs come to a boil, turn off the burner, set timer on 15 minutes, and allow eggs to sit. Once done, rinse the eggs and shell them. Set eggs aside.",
+          "input_condition": [
+            "have_egg"
+          ],
+          "task": [
+            {
+              "action_name": "Put eggs into a pan of lukewarm water with a little salt",
+              "output_quality": [
+                "Put on high heat",
+                "allow eggs to come to a rolling boil."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "pan",
+                  "burner"
+                ],
+                "failure": [
+                  "Extra boiled eggs"
+                ]
+              }
+            },
+            {
+              "action_name": "Turn off the burner",
+              "output_quality": [
+                "Right after eggs come to a boil"
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": []
+              }
+            },
+            {
+              "action_name": "Allow eggs to sit for 15 minutes",
+              "output_quality": [
+                "Make sure the burner is turned off"
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": []
+              }
+            },
+            {
+              "action_name": "Rinse and shell the egg",
+              "output_quality": [],
+              "background_knowledge": {
+                "tool": [],
+                "failure": []
+              }
+            }
+          ],
+          "output_condition": [
+            "have_drained_shelled_egg"
+          ],
+          "modality": {
+            "image": [
+              "./images/my-scotch-eggs/my-scotch-eggs_2_0.jpg"
+            ],
+            "video": " "
+          }
+        },
+        {
+          "original_text": "I like to cut the bacon with cooking scissors before cooking, but you can just crumble the bacon after it's done cooking. Once the bacon is cooked, drain on paper towels and set aside.",
+          "input_condition": [
+            "have_bacon"
+          ],
+          "task": [
+            {
+              "action_name": "Cut bacon",
+              "output_quality": [
+                "Use cooking scissors."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "cooking scissors"
+                ],
+                "failure": []
+              }
+            },
+            {
+              "action_name": "Cook Bacon",
+              "output_quality": [],
+              "background_knowledge": {
+                "tool": [],
+                "failure": []
+              }
+            },
+            {
+              "action_name": "Crumble Bacon",
+              "output_quality": [
+                "Make sure the bacon is cooked"
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": []
+              }
+            },
+            {
+              "action_name": "Drain bacon",
+              "output_quality": [
+                "Use paper towels to drain."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": []
+              }
+            }
+          ],
+          "output_condition": [
+            "have_cooked_crumbled_drained_bacon"
+          ],
+          "modality": {
+            "image": [
+              "./images/my-scotch-eggs/my-scotch-eggs_3_0.jpg"
+            ],
+            "video": " "
+          }
+        },
+        {
+          "original_text": "Preheat oven to 400 degrees.Combine all the dry ingredients then add the milk, egg, and oil until just blended but don't over-mix.",
+          "input_condition": [
+            "have_egg",
+            "have_milk",
+            "have_dry_ingredients"
+          ],
+          "task": [
+            {
+              "action_name": "Preheat Oven to 400 degrees",
+              "output_quality": [],
+              "background_knowledge": {
+                "tool": [
+                  "oven"
+                ],
+                "failure": []
+              }
+            },
+            {
+              "action_name": "Combine all dry ingredients",
+              "output_quality": [],
+              "background_knowledge": {
+                "tool": [],
+                "failure": []
+              }
+            },
+            {
+              "action_name": "Add milk, egg, and oil",
+              "output_quality": [
+                "Make sure it is just blended",
+                "Do not over mix"
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "overmixed mixture"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "have_dry_milk_egg_oil_blend"
+          ],
+          "modality": {
+            "image": [
+              "./images/my-scotch-eggs/my-scotch-eggs_4_0.jpg"
+            ],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Spray a large muffin pan liberally with non-stick cooking spray. Fill each muffin cup about half full with corn muffin batter. Sprinkle bacon pieces on top of corn muffin batter. Place a boiled egg on top of the bacon. Sprinkle fresh cracked pepper and salt on top of the egg.",
+          "input_condition": [
+            "have_cooking_spray",
+            "have_corn_muffin_batter",
+            "have_drained_shelled_egg",
+            "have_bacon",
+            "have_pepper",
+            "have_salt"
+          ],
+          "task": [
+            {
+              "action_name": "Cooking Spray on Large Muffin Pan",
+              "output_quality": [
+                "Spray the pan liberally"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "muffin pan",
+                  "cooking spray"
+                ],
+                "failure": []
+              }
+            },
+            {
+              "action_name": "Fill half muffin cup with batter",
+              "output_quality": [
+                "Make sure to fill the cup half full"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "muffin cup",
+                  "something to fill batter into the cup"
+                ],
+                "failure": []
+              }
+            },
+            {
+              "action_name": "Sprinkle bacon pieces on the batter",
+              "output_quality": [
+                "Sprinkle the pieces on the muffin batter in the cup"
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": []
+              }
+            },
+            {
+              "action_name": "Place boiled egg on bacon",
+              "output_quality": [],
+              "background_knowledge": {
+                "tool": [],
+                "failure": []
+              }
+            },
+            {
+              "action_name": "Sprinkle pepper and salt on the egg",
+              "output_quality": [
+                "Make sure the pepper is freshly cracked"
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": []
+              }
+            }
+          ],
+          "output_condition": [
+            "have_filled_muffin_cups"
+          ],
+          "modality": {
+            "image": [
+              "./images/my-scotch-eggs/my-scotch-eggs_5_0.jpg"
+            ],
+            "video": " "
+          }
+        },
+        {
+          "original_text": "Bake your assembled Scotch Eggs at 400 degrees. Check them at ten minutes, they should be plumped up but not browned at the edges.You can put cheese on at this point and cook another five minutes, if you plan to eat them immediately.Or continue to cook another five mintues without the cheese if you intend on cooking them in advance and re-heating them later in the microwave.",
+          "input_condition": [
+            "have_scotch_egg",
+            "have_milk",
+            "have_dry_ingredients"
+          ],
+          "task": [
+            {
+              "action_name": "Bake Scotch eggs at 400 degree",
+              "output_quality": [
+                "Make sure the eggs are assembled"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "oven"
+                ],
+                "failure": []
+              }
+            },
+            {
+              "action_name": "Check the eggs in 10 minutes",
+              "output_quality": [
+                "Eggs should be plumped up",
+                "Edges shouldn\u00e2\u20ac\u2122t be browned"
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": []
+              }
+            },
+            {
+              "action_name": "Put cheese and Cook for 5 minutes",
+              "output_quality": [
+                "Put cheese on the egg"
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": []
+              }
+            }
+          ],
+          "output_condition": [
+            "have_cooked_cheese_egg"
+          ],
+          "modality": {
+            "image": [
+              "./images/my-scotch-eggs/my-scotch-eggs_6_0.jpg"
+            ],
+            "video": " "
+          }
+        },
+        {
+          "original_text": "Once the Scotch Eggs are done, allow them to cool in the muffin pan for a few minutes. Run a knife around the edge of each muffin and pop each muffin out gently. Sprinkle fresh cracked pepper, salt and parsley over each egg.Enjoy your Scotch Egg!",
+          "input_condition": [
+            "have_scotch_eggs"
+          ],
+          "task": [
+            {
+              "action_name": "Cool in the muffin pan",
+              "output_quality": [
+                "Make sure the scotch eggs are done"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "muffin pan"
+                ],
+                "failure": []
+              }
+            },
+            {
+              "action_name": "Pop Muffin Out using a knife",
+              "output_quality": [
+                "Run knife around the edge",
+                "Perform the process gently"
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "pop the muffin when eggs are hot"
+                ]
+              }
+            },
+            {
+              "action_name": "Sprinkle pepper, salt, and parsley",
+              "output_quality": [
+                "Make sure pepper is freshly cracked"
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": []
+              }
+            }
+          ],
+          "output_condition": [
+            "have_scotch_egg"
+          ],
+          "modality": {
+            "image": [
+              "./images/my-scotch-eggs/my-scotch-eggs_7_0.jpg"
+            ],
+            "video": " "
+          }
+        }
+      ]
+    },
+    "3": {
+      "recipe_name": "egg-in-an-avocado-hole",
+      "ingredients": [
+        {
+          "name": "egg",
+          "quantity": {
+            "measure": "2",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "0x3eb1",
+            "category": [
+              "eggs"
+            ],
+            "ref": [
+              "https://farrp.unl.edu/informalleggs"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "./images/egg-in-an-avocado-hole/ingredients/01_egg.jpeg"
+        },
+        {
+          "name": "avocado",
+          "quantity": {
+            "measure": "1",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "0x1641",
+            "category": [
+              "Fruits"
+            ],
+            "ref": [
+              "https://farrp.unl.edu/informallfruit"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "./images/egg-in-an-avocado-hole/ingredients/02_avacado.jpeg"
+        },
+        {
+          "name": "salt",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "./images/egg-in-an-avocado-hole/ingredients/03_salt.jpeg"
+        },
+        {
+          "name": "pepper",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "./images/egg-in-an-avocado-hole/ingredients/04_pepper.webp"
+        },
+        {
+          "name": "kale strips",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "./images/egg-in-an-avocado-hole/ingredients/05_kalestrips.jpeg"
+        },
+        {
+          "name": "bacon",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "./images/egg-in-an-avocado-hole/ingredients/06_bacon.jpeg"
+        },
+        {
+          "name": "chives",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "./images/egg-in-an-avocado-hole/ingredients/07_chives.jpeg"
+        },
+        {
+          "name": "cheese",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "0x667",
+            "category": [
+              "cows milk"
+            ],
+            "ref": [
+              "http://research.bmh.manchester.ac.uk/informall/allergenic-food/?foodid=5000"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": "./images/egg-in-an-avocado-hole/ingredients/08_cheese.jpeg"
+        },
+        {
+          "name": "hot sauce",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "./images/egg-in-an-avocado-hole/ingredients/09_hotsauce.jpeg",
+          "image": "./images/egg-in-an-avocado-hole/ingredients/09_hotsauce.jpeg"
+        }
+      ],
+      "hasDairy":true,
+      "hasMeat":true,
+      "hasNuts":false,
+      "prep_time": "",
+      "cook_time": "",
+      "serves": "",
+      "instructions": [
+        {
+          "original_text": "Turn your oven on to 425 F.While it's heating up you can prepare your avocado. Start by slicing your avocado in half lengthwise. Remove the pit and compost it. Using your spoon, gently scrape and scoop out a small portion of the hole left by the pit in your avocado. This will allow you to fit more egg into your avocado half.",
+          "input_condition": [
+            "have_oven",
+            "have_avocado"
+          ],
+          "task": [
+            {
+              "action_name": "Turn your oven on to 425 F",
+              "output_quality": [
+                ""
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "oven"
+                ],
+                "failure": [
+                  ""
+                ]
+              }
+            },
+            {
+              "action_name": "Slice avacoda in half lengthwise",
+              "output_quality": [
+                "Using a spoon, gently scrape out the small portion of the hole left by the pit"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "knife",
+                  "spoon"
+                ],
+                "failure": [
+                  ""
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "have_sliced_pitted_avocado",
+            "have_oven_preheated"
+          ],
+          "modality": {
+            "image": [
+              "",
+              ""
+            ],
+            "video": " "
+          }
+        },
+        {
+          "original_text": "Crack your eggs into a bowl. Using a regular teaspoon or tablespoon, gently scoop one of your yolks out of the bowl and place it into one of your avocado halves. Fill the remainder of the space in your avocado with egg white. Repeat with the second egg and avocado half.",
+          "input_condition": [
+            "have_eggs"
+          ],
+          "task": [
+            {
+              "action_name": "Crack eggs into a bowl",
+              "output_quality": [
+                ""
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "bowl"
+                ],
+                "failure": [
+                  ""
+                ]
+              }
+            },
+            {
+              "action_name": "Scoop out the yolk and place in one avocado half.",
+              "output_quality": [
+                "Use a tablespoon or teaspoon to scoop out the yolk"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "knife",
+                  "spoon"
+                ],
+                "failure": [
+                  ""
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "have_eggs_in_avocado"
+          ],
+          "modality": {
+            "image": [
+              "",
+              ""
+            ],
+            "video": " "
+          }
+        },
+        {
+          "original_text": "Place your freshly egged avocado halves in a small baking dish. You'll want your avocados to be fairly snug so that they don't tip over letting the egg run out of the center. I've found that my bread loaf baking dish is perfect for most larger avocados. If you need to find a smaller vessel or use tin foil to secure your avocados from rolling. Bake your Egg in an Avocado Hole for 15-20 minutes at 425F depending on your oven and how well done you like your eggs. Once baked to your preferred egg doneness, remove your baking dish from the oven and allow the avocados to cool for roughly a minute before removing them from the dish.",
+          "input_condition": [
+            "have_eggs"
+          ],
+          "task": [
+            {
+              "action_name": "Place egged avocado halves in a baking dish",
+              "output_quality": [
+                "bread load baking dish works",
+                "can use a tin foil to prevent the avocados from rolling"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "baking dish"
+                ],
+                "failure": [
+                  ""
+                ]
+              }
+            },
+            {
+              "action_name": "Put the baking dish in the oven for 15-20 minutes at 425 F",
+              "output_quality": [
+                "Adjust the time as per your egg doneness preference"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  ""
+                ],
+                "failure": [
+                  ""
+                ]
+              }
+            },
+            {
+              "action_name": "Let the avocados cool for a minute in the baking dish after removing from the oven.",
+              "output_quality": [],
+              "background_knowledge": {
+                "tool": [
+                  ""
+                ],
+                "failure": [
+                  ""
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "have_baked_eggs_in_avocado"
+          ],
+          "modality": {
+            "image": [
+              "",
+              ""
+            ],
+            "video": " "
+          }
+        },
+        {
+          "original_text": "Salt and pepper to taste.Top with your favorite garnishes. I listed a few of mine in step 1 in the Ingredients section, but get creative!",
+          "input_condition": [
+            "have_salt",
+            "have_pepper"
+          ],
+          "task": [
+            {
+              "action_name": "Add salt and pepper to taste.",
+              "output_quality": [
+                "can use any garnishes"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  ""
+                ],
+                "failure": [
+                  ""
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "have_garnished_recipe"
+          ],
+          "modality": {
+            "image": [
+              "",
+              ""
+            ],
+            "video": " "
+          }
+        },
+        {
+          "original_text": "Serve with some fresh fruit and enjoy! Some people also like them served with toast so they can spread the buttery avocado and delicious yolk on a crunchy piece of toast.",
+          "input_condition": [
+            "if_have_fruits",
+            "if_have_toast"
+          ],
+          "task": [
+            {
+              "action_name": "Can be served with fresh fruit and toast",
+              "output_quality": [
+                ""
+              ],
+              "background_knowledge": {
+                "tool": [
+                  ""
+                ],
+                "failure": [
+                  ""
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "recipe_complete"
+          ],
+          "modality": {
+            "image": [
+              "./images/egg-in-an-avocado-hole/egg-in-an-avocado-hole_6_0.jpg",
+              ""
+            ],
+            "video": " "
+          }
+        }
+      ]
+    }
+  }
+}
