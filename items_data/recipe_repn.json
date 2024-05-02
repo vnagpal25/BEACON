@@ -153,6 +153,9 @@
 				"quality_characteristic": "thinly sliced, optional",
 				"image": "./images/egg-drop-chicken-noodle-soup/ingredients/thinlyslicedscallions.jpeg"
 			}],
+      "hasDairy":false,
+      "hasMeat":true,
+      "hasNuts":false,
 			"prep_time": "10 minutes",
 			"cook_time": "15 minutes",
 			"serves": "5",
@@ -536,6 +539,9 @@
 			"prep_time": "",
 			"cook_time": "",
 			"serves": "",
+      "hasDairy":true,
+      "hasMeat":true,
+      "hasNuts":false,
 			"instructions": [{
 				"original_text": "Put your eggs into a pan of lukewarm water and sprinkle a little salt in the pan. Put on high heat and allow eggs to come to a rolling boil. Once eggs come to a boil, turn off the burner, set timer on 15 minutes, and allow eggs to sit. Once done, rinse the eggs and shell them. Set eggs aside.",
 				"input_condition": ["have_egg"],
@@ -884,6 +890,9 @@
 				"quality_characteristic": "./images/egg-in-an-avocado-hole/ingredients/09_hotsauce.jpeg",
 				"image": "./images/egg-in-an-avocado-hole/ingredients/09_hotsauce.jpeg"
 			}],
+      "hasDairy":true,
+      "hasMeat":true,
+      "hasNuts":false,
 			"prep_time": "",
 			"cook_time": "",
 			"serves": "",
@@ -1075,6 +1084,9 @@
 				"quality_characteristic": "semi-sweet",
 				"image": "./images/delicious-chocolate-bark-recipe/ingredients/05_chocolatechips.jpeg"
 			}],
+      "hasDairy":true,
+      "hasMeat":false,
+      "hasNuts":false,
 			"prep_time": "",
 			"cook_time": "",
 			"serves": "",
@@ -1287,6 +1299,9 @@
 				"quality_characteristic": "",
 				"image": "./images/eggs-and-bacon-candy/ingredients/03_minipretzelsticks.jpeg"
 			}],
+      "hasDairy":false,
+      "hasMeat":false,
+      "hasNuts":false,
 			"prep_time": "",
 			"cook_time": "",
 			"serves": "",
@@ -1486,6 +1501,9 @@
 				"quality_characteristic": "",
 				"image": "./images/bacon-and-egg-pie/ingredients/06_parsley.jpeg"
 			}],
+      "hasDairy":true,
+      "hasMeat":true,
+      "hasNuts":false,
 			"prep_time": "",
 			"cook_time": "",
 			"serves": "",
@@ -1717,6 +1735,9 @@
 				"quality_characteristic": "",
 				"image": "./images/how-to-make-egg-salad/ingredients/05_pepper.webp"
 			}],
+      "hasDairy":false,
+      "hasMeat":false,
+      "hasNuts":false,
 			"prep_time": "",
 			"cook_time": "",
 			"serves": "6",
@@ -1930,6 +1951,9 @@
 				"quality_characteristic": "",
 				"image": "./images/peekaboo-sugar-eggs/ingredients/04_foodcolor.jpeg"
 			}],
+      "hasDairy":false,
+      "hasMeat":false,
+      "hasNuts":false,
 			"prep_time": "",
 			"cook_time": "",
 			"serves": "",
@@ -2119,6 +2143,9 @@
 				"quality_characteristic": "",
 				"image": "./images/egg-bundles/ingredients/09_shrimp.webp"
 			}],
+      "hasDairy":true,
+      "hasMeat":true,
+      "hasNuts":false,
 			"prep_time": "",
 			"cook_time": "",
 			"serves": "",
@@ -2220,6 +2247,9 @@
 				"quality_characteristic": "clear",
 				"image": "./images/cadbury-creme-egg-rolls/ingredients/03_crescentrools.jpeg"
 			}],
+      "hasDairy":false,
+      "hasMeat":false,
+      "hasNuts":false,
 			"prep_time": "",
 			"cook_time": "",
 			"serves": "",
@@ -2399,6 +2429,9 @@
 				"quality_characteristic": "",
 				"image": "./images/mini-egg-pie/ingredients/05_pepper.webp"
 			}],
+      "hasDairy":false,
+      "hasMeat":false,
+      "hasNuts":false,
 			"prep_time": "",
 			"cook_time": "",
 			"serves": "",
@@ -2517,6 +2550,9 @@
 				"quality_characteristic": "hard-boiled",
 				"image": "./images/2-ingredient-avocado-egg-salad/ingredients/02_egg.jpeg"
 			}],
+      "hasDairy":false,
+      "hasMeat":false,
+      "hasNuts":false,
 			"prep_time": "",
 			"cook_time": "",
 			"serves": "",
@@ -2709,6 +2745,9 @@
 				"quality_characteristic": "diced",
 				"image": "./images/how-to-make-egg-omelettes/ingredients/08_bellpepper.jpeg"
 			}],
+      "hasDairy":true,
+      "hasMeat":true,
+      "hasNuts":false,
 			"prep_time": "",
 			"cook_time": "",
 			"serves": "2",
@@ -2919,6 +2958,9 @@
 				"quality_characteristic": "boiled",
 				"image": "./images/bunny-egg-salad/ingredients/06_egg.jpeg"
 			}],
+      "hasDairy":false,
+      "hasMeat":false,
+      "hasNuts":false,
 			"prep_time": "",
 			"cook_time": "",
 			"serves": "",
@@ -3081,6 +3123,9 @@
 				"quality_characteristic": "romaine lettuce / croutons / Parmesan cheese",
 				"image": "./images/deviled-egg-salad/ingredients/06_saladkit.png"
 			}],
+      "hasDairy":false,
+      "hasMeat":false,
+      "hasNuts":false,
 			"prep_time": "",
 			"cook_time": "",
 			"serves": "",
@@ -3337,6 +3382,9 @@
 				"quality_characteristic": "",
 				"image": "./images/dinosaur-egg-inspired-by-mikeasaurus/ingredients/08_mint.jpeg"
 			}],
+      "hasDairy":false,
+      "hasMeat":false,
+      "hasNuts":false,
 			"prep_time": "",
 			"cook_time": "",
 			"serves": "",
@@ -3532,6 +3580,9 @@
 				"quality_characteristic": "ground",
 				"image": "./images/bacon-asparagus-and-egg-bake/ingredients/05_blackpepper.jpeg"
 			}],
+      "hasDairy":true,
+      "hasMeat":true,
+      "hasNuts":false,
 			"prep_time": "",
 			"cook_time": "",
 			"serves": "",
@@ -3709,6 +3760,9 @@
 				"quality_characteristic": "",
 				"image": "./images/how-to-make-chinese-egg-tarts/ingredients/07_salt.webp"
 			}],
+      "hasDairy":true,
+      "hasMeat":false,
+      "hasNuts":false,
 			"prep_time": "",
 			"cook_time": "",
 			"serves": "",
@@ -3885,6 +3939,9 @@
 				"quality_characteristic": "",
 				"image": "./images/egg-filled-bread-roll/ingredients/08_oil.jpeg"
 			}],
+      "hasDairy":false,
+      "hasMeat":false,
+      "hasNuts":false,
 			"prep_time": "",
 			"cook_time": "",
 			"serves": "",
@@ -4063,6 +4120,9 @@
 				"quality_characteristic": "melting",
 				"image": "./images/chocolate-peanut-butter-eggs/ingredients/06_meltingchocolate.jpeg"
 			}],
+      "hasDairy":true,
+      "hasMeat":false,
+      "hasNuts":true,
 			"prep_time": "",
 			"cook_time": "",
 			"serves": "",
@@ -4314,6 +4374,9 @@
 				"quality_characteristic": "",
 				"image": ""
 			}],
+      "hasDairy":true,
+      "hasMeat":false,
+      "hasNuts":false,
 			"prep_time": "",
 			"cook_time": "",
 			"serves": "",
@@ -4494,6 +4557,9 @@
 				"quality_characteristic": "",
 				"image": "./images/peekaboo-sugar-eggs/ingredients/04_foodcolor.jpeg"
 			}],
+      "hasDairy":false,
+      "hasMeat":false,
+      "hasNuts":false,
 			"prep_time": "",
 			"cook_time": "",
 			"serves": "",
@@ -4627,6 +4693,9 @@
 				"quality_characteristic": "organic",
 				"image": "./images/eggs-and-bacon-the-perfect-quick-paleo-meal/ingredients/03_spinach.webp"
 			}],
+      "hasDairy":false,
+      "hasMeat":true,
+      "hasNuts":false,
 			"prep_time": "",
 			"cook_time": "",
 			"serves": "",
@@ -4758,6 +4827,9 @@
 				"quality_characteristic": "",
 				"image": "./images/bakedfriedpan-fried-scotch-egg/ingredients/05_breadcrumbs.jpeg"
 			}],
+      "hasDairy":false,
+      "hasMeat":true,
+      "hasNuts":false,
 			"prep_time": "",
 			"cook_time": "",
 			"serves": "",
@@ -4981,6 +5053,9 @@
 				"quality_characteristic": "",
 				"image": "./images/deviled-eggs-with-smoked-salmon-and-capers/ingredients/09_pepper.webp"
 			}],
+      "hasDairy":true,
+      "hasMeat":true,
+      "hasNuts":false,
 			"prep_time": "",
 			"cook_time": "",
 			"serves": "",

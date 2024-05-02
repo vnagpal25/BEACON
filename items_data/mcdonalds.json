@@ -1,0 +1,447 @@
+{
+  "recipe_ids": {
+    "31": {
+      "recipe_name": "mcdonalds_apple_pie",
+      "ingredients": [
+        {
+          "name": "Granny Smith Apple",
+          "quantity": {
+            "measure": "1",
+            "unit": "Medium"
+          }
+        },
+        {
+          "name": "Red Apple",
+          "quantity": {
+            "measure": "1",
+            "unit": "Medium"
+          }
+        },
+        {
+          "name": "Unsalted Butter",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          }
+        },
+        {
+          "name": "Brown Sugar",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          }
+        },
+        {
+          "name": "Ground Cinnamon",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          }
+        },
+        {
+          "name": "Ground Nutmeg",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          }
+        },
+        {
+          "name": "Allspice",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          }
+        },
+        {
+          "name": "Vanilla Extract",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          }
+        },
+        {
+          "name": "Lemon Juice",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          }
+        },
+        {
+          "name": "Salt",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          }
+        },
+        {
+          "name": "Puff Pastry Sheets",
+          "quantity": {
+            "measure": "1",
+            "unit": "Package"
+          }
+        }
+      ],
+      "instructions": [
+        {
+          "original_text": "Defrost puff pastry and prepare apple filling by dicing apples and cooking with spices, butter, and lemon juice until softened.",
+          "input_condition": [
+            "have_apples",
+            "have_puff_pastry",
+            "have_spices"
+          ],
+          "tasks list": [
+            {
+              "action_name": "Prepare Apple Filling",
+              "output_quality": [
+                "Apples are diced and cooked with spices into a softened filling"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Saucepan"
+                ],
+                "failure": [
+                  "Apples not softened",
+                  "Spices not well integrated"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "apple_filling_ready"
+          ]
+        },
+        {
+          "original_text": "Assemble pies with the filling on puff pastry squares, fold, and seal edges with a fork.",
+          "input_condition": [
+            "apple_filling_ready",
+            "puff_pastry_defrosted"
+          ],
+          "tasks list": [
+            {
+              "action_name": "Assemble Pies",
+              "output_quality": [
+                "Pies are assembled with filling sealed within pastry"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Fork",
+                  "Pastry brush"
+                ],
+                "failure": [
+                  "Pastry not sealed properly",
+                  "Filling leaks out"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "pies_assembled"
+          ]
+        },
+        {
+          "original_text": "Fry pies in heated oil until golden brown, then drain on a wire rack.",
+          "input_condition": [
+            "pies_assembled",
+            "oil_heated"
+          ],
+          "tasks list": [
+            {
+              "action_name": "Fry Pies",
+              "output_quality": [
+                "Pies are golden brown and crispy"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Deep fryer",
+                  "Wire rack"
+                ],
+                "failure": [
+                  "Pies not evenly fried",
+                  "Oil not at correct temperature"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "pies_fried"
+          ]
+        }
+      ]
+    },
+    "32":{
+      "recipe_name": "bacon_ranch_mccrispy_deluxe",
+      "ingredients": [
+        {
+          "name": "Chicken Breasts, boneless, skinless",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          }
+        },
+        {
+          "name": "Salt",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          }
+        },
+        {
+          "name": "Finely ground black pepper",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          }
+        },
+        {
+          "name": "All-purpose flour",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          }
+        },
+        {
+          "name": "Cornmeal",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          }
+        },
+        {
+          "name": "Onion powder",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          }
+        },
+        {
+          "name": "Garlic powder",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          }
+        },
+        {
+          "name": "Paprika",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          }
+        },
+        {
+          "name": "Egg",
+          "quantity": {
+            "measure": "1",
+            "unit": ""
+          }
+        },
+        {
+          "name": "Milk",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          }
+        },
+        {
+          "name": "Vegetable Oil",
+          "quantity": {
+            "measure": "For deep frying",
+            "unit": ""
+          }
+        },
+        {
+          "name": "Buttermilk",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          }
+        },
+        {
+          "name": "Mayonnaise",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          }
+        },
+        {
+          "name": "Dry ranch dressing mix",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          }
+        },
+        {
+          "name": "Potato Hamburger Buns",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          }
+        },
+        {
+          "name": "Butter, melted",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          }
+        },
+        {
+          "name": "Bacon, cooked",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          }
+        },
+        {
+          "name": "Crinkle cut pickles",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          }
+        },
+        {
+          "name": "Lettuce, shredded",
+          "quantity": {
+            "measure": "Optional",
+            "unit": ""
+          }
+        },
+        {
+          "name": "Roma Tomatoes, sliced",
+          "quantity": {
+            "measure": "Optional",
+            "unit": ""
+          }
+        }
+      ],
+      "instructions": [
+        {
+          "original_text": "Pat the chicken breasts dry, cut them in half horizontally, and season with salt and pepper. Set up a breading station with dry and wet mixtures, coat the chicken accordingly, and let rest on a wire rack.",
+          "input_condition": [
+            "have_chicken_breast",
+            "have_salt_pepper",
+            "have_flour",
+            "have_cornmeal",
+            "have_onion_powder",
+            "have_garlic_powder",
+            "have_paprika",
+            "have_egg",
+            "have_milk"
+          ],
+          "tasks list": [
+            {
+              "action_name": "Prepare Chicken for Frying",
+              "output_quality": [
+                "Chicken is seasoned, breaded, and ready to fry"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Shallow pans",
+                  "Wire rack",
+                  "Baking tray"
+                ],
+                "failure": [
+                  "Chicken not properly seasoned",
+                  "Breading falls off"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "chicken_ready_to_fry"
+          ]
+        },
+        {
+          "original_text": "Fry the chicken in vegetable oil heated to 350 degrees Fahrenheit until the internal temperature reaches 165 degrees. Let rest on a wire rack.",
+          "input_condition": [
+            "chicken_ready_to_fry",
+            "have_vegetable_oil"
+          ],
+          "tasks list": [
+            {
+              "action_name": "Fry Chicken",
+              "output_quality": [
+                "Chicken is crispy and cooked to a safe temperature"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Heavy-bottom pot",
+                  "Thermometer",
+                  "Wire rack"
+                ],
+                "failure": [
+                  "Oil temperature incorrect",
+                  "Chicken undercooked or overcooked"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "chicken_cooked"
+          ]
+        },
+        {
+          "original_text": "Make the ranch dressing by combining buttermilk, mayonnaise, and dry ranch dressing mix.",
+          "input_condition": [
+            "have_buttermilk",
+            "have_mayonnaise",
+            "have_ranch_dressing_mix"
+          ],
+          "tasks list": [
+            {
+              "action_name": "Prepare Ranch Dressing",
+              "output_quality": [
+                "Ranch dressing is smooth and well mixed"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Bowl",
+                  "Spoon"
+                ],
+                "failure": [
+                  "Dressing ingredients not fully combined",
+                  "Dressing too thick or too thin"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "ranch_dressing_ready"
+          ]
+        },
+        {
+          "original_text": "Assemble the sandwich by toasting the potato rolls with butter, adding ranch dressing, the fried chicken, bacon, pickles, and optionally lettuce and tomato.",
+          "input_condition": [
+            "have_potato_buns",
+            "have_butter",
+            "chicken_cooked",
+            "ranch_dressing_ready",
+            "have_bacon",
+            "have_pickles",
+            "have_lettuce_optional",
+            "have_tomato_optional"
+          ],
+          "tasks list": [
+            {
+              "action_name": "Assemble McCrispy Sandwich",
+              "output_quality": [
+                "Sandwich is fully assembled with all components"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Skillet",
+                  "Knife"
+                ],
+                "failure": [
+                  "Buns not toasted",
+                  "Components missing or incorrectly layered"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "sandwich_ready"
+          ]
+        }
+      ]
+    }
+  }
+}

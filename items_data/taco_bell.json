@@ -401,6 +401,9 @@
           "image": "https://example.com/kosher_salt_image.jpg"
         }
       ],
+      "hasDairy":true,
+      "hasMeat":true,
+      "hasNuts":false,
       "prep_time": "10 minutes",
       "cook_time": "20 minutes",
       "serves": "6",
@@ -950,6 +953,9 @@
       "prep_time": "20 minutes",
       "cook_time": "20 minutes",
       "serves": "4",
+      "hasDairy":true,
+      "hasMeat":true,
+      "hasNuts":false,
       "instructions": [
         {
           "original_text": "In a large skillet, cook ground beef over medium-high heat until no pink remains. Drain any excess fat.",
@@ -1423,6 +1429,9 @@
       "prep_time": "10 minutes",
       "cook_time": "15 minutes",
       "serves": "2",
+      "hasDairy":true,
+      "hasMeat":true,
+      "hasNuts":false,
       "instructions": [
         {
           "original_text": "Add all ingredients to a small bowl. Stir well to combine. Set aside.",
@@ -1763,6 +1772,9 @@
           "image": ""
         }
       ],
+      "hasDairy":true,
+      "hasMeat":false,
+      "hasNuts":false,
       "prep_time": "10 minutes",
       "cook_time": "",
       "serves": "2",
@@ -2425,6 +2437,9 @@
           "image": ""
         }
       ],
+      "hasDairy":true,
+      "hasMeat":false,
+      "hasNuts":false,
       "prep_time": "20 minutes",
       "cook_time": "20 minutes",
       "serves": "6",
