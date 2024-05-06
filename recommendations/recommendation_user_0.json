@@ -1,0 +1,29 @@
+{
+  "meal_plan": [
+    {
+      "day 1": [
+        {
+          "Beverage": "11",
+          "Main Course": "13"
+        },
+        {
+          "Beverage": "25",
+          "Main Course": "15",
+          "Side": "17"
+        },
+        {
+          "Beverage": "22",
+          "Main Course": "15",
+          "Dessert": "26",
+          "Side": "22"
+        }
+      ]
+    }
+  ],
+  "goodness": 0.9333333333333332,
+  "features": {
+    "hasDairy": 3,
+    "hasMeat": 3,
+    "hasNuts": 0
+  }
+}
