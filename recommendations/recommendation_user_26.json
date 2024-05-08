@@ -1,0 +1,1 @@
+{"meal_plan": [{"day 1": [{"Beverage": "22", "Main Course": "6"}, {"Beverage": "12", "Main Course": "2", "Side": "27"}, {"Beverage": "18", "Main Course": "30", "Dessert": "3", "Side": "27"}]}], "goodness": 0.975, "features": {"hasDairy": 6, "hasMeat": 5, "hasNuts": 0}}
