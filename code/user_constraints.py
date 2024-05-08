@@ -164,7 +164,7 @@ class User_Constraints:
         self.config_score = 1 - (len(violated_constraints) / total_constraints)
 
         # Return the configuration score
-        return self.config_score
+        return self.config_score, all_annotations
 
     def get_config(self):
         """Return the configuration score."""
