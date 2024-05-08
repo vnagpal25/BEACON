@@ -1,5 +1,3 @@
-# TODO fix input reading to read all recipes
-
 from metrics import Metric
 from meal_info import MealInfo
 from meal_config import MealConfig
@@ -17,40 +15,39 @@ class MealRecommender:
     def __init__(self, user):
         self.user = user
         self.recipe_set, self.beverage_set, self.user_request = self.ReadInputs()
-        self.recipe_names = self.GetRecipeNames()
+        self.recipe_info = self.GetRecipeInfo()
         self.beverage_names = self.GetBeverageNames()
 
         self.time_period = 0
         self.meal_configs = {}
         self.recommendation_constraints = []
+        self.user_compatibilities = {}
         self.recommendation = None
-        
+
         self.goodness_score = None
         self.config_score = None
         self.dup_meal_score = None
         self.dup_day_score = None
         self.coverage_score = None
-        
-        self.score_breakdown = None
 
+        self.score_breakdown = None
 
     def ReadInputs(self):
         root = root_dir()
-        
-        with open(f'{root}/items_data/test_r3.json', 'r') as file:
-            test_recipes = json.load(file)
-            recipes = test_recipes['recipe-ids']
 
-        
-        # # Read Taco Bell R3
-        # with open(f'{root}/items_data/taco_bell.json', 'r') as file:
-        #     tb_recipes = json.load(file)
-        #     recipes = tb_recipes['recipe-ids']
+        # with open(f'{root}/items_data/test_r3.json', 'r') as file:
+        #     test_recipes = json.load(file)
+        #     recipes = test_recipes['recipe-ids']
 
-        # # Read R3 dataset
-        # with open('../items_data/recipe_repn.json', 'r') as file:
-        #     orig_r3_recipes = json.load(file)
-        #     recipes = recipes | orig_r3_recipes['recipe-ids']
+        # Read Taco Bell R3
+        with open(f'{root}/items_data/taco_bell.json', 'r') as file:
+            tb_recipes = json.load(file)
+            recipes = tb_recipes['recipe-ids']
+
+        # Read R3 dataset
+        with open('../items_data/recipe_repn.json', 'r') as file:
+            orig_r3_recipes = json.load(file)
+            recipes = recipes | orig_r3_recipes['recipe-ids']
 
         # Read Beverages dataset
         with open('../items_data/beverages.json', 'r') as file:
@@ -63,11 +60,11 @@ class MealRecommender:
 
         return recipes, beverages, user_request
 
-
     def RunMealRecStrat(self):
         # Runs Meal Recommendation Strategy to create personalized meal plan
         # [{'meal': 'breakfast'/'lunch'/'dinner', 'time': 'HH:MM'}']
         self.recommendation_constraints = self.user_request['recommendation_constraints']
+        self.user_compatibilities = self.user_request['user_compatibilities']
         self.time_period = self.user_request['time_period']
 
         # [[Days: {Meal Type, Meal {<Beverage><MainCourse><Side>, }}]]
@@ -98,27 +95,25 @@ class MealRecommender:
 
                 # Random Method for Recommendation
                 if meal_info.meal_config.has_beverage():
-                    meal['Beverage'] = self.beverage_names[random.choice(
-                        list(self.beverage_set.keys()))]
+                    meal['Beverage'] = random.choice(
+                        list(self.beverage_set.keys()))
                 if meal_info.meal_config.has_main_course():
-                    meal["Main Course"] = self.recipe_names[random.choice(
-                        list(self.recipe_set.keys()))]
+                    meal["Main Course"] = random.choice(
+                        list(self.recipe_set.keys()))
                 if meal_info.meal_config.has_dessert():
-                    meal['Dessert'] = self.recipe_names[random.choice(
-                        list(self.recipe_set.keys()))]
+                    meal['Dessert'] = random.choice(
+                        list(self.recipe_set.keys()))
                 if meal_info.meal_config.has_side():
-                    meal['Side'] = self.recipe_names[random.choice(
-                        list(self.recipe_set.keys()))]
-
+                    meal['Side'] = random.choice(
+                        list(self.recipe_set.keys()))
                 meals.append(meal)
 
             meals = {f'day {j + 1}': meals}
             meal_plan.append(meals)
 
-        self.recommendation = meal_plan
+        self.recommendation = {'meal_plan': meal_plan}
         # return meal plan
-        return meal_plan
-
+        return {'meal_plan': meal_plan}
 
     def WriteMealRecs(self, meal_plan=None):
         if not meal_plan:
@@ -128,21 +123,22 @@ class MealRecommender:
         with open(f'../recommendations/recommendation_{self.user}', 'w') as file:
             json.dump(meal_plan, file)
 
-
     def EvaluateRecs(self):
         goodness_calculator = Metric(
-            config_weight=1, duplicate_meal_score_weight=1, duplicate_day_score_weight=1, coverages_weight=1)
-        self.goodness_score, self.config_score, \
-        self.dup_meal_score, self.dup_day_score, \
-        self.coverage_score, self.score_breakdown = goodness_calculator.EvaluateMealRec(meal_plan=self.recommendation, time_period=self.time_period,
-                                                                                                                                                   meal_configs=self.meal_configs, rec_constraints=self.recommendation_constraints,
-                                                                                                                                                   bev_names=self.GetBeverageNames(), recipe_names=self.GetRecipeNames())
+            config_weight=1, duplicate_meal_score_weight=1, duplicate_day_score_weight=1, coverages_weight=1, constraint_weight=1)
 
+        self.goodness_score, self.config_score, \
+            self.dup_meal_score, self.dup_day_score, \
+            self.coverage_score, self.user_constraint_score, self.score_breakdown, self.rec_features = goodness_calculator.EvaluateMealRec(meal_plan=self.recommendation['meal_plan'], time_period=self.time_period,
+                                                                                                                                           meal_configs=self.meal_configs, rec_constraints=self.recommendation_constraints,
+                                                                                                                                           bev_names=self.GetBeverageNames(), recipe_names=self.recipe_info,
+                                                                                                                                           user_compatibilities=self.user_compatibilities)
+        self.recommendation['goodness'] = self.goodness_score
+        self.recommendation['features'] = self.rec_features
 
     def SetRecommendation(self, file_name):
         with open(f'../recommendations/{file_name}', 'r') as file:
             self.recommendation = json.load(file)
-
 
     def GetBeverageNames(self):
         beverage_names = {}
@@ -150,9 +146,10 @@ class MealRecommender:
             beverage_names[id] = drink['name']
         return beverage_names
 
-
-    def GetRecipeNames(self):
+    def GetRecipeInfo(self):
         recipe_names = {}
         for id, recipe in self.recipe_set.items():
-            recipe_names[id] = recipe['recipe_name']
+            recipe_names[id] = (recipe['recipe_name'], {'hasDairy': recipe['hasDairy'],
+                                                        'hasMeat': recipe['hasMeat'],
+                                                        'hasNuts': recipe['hasNuts']})
         return recipe_names
