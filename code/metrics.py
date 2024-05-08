@@ -1,21 +1,26 @@
 from coverage import Coverage
 from duplicate_score import DuplicateScore
+from user_constraints import User_Constraints
 
 
 class Metric:
-    def __init__(self, config_weight=0, duplicate_meal_score_weight=0, duplicate_day_score_weight=0, coverages_weight=0):
+    def __init__(self, config_weight=0, duplicate_meal_score_weight=0, duplicate_day_score_weight=0, coverages_weight=0, constraint_weight=0):
         self.config_score_weight = config_weight
         self.duplicate_meal_score_weight = duplicate_meal_score_weight
         self.duplicate_day_score_weight = duplicate_day_score_weight
         self.coverages_weight = coverages_weight
-        self.score_breakdown = {}
+        self.user_constraint_weight = constraint_weight
 
+        self.score_breakdown = None
+        self.rec_features = None
+        
         self.duplicate_day_score = 0
         self.duplicate_meal_score = 0
         self.coverage_score = 0
+        self.user_constraint_score = 0
         self.config_quality_score = 0
-
-    def EvaluateMealRec(self, time_period=None, meal_plan=None, meal_configs=None, rec_constraints=None, bev_names=None, recipe_names=None):
+         
+    def EvaluateMealRec(self, time_period=None, meal_plan=None, meal_configs=None, rec_constraints=None, bev_names=None, recipe_names=None, user_compatibilities=None):
         # Checks if Meal Config is satisfied, a number between 0 and 1
         self.ConfigScoreCalc(
             meal_plan, time_period, rec_constraints)
@@ -23,12 +28,16 @@ class Metric:
         self.DuplicateScoreCalc(meal_plan)
 
         self.CoverageScoreCalc(
-            meal_plan, meal_configs, bev_names, recipe_names)
+            meal_plan, meal_configs, bev_names)
 
+        self.ConstraintsScoreCalc(meal_plan, user_compatibilities, recipe_names)
+        
         score_weights = [self.config_score_weight,  self.duplicate_meal_score_weight,
-                         self.duplicate_day_score_weight, self.coverages_weight]
+                         self.duplicate_day_score_weight, self.coverages_weight, 
+                         self.user_constraint_weight]
         score_values = [self.config_quality_score, self.duplicate_meal_score,
-                        self.duplicate_day_score,        self.coverage_score]
+                        self.duplicate_day_score,        self.coverage_score,
+                        self.user_constraint_score]
 
         # dot product
         total_score = sum([weight * score for weight,
@@ -36,7 +45,7 @@ class Metric:
 
         return total_score / len(score_values), \
             self.config_quality_score, self.duplicate_meal_score,  self.duplicate_day_score, self.coverage_score, \
-            self.score_breakdown
+            self.user_constraint_score, self.score_breakdown, self.rec_features
 
     def ConfigScoreCalc(self, meal_plan_, time_period, rec_constraints):
         score = 0
@@ -55,10 +64,7 @@ class Metric:
                 if inp['meal_name'] == out['meal_name']:
                     score += 1
                 total_possible_score += 1
-
-                # out.pop('meal_name')
-                # out.pop('meal_time')
-
+                
                 if set(inp['meal_config']).issubset(set(list(out.keys()))):
                     score += 1
                 total_possible_score += 1
@@ -69,7 +75,7 @@ class Metric:
         self.duplicate_day_score, self.duplicate_meal_score, self.score_breakdown = dup_scorer.recommendation_score(
             meal_plan_)
 
-    def CoverageScoreCalc(self, meal_plan_, meal_configs, bev_names, recipe_names):
+    def CoverageScoreCalc(self, meal_plan_, meal_configs, bev_names, recipe_names=None):
         coverages = []
         for i, day_plan in enumerate(meal_plan_, 1):
             day_str = f'day {i}'
@@ -114,8 +120,59 @@ class Metric:
                 # append results
                 day_coverages.append(
                     coverage_score if coverage_score >= 0 else 0)
-                self.score_breakdown[day_str]['meal_coverages'] = day_coverages
-
                 coverages.append(coverage_score if coverage_score >= 0 else 0)
 
+            self.score_breakdown[day_str]['meal_coverages'] = day_coverages
+
+
         self.coverage_score = sum(coverages)/len(coverages)
+
+    def ConstraintsScoreCalc(self, meal_plan_, user_compatibilities, recipes_info):
+        constraint_calculator = User_Constraints()
+        constraint_calculator.set_num_constraints(3)
+        # User calibration
+        for feature, compt in user_compatibilities.items():
+          constraint_calculator.add_new_constraint(feature, 0 if compt else -1)
+        curr_features = constraint_calculator.get_constraints()
+        if 'HasDairy' in curr_features:
+          constraint_calculator.remove_constraint('HasDairy')
+        if 'HasMeat' in curr_features:
+          constraint_calculator.remove_constraint('HasMeat')
+        if 'HasNuts' in curr_features:
+          constraint_calculator.remove_constraint('HasNuts')          
+        
+        # take 1 day recommendations(parse all jsons) and label each one with 3 features in a spreadsheet
+        
+        # Recipe calibration
+        for id, (_, features_dict) in recipes_info.items():
+          compt_features = []
+          for feature, compt in features_dict.items():
+            if compt:
+              compt_features.append(feature)
+          constraint_calculator.add_annotated_food_item(id, compt_features)
+
+        features = {'hasDairy':0, 'hasMeat':0, 'hasNuts':0}
+        # calculate constraint scores for recommendation
+        constraint_scores = []
+        for i, day_plan in enumerate(meal_plan_, 1):
+          day_str = f'day {i}'
+          day_plan = day_plan[day_str]
+          
+          day_constraints = []
+          for meal in day_plan:
+            meal = meal.copy()
+            del meal['Beverage']
+
+            score, roles = constraint_calculator.calc_config(meal)
+            
+            day_constraints.append(score)
+            constraint_scores.append(score)
+
+            for role in roles:
+              features[role] += 1
+            
+          self.score_breakdown[day_str]['user_constraint_coverages'] = day_constraints
+        
+        
+        self.user_constraint_score = sum(constraint_scores) / len(constraint_scores)
+        self.rec_features = features
