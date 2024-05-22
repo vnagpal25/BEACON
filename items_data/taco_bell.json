@@ -401,9 +401,9 @@
           "image": "https://example.com/kosher_salt_image.jpg"
         }
       ],
-      "hasDairy":true,
-      "hasMeat":true,
-      "hasNuts":false,
+      "hasDairy": true,
+      "hasMeat": true,
+      "hasNuts": false,
       "prep_time": "10 minutes",
       "cook_time": "20 minutes",
       "serves": "6",
@@ -953,9 +953,9 @@
       "prep_time": "20 minutes",
       "cook_time": "20 minutes",
       "serves": "4",
-      "hasDairy":true,
-      "hasMeat":true,
-      "hasNuts":false,
+      "hasDairy": true,
+      "hasMeat": true,
+      "hasNuts": false,
       "instructions": [
         {
           "original_text": "In a large skillet, cook ground beef over medium-high heat until no pink remains. Drain any excess fat.",
@@ -1429,9 +1429,9 @@
       "prep_time": "10 minutes",
       "cook_time": "15 minutes",
       "serves": "2",
-      "hasDairy":true,
-      "hasMeat":true,
-      "hasNuts":false,
+      "hasDairy": true,
+      "hasMeat": true,
+      "hasNuts": false,
       "instructions": [
         {
           "original_text": "Add all ingredients to a small bowl. Stir well to combine. Set aside.",
@@ -1772,9 +1772,9 @@
           "image": ""
         }
       ],
-      "hasDairy":true,
-      "hasMeat":false,
-      "hasNuts":false,
+      "hasDairy": true,
+      "hasMeat": false,
+      "hasNuts": false,
       "prep_time": "10 minutes",
       "cook_time": "",
       "serves": "2",
@@ -2437,16 +2437,24 @@
           "image": ""
         }
       ],
-      "hasDairy":true,
-      "hasMeat":false,
-      "hasNuts":false,
+      "hasDairy": true,
+      "hasMeat": false,
+      "hasNuts": false,
       "prep_time": "20 minutes",
       "cook_time": "20 minutes",
       "serves": "6",
-      "instructions":[
+      "instructions": [
         {
           "original_text": "Combine all of the sauce ingredients in a bowl and whisk well. Refrigerate until ready to use.",
-          "input_condition": ["have_mayonnaise", "have_garlic_cloves", "have_white_vinegar", "have_black_pepper", "have_ground_cumin", "have_onion_powder", "have_red_chili_powder"],
+          "input_condition": [
+            "have_mayonnaise",
+            "have_garlic_cloves",
+            "have_white_vinegar",
+            "have_black_pepper",
+            "have_ground_cumin",
+            "have_onion_powder",
+            "have_red_chili_powder"
+          ],
           "task": [
             {
               "action_name": "Combine sauce ingredients in a bowl",
@@ -2704,6 +2712,2525 @@
           ],
           "output_condition": [
             "have_prepared_filled_paratha"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        }
+      ]
+    },
+    "31": {
+      "recipe_name": "crunchy-taco",
+      "ingredients": [
+        {
+          "name": "masa harina",
+          "quantity": {
+            "measure": "1 1/2",
+            "unit": "tablespoons"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "chili powder",
+          "quantity": {
+            "measure": "4 1/2",
+            "unit": "teaspoons"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "onion powder",
+          "quantity": {
+            "measure": "1/2",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "garlic powder",
+          "quantity": {
+            "measure": "1/2",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "seasoning salt",
+          "quantity": {
+            "measure": "1/2",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "paprika",
+          "quantity": {
+            "measure": "1/2",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "ground cumin",
+          "quantity": {
+            "measure": "1/4",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "garlic salt",
+          "quantity": {
+            "measure": "1/2",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "sugar",
+          "quantity": {
+            "measure": "1/4",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "dried minced onion",
+          "quantity": {
+            "measure": "1",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "beef bouillon powder",
+          "quantity": {
+            "measure": "1/2",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "ground chuck",
+          "quantity": {
+            "measure": "1 1/3",
+            "unit": "pounds"
+          },
+          "allergies": {
+            "id": "0xb74d",
+            "category": [
+              "meat"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/foods/pork",
+              "https://www.healthline.com/health/allergies/most-uncommon-food-allergies#red-meat"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "taco shells",
+          "quantity": {
+            "measure": "12",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "iceberg lettuce",
+          "quantity": {
+            "measure": "1/2",
+            "unit": "head"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "shredded",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "shredded cheddar cheese",
+          "quantity": {
+            "measure": "1",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "",
+            "category": [
+              "Dairy"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/milk-allergy-symptoms#milk-allergy"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "Roma tomatoes",
+          "quantity": {
+            "measure": "2",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": [
+              "Nightshade Vegetables"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/nightshade-vegetables#solanine"
+            ],
+            "details": ""
+          },
+          "alternative": "diced",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "sour cream",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": [
+              "Dairy"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/milk-allergy-symptoms#milk-allergy"
+            ],
+            "details": ""
+          },
+          "alternative": "optional",
+          "quality_characteristic": "",
+          "image": ""
+        }
+      ],
+      "hasDairy": true,
+      "hasMeat": true,
+      "hasNuts": false,
+      "prep_time": "10 minutes",
+      "cook_time": "20 minutes",
+      "serves": "12",
+      "instructions": [
+        {
+          "original_text": "In a small bowl, combine all the ingredients except the meat, and mix well.",
+          "input_condition": [
+            "have_taco_ingredients_except_meat"
+          ],
+          "task": [
+            {
+              "action_name": "Combine all ingredients except meat in a small bowl",
+              "output_quality": [
+                "Ingredients should be well mixed."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Small Bowl",
+                  "Mixing Spoon"
+                ],
+                "failure": [
+                  "Ingredients not mixed well"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "have_combined_ingredients"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Crumble the ground beef into a large skillet (preferably nonstick) and brown, stirring well.",
+          "input_condition": [
+            "have_ground_beef",
+            "have_large_skillet"
+          ],
+          "task": [
+            {
+              "action_name": "Crumble ground beef into a large skillet",
+              "output_quality": [
+                "Ground beef should be crumbled in skillet."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Large Skillet"
+                ],
+                "failure": [
+                  "Beef not crumbled"
+                ]
+              }
+            },
+            {
+              "action_name": "Brown ground beef, stirring well",
+              "output_quality": [
+                "Beef should be evenly browned."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Stirring Spoon"
+                ],
+                "failure": [
+                  "Beef not browned evenly"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "have_browned_beef"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Remove from the heat. Dump the meat into a strainer in the sink, rinse with hot water, and drain off the water and grease from the beef.",
+          "input_condition": [
+            "have_browned_beef",
+            "have_strainer"
+          ],
+          "task": [
+            {
+              "action_name": "Remove skillet from heat",
+              "output_quality": [
+                "Skillet should be off the heat."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Skillet not removed from heat"
+                ]
+              }
+            },
+            {
+              "action_name": "Dump meat into a strainer and rinse with hot water",
+              "output_quality": [
+                "Beef should be rinsed with hot water."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Strainer",
+                  "Sink"
+                ],
+                "failure": [
+                  "Beef not rinsed properly"
+                ]
+              }
+            },
+            {
+              "action_name": "Drain off the water and grease from the beef",
+              "output_quality": [
+                "Water and grease should be drained off."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Water and grease not drained off"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "have_drained_beef"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Return the beef to the pan.",
+          "input_condition": [
+            "have_drained_beef",
+            "have_large_skillet"
+          ],
+          "task": [
+            {
+              "action_name": "Return beef to the pan",
+              "output_quality": [
+                "Beef should be back in the skillet."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Beef not returned to pan"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "have_beef_back_in_skillet"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Stir in the spice mix and 3/4 to 1 cup water.",
+          "input_condition": [
+            "have_beef_back_in_skillet",
+            "have_combined_ingredients"
+          ],
+          "task": [
+            {
+              "action_name": "Stir in the spice mix and 3/4 to 1 cup water",
+              "output_quality": [
+                "Spice mix and water should be evenly mixed into the beef."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Measuring Cup",
+                  "Stirring Spoon"
+                ],
+                "failure": [
+                  "Spice mix and water not evenly mixed"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "have_beef_with_spice_mix_and_water"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Simmer on medium-low heat for 20 minutes, until most of the moisture has cooked away. Remove from heat before the meat is completely dry.",
+          "input_condition": [
+            "have_beef_with_spice_mix_and_water"
+          ],
+          "task": [
+            {
+              "action_name": "Simmer on medium-low heat for 20 minutes",
+              "output_quality": [
+                "Beef should be simmered for 20 minutes on medium-low heat."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Timer"
+                ],
+                "failure": [
+                  "Beef not simmered for full 20 minutes"
+                ]
+              }
+            },
+            {
+              "action_name": "Cook until most of the moisture has cooked away",
+              "output_quality": [
+                "Moisture should mostly be cooked away from the beef."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Beef still too moist",
+                  "Beef too dry"
+                ]
+              }
+            },
+            {
+              "action_name": "Remove from heat before the meat is completely dry",
+              "output_quality": [
+                "Beef should not be completely dry."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Beef too dry"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "have_simmered_beef"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        }
+      ]
+    },
+    "32": {
+      "recipe_name": "soft-taco-beef",
+      "ingredients": [
+        {
+          "name": "masa harina",
+          "quantity": {
+            "measure": "1 1/2",
+            "unit": "tablespoons"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "chili powder",
+          "quantity": {
+            "measure": "4 1/2",
+            "unit": "teaspoons"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "onion powder",
+          "quantity": {
+            "measure": "1/2",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "garlic powder",
+          "quantity": {
+            "measure": "1/2",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "seasoning salt",
+          "quantity": {
+            "measure": "1/2",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "paprika",
+          "quantity": {
+            "measure": "1/2",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "ground cumin",
+          "quantity": {
+            "measure": "1/4",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "garlic salt",
+          "quantity": {
+            "measure": "1/2",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "sugar",
+          "quantity": {
+            "measure": "1/4",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "dried minced onion",
+          "quantity": {
+            "measure": "1",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "beef bouillon powder",
+          "quantity": {
+            "measure": "1/2",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "ground beef chuck",
+          "quantity": {
+            "measure": "1 1/3",
+            "unit": "pounds"
+          },
+          "allergies": {
+            "id": "0xb74d",
+            "category": [
+              "meat"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/foods/pork",
+              "https://www.healthline.com/health/allergies/most-uncommon-food-allergies#red-meat"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "white tortillas",
+          "quantity": {
+            "measure": "12",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "six to eight inches wide",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "shredded cheddar cheese",
+          "quantity": {
+            "measure": "1",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "",
+            "category": [
+              "Dairy"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/milk-allergy-symptoms#milk-allergy"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "iceberg lettuce",
+          "quantity": {
+            "measure": "1/2",
+            "unit": "head"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "shredded (about 3 cups)",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "Roma tomatoes",
+          "quantity": {
+            "measure": "2",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": [
+              "Nightshade Vegetables"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/nightshade-vegetables#solanine"
+            ],
+            "details": ""
+          },
+          "alternative": "diced",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "sour cream",
+          "quantity": {
+            "measure": "3/4",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "",
+            "category": [
+              "Dairy"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/milk-allergy-symptoms#milk-allergy"
+            ],
+            "details": ""
+          },
+          "alternative": "optional",
+          "quality_characteristic": "",
+          "image": ""
+        }
+      ],
+      "hasDairy": true,
+      "hasMeat": true,
+      "hasNuts": false,
+      "prep_time": "15 minutes",
+      "cook_time": "30 minutes",
+      "serves": "12",
+      "instructions": [
+        {
+          "original_text": "Place all the ingredients except the meat in a small bowl.",
+          "input_condition": [
+            "have_all_ingredients_except_meat"
+          ],
+          "task": [
+            {
+              "action_name": "Place all the ingredients except the meat in a small bowl",
+              "output_quality": [
+                "All ingredients except the meat should be in the small bowl."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Small Bowl"
+                ],
+                "failure": [
+                  "Ingredients not placed in the bowl"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "ingredients_in_bowl"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Stir the spices well to make sure the spices are blended well.",
+          "input_condition": [
+            "ingredients_in_bowl"
+          ],
+          "task": [
+            {
+              "action_name": "Stir the spices well",
+              "output_quality": [
+                "Spices should be blended well."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Stirring Spoon"
+                ],
+                "failure": [
+                  "Spices not blended well"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "blended_spices"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Crumble the ground beef into a large skillet (preferably nonstick) over medium-high heat and brown the beef, stirring well.",
+          "input_condition": [
+            "have_ground_beef",
+            "have_skillet"
+          ],
+          "task": [
+            {
+              "action_name": "Crumble the ground beef into a large skillet over medium-high heat",
+              "output_quality": [
+                "Ground beef should be crumbled into the skillet."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Large Skillet"
+                ],
+                "failure": [
+                  "Beef not crumbled into the skillet"
+                ]
+              }
+            },
+            {
+              "action_name": "Brown the beef, stirring well",
+              "output_quality": [
+                "Beef should be browned evenly."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Stirring Spoon"
+                ],
+                "failure": [
+                  "Beef not browned evenly"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "browned_beef"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Transfer the browned beef to a colander to drain off the grease.",
+          "input_condition": [
+            "browned_beef",
+            "have_colander"
+          ],
+          "task": [
+            {
+              "action_name": "Transfer the browned beef to a colander to drain off the grease",
+              "output_quality": [
+                "Grease should be drained from the beef."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Colander"
+                ],
+                "failure": [
+                  "Grease not drained from the beef"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "drained_beef"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Return the beef to the skillet.",
+          "input_condition": [
+            "drained_beef",
+            "have_skillet"
+          ],
+          "task": [
+            {
+              "action_name": "Return the beef to the skillet",
+              "output_quality": [
+                "Beef should be in the skillet."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Beef not in the skillet"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "beef_in_skillet"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Add the spice mix and 3/4 to 1 cup water. Stir to combine.",
+          "input_condition": [
+            "blended_spices",
+            "beef_in_skillet",
+            "have_water"
+          ],
+          "task": [
+            {
+              "action_name": "Add the spice mix and 3/4 to 1 cup water to the beef",
+              "output_quality": [
+                "Spice mix and water should be added to the beef."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Spice mix or water not added"
+                ]
+              }
+            },
+            {
+              "action_name": "Stir to combine",
+              "output_quality": [
+                "Spices and water should be well combined with the beef."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Stirring Spoon"
+                ],
+                "failure": [
+                  "Spices and water not combined"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "combined_beef_mixture"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Simmer the beef mixture on medium-low heat for 20 minutes, or until most of the moisture has cooked away. Remove the skillet from heat before the meat is completely dry.",
+          "input_condition": [
+            "combined_beef_mixture"
+          ],
+          "task": [
+            {
+              "action_name": "Simmer the beef mixture on medium-low heat for 20 minutes or until most of the moisture has cooked away",
+              "output_quality": [
+                "Beef mixture should be simmered with most moisture cooked away."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Moisture not cooked away",
+                  "Beef mixture too dry"
+                ]
+              }
+            },
+            {
+              "action_name": "Remove the skillet from heat before the meat is completely dry",
+              "output_quality": [
+                "Beef should not be completely dry."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Beef mixture too dry"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "simmered_beef_mixture"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Heat a skillet over medium heat.",
+          "input_condition": [
+            "have_skillet"
+          ],
+          "task": [
+            {
+              "action_name": "Heat a skillet over medium heat",
+              "output_quality": [
+                "Skillet should be heated over medium heat."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Skillet"
+                ],
+                "failure": [
+                  "Skillet not heated properly"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "heated_skillet"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Place each tortilla in the skillet for about 30 seconds on each side to warm them up.",
+          "input_condition": [
+            "have_tortillas",
+            "heated_skillet"
+          ],
+          "task": [
+            {
+              "action_name": "Place each tortilla in the skillet",
+              "output_quality": [
+                "Tortilla should be placed in the skillet."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Tortilla not placed in skillet"
+                ]
+              }
+            },
+            {
+              "action_name": "Warm each tortilla for about 30 seconds on each side",
+              "output_quality": [
+                "Tortillas should be warmed for 30 seconds on each side."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Tortillas not warmed properly"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "warmed_tortillas"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Remove the tortilla from the skillet.",
+          "input_condition": [
+            "warmed_tortillas"
+          ],
+          "task": [
+            {
+              "action_name": "Remove the tortilla from the skillet",
+              "output_quality": [
+                "Tortillas should be removed from the skillet."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Tortillas not removed from skillet"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "tortillas_removed_from_skillet"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Cover the tortillas with a towel to keep them warm.",
+          "input_condition": [
+            "tortillas_removed_from_skillet"
+          ],
+          "task": [
+            {
+              "action_name": "Cover the tortillas with a towel",
+              "output_quality": [
+                "Tortillas should be covered with a towel."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Towel"
+                ],
+                "failure": [
+                  "Tortillas not covered"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "tortillas_kept_warm"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Spoon a couple tablespoons of beef on a tortilla.",
+          "input_condition": [
+            "have_tortillas",
+            "have_cooked_beef"
+          ],
+          "task": [
+            {
+              "action_name": "Spoon a couple tablespoons of beef onto a tortilla",
+              "output_quality": [
+                "Beef should be placed on the tortilla."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Beef not placed on tortilla",
+                  "Incorrect amount of beef on tortilla"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "beef_on_tortilla"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Top with lettuce, cheese, and diced tomato.",
+          "input_condition": [
+            "beef_on_tortilla",
+            "have_lettuce",
+            "have_cheese",
+            "have_diced_tomato"
+          ],
+          "task": [
+            {
+              "action_name": "Top with lettuce, cheese, and diced tomato",
+              "output_quality": [
+                "Lettuce, cheese, and diced tomato should be placed on top of the beef."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Lettuce not added",
+                  "Cheese not added",
+                  "Diced tomato not added",
+                  "Ingredients not evenly distributed"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "taco_topped_with_lettuce_cheese_tomato"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Top with sour cream if desired.",
+          "input_condition": [
+            "taco_topped_with_lettuce_cheese_tomato",
+            "have_sour_cream"
+          ],
+          "task": [
+            {
+              "action_name": "Top with sour cream if desired",
+              "output_quality": [
+                "Sour cream should be placed on top of the taco if desired."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Sour cream not added when desired",
+                  "Sour cream added when not desired"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "taco_with_optional_sour_cream"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Repeat with the remaining ingredients.",
+          "input_condition": [
+            "have_remaining_ingredients"
+          ],
+          "task": [
+            {
+              "action_name": "Repeat the process with remaining ingredients",
+              "output_quality": [
+                "All tortillas should be topped with beef, lettuce, cheese, diced tomato, and optionally sour cream."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Some tortillas are missing ingredients"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "all_tacos_prepared"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Serve immediately with your favorite taco sauce.",
+          "input_condition": [
+            "all_tacos_prepared",
+            "have_taco_sauce"
+          ],
+          "task": [
+            {
+              "action_name": "Serve immediately with taco sauce",
+              "output_quality": [
+                "Tacos should be served with taco sauce."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Tacos not served immediately",
+                  "Tacos not served with taco sauce"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "tacos_ready_to_eat"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        }
+      ]
+    },
+    "33": {
+      "recipe_name": "nacho-bell-grande-beef",
+      "ingredients": [
+        {
+          "name": "Tortilla Chips",
+          "quantity": {
+            "measure": "1",
+            "unit": "10-13 oz Bag"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "Ground Beef",
+          "quantity": {
+            "measure": "1",
+            "unit": "lb"
+          },
+          "allergies": {
+            "id": "0xb74d",
+            "category": [
+              "meat"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/foods/pork",
+              "https://www.healthline.com/health/allergies/most-uncommon-food-allergies#red-meat"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "Refried Beans",
+          "quantity": {
+            "measure": "1",
+            "unit": "13 oz Can"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "Nacho Cheese",
+          "quantity": {
+            "measure": "1",
+            "unit": "12 oz Jar"
+          },
+          "allergies": {
+            "id": "",
+            "category": [
+              "Dairy"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/milk-allergy-symptoms#milk-allergy"
+            ],
+            "details": ""
+          },
+          "alternative": "Store-Bought",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "Sour Cream",
+          "quantity": {
+            "measure": "6-8",
+            "unit": "oz"
+          },
+          "allergies": {
+            "id": "",
+            "category": [
+              "Dairy"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/milk-allergy-symptoms#milk-allergy"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "Tomato",
+          "quantity": {
+            "measure": "1",
+            "unit": "medium"
+          },
+          "allergies": {
+            "id": "",
+            "category": [
+              "Nightshade Vegetables"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/nightshade-vegetables#solanine"
+            ],
+            "details": ""
+          },
+          "alternative": "Diced",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "Green Onions",
+          "quantity": {
+            "measure": "",
+            "unit": "Optional"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "Jalapenos",
+          "quantity": {
+            "measure": "",
+            "unit": "Optional"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "Salsa or Hot Sauce",
+          "quantity": {
+            "measure": "",
+            "unit": "Optional"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "Guacamole",
+          "quantity": {
+            "measure": "",
+            "unit": "Optional"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        }
+      ],
+      "hasDairy": true,
+      "hasMeat": true,
+      "hasNuts": false,
+      "prep_time": "5 minutes",
+      "cook_time": "5 minutes",
+      "serves": "6",
+      "instructions": [
+        {
+          "original_text": "Dump Tortilla Chips out on a Platter",
+          "input_condition": [
+            "have_tortilla_chips",
+            "have_platter"
+          ],
+          "task": [
+            {
+              "action_name": "Dump Tortilla Chips out on a Platter",
+              "output_quality": [
+                "Tortilla chips should be spread out on the platter."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Tortilla chips not on the platter",
+                  "Tortilla chips unevenly spread"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "tortilla_chips_on_platter"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "In a Medium Fry Pan -Cook and break up the ground Beef-add Taco Seasoning and water as directed on seasoning",
+          "input_condition": [
+            "have_ground_beef",
+            "have_taco_seasoning",
+            "have_water"
+          ],
+          "task": [
+            {
+              "action_name": "Cook and break up the ground beef",
+              "output_quality": [
+                "Ground beef should be cooked and broken into small pieces."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Fry Pan"
+                ],
+                "failure": [
+                  "Beef not fully cooked",
+                  "Beef not broken up"
+                ]
+              }
+            },
+            {
+              "action_name": "Add taco seasoning and water as directed on seasoning",
+              "output_quality": [
+                "Ground beef should be seasoned with taco seasoning and water."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Seasoning not properly mixed",
+                  "Incorrect amount of water"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "seasoned_ground_beef"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Heat Beans and Nacho Cheese in Microwave",
+          "input_condition": [
+            "have_beans",
+            "have_nacho_cheese",
+            "have_microwave"
+          ],
+          "task": [
+            {
+              "action_name": "Heat beans in the microwave",
+              "output_quality": [
+                "Beans should be heated."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Beans not heated",
+                  "Beans overheated"
+                ]
+              }
+            },
+            {
+              "action_name": "Heat nacho cheese in the microwave",
+              "output_quality": [
+                "Nacho cheese should be heated."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Nacho cheese not heated",
+                  "Nacho cheese overheated"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "heated_beans_and_cheese"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Scoop beans onto chips using an ice cream scoop works best but go with what you have",
+          "input_condition": [
+            "heated_beans",
+            "tortilla_chips_on_platter"
+          ],
+          "task": [
+            {
+              "action_name": "Scoop beans onto chips",
+              "output_quality": [
+                "Beans should be evenly distributed on the chips."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Ice Cream Scoop"
+                ],
+                "failure": [
+                  "Beans not evenly distributed on chips"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "chips_with_beans"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Spread ground beef over chips and beans",
+          "input_condition": [
+            "have_ground_beef",
+            "chips_with_beans"
+          ],
+          "task": [
+            {
+              "action_name": "Spread ground beef over chips and beans",
+              "output_quality": [
+                "Ground beef should be evenly distributed over the chips and beans."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Ground beef not evenly spread",
+                  "Incorrect amount of ground beef"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "nachos_with_ground_beef"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Pour hot nacho cheese over chips, beans, and beef",
+          "input_condition": [
+            "heated_nacho_cheese",
+            "nachos_with_ground_beef"
+          ],
+          "task": [
+            {
+              "action_name": "Pour hot nacho cheese over chips, beans, and beef",
+              "output_quality": [
+                "Nacho cheese should be evenly poured over the chips, beans, and beef."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Nacho cheese not evenly poured",
+                  "Incorrect amount of nacho cheese"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "nachos_with_nacho_cheese"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Sprinkle tomatoes over nachos",
+          "input_condition": [
+            "have_tomatoes",
+            "nachos_with_nacho_cheese"
+          ],
+          "task": [
+            {
+              "action_name": "Sprinkle tomatoes over nachos",
+              "output_quality": [
+                "Tomatoes should be evenly sprinkled over the nachos."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Tomatoes not evenly sprinkled",
+                  "Incorrect amount of tomatoes"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "nachos_with_tomatoes"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Top with sour cream and other optional garnishes",
+          "input_condition": [
+            "have_sour_cream",
+            "have_optional_garnishes",
+            "nachos_with_tomatoes"
+          ],
+          "task": [
+            {
+              "action_name": "Top with sour cream and other optional garnishes",
+              "output_quality": [
+                "Sour cream and optional garnishes should be evenly distributed over the nachos."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Sour cream and optional garnishes not evenly distributed",
+                  "Incorrect amount of sour cream or garnishes"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "final_nachos_ready_to_serve"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        }
+      ]
+    },
+    "34": {
+      "recipe_name": "veggie-power-bowl",
+      "ingredients": [
+        {
+          "name": "canned black beans in seasoned sauce",
+          "quantity": {
+            "measure": "1",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "Spanish style ready rice",
+          "quantity": {
+            "measure": "1",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "lettuce",
+          "quantity": {
+            "measure": "4",
+            "unit": "cups"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "finely chopped",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "Roma tomatoes",
+          "quantity": {
+            "measure": "2",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": [
+              "Nightshade Vegetables"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/nightshade-vegetables#solanine"
+            ],
+            "details": "seeded and chopped"
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "cheddar cheese",
+          "quantity": {
+            "measure": "2",
+            "unit": "oz"
+          },
+          "allergies": {
+            "id": "",
+            "category": [
+              "Dairy"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/milk-allergy-symptoms#milk-allergy"
+            ],
+            "details": "shredded, or try a three-cheese blend similar to the one Taco Bell uses, made with mozzarella, cheddar, and pepper jack cheese"
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "avocado",
+          "quantity": {
+            "measure": "½",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": "sliced"
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "sour cream",
+          "quantity": {
+            "measure": "2",
+            "unit": "tablespoons"
+          },
+          "allergies": {
+            "id": "",
+            "category": [
+              "Dairy"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/milk-allergy-symptoms#milk-allergy"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "ripe avocado",
+          "quantity": {
+            "measure": "½",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "plain non-fat Greek yogurt",
+          "quantity": {
+            "measure": "½",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "",
+            "category": [
+              "Dairy"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/milk-allergy-symptoms#milk-allergy"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "fresh lime juice",
+          "quantity": {
+            "measure": "3",
+            "unit": "tablespoons"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "ranch seasoning",
+          "quantity": {
+            "measure": "1",
+            "unit": "tablespoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": "*in the packet"
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "onions",
+          "quantity": {
+            "measure": "",
+            "unit": "Optional"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "pickled jalapeños",
+          "quantity": {
+            "measure": "",
+            "unit": "Optional"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "salsa or hot sauce",
+          "quantity": {
+            "measure": "",
+            "unit": "Optional"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "pico de gallo",
+          "quantity": {
+            "measure": "",
+            "unit": "Optional"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        }
+      ],
+      "hasDairy": true,
+      "hasMeat": false,
+      "hasNuts": false,
+      "prep_time": "5 minutes",
+      "cook_time": "5 minutes",
+      "serves": "2",
+      "instructions": [
+        {
+          "original_text": "Place the black beans in a small saucepan and heat on medium-low. Heat beans until simmering, while stirring.",
+          "input_condition": [
+            "have_black_beans",
+            "have_saucepan"
+          ],
+          "task": [
+            {
+              "action_name": "Heat black beans in saucepan",
+              "output_quality": [
+                "Black beans should be heated until simmering while stirring."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Saucepan"
+                ],
+                "failure": [
+                  "Beans not heated",
+                  "Beans overheated"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "simmered_black_beans"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "While the beans are simmering, cook the seasoned rice in the microwave according to package directions, typically 90 seconds.",
+          "input_condition": [
+            "have_seasoned_rice",
+            "have_microwave"
+          ],
+          "task": [
+            {
+              "action_name": "Cook seasoned rice in microwave",
+              "output_quality": [
+                "Rice should be cooked according to package directions, typically for 90 seconds."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Microwave"
+                ],
+                "failure": [
+                  "Rice not cooked",
+                  "Rice overcooked"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "cooked_seasoned_rice"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Divide the ingredients between 2 medium-size bowls.",
+          "input_condition": [
+            "simmered_black_beans",
+            "cooked_seasoned_rice"
+          ],
+          "task": [
+            {
+              "action_name": "Divide ingredients between bowls",
+              "output_quality": [
+                "Ingredients should be evenly divided between 2 medium-size bowls."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Ingredients not evenly divided",
+                  "Incorrect amount of ingredients in bowls"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "divided_ingredients_in_bowls"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Place the dressing ingredients into a small blender or food processor and blend until smooth.",
+          "input_condition": [
+            "have_dressing_ingredients"
+          ],
+          "task": [
+            {
+              "action_name": "Blend dressing ingredients until smooth",
+              "output_quality": [
+                "Dressing should be smooth after blending."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Blender",
+                  "Food Processor"
+                ],
+                "failure": [
+                  "Dressing not smooth after blending",
+                  "Incorrect amount of ingredients in dressing"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "smooth_dressing"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Drizzle the dressing on top of the bowls and serve.",
+          "input_condition": [
+            "smooth_dressing",
+            "divided_ingredients_in_bowls"
+          ],
+          "task": [
+            {
+              "action_name": "Drizzle dressing on top of bowls",
+              "output_quality": [
+                "Dressing should be evenly drizzled on top of the bowls."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Dressing not evenly drizzled",
+                  "Incorrect amount of dressing on bowls"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "final_dressed_bowls_ready_to_serve"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        }
+      ]
+    },
+    "35": {
+      "recipe_name": "cheesy-bean-rice-burrito",
+      "ingredients": [
+        {
+          "name": "sour cream",
+          "quantity": {
+            "measure": "¼",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "",
+            "category": [
+              "Dairy"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/milk-allergy-symptoms#milk-allergy"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "mayonnaise",
+          "quantity": {
+            "measure": "¼",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "0x7f2",
+            "category": [
+              "Olive"
+            ],
+            "ref": [
+              "https://www.foodallergy.org/living-food-allergies/food-allergy-essentials/common-allergens/olive"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "pickled jalapenos",
+          "quantity": {
+            "measure": "2",
+            "unit": "tablespoons"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": "diced, optional"
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "pickled jalapeno juice",
+          "quantity": {
+            "measure": "2",
+            "unit": "tablespoons"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": "optional"
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "paprika",
+          "quantity": {
+            "measure": "1",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "cumin",
+          "quantity": {
+            "measure": "1",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "garlic powder",
+          "quantity": {
+            "measure": "½",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "onion powder",
+          "quantity": {
+            "measure": "½",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "chipotle chili powder or regular chili powder",
+          "quantity": {
+            "measure": "½",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        }
+      ],
+      "hasDairy": true,
+      "hasMeat": false,
+      "hasNuts": false,
+      "prep_time": "20 minutes",
+      "cook_time": "15 minutes",
+      "serves": "8 Burritos",
+      "instructions": [
+        {
+          "original_text": "In a small bowl, mix together the creamy jalapeno sauce ingredients.",
+          "input_condition": [
+            "have_creamy_jalapeno_sauce_ingredients"
+          ],
+          "task": [
+            {
+              "action_name": "Mix creamy jalapeno sauce ingredients in a small bowl",
+              "output_quality": [
+                "Creamy jalapeno sauce should be well combined."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Small Bowl"
+                ],
+                "failure": [
+                  "Ingredients not well mixed",
+                  "Incorrect amount of ingredients in sauce"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "mixed_creamy_jalapeno_sauce"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Lay a tortilla flat, spread ¼ cup of refried beans, ⅓ cup of Spanish rice, ¼ cup of Mexican cheese, and ½ tablespoon* of jalapeno sauce down the middle. Roll into a burrito.",
+          "input_condition": [
+            "have_tortilla",
+            "have_refried_beans",
+            "have_spanish_rice",
+            "have_mexican_cheese",
+            "mixed_creamy_jalapeno_sauce"
+          ],
+          "task": [
+            {
+              "action_name": "Prepare burrito filling and roll",
+              "output_quality": [
+                "Burrito should be evenly rolled with the filling ingredients inside."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Uneven distribution of filling ingredients",
+                  "Incorrect amount of filling ingredients"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "rolled_burrito"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Fold the burrito.",
+          "input_condition": [
+            "rolled_burrito"
+          ],
+          "task": [
+            {
+              "action_name": "Fold the burrito",
+              "output_quality": [
+                "Burrito should be neatly folded."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Burrito not folded neatly"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "folded_burrito"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Place a skillet over medium heat. Add burrito seam side down. Toast on both sides till brown.",
+          "input_condition": [
+            "folded_burrito"
+          ],
+          "task": [
+            {
+              "action_name": "Toast burrito in skillet until brown on both sides",
+              "output_quality": [
+                "Burrito should be toasted until brown on both sides."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Skillet"
+                ],
+                "failure": [
+                  "Burrito not toasted evenly",
+                  "Burrito burnt"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "toasted_burrito_ready_to_serve"
           ],
           "modality": {
             "image": [],
