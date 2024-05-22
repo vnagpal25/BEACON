@@ -1,7 +1,7 @@
 {
   "recipe_ids": {
-    "31": {
-      "recipe_name": "mcdonalds_apple_pie",
+    "36": {
+      "recipe_name": "apple-pie",
       "ingredients": [
         {
           "name": "Granny Smith Apple",
@@ -168,7 +168,7 @@
         }
       ]
     },
-    "32":{
+    "37":{
       "recipe_name": "bacon_ranch_mccrispy_deluxe",
       "ingredients": [
         {
