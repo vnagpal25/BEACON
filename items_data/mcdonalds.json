@@ -4,442 +4,4265 @@
       "recipe_name": "apple-pie",
       "ingredients": [
         {
-          "name": "Granny Smith Apple",
+          "name": "Granny Smith apple",
           "quantity": {
             "measure": "1",
-            "unit": "Medium"
-          }
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
         },
         {
-          "name": "Red Apple",
+          "name": "red apple",
           "quantity": {
             "measure": "1",
-            "unit": "Medium"
-          }
-        },
-        {
-          "name": "Unsalted Butter",
-          "quantity": {
-            "measure": "",
             "unit": ""
-          }
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
         },
         {
-          "name": "Brown Sugar",
+          "name": "butter",
           "quantity": {
-            "measure": "",
-            "unit": ""
-          }
+            "measure": "3",
+            "unit": "tablespoons"
+          },
+          "allergies": {
+            "id": "",
+            "category": [
+              "Dairy"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/milk-allergy-symptoms#milk-allergy"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
         },
         {
-          "name": "Ground Cinnamon",
+          "name": "brown sugar",
           "quantity": {
-            "measure": "",
-            "unit": ""
-          }
+            "measure": "3",
+            "unit": "tablespoons"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
         },
         {
-          "name": "Ground Nutmeg",
+          "name": "ground cinnamon",
           "quantity": {
-            "measure": "",
-            "unit": ""
-          }
+            "measure": "1/2",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
         },
         {
-          "name": "Allspice",
+          "name": "nutmeg",
           "quantity": {
-            "measure": "",
-            "unit": ""
-          }
+            "measure": "1/4",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
         },
         {
-          "name": "Vanilla Extract",
+          "name": "allspice",
           "quantity": {
-            "measure": "",
-            "unit": ""
-          }
+            "measure": "1/4",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
         },
         {
-          "name": "Lemon Juice",
+          "name": "vanilla extract",
           "quantity": {
-            "measure": "",
-            "unit": ""
-          }
+            "measure": "1/4",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
         },
         {
-          "name": "Salt",
-          "quantity": {
-            "measure": "",
-            "unit": ""
-          }
-        },
-        {
-          "name": "Puff Pastry Sheets",
+          "name": "lemon juice",
           "quantity": {
             "measure": "1",
-            "unit": "Package"
-          }
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "salt",
+          "quantity": {
+            "measure": "1/4",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": [
+              "Salt"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/how-much-sodium-per-day#recommendations"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "puff pastry",
+          "quantity": {
+            "measure": "2",
+            "unit": "sheets"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": "cut into 8 inch squares"
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
         }
       ],
+      "hasDairy": true,
+      "hasMeat": false,
+      "hasNuts": false,
+      "prep_time": "10 minutes",
+      "cook_time": "15 minutes",
+      "total_time": "25 minutes",
+      "serves": "8",
       "instructions": [
         {
-          "original_text": "Defrost puff pastry and prepare apple filling by dicing apples and cooking with spices, butter, and lemon juice until softened.",
+          "original_text": "Defrost the puff pastry according to package directions.",
           "input_condition": [
-            "have_apples",
-            "have_puff_pastry",
-            "have_spices"
+            "have_puff_pastry"
           ],
-          "tasks list": [
+          "task": [
             {
-              "action_name": "Prepare Apple Filling",
+              "action_name": "Defrost puff pastry",
               "output_quality": [
-                "Apples are diced and cooked with spices into a softened filling"
+                "Puff pastry should be defrosted according to package directions."
               ],
               "background_knowledge": {
-                "tool": [
-                  "Saucepan"
-                ],
+                "tool": [],
                 "failure": [
-                  "Apples not softened",
-                  "Spices not well integrated"
+                  "Puff pastry not defrosted properly",
+                  "Puff pastry still frozen"
                 ]
               }
             }
           ],
           "output_condition": [
-            "apple_filling_ready"
-          ]
+            "defrosted_puff_pastry"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
         },
         {
-          "original_text": "Assemble pies with the filling on puff pastry squares, fold, and seal edges with a fork.",
+          "original_text": "Dice apples into small pieces and place apples in a pot over medium heat.",
           "input_condition": [
-            "apple_filling_ready",
-            "puff_pastry_defrosted"
+            "have_apples"
           ],
-          "tasks list": [
+          "task": [
             {
-              "action_name": "Assemble Pies",
+              "action_name": "Dice apples and place in pot over medium heat",
               "output_quality": [
-                "Pies are assembled with filling sealed within pastry"
+                "Apples should be diced into small pieces and placed in pot over medium heat."
               ],
               "background_knowledge": {
                 "tool": [
-                  "Fork",
-                  "Pastry brush"
+                  "Knife",
+                  "Pot"
                 ],
                 "failure": [
-                  "Pastry not sealed properly",
+                  "Apples not diced properly",
+                  "Apples not placed in pot"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "diced_apples_in_pot"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "To the pot add butter, brown sugar, cinnamon, nutmeg, allspice, vanilla extract, lemon juice, and salt.",
+          "input_condition": [
+            "diced_apples_in_pot",
+            "have_butter",
+            "have_brown_sugar",
+            "have_cinnamon",
+            "have_nutmeg",
+            "have_allspice",
+            "have_vanilla_extract",
+            "have_lemon_juice",
+            "have_salt"
+          ],
+          "task": [
+            {
+              "action_name": "Add ingredients to pot",
+              "output_quality": [
+                "Butter, brown sugar, cinnamon, nutmeg, allspice, vanilla extract, lemon juice, and salt should be added to the pot."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Ingredients not added to pot"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "ingredients_added_to_apples"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Cook apples for about 10 to 12 minutes or until the apples are softened.",
+          "input_condition": [
+            "ingredients_added_to_apples"
+          ],
+          "task": [
+            {
+              "action_name": "Cook apples",
+              "output_quality": [
+                "Apples should be softened after cooking for 10 to 12 minutes."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Apples not cooked properly",
+                  "Apples not softened"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "cooked_apples"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Cut puff pastry into 8 squares.",
+          "input_condition": [
+            "defrosted_puff_pastry"
+          ],
+          "task": [
+            {
+              "action_name": "Cut puff pastry into squares",
+              "output_quality": [
+                "Puff pastry should be cut into 8 squares."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Knife"
+                ],
+                "failure": [
+                  "Puff pastry not cut into 8 squares",
+                  "Uneven squares"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "cut_puff_pastry_squares"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Spoon 1 heaping tablespoon of cooked apples onto one side of each one of the squares.",
+          "input_condition": [
+            "cut_puff_pastry_squares",
+            "cooked_apples"
+          ],
+          "task": [
+            {
+              "action_name": "Spoon cooked apples onto pastry",
+              "output_quality": [
+                "1 heaping tablespoon of cooked apples should be on one side of each square."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Spoon"
+                ],
+                "failure": [
+                  "Apples not properly measured",
+                  "Apples not placed on one side"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "apples_on_puff_pastry"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Brush water on the edge of each one of the squares and fold the squares over on each other. Use a fork to crimp the edges together.",
+          "input_condition": [
+            "apples_on_puff_pastry"
+          ],
+          "task": [
+            {
+              "action_name": "Brush water on edges and fold squares",
+              "output_quality": [
+                "Water should be brushed on the edges of each square.",
+                "Squares should be folded over and edges crimped with a fork."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Brush",
+                  "Fork"
+                ],
+                "failure": [
+                  "Edges not sealed properly",
                   "Filling leaks out"
                 ]
               }
             }
           ],
           "output_condition": [
-            "pies_assembled"
-          ]
+            "sealed_puff_pastry_squares"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
         },
         {
-          "original_text": "Fry pies in heated oil until golden brown, then drain on a wire rack.",
+          "original_text": "Add enough oil to a large pot or deep fryer to cover the bottom 3 inches.",
           "input_condition": [
-            "pies_assembled",
-            "oil_heated"
+            "have_oil",
+            "have_large_pot_or_deep_fryer"
           ],
-          "tasks list": [
+          "task": [
             {
-              "action_name": "Fry Pies",
+              "action_name": "Add oil to pot",
               "output_quality": [
-                "Pies are golden brown and crispy"
+                "Oil should cover the bottom 3 inches of the pot or deep fryer."
               ],
               "background_knowledge": {
                 "tool": [
-                  "Deep fryer",
-                  "Wire rack"
+                  "Large Pot or Deep Fryer"
                 ],
                 "failure": [
-                  "Pies not evenly fried",
-                  "Oil not at correct temperature"
+                  "Not enough oil added"
                 ]
               }
             }
           ],
           "output_condition": [
-            "pies_fried"
-          ]
+            "oil_in_pot"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Heat oil until 350 degrees. The oil will be ready when you drop a small piece of dough in the oil and it cooks rapidly.",
+          "input_condition": [
+            "oil_in_pot"
+          ],
+          "task": [
+            {
+              "action_name": "Heat oil to 350 degrees",
+              "output_quality": [
+                "Oil should be heated to 350 degrees."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Thermometer"
+                ],
+                "failure": [
+                  "Oil not hot enough",
+                  "Oil too hot"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "heated_oil"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Cook pies 2 at a time, for about 1 minute on each side.",
+          "input_condition": [
+            "heated_oil",
+            "sealed_puff_pastry_squares"
+          ],
+          "task": [
+            {
+              "action_name": "Cook pies",
+              "output_quality": [
+                "Pies should be cooked for about 1 minute on each side."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Pies not cooked evenly",
+                  "Pies overcooked"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "cooked_pies"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Remove pies when both sides are golden brown.",
+          "input_condition": [
+            "cooked_pies"
+          ],
+          "task": [
+            {
+              "action_name": "Remove pies from oil",
+              "output_quality": [
+                "Both sides of the pies should be golden brown."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Slotted Spoon or Tongs"
+                ],
+                "failure": [
+                  "Pies not golden brown",
+                  "Pies undercooked"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "golden_brown_pies"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Place fried pies on a wire rack to drain excess oil.",
+          "input_condition": [
+            "golden_brown_pies"
+          ],
+          "task": [
+            {
+              "action_name": "Drain pies on wire rack",
+              "output_quality": [
+                "Excess oil should be drained from the pies."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Wire Rack"
+                ],
+                "failure": [
+                  "Excess oil remains on pies"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "drained_pies"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "If you want to keep the pies warm, hold them in a 200-degree oven until you are ready to serve.",
+          "input_condition": [
+            "drained_pies"
+          ],
+          "task": [
+            {
+              "action_name": "Keep pies warm in oven",
+              "output_quality": [
+                "Pies should be kept warm in a 200-degree oven."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Oven"
+                ],
+                "failure": [
+                  "Pies not kept warm"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "warm_pies"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
         }
       ]
     },
-    "37":{
-      "recipe_name": "bacon_ranch_mccrispy_deluxe",
+    "37": {
+      "recipe_name": "quarter-pounder",
       "ingredients": [
         {
-          "name": "Chicken Breasts, boneless, skinless",
-          "quantity": {
-            "measure": "",
-            "unit": ""
-          }
-        },
-        {
-          "name": "Salt",
-          "quantity": {
-            "measure": "",
-            "unit": ""
-          }
-        },
-        {
-          "name": "Finely ground black pepper",
-          "quantity": {
-            "measure": "",
-            "unit": ""
-          }
-        },
-        {
-          "name": "All-purpose flour",
-          "quantity": {
-            "measure": "",
-            "unit": ""
-          }
-        },
-        {
-          "name": "Cornmeal",
-          "quantity": {
-            "measure": "",
-            "unit": ""
-          }
-        },
-        {
-          "name": "Onion powder",
-          "quantity": {
-            "measure": "",
-            "unit": ""
-          }
-        },
-        {
-          "name": "Garlic powder",
-          "quantity": {
-            "measure": "",
-            "unit": ""
-          }
-        },
-        {
-          "name": "Paprika",
-          "quantity": {
-            "measure": "",
-            "unit": ""
-          }
-        },
-        {
-          "name": "Egg",
+          "name": "sliced white onions",
           "quantity": {
             "measure": "1",
-            "unit": ""
-          }
+            "unit": "tablespoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
         },
         {
-          "name": "Milk",
+          "name": "sesame seed hamburger buns",
           "quantity": {
-            "measure": "",
+            "measure": "4",
             "unit": ""
-          }
+          },
+          "allergies": {
+            "id": "",
+            "category": [
+              "Gluten",
+              "Sesame"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/gluten-free-diet#foods-to-avoid",
+              "https://www.foodallergy.org/living-food-allergies/food-allergy-essentials/common-allergens/sesame"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
         },
         {
-          "name": "Vegetable Oil",
+          "name": "ground beef chuck",
           "quantity": {
-            "measure": "For deep frying",
-            "unit": ""
-          }
+            "measure": "1 1/3",
+            "unit": "pounds"
+          },
+          "allergies": {
+            "id": "0xb74d",
+            "category": [
+              "meat"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/foods/pork",
+              "https://www.healthline.com/health/allergies/most-uncommon-food-allergies#red-meat"
+            ],
+            "details": "this allows for some shrinkage"
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
         },
         {
-          "name": "Buttermilk",
+          "name": "salt",
           "quantity": {
-            "measure": "",
-            "unit": ""
-          }
+            "measure": "1/2",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": [
+              "Salt"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/how-much-sodium-per-day#recommendations"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
         },
         {
-          "name": "Mayonnaise",
+          "name": "American cheese",
           "quantity": {
-            "measure": "",
-            "unit": ""
-          }
+            "measure": "8",
+            "unit": "slices"
+          },
+          "allergies": {
+            "id": "",
+            "category": [
+              "Dairy"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/milk-allergy-symptoms#milk-allergy"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
         },
         {
-          "name": "Dry ranch dressing mix",
+          "name": "dill pickle slices",
           "quantity": {
-            "measure": "",
+            "measure": "8",
             "unit": ""
-          }
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
         },
         {
-          "name": "Potato Hamburger Buns",
+          "name": "mustard",
           "quantity": {
-            "measure": "",
-            "unit": ""
-          }
+            "measure": "1 1/3",
+            "unit": "tablespoons"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
         },
         {
-          "name": "Butter, melted",
+          "name": "ketchup",
           "quantity": {
-            "measure": "",
-            "unit": ""
-          }
-        },
-        {
-          "name": "Bacon, cooked",
-          "quantity": {
-            "measure": "",
-            "unit": ""
-          }
-        },
-        {
-          "name": "Crinkle cut pickles",
-          "quantity": {
-            "measure": "",
-            "unit": ""
-          }
-        },
-        {
-          "name": "Lettuce, shredded",
-          "quantity": {
-            "measure": "Optional",
-            "unit": ""
-          }
-        },
-        {
-          "name": "Roma Tomatoes, sliced",
-          "quantity": {
-            "measure": "Optional",
-            "unit": ""
-          }
+            "measure": "3 1/3 to 4",
+            "unit": "tablespoons"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
         }
       ],
+      "hasDairy": true,
+      "hasMeat": true,
+      "hasNuts": false,
+      "prep_time": "15 minutes",
+      "cook_time": "10 minutes",
+      "total_time": "25 minutes",
+      "serves": "4",
       "instructions": [
         {
-          "original_text": "Pat the chicken breasts dry, cut them in half horizontally, and season with salt and pepper. Set up a breading station with dry and wet mixtures, coat the chicken accordingly, and let rest on a wire rack.",
+          "original_text": "Toast the buns in a cast-iron or stainless-steel skillet over medium heat for about 1 minute, or until they brown. Set aside.",
           "input_condition": [
-            "have_chicken_breast",
-            "have_salt_pepper",
+            "have_buns"
+          ],
+          "task": [
+            {
+              "action_name": "Toast buns in skillet",
+              "output_quality": [
+                "Buns should be browned and toasted."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Cast-iron or Stainless-steel Skillet"
+                ],
+                "failure": [
+                  "Buns not browned",
+                  "Buns burnt"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "toasted_buns"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Form the ground beef into 4 equal balls. Place each ball of meat between two sheets of waxed paper or plastic wrap and gently press the meat into disc shapes. Do not press too hard, as the patties may fall apart.",
+          "input_condition": [
+            "have_ground_beef"
+          ],
+          "task": [
+            {
+              "action_name": "Form ground beef into patties",
+              "output_quality": [
+                "Ground beef should be shaped into disc-shaped patties."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Waxed Paper or Plastic Wrap"
+                ],
+                "failure": [
+                  "Patties fall apart",
+                  "Patties not evenly shaped"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "formed_patties"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "In the same skillet you used to toast the buns, cook the patties for 3 to 4 minutes on each side. Season each side with salt while cooking.",
+          "input_condition": [
+            "formed_patties",
+            "toasted_buns"
+          ],
+          "task": [
+            {
+              "action_name": "Cook patties in skillet",
+              "output_quality": [
+                "Patties should be cooked for 3 to 4 minutes on each side and seasoned with salt."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Cast-iron or Stainless-steel Skillet"
+                ],
+                "failure": [
+                  "Patties undercooked",
+                  "Patties overcooked"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "cooked_patties"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Place the bottom buns on a plate. To each bun add: a slice of American cheese, 1 burger patty, another slice of American cheese, 2 pickle slices, several sliced white onions, 1 teaspoon of mustard, and 2 to 3 teaspoons of ketchup. Cover the burger with the top bun.",
+          "input_condition": [
+            "toasted_buns",
+            "cooked_patties",
+            "have_american_cheese",
+            "have_pickle_slices",
+            "have_sliced_white_onions",
+            "have_mustard",
+            "have_ketchup"
+          ],
+          "task": [
+            {
+              "action_name": "Assemble burgers",
+              "output_quality": [
+                "Each bun should have the specified toppings and be covered with the top bun."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Ingredients missing",
+                  "Burgers not assembled correctly"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "assembled_burgers"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        }
+      ]
+    },
+    "38": {
+      "recipe_name": "blt-quarter-punder",
+      "ingredients": [
+        {
+          "name": "sesame seed hamburger buns",
+          "quantity": {
+            "measure": "4",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": [
+              "Gluten",
+              "Sesame"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/gluten-free-diet#foods-to-avoid",
+              "https://www.foodallergy.org/living-food-allergies/food-allergy-essentials/common-allergens/sesame"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "mayonnaise",
+          "quantity": {
+            "measure": "2",
+            "unit": "tablespoons"
+          },
+          "allergies": {
+            "id": "0x7f2",
+            "category": [
+              "Eggs",
+              "Olive"
+            ],
+            "ref": [
+              "https://www.foodallergy.org/living-food-allergies/food-allergy-essentials/common-allergens/egg",
+              "https://www.foodallergy.org/living-food-allergies/food-allergy-essentials/common-allergens/olive"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "liquid smoke",
+          "quantity": {
+            "measure": "1/4",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "paprika",
+          "quantity": {
+            "measure": "1/8",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "ground beef chuck",
+          "quantity": {
+            "measure": "1 1/3",
+            "unit": "pounds"
+          },
+          "allergies": {
+            "id": "0xb74d",
+            "category": [
+              "meat"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/foods/pork",
+              "https://www.healthline.com/health/allergies/most-uncommon-food-allergies#red-meat"
+            ],
+            "details": "this allows for some shrinkage"
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "salt",
+          "quantity": {
+            "measure": "1/2",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": [
+              "Salt"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/how-much-sodium-per-day#recommendations"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "American cheese",
+          "quantity": {
+            "measure": "8",
+            "unit": "slices"
+          },
+          "allergies": {
+            "id": "",
+            "category": [
+              "Dairy"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/milk-allergy-symptoms#milk-allergy"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "bacon",
+          "quantity": {
+            "measure": "8",
+            "unit": "slices"
+          },
+          "allergies": {
+            "id": "",
+            "category": [
+              "Pork"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/foods/pork"
+            ],
+            "details": "cooked until crispy"
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "roma tomatoes",
+          "quantity": {
+            "measure": "3",
+            "unit": "",
+            "preparation": "sliced"
+          },
+          "allergies": {
+            "id": "",
+            "category": [
+              "Nightshade Vegetables"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/nightshade-vegetables#solanine"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "shredded iceberg lettuce",
+          "quantity": {
+            "measure": "1/2",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "dill pickle slices",
+          "quantity": {
+            "measure": "8",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        }
+      ],
+      "prep_time": "10 minutes",
+      "cook_time": "15 minutes",
+      "total_time": "25 minutes",
+      "serves": "4",
+      "hasDairy": true,
+      "hasMeat": true,
+      "hasNuts": false,
+      "instructions": [
+        {
+          "original_text": "Toast the buns in a cast-iron or stainless-steel skillet over medium heat for about 1 minute, or until they brown. Set aside.",
+          "input_condition": [
+            "have_buns"
+          ],
+          "task": [
+            {
+              "action_name": "Toast buns in skillet",
+              "output_quality": [
+                "Buns should be browned and toasted."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Cast-iron or Stainless-steel Skillet"
+                ],
+                "failure": [
+                  "Buns not browned",
+                  "Buns burnt"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "toasted_buns"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "To make the smoky sauce, combine the mayonnaise, liquid smoke, and paprika in a small bowl. Mix well and set aside.",
+          "input_condition": [
+            "have_mayonnaise",
+            "have_liquid_smoke",
+            "have_paprika"
+          ],
+          "task": [
+            {
+              "action_name": "Combine mayonnaise, liquid smoke, and paprika in a small bowl",
+              "output_quality": [
+                "Ingredients should be well mixed."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Small Bowl"
+                ],
+                "failure": [
+                  "Ingredients not mixed well"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "smoky_sauce"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Form the meat into 4 equal balls. Place each ball between two sheets of waxed paper or plastic wrap and gently press the meat into patties. Do not press too hard, as the patties may fall apart.",
+          "input_condition": [
+            "have_ground_beef",
+            "have_waxed_paper_or_plastic_wrap"
+          ],
+          "task": [
+            {
+              "action_name": "Form the meat into 4 equal balls",
+              "output_quality": [
+                "Meat is divided into 4 equal balls."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Meat not divided equally"
+                ]
+              }
+            },
+            {
+              "action_name": "Place each ball between two sheets of waxed paper or plastic wrap and gently press the meat into patties",
+              "output_quality": [
+                "Meat is formed into patties."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Waxed paper or plastic wrap"
+                ],
+                "failure": [
+                  "Patties are too thin or fall apart"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "have_formed_patties"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Cook the patties for 3 to 4 minutes per side in the same skillet where you toasted the buns. Season the patties with salt before and after flipping them over in the skillet.",
+          "input_condition": [
+            "have_patties",
+            "have_toasted_buns",
+            "have_salt"
+          ],
+          "task": [
+            {
+              "action_name": "Cook patties in skillet",
+              "output_quality": [
+                "Patties should be cooked for 3 to 4 minutes per side.",
+                "Patties should be seasoned with salt before and after flipping."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Skillet"
+                ],
+                "failure": [
+                  "Patties undercooked or overcooked",
+                  "Patties not seasoned properly"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "cooked_patties"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "To build the burger, place a bottom bun on a plate. Spread some smoky sauce on the bun. Top with 1 slice of American cheese, followed by 1 burger patty and another slice of American cheese. Cut 2 slices of bacon in half and place the resulting 4 pieces of bacon on top of the cheese. Add 3 or 4 tomato slices and some shredded lettuce. Spread smoky sauce on the top bun and place it on the burger.",
+          "input_condition": [
+            "have_bottom_bun",
+            "have_smoky_sauce",
+            "have_American_cheese",
+            "have_burger_patty",
+            "have_bacon",
+            "have_tomato",
+            "have_lettuce"
+          ],
+          "task": [
+            {
+              "action_name": "Build the burger",
+              "output_quality": [
+                "Burger should be assembled with all ingredients in the specified order."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Plate"
+                ],
+                "failure": [
+                  "Ingredients not assembled properly"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "built_burger"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        }
+      ]
+    },
+    "39": {
+      "recipe_name": "sweet-tea",
+      "ingredients": [
+        {
+          "name": "water",
+          "quantity": {
+            "measure": "2",
+            "unit": "quarts",
+            "details": "divided use"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "teabags",
+          "quantity": {
+            "measure": "3",
+            "type": "family-sized",
+            "details": "or 12 regular-sized teabags"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "sugar",
+          "quantity": {
+            "measure": "2",
+            "unit": "cups",
+            "details": "or less, if desired"
+          },
+          "allergies": {
+            "id": "",
+            "category": [
+              "Sugar"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/how-much-sugar-per-day#how-much-sugar-is-too-much"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "ice",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        }
+      ],
+      "prep_time": "5 minutes",
+      "cook_time": "5 minutes",
+      "total_time": "10 minutes",
+      "serves": "6",
+      "hasDairy": false,
+      "hasMeat": false,
+      "hasNuts": false,
+      "instructions": [
+        {
+          "original_text": "Boil 1 quart of water. When the water reaches a boil, add the teabags and sugar and stir until the sugar dissolves.",
+          "input_condition": [
+            "have_water",
+            "have_teabags",
+            "have_sugar"
+          ],
+          "task": [
+            {
+              "action_name": "Boil water and prepare tea mixture",
+              "output_quality": [
+                "Water should be boiled.",
+                "Teabags and sugar should be added to the boiling water and stirred until the sugar dissolves."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Water not boiled",
+                  "Sugar not dissolved"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "prepared_tea_mixture"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Reduce the temperature to a simmer and let the tea steep for 5 minutes. Remove and discard the teabags.",
+          "input_condition": [
+            "prepared_tea_mixture"
+          ],
+          "task": [
+            {
+              "action_name": "Steep tea for 5 minutes",
+              "output_quality": [
+                "Tea should steep for 5 minutes at a simmering temperature.",
+                "Teabags should be removed and discarded."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Tea not steeped for the correct duration",
+                  "Teabags not removed"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "steeped_tea"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Fill a pitcher with ice. Pour the tea over the ice and add the rest of the water to fill the pitcher.",
+          "input_condition": [
+            "steeped_tea"
+          ],
+          "task": [
+            {
+              "action_name": "Prepare iced tea",
+              "output_quality": [
+                "Pitcher should be filled with ice.",
+                "Tea should be poured over the ice, and the rest of the water added to fill the pitcher."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Pitcher"
+                ],
+                "failure": [
+                  "Pitcher not filled with ice",
+                  "Incorrect water amount added"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "prepared_iced_tea"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Store the tea in the refrigerator.",
+          "input_condition": [
+            "prepared_iced_tea"
+          ],
+          "task": [
+            {
+              "action_name": "Refrigerate the tea",
+              "output_quality": [
+                "Tea should be stored in the refrigerator."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Tea not refrigerated"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "refrigerated_tea"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        }
+      ]
+    },
+    "40": {
+      "recipe_name": "McDonald’s Bacon Ranch McCrispy",
+      "ingredients": [
+        {
+          "name": "buttermilk",
+          "quantity": {
+            "measure": "1/2",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "0x7f2",
+            "category": [
+              "Dairy"
+            ],
+            "ref": [
+              "https://www.foodallergy.org/living-food-allergies/food-allergy-essentials/common-allergens/dairy"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "mayonnaise",
+          "quantity": {
+            "measure": "1/4",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "0x7f2",
+            "category": [
+              "Egg"
+            ],
+            "ref": [
+              "https://www.foodallergy.org/living-food-allergies/food-allergy-essentials/common-allergens/egg"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "Hidden Valley Original Ranch Seasoning and Salad Dressing Mix",
+          "quantity": {
+            "measure": "1",
+            "unit": "tablespoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "boneless skinless chicken breasts",
+          "quantity": {
+            "measure": "2",
+            "unit": "large"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "all-purpose flour",
+          "quantity": {
+            "measure": "1 1/2",
+            "unit": "cups"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "cornmeal",
+          "quantity": {
+            "measure": "2",
+            "unit": "tablespoons"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "onion powder",
+          "quantity": {
+            "measure": "2",
+            "unit": "teaspoons"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "garlic powder",
+          "quantity": {
+            "measure": "2",
+            "unit": "teaspoons"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "paprika",
+          "quantity": {
+            "measure": "1/4",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "salt",
+          "quantity": {
+            "measure": "1/4",
+            "unit": "teaspoon",
+            "details": "plus extra to season the chicken"
+          },
+          "allergies": {
+            "id": "",
+            "category": [
+              "Salt"
+            ],
+            "ref": [
+              "https://www.healthline.com/nutrition/how-much-sodium-per-day#recommendations"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "black pepper",
+          "quantity": {
+            "measure": "1/4",
+            "unit": "teaspoon",
+            "details": "plus extra to season to chicken"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "egg",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "0x7f2",
+            "category": [
+              "Egg"
+            ],
+            "ref": [
+              "https://www.foodallergy.org/living-food-allergies/food-allergy-essentials/common-allergens/egg"
+            ],
+            "details": "beaten"
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "milk",
+          "quantity": {
+            "measure": "1/2",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "0x7f2",
+            "category": [
+              "Dairy"
+            ],
+            "ref": [
+              "https://www.foodallergy.org/living-food-allergies/food-allergy-essentials/common-allergens/dairy"
+            ],
+            "details": ""
+          }
+        },
+        {
+          "name": "vegetable oil",
+          "quantity": {
+            "measure": "",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": "for deep frying"
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "potato hamburger buns",
+          "quantity": {
+            "measure": "4",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "melted butter",
+          "quantity": {
+            "measure": "1/2",
+            "unit": "tablespoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": [
+              "Dairy"
+            ],
+            "ref": [
+              "https://www.foodallergy.org/living-food-allergies/food-allergy-essentials/common-allergens/dairy"
+            ],
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "applewood smoked bacon",
+          "quantity": {
+            "measure": "8",
+            "unit": "slices",
+            "details": "cooked"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "crinkle-cut dill pickles",
+          "quantity": {
+            "measure": "12",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "shredded lettuce",
+          "quantity": {
+            "measure": "1/2",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": "optional"
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "large round tomato slices",
+          "quantity": {
+            "measure": "12",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": "optional"
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        }
+      ],
+      "prep_time": "15 minutes",
+      "cook_time": "20 minutes",
+      "total_time": "35 minutes",
+      "servings": "4",
+      "hasDairy": true,
+      "hasMeat": true,
+      "hasNuts": false,
+      "instructions": [
+        {
+          "original_text": "To make the dressing, combine the buttermilk, mayonnaise, and Hidden Valley Original Ranch Seasoning and Salad Dressing Mix in a small bowl. Mix well and place in the refrigerator.",
+          "input_condition": [
+            "have_buttermilk",
+            "have_mayonnaise",
+            "have_ranch_seasoning_mix"
+          ],
+          "task": [
+            {
+              "action_name": "Prepare dressing mixture",
+              "output_quality": [
+                "Buttermilk, mayonnaise, and ranch seasoning mix should be combined in a small bowl.",
+                "Mixture should be well-mixed.",
+                "Place the mixture in the refrigerator."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Small bowl"
+                ],
+                "failure": [
+                  "Ingredients not combined properly",
+                  "Mixture not refrigerated"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "prepared_dressing"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Cut the chicken breasts in half horizontally to create thinner cutlets. Season with a bit of salt and pepper.",
+          "input_condition": [
+            "have_chicken_breasts"
+          ],
+          "task": [
+            {
+              "action_name": "Prepare chicken cutlets",
+              "output_quality": [
+                "Chicken breasts should be cut in half horizontally to create thinner cutlets.",
+                "Cutlets should be seasoned with salt and pepper."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Knife"
+                ],
+                "failure": [
+                  "Chicken not cut properly",
+                  "Seasoning not evenly distributed"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "prepared_chicken_cutlets"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Set up a breading station: Combine the all-purpose flour, cornmeal, onion powder, garlic powder, paprika, salt, and ground black pepper in a flat dish. Stir until well combined. In another shallow dish, combine the egg and milk and beat until smooth.",
+          "input_condition": [
             "have_flour",
             "have_cornmeal",
             "have_onion_powder",
             "have_garlic_powder",
             "have_paprika",
-            "have_egg",
+            "have_salt",
+            "have_black_pepper",
+            "have_eggs",
             "have_milk"
           ],
-          "tasks list": [
+          "task": [
             {
-              "action_name": "Prepare Chicken for Frying",
+              "action_name": "Prepare breading station",
               "output_quality": [
-                "Chicken is seasoned, breaded, and ready to fry"
+                "Combine flour, cornmeal, onion powder, garlic powder, paprika, salt, and black pepper in a flat dish.",
+                "Stir until well combined.",
+                "Combine eggs and milk in another shallow dish and beat until smooth."
               ],
               "background_knowledge": {
                 "tool": [
-                  "Shallow pans",
-                  "Wire rack",
-                  "Baking tray"
+                  "Flat dish",
+                  "Shallow dish"
                 ],
                 "failure": [
-                  "Chicken not properly seasoned",
-                  "Breading falls off"
+                  "Ingredients not properly combined",
+                  "Egg mixture not smooth"
                 ]
               }
             }
           ],
           "output_condition": [
-            "chicken_ready_to_fry"
-          ]
+            "prepared_breading_station"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
         },
         {
-          "original_text": "Fry the chicken in vegetable oil heated to 350 degrees Fahrenheit until the internal temperature reaches 165 degrees. Let rest on a wire rack.",
+          "original_text": "Pour the vegetable oil into a deep, heavy-bottomed pot until it reaches a depth of 4 inches. Bring the oil to 350°F over medium-high heat.",
           "input_condition": [
-            "chicken_ready_to_fry",
             "have_vegetable_oil"
           ],
-          "tasks list": [
+          "task": [
             {
-              "action_name": "Fry Chicken",
+              "action_name": "Heat vegetable oil",
               "output_quality": [
-                "Chicken is crispy and cooked to a safe temperature"
+                "Vegetable oil should be poured into a deep, heavy-bottomed pot until it reaches a depth of 4 inches.",
+                "Oil should be heated to 350°F over medium-high heat."
               ],
               "background_knowledge": {
                 "tool": [
-                  "Heavy-bottom pot",
-                  "Thermometer",
+                  "Pot"
+                ],
+                "failure": [
+                  "Insufficient oil depth",
+                  "Incorrect oil temperature"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "heated_vegetable_oil"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "While the oil is heating, bread the chicken: Place the chicken into the flour, covering both sides, and shake off the excess. Dip the chicken into the egg mixture and shake off the excess. Then dip the chicken into the flour mixture again. Place the breaded chicken on a wire rack to rest for about 5 minutes before frying. This will help the coating adhere to the chicken.",
+          "input_condition": [
+            "heated_vegetable_oil",
+            "prepared_chicken_cutlets",
+            "prepared_breading_station"
+          ],
+          "task": [
+            {
+              "action_name": "Bread the chicken",
+              "output_quality": [
+                "Chicken should be coated in flour, covering both sides, and excess flour should be shaken off.",
+                "Chicken should be dipped into the egg mixture and excess egg mixture should be shaken off.",
+                "Chicken should be dipped into the flour mixture again.",
+                "Breaded chicken should be placed on a wire rack to rest for about 5 minutes before frying."
+              ],
+              "background_knowledge": {
+                "tool": [
                   "Wire rack"
                 ],
                 "failure": [
-                  "Oil temperature incorrect",
-                  "Chicken undercooked or overcooked"
+                  "Uneven coating",
+                  "Excessive coating",
+                  "Breading not adhering properly"
                 ]
               }
             }
           ],
           "output_condition": [
-            "chicken_cooked"
-          ]
+            "breaded_chicken"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
         },
         {
-          "original_text": "Make the ranch dressing by combining buttermilk, mayonnaise, and dry ranch dressing mix.",
+          "original_text": "Fry the chicken breasts, 2 at a time, for 7 to 8 minutes, or until the chicken has browned and reaches an internal temperature of 165°F. Drain the chicken on a clean wire rack.",
           "input_condition": [
-            "have_buttermilk",
-            "have_mayonnaise",
-            "have_ranch_dressing_mix"
+            "breaded_chicken"
           ],
-          "tasks list": [
+          "task": [
             {
-              "action_name": "Prepare Ranch Dressing",
+              "action_name": "Fry the chicken",
               "output_quality": [
-                "Ranch dressing is smooth and well mixed"
+                "Chicken breasts should be fried 2 at a time for 7 to 8 minutes, or until browned and reaches an internal temperature of 165°F.",
+                "Drain the fried chicken on a clean wire rack."
               ],
               "background_knowledge": {
                 "tool": [
-                  "Bowl",
-                  "Spoon"
+                  "Fryer",
+                  "Wire rack"
                 ],
                 "failure": [
-                  "Dressing ingredients not fully combined",
-                  "Dressing too thick or too thin"
+                  "Overcooked chicken",
+                  "Undercooked chicken",
+                  "Chicken not drained properly"
                 ]
               }
             }
           ],
           "output_condition": [
-            "ranch_dressing_ready"
-          ]
+            "fried_chicken"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
         },
         {
-          "original_text": "Assemble the sandwich by toasting the potato rolls with butter, adding ranch dressing, the fried chicken, bacon, pickles, and optionally lettuce and tomato.",
+          "original_text": "Slice the potato buns if necessary and brush the cut sides with melted butter. Toast in a skillet over medium-high heat for 1 to 2 minutes, or until the buns are golden brown.",
           "input_condition": [
-            "have_potato_buns",
-            "have_butter",
-            "chicken_cooked",
-            "ranch_dressing_ready",
-            "have_bacon",
-            "have_pickles",
-            "have_lettuce_optional",
-            "have_tomato_optional"
+            "prepared_potato_buns"
           ],
-          "tasks list": [
+          "task": [
             {
-              "action_name": "Assemble McCrispy Sandwich",
+              "action_name": "Toast the potato buns",
               "output_quality": [
-                "Sandwich is fully assembled with all components"
+                "Buns should be brushed with melted butter on the cut sides.",
+                "Toast the buns in a skillet over medium-high heat for 1 to 2 minutes, or until golden brown."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Skillet"
+                ],
+                "failure": [
+                  "Buns burnt",
+                  "Uneven toasting",
+                  "Butter not applied evenly"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "toasted_potato_buns"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "To assemble the sandwiches, spread a generous amount of ranch dressing on the bottom bun and top with a fried chicken cutlet. Add 3 bacon slices followed by 3 pickles. Spread a generous amount of ranch dressing on the top bun and place it on the sandwich.",
+          "input_condition": [
+            "toasted_potato_buns",
+            "fried_chicken_cutlet",
+            "prepared_bacon_slices",
+            "prepared_pickles",
+            "prepared_ranch_dressing"
+          ],
+          "task": [
+            {
+              "action_name": "Assemble the sandwich",
+              "output_quality": [
+                "Bottom bun should be spread with ranch dressing.",
+                "Top with a fried chicken cutlet.",
+                "Add 3 bacon slices followed by 3 pickles.",
+                "Spread ranch dressing on the top bun and place it on the sandwich."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Uneven distribution of ingredients",
+                  "Bun not properly assembled"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "assembled_sandwich"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "To make the deluxe version, assemble the sandwich as described above, with the addition of 2 tablespoons of shredded lettuce and 3 tomato slices in between the bacon and pickles.",
+          "input_condition": [
+            "assembled_sandwich",
+            "prepared_shredded_lettuce",
+            "prepared_tomato_slices"
+          ],
+          "task": [
+            {
+              "action_name": "Make the deluxe version",
+              "output_quality": [
+                "Add 2 tablespoons of shredded lettuce and 3 tomato slices between the bacon and pickles."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Uneven distribution of ingredients",
+                  "Excessive toppings",
+                  "Bun not properly assembled"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "deluxe_sandwich"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        }
+      ]
+    },
+    "41": {
+      "recipe_name": "big-mac",
+      "ingredients": [
+        {
+          "name": "ground chuck",
+          "quantity": {
+            "measure": "1 1/2",
+            "unit": "pounds"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "salt",
+          "quantity": {
+            "measure": "1/2",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "black pepper",
+          "quantity": {
+            "measure": "1/4",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "butter",
+          "quantity": {
+            "measure": "1",
+            "unit": "tablespoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "hamburger buns",
+          "quantity": {
+            "measure": "5",
+            "unit": "whole"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": "plus 5 extra bottom buns for use as middle buns"
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "Big Mac sauce",
+          "quantity": {
+            "measure": "1/4",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "minced onion",
+          "quantity": {
+            "measure": "5",
+            "unit": "tablespoons"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "lettuce",
+          "quantity": {
+            "measure": "",
+            "unit": "",
+            "details": "as needed"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "American cheese",
+          "quantity": {
+            "measure": "5",
+            "unit": "slices"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "dill pickle slices",
+          "quantity": {
+            "measure": "15",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        }
+      ],
+      "prep_time": "15 minutes",
+      "cook_time": "10 minutes",
+      "total_time": "25 minutes",
+      "servings": "5",
+      "hasDairy": true,
+      "hasMeat": true,
+      "hasNuts": false,
+      "instructions": [
+        {
+          "original_text": "In a bowl, season the ground chuck with salt and pepper. Shape the meat into 10 relatively thin patties.",
+          "input_condition": [
+            "ground_chuck"
+          ],
+          "task": [
+            {
+              "action_name": "Season the ground chuck",
+              "output_quality": [
+                "Season ground chuck with salt and pepper in a bowl."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Bowl"
+                ],
+                "failure": [
+                  "Uneven seasoning",
+                  "Excessive seasoning"
+                ]
+              }
+            },
+            {
+              "action_name": "Shape the meat into patties",
+              "output_quality": [
+                "Shape the meat into 10 relatively thin patties."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Patties are too thick",
+                  "Patties are unevenly shaped"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "shaped_patties"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Heat a griddle to 350°F. Place the patties on the griddle and cook for 3 to 4 minutes on one side, adding an extra dash of salt and pepper while cooking. Flip the burgers and cook for an additional 3 to 4 minutes, until the juices from the meat run clear.",
+          "input_condition": [
+            "shaped_patties"
+          ],
+          "task": [
+            {
+              "action_name": "Cook patties on the griddle",
+              "output_quality": [
+                "Cook patties on a preheated griddle at 350°F.",
+                "Cook for 3 to 4 minutes on one side, adding salt and pepper while cooking.",
+                "Flip the burgers and cook for an additional 3 to 4 minutes."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Griddle"
+                ],
+                "failure": [
+                  "Burgers are undercooked",
+                  "Burgers are overcooked",
+                  "Burgers are not seasoned properly"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "cooked_burgers"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Flip the burgers and cook for an additional 3 to 4 minutes, until the juices from the meat run clear.",
+          "input_condition": [
+            "cooked_burgers"
+          ],
+          "task": [
+            {
+              "action_name": "Flip the burgers and cook",
+              "output_quality": [
+                "Flip the burgers and cook for an additional 3 to 4 minutes, until the juices from the meat run clear."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Burgers are undercooked",
+                  "Burgers are overcooked"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "fully_cooked_burgers"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Spread the softened butter on the cut sides of the buns and place them on the griddle until the bread begins to brown. Flip the middle buns and allow them to toast on both sides.",
+          "input_condition": [
+            "fully_cooked_burgers"
+          ],
+          "task": [
+            {
+              "action_name": "Toast the buns on the griddle",
+              "output_quality": [
+                "Spread softened butter on the cut sides of the buns.",
+                "Place the buns on the griddle until the bread begins to brown.",
+                "Flip the middle buns and toast on both sides."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Griddle"
+                ],
+                "failure": [
+                  "Buns are burnt",
+                  "Buns are not evenly toasted"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "toasted_buns"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Assemble the burgers in the following order: bottom bun, Big Mac sauce, onions, lettuce, cheese, hamburger patty, middle bun, Big Mac sauce, onions, lettuce, hamburger patty, two or three pickle slices, and finally the top bun.",
+          "input_condition": [
+            "toasted_buns"
+          ],
+          "task": [
+            {
+              "action_name": "Assemble the burgers",
+              "output_quality": [
+                "Assemble the burgers in the specified order."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Uneven stacking of ingredients",
+                  "Missing ingredients"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "assembled_burgers"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        }
+      ]
+    },
+    "42": {
+      "recipe_name": "breakfast-burrito",
+      "ingredients": [
+        {
+          "name": "pork sausage",
+          "quantity": {
+            "measure": "1",
+            "unit": "pound"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": "mild"
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "yellow onion",
+          "quantity": {
+            "measure": "1/2",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": "diced"
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "fresh tomatoes",
+          "quantity": {
+            "measure": "1/4",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": "diced"
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "green chilies",
+          "quantity": {
+            "measure": "1",
+            "unit": "tablespoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": "diced, those in a can"
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "tortillas",
+          "quantity": {
+            "measure": "10",
+            "unit": "6 inch"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "eggs",
+          "quantity": {
+            "measure": "9",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "American cheese",
+          "quantity": {
+            "measure": "6",
+            "unit": "ounces",
+            "details": "12 slices"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "salsa",
+          "quantity": {
+            "measure": "1/2",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        }
+      ],
+      "hasDairy": true,
+      "hasMeat": true,
+      "hasNuts": false,
+      "prep_time": "15 minutes",
+      "cook_time": "20 minutes",
+      "total_time": "35 minutes",
+      "servings": "10",
+      "instructions": [
+        {
+          "original_text": "Crumble and fry pork sausage, stir and separate meat so it will fry in small little pieces. Remove from heat drain excess grease.",
+          "input_condition": [],
+          "task": [
+            {
+              "action_name": "Fry pork sausage",
+              "output_quality": [
+                "Crumble and fry pork sausage, stirring and separating meat to fry in small pieces.",
+                "Remove from heat and drain excess grease."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Frying pan"
+                ],
+                "failure": [
+                  "Sausage not crumbled",
+                  "Excess grease not drained"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "cooked_sausage"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Place drained sausage in frying pan add onion, green chilies, and tomatoes, heat on medium temperature just until sausage and vegetables are heated through, stir frequently.",
+          "input_condition": [
+            "cooked_sausage"
+          ],
+          "task": [
+            {
+              "action_name": "Cook sausage with vegetables",
+              "output_quality": [
+                "Place drained sausage in frying pan.",
+                "Add onion, green chilies, and tomatoes.",
+                "Heat on medium temperature until sausage and vegetables are heated through, stirring frequently."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Frying pan"
+                ],
+                "failure": [
+                  "Vegetables not heated through",
+                  "Sausage overcooked"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "cooked_sausage_with_vegetables"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Measure 2 cups of eggs and beat. Add the eggs to the pan with the sausage mixture. When cooked remove from heat.",
+          "input_condition": [
+            "cooked_sausage_with_vegetables"
+          ],
+          "task": [
+            {
+              "action_name": "Cook eggs with sausage mixture",
+              "output_quality": [
+                "Measure and beat 2 cups of eggs.",
+                "Add eggs to the pan with the sausage mixture.",
+                "Cook until eggs are done and remove from heat."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Frying pan"
+                ],
+                "failure": [
+                  "Eggs not cooked through",
+                  "Eggs overcooked"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "cooked_breakfast_skillet"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Place two tablespoons of the sausage and egg mixture onto 1 tortilla, tear each slice of American cheese into two even portions, then place the cheese on top of the sausage mixture, and roll the tortilla.",
+          "input_condition": [
+            "cooked_breakfast_skillet"
+          ],
+          "task": [
+            {
+              "action_name": "Prepare breakfast burrito filling",
+              "output_quality": [
+                "Place two tablespoons of the sausage and egg mixture onto 1 tortilla.",
+                "Tear each slice of American cheese into two even portions, then place the cheese on top of the sausage mixture.",
+                "Roll the tortilla."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Uneven distribution of sausage and egg mixture",
+                  "Cheese not evenly distributed"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "prepared_breakfast_burrito"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "If you make these all ahead of time, you can wrap in plastic to store them in the refrigerator or freezer, and then heat them up in the microwave for a moment or two.",
+          "input_condition": [
+            "prepared_breakfast_burrito"
+          ],
+          "task": [
+            {
+              "action_name": "Store prepared burritos",
+              "output_quality": [
+                "Wrap the burritos in plastic.",
+                "Store them in the refrigerator or freezer."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Plastic wrap"
+                ],
+                "failure": [
+                  "Burritos not properly wrapped",
+                  "Improper storage"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "stored_breakfast_burrito"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Serve with your favorite taco or Picante sauce. You will find these are milder and really great for breakfast. I also like to serve sour cream and avocado with mine.",
+          "input_condition": [
+            "stored_breakfast_burrito"
+          ],
+          "task": [
+            {
+              "action_name": "Serve breakfast burritos",
+              "output_quality": [
+                "Serve burritos with taco or Picante sauce.",
+                "Optionally, serve with sour cream and avocado."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Improper serving",
+                  "Missing condiments"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "served_breakfast_burrito"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        }
+      ]
+    },
+    "43": {
+      "recipe_name": "caramel-cappucino",
+      "ingredients": [
+        {
+          "name": "hot coffee",
+          "quantity": {
+            "measure": "6",
+            "unit": "ounces",
+            "details": "strong, or two shots of espresso"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "milk",
+          "quantity": {
+            "measure": "1/2",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": "the lower the fat content the better, it will froth more"
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "caramel ice cream topping",
+          "quantity": {
+            "measure": "2",
+            "unit": "tablespoons",
+            "details": "divided use"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "whipped cream",
+          "quantity": {
+            "measure": "2",
+            "unit": "tablespoons"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        }
+      ],
+      "prep_time": "5 minutes",
+      "cook_time": "3 minutes",
+      "total_time": "8 minutes",
+      "serves": "1",
+      "hasDairy": true,
+      "hasNuts": false,
+      "hasMeat": false,
+      "instructions": [
+        {
+          "original_text": "Warm the milk in a small pan or in the microwave.",
+          "input_condition": [],
+          "task": [
+            {
+              "action_name": "Warm the milk",
+              "output_quality": [
+                "Heat the milk in a small pan or microwave until warm."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Small pan",
+                  "Microwave"
+                ],
+                "failure": [
+                  "Overheating the milk",
+                  "Underheating the milk"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "warmed_milk"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Froth the milk with a frother or by putting it in a sealed jar and shaking it vigorously.",
+          "input_condition": [
+            "warmed_milk"
+          ],
+          "task": [
+            {
+              "action_name": "Froth the milk",
+              "output_quality": [
+                "Use a frother or sealed jar to froth the warmed milk."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Frother",
+                  "Sealed jar"
+                ],
+                "failure": [
+                  "Incomplete frothing",
+                  "Milk not frothed adequately"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "frothed_milk"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Pour the hot coffee or espresso into a large warm coffee mug.",
+          "input_condition": [
+            "frothed_milk"
+          ],
+          "task": [
+            {
+              "action_name": "Prepare coffee or espresso",
+              "output_quality": [
+                "Pour hot coffee or espresso into a large warm coffee mug."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Coffee or espresso not hot",
+                  "Mug not warm"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "prepared_coffee_or_espresso"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Add 1 tablespoon of caramel syrup.",
+          "input_condition": [
+            "prepared_coffee_or_espresso"
+          ],
+          "task": [
+            {
+              "action_name": "Add caramel syrup",
+              "output_quality": [
+                "Pour 1 tablespoon of caramel syrup into the coffee or espresso."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Tablespoon"
+                ],
+                "failure": [
+                  "Incorrect measurement",
+                  "Spillage"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "caramel_added"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Add warmed milk and stir to combine.",
+          "input_condition": [
+            "caramel_added"
+          ],
+          "task": [
+            {
+              "action_name": "Combine with frothed milk",
+              "output_quality": [
+                "Pour frothed milk into the coffee or espresso with caramel syrup and stir to combine."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Incomplete mixing",
+                  "Frothed milk not properly incorporated"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "milk_combined"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Top with whipped cream.",
+          "input_condition": [
+            "milk_combined"
+          ],
+          "task": [
+            {
+              "action_name": "Add whipped cream",
+              "output_quality": [
+                "Top the coffee or espresso mixture with whipped cream."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Insufficient whipped cream",
+                  "Whipped cream not properly applied"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "whipped_cream_added"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Drizzle the remaining caramel syrup on top.",
+          "input_condition": [
+            "whipped_cream_added"
+          ],
+          "task": [
+            {
+              "action_name": "Drizzle caramel syrup",
+              "output_quality": [
+                "Drizzle the remaining caramel syrup over the whipped cream."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Uneven drizzling",
+                  "Excessive syrup"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "final_caramel_drizzle"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        }
+      ]
+    },
+    "44": {
+      "recipe_name": "maple-oatmeal",
+      "ingredients": [
+        {
+          "name": "quick-cooking oatmeal",
+          "quantity": {
+            "measure": "1/2",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "hot water",
+          "quantity": {
+            "measure": "1",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "salt",
+          "quantity": {
+            "measure": "1/4",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "half and half",
+          "quantity": {
+            "measure": "2",
+            "unit": "tablespoons"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "maple syrup",
+          "quantity": {
+            "measure": "1",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "brown sugar",
+          "quantity": {
+            "measure": "2",
+            "unit": "tablespoons"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "raisins",
+          "quantity": {
+            "measure": "1",
+            "unit": "teaspoon",
+            "details": "white"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "Craisins",
+          "quantity": {
+            "measure": "1/2",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "red delicious apple",
+          "quantity": {
+            "measure": "1",
+            "unit": "tablespoon",
+            "details": "chopped"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "granny smith apple",
+          "quantity": {
+            "measure": "1",
+            "unit": "tablespoon",
+            "details": "chopped"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        }
+      ],
+      "prep_time": "10 minutes",
+      "cook_time": "5 minutes",
+      "total_time": "15 minutes",
+      "servings": "1",
+      "hasDairy": true,
+      "hasMeat": false,
+      "hasNuts": true,
+      "instructions": [
+        {
+          "original_text": "Place the oatmeal in a microwave-safe bowl.",
+          "input_condition": [],
+          "task": [
+            {
+              "action_name": "Prepare microwave-safe bowl",
+              "output_quality": [
+                "Place the oatmeal in a microwave-safe bowl."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Microwave-safe bowl"
+                ],
+                "failure": [
+                  "Using non-microwave-safe bowl"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "oatmeal_in_bowl"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Add the hot water, salt, and half and half, and microwave for about 1 minute. Stir well.",
+          "input_condition": [
+            "oatmeal_in_bowl"
+          ],
+          "task": [
+            {
+              "action_name": "Microwave oatmeal mixture",
+              "output_quality": [
+                "Add hot water, salt, and half and half to the oatmeal in the bowl. Microwave for about 1 minute and stir well."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Microwave"
+                ],
+                "failure": [
+                  "Overcooking in microwave",
+                  "Undercooking in microwave"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "oatmeal_microwaved"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Stir the maple syrup into the oatmeal.",
+          "input_condition": [
+            "oatmeal_microwaved"
+          ],
+          "task": [
+            {
+              "action_name": "Add maple syrup",
+              "output_quality": [
+                "Stir maple syrup into the oatmeal."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Spoon"
+                ],
+                "failure": [
+                  "Incomplete mixing",
+                  "Maple syrup not evenly distributed"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "maple_syrup_added"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Sprinkle the brown sugar, raisins, white raisins, Craisins, and chopped apples on top.",
+          "input_condition": [
+            "maple_syrup_added"
+          ],
+          "task": [
+            {
+              "action_name": "Add toppings",
+              "output_quality": [
+                "Sprinkle brown sugar, raisins, white raisins, Craisins, and chopped apples on top of the oatmeal."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Uneven distribution of toppings",
+                  "Excessive toppings"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "toppings_added"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        }
+      ]
+    },
+    "45": {
+      "recipe_name": "egg-mcmuffin",
+      "ingredients": [
+        {
+          "name": "softened butter",
+          "quantity": {
+            "measure": "4",
+            "unit": "tablespoons"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "English Muffins",
+          "quantity": {
+            "measure": "4",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "Canadian Bacon",
+          "quantity": {
+            "measure": "4",
+            "unit": "slices"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "eggs",
+          "quantity": {
+            "measure": "4",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "water",
+          "quantity": {
+            "measure": "1/2",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "American cheese",
+          "quantity": {
+            "measure": "4",
+            "unit": "slices"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        }
+      ],
+      "hasDairy": true,
+      "hasMeat": true,
+      "hasNuts": false,
+      "prep_time": "5 minutes",
+      "cook_time": "5 minutes",
+      "servings": "4",
+      "instructions": [
+        {
+          "original_text": "Split open English Muffins and place them into a toaster, toast the English Muffins.",
+          "input_condition": [],
+          "task": [
+            {
+              "action_name": "Toast English Muffins",
+              "output_quality": [
+                "Split open English Muffins and toast them in a toaster."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Toaster"
+                ],
+                "failure": [
+                  "Over-toasting English Muffins",
+                  "Under-toasting English Muffins"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "muffins_toasted"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "In a non-stick skillet over medium heat, cook Candian bacon on both sides for about 1 to 2 minutes in two teaspoons of butter. The bacon should begin to just brown.",
+          "input_condition": [
+            "muffins_toasted"
+          ],
+          "task": [
+            {
+              "action_name": "Cook Canadian bacon",
+              "output_quality": [
+                "In a non-stick skillet over medium heat, cook Candian bacon on both sides for about 1 to 2 minutes in two teaspoons of butter. The bacon should begin to just brown."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Non-stick skillet",
+                  "Butter"
+                ],
+                "failure": [
+                  "Overcooking Canadian bacon",
+                  "Undercooking Canadian bacon",
+                  "Bacon sticking to skillet"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "bacon_cooked"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "While the Canadian bacon is cooking, remove the English muffins from the toaster and spread softened butter on both halves.",
+          "input_condition": [
+            "muffins_toasted",
+            "bacon_cooked"
+          ],
+          "task": [
+            {
+              "action_name": "Spread softened butter on toasted English Muffins",
+              "output_quality": [
+                "Remove the English muffins from the toaster and spread softened butter on both halves."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Butter knife"
+                ],
+                "failure": [
+                  "Insufficient butter spread",
+                  "Uneven butter spread"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "butter_spread"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Place the 1 slice of Canadian bacon on each English Muffin bottom.",
+          "input_condition": [
+            "butter_spread"
+          ],
+          "task": [
+            {
+              "action_name": "Assemble English Muffins with Canadian bacon",
+              "output_quality": [
+                "Place one slice of Canadian bacon on each English Muffin bottom."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Misplacing Canadian bacon",
+                  "Uneven placement of Canadian bacon"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "muffins_assembled"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Add about 1 tablespoon of butter to the same skillet where you cooked the bacon.",
+          "input_condition": [
+            "muffins_assembled"
+          ],
+          "task": [
+            {
+              "action_name": "Add butter to skillet",
+              "output_quality": [
+                "Add about 1 tablespoon of butter to the skillet."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Skillet"
+                ],
+                "failure": [
+                  "Insufficient butter added",
+                  "Butter burning"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "butter_added"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Place the quart-sized canning lids screw size up (or you can use an egg ring) into the skillet.",
+          "input_condition": [
+            "butter_added"
+          ],
+          "task": [
+            {
+              "action_name": "Prepare skillet for eggs",
+              "output_quality": [
+                "Place quart-sized canning lids screw size up into the skillet (or use egg rings)."
               ],
               "background_knowledge": {
                 "tool": [
                   "Skillet",
-                  "Knife"
+                  "Canning lids or egg rings"
                 ],
                 "failure": [
-                  "Buns not toasted",
-                  "Components missing or incorrectly layered"
+                  "Egg sticking to rings",
+                  "Uneven cooking due to improper placement of rings"
                 ]
               }
             }
           ],
           "output_condition": [
-            "sandwich_ready"
-          ]
+            "skillet_prepared"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Spray the canning lid with non-stick spray. Crack an egg into each of the rings.",
+          "input_condition": [
+            "skillet_prepared"
+          ],
+          "task": [
+            {
+              "action_name": "Prepare eggs",
+              "output_quality": [
+                "Spray the canning lid with non-stick spray. Crack an egg into each of the rings."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Non-stick spray"
+                ],
+                "failure": [
+                  "Egg sticking to rings",
+                  "Improper egg cracking leading to shell fragments in egg"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "eggs_prepared"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Break the yolk with a fork. Pour about 1/2 cup of water into the skillet, and place a lid on top. Cook until the eggs are set, it should take about two minutes.",
+          "input_condition": [
+            "eggs_prepared"
+          ],
+          "task": [
+            {
+              "action_name": "Cook eggs",
+              "output_quality": [
+                "Break the yolk with a fork. Pour about 1/2 cup of water into the skillet, and place a lid on top. Cook until the eggs are set, it should take about two minutes."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Fork",
+                  "Skillet",
+                  "Lid"
+                ],
+                "failure": [
+                  "Overcooking eggs",
+                  "Undercooking eggs",
+                  "Water boiling over",
+                  "Eggs sticking to skillet"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "eggs_cooked"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Gently remove the eggs from the rings, and place one egg on each piece of Canadian bacon.",
+          "input_condition": [
+            "eggs_cooked"
+          ],
+          "task": [
+            {
+              "action_name": "Remove eggs from rings",
+              "output_quality": [
+                "Gently remove the eggs from the rings, and place one egg on each piece of Canadian bacon."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Eggs breaking during removal from rings",
+                  "Eggs sticking to rings"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "eggs_placed_on_bacon"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Top each egg with one slice of American cheese, top cheese with the top of the English muffin.",
+          "input_condition": [
+            "eggs_placed_on_bacon"
+          ],
+          "task": [
+            {
+              "action_name": "Add cheese and top with muffin",
+              "output_quality": [
+                "Top each egg with one slice of American cheese, top cheese with the top of the English muffin."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Cheese not melting properly",
+                  "Muffin not properly aligned with egg and cheese"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "muffin_topped"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Wrap each egg McMuffin with foil or parchment paper. Wait about 30 seconds before serving.",
+          "input_condition": [
+            "muffin_topped"
+          ],
+          "task": [
+            {
+              "action_name": "Wrap egg McMuffin",
+              "output_quality": [
+                "Wrap each egg McMuffin with foil or parchment paper. Wait about 30 seconds before serving."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Foil",
+                  "Parchment paper"
+                ],
+                "failure": [
+                  "Wrapping not tight enough, causing ingredients to spill out",
+                  "Wrapping tearing"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "mcmuffin_wrapped"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        }
+      ]
+    },
+    "46": {
+      "recipe_name": "mcgriddle",
+      "ingredients": [
+        {
+          "name": "pancake mix",
+          "quantity": {
+            "measure": "1 ½",
+            "unit": "cups"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "water",
+          "quantity": {
+            "measure": "1",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "pancake syrup",
+          "quantity": {
+            "measure": "⅓",
+            "unit": "cup"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "sausage patties",
+          "quantity": {
+            "measure": "4",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "American cheese",
+          "quantity": {
+            "measure": "4",
+            "unit": "slices"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "eggs",
+          "quantity": {
+            "measure": "4",
+            "unit": ""
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "olive oil",
+          "quantity": {
+            "measure": "2",
+            "unit": "tablespoons"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "salt",
+          "quantity": {
+            "measure": "1",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        },
+        {
+          "name": "pepper",
+          "quantity": {
+            "measure": "1",
+            "unit": "teaspoon"
+          },
+          "allergies": {
+            "id": "",
+            "category": "",
+            "ref": "",
+            "details": ""
+          },
+          "alternative": "",
+          "quality_characteristic": "",
+          "image": ""
+        }
+      ],
+      "hasDairy": true,
+      "hasMeat": true,
+      "hasNuts": false,
+      "prep_time": "15 minutes",
+      "cook_time": "30 minutes",
+      "total_time": "45 minutes",
+      "servings": "4",
+      "instructions": [
+        {
+          "original_text": "Place pancake mix and water in a medium bowl. Mix until thoroughly combined.",
+          "input_condition": [],
+          "task": [
+            {
+              "action_name": "Mix pancake mix and water",
+              "output_quality": [
+                "Pancake mix and water are thoroughly combined."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Medium bowl"
+                ],
+                "failure": [
+                  "Mixing not thorough, resulting in lumps in the batter"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "pancake_batter_prepared"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Heat skillet over medium heat. Place a 3 inch metal round cookie cutter or mason jar lid lightly spray with non-stick spray in the skillet and fill it half full with pancake batter.",
+          "input_condition": [
+            "pancake_batter_prepared"
+          ],
+          "task": [
+            {
+              "action_name": "Prepare skillet and fill cookie cutter with batter",
+              "output_quality": [
+                "Skillet heated over medium heat.",
+                "Cookie cutter or mason jar lid placed in skillet and filled half full with pancake batter."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Skillet",
+                  "3 inch metal round cookie cutter or mason jar lid",
+                  "Non-stick spray"
+                ],
+                "failure": [
+                  "Batter overflowing from the cookie cutter",
+                  "Pancake sticking to the cookie cutter"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "pancake_cooking"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "After one minute, when bubbles start to form, remove the cookie cutter and flip the pancake over. Cook on the other side for one minute then remove and put on a plate.",
+          "input_condition": [
+            "pancake_cooking"
+          ],
+          "task": [
+            {
+              "action_name": "Flip and cook pancake",
+              "output_quality": [
+                "Cookie cutter removed and pancake flipped over when bubbles start to form, then cooked on the other side for one minute."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Pancake not cooked evenly on both sides",
+                  "Pancake breaking during flipping"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "pancake_ready"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Repeat steps 2 & 3 until you have 8 pancakes for the sandwiches.",
+          "input_condition": [
+            "pancake_batter_prepared"
+          ],
+          "task": [
+            {
+              "action_name": "Make additional pancakes",
+              "output_quality": [
+                "Prepare additional pancakes following steps 2 & 3 until you have a total of 8 pancakes."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Unevenly sized pancakes",
+                  "Pancakes not cooked through"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "pancakes_ready_for_sandwiches"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Using a silicone brush, spread syrup over both sides of the pancakes and set aside.",
+          "input_condition": [
+            "pancakes_ready_for_sandwiches"
+          ],
+          "task": [
+            {
+              "action_name": "Spread syrup on pancakes",
+              "output_quality": [
+                "Syrup spread evenly over both sides of the pancakes."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Silicone brush"
+                ],
+                "failure": [
+                  "Uneven distribution of syrup",
+                  "Pancakes becoming too soggy"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "pancakes_syrup_coated"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Cook the sausage patties over medium heat for 3 minutes on each side. Remove from heat and top them with cheese.",
+          "input_condition": [],
+          "task": [
+            {
+              "action_name": "Cook sausage patties",
+              "output_quality": [
+                "Sausage patties cooked for 3 minutes on each side over medium heat.",
+                "Cheese placed on top of the cooked sausage patties."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Skillet"
+                ],
+                "failure": [
+                  "Sausage patties undercooked",
+                  "Cheese not melting onto the patties"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "sausage_patties_ready_with_cheese"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "In a small bowl, beat egg with a fork (one at a time). Add a pinch of salt and pepper while beating.",
+          "input_condition": [],
+          "task": [
+            {
+              "action_name": "Beat egg with salt and pepper",
+              "output_quality": [
+                "Egg beaten with a fork until smooth.",
+                "A pinch of salt and pepper added to the beaten egg."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Fork"
+                ],
+                "failure": [
+                  "Egg not beaten thoroughly",
+                  "Overbeating the egg"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "egg_ready_for_cooking"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Add a small amount of olive oil to the skillet. Add beaten egg and cook for about one minute, then fold the egg over twice to make a small square to fit the sandwich.",
+          "input_condition": [
+            "egg_ready_for_cooking"
+          ],
+          "task": [
+            {
+              "action_name": "Cook beaten egg",
+              "output_quality": [
+                "Beaten egg cooked for about one minute in olive oil.",
+                "Folded over twice to form a small square."
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Skillet"
+                ],
+                "failure": [
+                  "Egg sticking to the skillet",
+                  "Overcooking the egg"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "cooked_egg_ready_for_assembly"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Repeat steps 7 & 8 for the remaining eggs.",
+          "input_condition": [
+            "egg_ready_for_cooking"
+          ],
+          "task": [
+            {
+              "action_name": "Repeat egg beating and cooking",
+              "output_quality": [
+                "Additional eggs beaten and cooked following steps 7 & 8."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Inconsistent egg cooking",
+                  "Running out of olive oil"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "all_eggs_cooked_and_ready_for_assembly"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
+        },
+        {
+          "original_text": "Assemble sandwiches with pancake bottom, egg, sausage, cheese and topped with another pancake.",
+          "input_condition": [
+            "all_eggs_cooked_and_ready_for_assembly",
+            "sausage_patties_ready_with_cheese",
+            "pancakes_syrup_coated"
+          ],
+          "task": [
+            {
+              "action_name": "Assemble sandwiches",
+              "output_quality": [
+                "Sandwiches assembled with pancake bottom, egg, sausage, cheese, and topped with another pancake."
+              ],
+              "background_knowledge": {
+                "tool": [],
+                "failure": [
+                  "Uneven stacking of ingredients",
+                  "Sandwiches falling apart"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "sandwiches_ready_to_serve"
+          ],
+          "modality": {
+            "image": [],
+            "video": ""
+          }
         }
       ]
     }
