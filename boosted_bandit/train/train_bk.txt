@@ -1,1 +1,1 @@
-import: "..\recs_bk.txt"
+import: "../recs_bk.txt"
