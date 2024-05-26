@@ -2,103 +2,178 @@
   "beverage_ids": {
     "1": {
       "name": "Coffee",
-      "additionalInfo": ""
+      "additionalInfo": "",
+      "hasNuts": false,
+      "hasDairy": false,
+      "hasMeat": false
     },
     "2": {
       "name": "Tea",
-      "additionalInfo": ""
+      "additionalInfo": "",
+      "hasNuts": false,
+      "hasDairy": false,
+      "hasMeat": false
     },
     "3": {
       "name": "Orange Juice",
-      "additionalInfo": ""
+      "additionalInfo": "",
+      "hasNuts": false,
+      "hasDairy": false,
+      "hasMeat": false
     },
     "4": {
       "name": "Cola",
-      "additionalInfo": ""
+      "additionalInfo": "",
+      "hasNuts": false,
+      "hasDairy": false,
+      "hasMeat": false
     },
     "5": {
       "name": "Water",
-      "additionalInfo": ""
+      "additionalInfo": "",
+      "hasNuts": false,
+      "hasDairy": false,
+      "hasMeat": false
     },
     "6": {
       "name": "Milk",
-      "additionalInfo": ""
+      "additionalInfo": "",
+      "hasNuts": false,
+      "hasDairy": true,
+      "hasMeat": false
     },
     "7": {
       "name": "Smoothie",
-      "additionalInfo": ""
+      "additionalInfo": "",
+      "hasNuts": false,
+      "hasDairy": false,
+      "hasMeat": false
     },
     "8": {
       "name": "Lemonade",
-      "additionalInfo": ""
+      "additionalInfo": "",
+      "hasNuts": false,
+      "hasDairy": false,
+      "hasMeat": false
     },
     "9": {
       "name": "Iced Tea",
-      "additionalInfo": ""
+      "additionalInfo": "",
+      "hasNuts": false,
+      "hasDairy": false,
+      "hasMeat": false
     },
     "10": {
       "name": "Hot Chocolate",
-      "additionalInfo": ""
+      "additionalInfo": "",
+      "hasNuts": false,
+      "hasDairy": true,
+      "hasMeat": false
     },
     "11": {
       "name": "Apple Juice",
-      "additionalInfo": ""
+      "additionalInfo": "",
+      "hasNuts": false,
+      "hasDairy": false,
+      "hasMeat": false
     },
     "12": {
       "name": "Pepsi",
-      "additionalInfo": ""
+      "additionalInfo": "",
+      "hasNuts": false,
+      "hasDairy": false,
+      "hasMeat": false
     },
     "13": {
       "name": "Cappuccino",
-      "additionalInfo": ""
+      "additionalInfo": "",
+      "hasNuts": false,
+      "hasDairy": true,
+      "hasMeat": false
     },
     "14": {
       "name": "Green Tea",
-      "additionalInfo": ""
+      "additionalInfo": "",
+      "hasNuts": false,
+      "hasDairy": false,
+      "hasMeat": false
     },
     "15": {
       "name": "Ginger Ale",
-      "additionalInfo": ""
+      "additionalInfo": "",
+      "hasNuts": false,
+      "hasDairy": false,
+      "hasMeat": false
     },
     "16": {
       "name": "Iced Coffee",
-      "additionalInfo": ""
+      "additionalInfo": "",
+      "hasNuts": false,
+      "hasDairy": true,
+      "hasMeat": false
     },
     "17": {
       "name": "Chai Latte",
-      "additionalInfo": ""
+      "additionalInfo": "",
+      "hasNuts": false,
+      "hasDairy": true,
+      "hasMeat": false
     },
     "18": {
       "name": "Cranberry Juice",
-      "additionalInfo": ""
+      "additionalInfo": "",
+      "hasNuts": false,
+      "hasDairy": false,
+      "hasMeat": false
     },
     "19": {
       "name": "Sprite",
-      "additionalInfo": ""
+      "additionalInfo": "",
+      "hasNuts": false,
+      "hasDairy": false,
+      "hasMeat": false
     },
     "20": {
       "name": "Hot Tea",
-      "additionalInfo": ""
+      "additionalInfo": "",
+      "hasNuts": false,
+      "hasDairy": false,
+      "hasMeat": false
     },
     "21": {
       "name": "Fruit Punch",
-      "additionalInfo": ""
+      "additionalInfo": "",
+      "hasNuts": false,
+      "hasDairy": false,
+      "hasMeat": false
     },
     "22": {
       "name": "Almond Milk",
-      "additionalInfo": ""
+      "additionalInfo": "",
+      "hasNuts": true,
+      "hasDairy": false,
+      "hasMeat": false
     },
     "23": {
       "name": "Coconut Water",
-      "additionalInfo": ""
+      "additionalInfo": "",
+      "hasNuts": false,
+      "hasDairy": false,
+      "hasMeat": false
     },
     "24": {
       "name": "Espresso",
-      "additionalInfo": ""
+      "additionalInfo": "",
+      "hasNuts": false,
+      "hasDairy": false,
+      "hasMeat": false
     },
     "25": {
       "name": "Tomato Juice",
-      "additionalInfo": ""
+      "additionalInfo": "",
+      "hasNuts": false,
+      "hasDairy": false,
+      "hasMeat": false
     }
   }
 }
