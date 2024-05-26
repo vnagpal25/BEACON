@@ -7,3 +7,4 @@ code/.ipynb_checkpoints/meal_recommender_demo-checkpoint.ipynb
 code/__pycache__/meal_recommender.cpython-39.pyc
 code/__pycache__/user_constraints.cpython-39.pyc
 code/__pycache__/user_constraints.cpython-311.pyc
+boosted_bandit/*.jar
