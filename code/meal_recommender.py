@@ -18,11 +18,12 @@ class MealRecommender:
         self.recipe_info = self.GetRecipeInfo()
         self.beverage_names = self.GetBeverageNames()
 
-        self.time_period = 0
-        self.meal_configs = {}
-        self.recommendation_constraints = []
-        self.user_compatibilities = {}
+        self.time_period = self.user_request['time_period']
+        self.recommendation_constraints = self.user_request['recommendation_constraints']
+        self.user_compatibilities = self.user_request['user_compatibilities']
         self.recommendation = None
+        self.meal_configs = {}
+        self.get_configs()
 
         self.goodness_score = None
         self.config_score = None
@@ -31,6 +32,7 @@ class MealRecommender:
         self.coverage_score = None
 
         self.score_breakdown = None
+
 
     def ReadInputs(self):
         root = root_dir()
@@ -60,12 +62,9 @@ class MealRecommender:
 
         return recipes, beverages, user_request
 
-    def RunMealRecStrat(self):
+    def RunMealRecStratRandom(self):
         # Runs Meal Recommendation Strategy to create personalized meal plan
         # [{'meal': 'breakfast'/'lunch'/'dinner', 'time': 'HH:MM'}']
-        self.recommendation_constraints = self.user_request['recommendation_constraints']
-        self.user_compatibilities = self.user_request['user_compatibilities']
-        self.time_period = self.user_request['time_period']
 
         # [[Days: {Meal Type, Meal {<Beverage><MainCourse><Side>, }}]]
         meal_plan = []
@@ -153,3 +152,21 @@ class MealRecommender:
                                                         'hasMeat': recipe['hasMeat'],
                                                         'hasNuts': recipe['hasNuts']})
         return recipe_names
+
+    def get_configs(self):
+      for j in range(self.time_period):
+          # holds list of meals for day j
+          meals = []
+
+          # iterates over meal configuration for each day
+          for meal_info in self.recommendation_constraints:
+              meal_info = meal_info['meal_type']
+
+              # Final Parsing on User Input
+              meal_name = meal_info['meal_name']
+              meal_time = meal_info['time']
+
+              meal_config = meal_info['meal_config']
+              meal_config = MealConfig(meal_config)
+              self.meal_configs[meal_name] = meal_config
+

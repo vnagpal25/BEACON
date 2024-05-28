@@ -21,6 +21,14 @@ class Metric:
         self.config_quality_score = 0
          
     def EvaluateMealRec(self, time_period=None, meal_plan=None, meal_configs=None, rec_constraints=None, bev_names=None, recipe_names=None, user_compatibilities=None):
+        for i, day_plan in enumerate(meal_plan, 1):
+            day_str = f'day {i}'
+            day_plan = day_plan[day_str]
+            
+            for meal in day_plan:
+              if "Beverage" in meal:
+                meal["Beverage"] = meal["Beverage"] + '_bev'
+        
         # Checks if Meal Config is satisfied, a number between 0 and 1
         self.ConfigScoreCalc(
             meal_plan, time_period, rec_constraints)
@@ -100,6 +108,7 @@ class Metric:
 
                 # adding beverage role if in the recommendation
                 food_items = {}
+                print(meal)
                 for role, name in meal.items():
                     if role == "Beverage":
                         bev_index = desired_config.index('Beverage')
@@ -111,7 +120,7 @@ class Metric:
                             bev_index = desired_config.index('Beverage')
                             roles_arr[bev_index] = 0
                     food_items[name] = roles_arr
-
+                print(food_items)
                 coverage_calculator.add_food_items(food_items)
                 # calculate coverage for recommended meal
                 coverage_calculator.calc_coverage(meal)
@@ -132,7 +141,15 @@ class Metric:
         constraint_calculator.set_num_constraints(3)
         # User calibration
         for feature, compt in user_compatibilities.items():
-          constraint_calculator.add_new_constraint(feature, 0 if compt else -1)
+          if feature == 'dairyPreference':
+            constraint_calculator.add_new_constraint('hasDairy', compt)
+          elif feature == 'meatPreference':
+            constraint_calculator.add_new_constraint('hasMeat', compt)
+          elif feature == 'nutsPreference':
+            constraint_calculator.add_new_constraint('hasNuts', compt)
+          else:
+            print("Shouldn't be executed")
+          
         curr_features = constraint_calculator.get_constraints()
         if 'HasDairy' in curr_features:
           constraint_calculator.remove_constraint('HasDairy')
@@ -150,7 +167,6 @@ class Metric:
             if compt:
               compt_features.append(feature)
           constraint_calculator.add_annotated_food_item(id, compt_features)
-
         features = {'hasDairy':0, 'hasMeat':0, 'hasNuts':0}
         # calculate constraint scores for recommendation
         constraint_scores = []
@@ -167,6 +183,7 @@ class Metric:
             
             day_constraints.append(score)
             constraint_scores.append(score)
+            
 
             for role in roles:
               features[role] += 1

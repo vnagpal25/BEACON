@@ -1,5 +1,0 @@
-digraph RDN{
-0[style="filled" label="item(item_name,value)" color="gray92"];
-1[style="filled" label="recommendation(user_name,item_name)" color="gray52"];
-0 -> 1[label="" style=solid];
-}
