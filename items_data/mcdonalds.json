@@ -2,6 +2,10 @@
   "recipe-ids": {
     "36": {
       "recipe_name": "apple-pie",
+      "food_role": [
+        "Dessert",
+        "Side"
+      ],
       "ingredients": [
         {
           "name": "Granny Smith apple",
@@ -592,6 +596,9 @@
     },
     "37": {
       "recipe_name": "quarter-pounder",
+      "food_role": [
+        "Main Course",
+      ],
       "ingredients": [
         {
           "name": "sliced white onions",
@@ -878,6 +885,10 @@
     },
     "38": {
       "recipe_name": "blt-quarter-punder",
+      "food_role": [
+        "Main Course",
+        "Side"
+      ],
       "ingredients": [
         {
           "name": "sesame seed hamburger buns",
@@ -1273,6 +1284,9 @@
     },
     "39": {
       "recipe_name": "sweet-tea",
+      "food_role": [
+        "Beverage"
+      ],
       "ingredients": [
         {
           "name": "water",
@@ -1476,6 +1490,10 @@
     },
     "40": {
       "recipe_name": "McDonald’s Bacon Ranch McCrispy",
+      "food_role": [
+        "Main Course",
+        "Side"
+      ],
       "ingredients": [
         {
           "name": "buttermilk",
@@ -2138,6 +2156,9 @@
     },
     "41": {
       "recipe_name": "big-mac",
+      "food_role": [
+        "Main Course"
+      ],
       "ingredients": [
         {
           "name": "ground chuck",
@@ -2477,6 +2498,9 @@
     },
     "42": {
       "recipe_name": "breakfast-burrito",
+      "food_role": [
+        "Main Course",
+      ],
       "ingredients": [
         {
           "name": "pork sausage",
@@ -2803,6 +2827,9 @@
     },
     "43": {
       "recipe_name": "caramel-cappucino",
+      "food_role": [
+        "Beverage"
+      ],
       "ingredients": [
         {
           "name": "hot coffee",
@@ -3085,6 +3112,9 @@
     },
     "44": {
       "recipe_name": "maple-oatmeal",
+      "food_role": [
+        "Main Course"
+      ],
       "ingredients": [
         {
           "name": "quick-cooking oatmeal",
@@ -3377,6 +3407,9 @@
     },
     "45": {
       "recipe_name": "egg-mcmuffin",
+      "food_role": [
+        "Main Course"
+      ],
       "ingredients": [
         {
           "name": "softened butter",
@@ -3817,6 +3850,9 @@
     },
     "46": {
       "recipe_name": "mcgriddle",
+      "food_role": [
+        "Main Course"
+      ],
       "ingredients": [
         {
           "name": "pancake mix",
