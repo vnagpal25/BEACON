@@ -2,6 +2,9 @@
   "recipe-ids": {
     "26": {
       "recipe_name": "cheesy-gordita-crunch-copycat",
+      "food_role": [
+        "Main Course"
+      ],
       "ingredients": [
         {
           "name": "ground beef",
@@ -659,6 +662,9 @@
     },
     "27": {
       "recipe_name": "crunchwrap-supreme-copycat",
+      "food_role": [
+        "Main Course"
+      ],
       "ingredients": [
         {
           "name": "ground beef",
@@ -1326,6 +1332,10 @@
     },
     "28": {
       "recipe_name": "quesadilla-copycat",
+      "food_role": [
+        "Main Course",
+        "Side"
+      ],
       "ingredients": [
         {
           "name": "Mayo",
@@ -1690,6 +1700,9 @@
     },
     "29": {
       "recipe_name": "bean-burrito-copycat",
+      "food_role": [
+        "Main Course"
+      ],
       "ingredients": [
         {
           "name": "refried beans",
@@ -2087,6 +2100,9 @@
     },
     "30": {
       "recipe_name": "black-bean-chalupa-copycat",
+      "food_role": [
+        "Main Course"
+      ],
       "ingredients": [
         {
           "name": "oil",
@@ -2722,6 +2738,9 @@
     },
     "31": {
       "recipe_name": "crunchy-taco",
+      "food_role": [
+        "Main Course"
+      ],
       "ingredients": [
         {
           "name": "masa harina",
@@ -3266,6 +3285,9 @@
     },
     "32": {
       "recipe_name": "soft-taco-beef",
+      "food_role": [
+        "Main Course"
+      ],
       "ingredients": [
         {
           "name": "masa harina",
@@ -4083,6 +4105,9 @@
     },
     "33": {
       "recipe_name": "nacho-bell-grande-beef",
+      "food_role": [
+        "Main Course"
+      ],
       "ingredients": [
         {
           "name": "Tortilla Chips",
@@ -4537,6 +4562,9 @@
     },
     "34": {
       "recipe_name": "veggie-power-bowl",
+      "food_role": [
+        "Main Course"
+      ],
       "ingredients": [
         {
           "name": "canned black beans in seasoned sauce",
@@ -4957,6 +4985,9 @@
     },
     "35": {
       "recipe_name": "cheesy-bean-rice-burrito",
+      "food_role": [
+        "Main Course"
+      ],
       "ingredients": [
         {
           "name": "sour cream",
