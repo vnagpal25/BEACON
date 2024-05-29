@@ -2,6 +2,9 @@
   "recipe-ids": {
     "1": {
       "recipe_name": "egg-drop-chicken-noodle-soup",
+      "food_role": [
+        "Main Course"
+      ],
       "ingredients": [
         {
           "name": "chicken broth",
@@ -484,6 +487,9 @@
     },
     "2": {
       "recipe_name": "my-scotch-eggs",
+      "food_role": [
+        "Main Course"
+      ],
       "ingredients": [
         {
           "name": "eggs",
@@ -1101,6 +1107,9 @@
     },
     "3": {
       "recipe_name": "egg-in-an-avocado-hole",
+      "food_role": [
+        "Main Course"
+      ],
       "ingredients": [
         {
           "name": "egg",
@@ -1491,6 +1500,9 @@
     },
     "4": {
       "recipe_name": "delicious-chocolate-bark-recipe",
+      "food_role": [
+        "Dessert"
+      ],
       "ingredients": [
         {
           "name": "butter",
@@ -1915,6 +1927,10 @@
     },
     "5": {
       "recipe_name": "bacon-candy",
+      "food_role": [
+        "Side",
+        "Dessert"
+      ],
       "ingredients": [
         {
           "name": "Yellow and Green M&M",
@@ -2179,6 +2195,9 @@
     },
     "6": {
       "recipe_name": "bacon-and-egg-pie",
+      "food_role": [
+        "Main Course"
+      ],
       "ingredients": [
         {
           "name": "puff pastry",
@@ -2604,6 +2623,10 @@
     },
     "7": {
       "recipe_name": "how-to-make-egg-salad",
+      "food_role": [
+        "Main Course",
+        "Side"
+      ],
       "ingredients": [
         {
           "name": "eggs",
@@ -2994,6 +3017,9 @@
     },
     "8": {
       "recipe_name": "peekaboo-sugar-eggs",
+      "food_role": [
+        "Dessert"
+      ],
       "ingredients": [
         {
           "name": "granulated sugar",
@@ -3172,6 +3198,10 @@
     },
     "9": {
       "recipe_name": "egg-bundles",
+      "food_role": [
+        "Main Course",
+        "Side"
+      ],
       "ingredients": [
         {
           "name": "egg",
@@ -3441,6 +3471,9 @@
     },
     "10": {
       "recipe_name": "cadbury-creme-egg-rolls",
+      "food_role": [
+        "Dessert"
+      ],
       "ingredients": [
         {
           "name": "eggs",
@@ -3701,6 +3734,9 @@
     },
     "11": {
       "recipe_name": "mini-egg-pie",
+      "food_role": [
+        "Dessert"
+      ],
       "ingredients": [
         {
           "name": "eggs",
@@ -3957,6 +3993,10 @@
     },
     "12": {
       "recipe_name": "2-ingredient-avocado-egg-salad",
+      "food_role": [
+        "Main Course",
+        "Side"
+      ],
       "ingredients": [
         {
           "name": "hass avacado",
@@ -4133,6 +4173,10 @@
     },
     "13": {
       "recipe_name": "how-to-make-egg-omelettes",
+      "food_role": [
+        "Main Course",
+        "Side"
+      ],
       "ingredients": [
         {
           "name": "eggs",
@@ -4509,6 +4553,10 @@
     },
     "14": {
       "recipe_name": "bunny-egg-salad",
+      "food_role": [
+        "Main Course",
+        "Side"
+      ],
       "ingredients": [
         {
           "name": "salad",
@@ -4749,6 +4797,10 @@
     },
     "15": {
       "recipe_name": "deviled-egg-salad",
+      "food_role": [
+        "Main Course",
+        "Side"
+      ],
       "ingredients": [
         {
           "name": "egg",
@@ -5121,6 +5173,11 @@
     },
     "16": {
       "recipe_name": "dinosaur-inspired-by-mikeasaurus",
+      "food_role": [
+        "Main Course",
+        "Side",
+        "Dessert"
+      ],
       "ingredients": [
         {
           "name": "Jell-O",
@@ -5497,6 +5554,10 @@
     },
     "17": {
       "recipe_name": "bacon-asparagus-and-egg-bake",
+      "food_role": [
+        "Main Course",
+        "Side"
+      ],
       "ingredients": [
         {
           "name": "bacon",
@@ -5728,6 +5789,9 @@
     },
     "18": {
       "recipe_name": "how-to-make-chinese-egg-tarts",
+      "food_role": [
+        "Dessert"
+      ],
       "ingredients": [
         {
           "name": "puff pastry sheet",
@@ -5956,6 +6020,10 @@
     },
     "19": {
       "recipe_name": "egg-filled-bread-roll",
+      "food_role": [
+        "Main Course",
+        "Side"
+      ],
       "ingredients": [
         {
           "name": "egg",
@@ -6272,6 +6340,9 @@
     },
     "20": {
       "recipe_name": "chocolate-peanut-butter",
+      "food_role": [
+        "Dessert"
+      ],
       "ingredients": [
         {
           "name": "peanut butter candy",
@@ -6487,6 +6558,10 @@
     },
     "21": {
       "recipe_name": "supremely-spicy-scrambled-eggs",
+      "food_role": [
+        "Main Course",
+        "Side"
+      ],
       "ingredients": [
         {
           "name": "eggs",
@@ -6954,6 +7029,9 @@
     },
     "22": {
       "recipe_name": "peekaboo-sugar",
+      "food_role": [
+        "Dessert"
+      ],
       "ingredients": [
         {
           "name": "sugar",
@@ -7194,6 +7272,9 @@
     },
     "23": {
       "recipe_name": "eggs-and-bacon-the-perfect-quick-paleo-meal",
+      "food_role": [
+        "Main Course"
+      ],
       "ingredients": [
         {
           "name": "egg",
@@ -7354,6 +7435,10 @@
     },
     "24": {
       "recipe_name": "bakedfriedpan-fried-scotch-egg",
+      "food_role": [
+        "Main Course",
+        "Side"
+      ],
       "ingredients": [
         {
           "name": "egg",
@@ -7617,6 +7702,9 @@
     },
     "25": {
       "recipe_name": "deviled-eggs-with-smoked-salmon-and-capers",
+      "food_role": [
+        "Side"
+      ],
       "ingredients": [
         {
           "name": "egg",
@@ -7877,6 +7965,9 @@
     },
     "47": {
       "recipe_name": "baklava",
+      "food_role": [
+        "Dessert"
+      ],
       "ingredients": [
         {
           "name": "phyllo dough",
@@ -8375,6 +8466,9 @@
     },
     "48": {
       "recipe_name": "German Rhubarb Cake with Meringue Topping (Omas Rhabarberkuchen mit Baiser)",
+      "food_role": [
+        "Dessert"
+      ],
       "ingredients": [
         {
           "name": "Rhubarb",
@@ -8902,6 +8996,9 @@
     },
     "49": {
       "recipe_name": "honey-vanilla-almond-cake",
+      "food_role": [
+        "Dessert"
+      ],
       "ingredients": [
         {
           "name": "Unsalted butter",
@@ -9282,6 +9379,9 @@
     },
     "50": {
       "recipe_name": "caramel-nut-tart",
+      "food_role": [
+        "Dessert"
+      ],
       "ingredients": [
         {
           "name": "all-purpose flour",
