@@ -2,6 +2,9 @@
   "beverage_ids": {
     "1": {
       "name": "Coffee",
+      "food_role": [
+        "Beverage"
+      ],
       "additionalInfo": "",
       "hasNuts": false,
       "hasDairy": false,
@@ -9,6 +12,9 @@
     },
     "2": {
       "name": "Tea",
+      "food_role": [
+        "Beverage"
+      ],
       "additionalInfo": "",
       "hasNuts": false,
       "hasDairy": false,
@@ -16,6 +22,9 @@
     },
     "3": {
       "name": "Orange Juice",
+      "food_role": [
+        "Beverage"
+      ],
       "additionalInfo": "",
       "hasNuts": false,
       "hasDairy": false,
@@ -23,6 +32,9 @@
     },
     "4": {
       "name": "Cola",
+      "food_role": [
+        "Beverage"
+      ],
       "additionalInfo": "",
       "hasNuts": false,
       "hasDairy": false,
@@ -30,6 +42,9 @@
     },
     "5": {
       "name": "Water",
+      "food_role": [
+        "Beverage"
+      ],
       "additionalInfo": "",
       "hasNuts": false,
       "hasDairy": false,
@@ -44,6 +59,9 @@
     },
     "7": {
       "name": "Smoothie",
+      "food_role": [
+        "Beverage"
+      ],
       "additionalInfo": "",
       "hasNuts": false,
       "hasDairy": false,
@@ -51,6 +69,9 @@
     },
     "8": {
       "name": "Lemonade",
+      "food_role": [
+        "Beverage"
+      ],
       "additionalInfo": "",
       "hasNuts": false,
       "hasDairy": false,
@@ -58,6 +79,9 @@
     },
     "9": {
       "name": "Iced Tea",
+      "food_role": [
+        "Beverage"
+      ],
       "additionalInfo": "",
       "hasNuts": false,
       "hasDairy": false,
@@ -65,6 +89,9 @@
     },
     "10": {
       "name": "Hot Chocolate",
+      "food_role": [
+        "Beverage"
+      ],
       "additionalInfo": "",
       "hasNuts": false,
       "hasDairy": true,
@@ -72,6 +99,9 @@
     },
     "11": {
       "name": "Apple Juice",
+      "food_role": [
+        "Beverage"
+      ],
       "additionalInfo": "",
       "hasNuts": false,
       "hasDairy": false,
@@ -79,6 +109,9 @@
     },
     "12": {
       "name": "Pepsi",
+      "food_role": [
+        "Beverage"
+      ],
       "additionalInfo": "",
       "hasNuts": false,
       "hasDairy": false,
@@ -86,6 +119,9 @@
     },
     "13": {
       "name": "Cappuccino",
+      "food_role": [
+        "Beverage"
+      ],
       "additionalInfo": "",
       "hasNuts": false,
       "hasDairy": true,
@@ -93,6 +129,9 @@
     },
     "14": {
       "name": "Green Tea",
+      "food_role": [
+        "Beverage"
+      ],
       "additionalInfo": "",
       "hasNuts": false,
       "hasDairy": false,
@@ -100,6 +139,9 @@
     },
     "15": {
       "name": "Ginger Ale",
+      "food_role": [
+        "Beverage"
+      ],
       "additionalInfo": "",
       "hasNuts": false,
       "hasDairy": false,
@@ -107,6 +149,9 @@
     },
     "16": {
       "name": "Iced Coffee",
+      "food_role": [
+        "Beverage"
+      ],
       "additionalInfo": "",
       "hasNuts": false,
       "hasDairy": true,
@@ -114,6 +159,9 @@
     },
     "17": {
       "name": "Chai Latte",
+      "food_role": [
+        "Beverage"
+      ],
       "additionalInfo": "",
       "hasNuts": false,
       "hasDairy": true,
@@ -121,6 +169,9 @@
     },
     "18": {
       "name": "Cranberry Juice",
+      "food_role": [
+        "Beverage"
+      ],
       "additionalInfo": "",
       "hasNuts": false,
       "hasDairy": false,
@@ -128,6 +179,9 @@
     },
     "19": {
       "name": "Sprite",
+      "food_role": [
+        "Beverage"
+      ],
       "additionalInfo": "",
       "hasNuts": false,
       "hasDairy": false,
@@ -135,6 +189,9 @@
     },
     "20": {
       "name": "Hot Tea",
+      "food_role": [
+        "Beverage"
+      ],
       "additionalInfo": "",
       "hasNuts": false,
       "hasDairy": false,
@@ -142,6 +199,9 @@
     },
     "21": {
       "name": "Fruit Punch",
+      "food_role": [
+        "Beverage"
+      ],
       "additionalInfo": "",
       "hasNuts": false,
       "hasDairy": false,
@@ -149,6 +209,9 @@
     },
     "22": {
       "name": "Almond Milk",
+      "food_role": [
+        "Beverage"
+      ],
       "additionalInfo": "",
       "hasNuts": true,
       "hasDairy": false,
@@ -156,6 +219,9 @@
     },
     "23": {
       "name": "Coconut Water",
+      "food_role": [
+        "Beverage"
+      ],
       "additionalInfo": "",
       "hasNuts": false,
       "hasDairy": false,
@@ -163,6 +229,9 @@
     },
     "24": {
       "name": "Espresso",
+      "food_role": [
+        "Beverage"
+      ],
       "additionalInfo": "",
       "hasNuts": false,
       "hasDairy": false,
@@ -170,6 +239,9 @@
     },
     "25": {
       "name": "Tomato Juice",
+      "food_role": [
+        "Beverage"
+      ],
       "additionalInfo": "",
       "hasNuts": false,
       "hasDairy": false,
