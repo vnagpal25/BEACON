@@ -1,0 +1,29 @@
+{
+  "meal_plan": [
+    {
+      "day 1": [
+        {
+          "meal_name": "breakfast",
+          "meal_time": "9:00",
+          "Beverage": "1",
+          "Main Course": "36"
+        },
+        {
+          "meal_name": "lunch",
+          "meal_time": "13:00",
+          "Beverage": "2",
+          "Main Course": "37",
+          "Side": "38"
+        },
+        {
+          "meal_name": "dinner",
+          "meal_time": "20:00",
+          "Beverage": "3",
+          "Main Course": "39",
+          "Dessert": "41",
+          "Side": "40"
+        }
+      ]
+    }
+  ]
+}

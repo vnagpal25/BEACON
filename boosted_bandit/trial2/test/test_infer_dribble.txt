@@ -39,9 +39,9 @@
 % [ LazyGroundClauseIndex ]  Building full index for mode/1 with 1 assertions.
 
 %  Read the facts.
-%  Have read 24 facts.
-% Have read 277 examples from 'test' [test/test*].
-% Have read 99 examples from 'test' [test/test*].
+%  Have read 17 facts.
+% Have read 333 examples from 'test' [test/test*].
+% Have read 28 examples from 'test' [test/test*].
 
 %  LearnOneClause initialized.
 
@@ -62,19 +62,19 @@
 % Collecting the types of constants.
 
 % Looking at the training examples to see if any types of new constants can be inferred.
-% Time to collect constants: 11 milliseconds
+% Time to collect constants: 4 milliseconds
 % Time to collect examples: 0 seconds
 
-% Read 277 pos examples and 99 neg examples.
-% Time to init learnOneClause: 24 milliseconds
+% Read 333 pos examples and 28 neg examples.
+% Time to init learnOneClause: 6 milliseconds
 % Old dirtrain/models/
 
-% Have 277 'raw' positive examples and kept 277.
-% Have 99 'raw' negative examples and kept 99.
+% Have 333 'raw' positive examples and kept 333.
+% Have 28 'raw' negative examples and kept 28.
 
 % processing backup's for recommendation
-%  POS EX = 277
-%  NEG EX = 99
+%  POS EX = 333
+%  NEG EX = 28
 
 % Memory usage by WILLSetup (just counts # targets?):
 %  |backupPosExamples| = 1
@@ -107,9 +107,9 @@
 %  Done loading 20 models.
 File: test/advice.txt doesnt exist.Hence no advice loaded
 
-% for recommendation |lookupPos| = 277
-% for recommendation |lookupNeg| = 99
-% getJointExamples: |pos| = 277, |neg| = 99
+% for recommendation |lookupPos| = 333
+% for recommendation |lookupNeg| = 28
+% getJointExamples: |pos| = 333, |neg| = 28
 
 % Starting inference in bRDN.
 % Trees = 20
@@ -117,31 +117,31 @@ File: test/advice.txt doesnt exist.Hence no advice loaded
 % Starting getMarginalProbabilities.
 % [ LazyGroundNthArgumentClauseIndex ]  Argument 0:  Building full index for item/2.
 % No Gibbs sampling needed during inference.
- (Arithmetic) Mean Probability Assigned to Correct Output Class: 262.901/376.00 = 0.699204
+ (Arithmetic) Mean Probability Assigned to Correct Output Class: 308.688/361.00 = 0.855092
 
- The weighted count of positive examples = 277.000 and the weighted count of negative examples = 99.000
+ The weighted count of positive examples = 333.000 and the weighted count of negative examples = 28.000
 
-printExamples: Writing out predictions (for Tuffy?) on 376 examples for 'recommendation' to:
+printExamples: Writing out predictions (for Tuffy?) on 361 examples for 'recommendation' to:
   test/results_recommendation.db
  and to:
   test/query_recommendation.db
 %    No need to compress since small: test/query_recommendation.db
 
 % Computing Area Under Curves.
-%Pos=277
-%Neg=99
-%LL:-37.90835083878006
-%LL:-224.16697166210255
+%Pos=333
+%Neg=28
+%LL:-28.038645923097217
+%LL:-99.2647761049364
 
 % Running command: java -jar ./auc.jar test/AUC/aucTemp.txt list 0.0
 % WAITING FOR command: java -jar ./auc.jar test/AUC/aucTemp.txt list 0.0
 % DONE WAITING FOR command: java -jar ./auc.jar test/AUC/aucTemp.txt list 0.0
 
-%   AUC ROC   = 0.608923
-%   AUC PR    = 0.783216
-%   CLL	      = -0.596189
-%   Precision = 0.784848 at threshold = 0.724
-%   Recall    = 0.935018
-%   F1        = 0.853377
+%   AUC ROC   = 0.524560
+%   AUC PR    = 0.926296
+%   CLL	      = -0.274972
+%   Precision = 0.926667 at threshold = 0.890
+%   Recall    = 0.834835
+%   F1        = 0.878357
 
-% Total inference time (20 trees): 634 milliseconds.
+% Total inference time (20 trees): 420 milliseconds.

@@ -1,0 +1,486 @@
+{
+  "1.0_1": {
+    "day 1": {
+      "duplicate_day_score": 1.0,
+      "duplicate_meal_scores": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "meal_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "user_constraint_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "1.0_2": {
+    "day 1": {
+      "duplicate_day_score": 1.0,
+      "duplicate_meal_scores": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "meal_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "user_constraint_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "1.0_3": {
+    "day 1": {
+      "duplicate_day_score": 1.0,
+      "duplicate_meal_scores": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "meal_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "user_constraint_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "0.9833333333333334_4": {
+    "day 1": {
+      "duplicate_day_score": 0.9166666666666667,
+      "duplicate_meal_scores": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "meal_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "user_constraint_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "0.9833333333333332_5": {
+    "day 1": {
+      "duplicate_day_score": 1.0,
+      "duplicate_meal_scores": [
+        1.0,
+        1.0,
+        0.75
+      ],
+      "meal_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "user_constraint_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "1.0_6": {
+    "day 1": {
+      "duplicate_day_score": 1.0,
+      "duplicate_meal_scores": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "meal_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "user_constraint_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "0.9833333333333334_7": {
+    "day 1": {
+      "duplicate_day_score": 0.9166666666666667,
+      "duplicate_meal_scores": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "meal_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "user_constraint_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "1.0_8": {
+    "day 1": {
+      "duplicate_day_score": 1.0,
+      "duplicate_meal_scores": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "meal_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "user_constraint_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "1.0_9": {
+    "day 1": {
+      "duplicate_day_score": 1.0,
+      "duplicate_meal_scores": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "meal_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "user_constraint_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "1.0_10": {
+    "day 1": {
+      "duplicate_day_score": 1.0,
+      "duplicate_meal_scores": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "meal_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "user_constraint_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "1.0_11": {
+    "day 1": {
+      "duplicate_day_score": 1.0,
+      "duplicate_meal_scores": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "meal_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "user_constraint_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "1.0_12": {
+    "day 1": {
+      "duplicate_day_score": 1.0,
+      "duplicate_meal_scores": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "meal_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "user_constraint_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "1.0_13": {
+    "day 1": {
+      "duplicate_day_score": 1.0,
+      "duplicate_meal_scores": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "meal_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "user_constraint_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "0.975_14": {
+    "day 1": {
+      "duplicate_day_score": 0.875,
+      "duplicate_meal_scores": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "meal_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "user_constraint_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "1.0_15": {
+    "day 1": {
+      "duplicate_day_score": 1.0,
+      "duplicate_meal_scores": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "meal_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "user_constraint_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "1.0_16": {
+    "day 1": {
+      "duplicate_day_score": 1.0,
+      "duplicate_meal_scores": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "meal_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "user_constraint_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "1.0_17": {
+    "day 1": {
+      "duplicate_day_score": 1.0,
+      "duplicate_meal_scores": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "meal_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "user_constraint_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "1.0_18": {
+    "day 1": {
+      "duplicate_day_score": 1.0,
+      "duplicate_meal_scores": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "meal_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "user_constraint_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "1.0_19": {
+    "day 1": {
+      "duplicate_day_score": 1.0,
+      "duplicate_meal_scores": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "meal_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "user_constraint_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "1.0_20": {
+    "day 1": {
+      "duplicate_day_score": 1.0,
+      "duplicate_meal_scores": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "meal_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "user_constraint_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "0.9833333333333334_21": {
+    "day 1": {
+      "duplicate_day_score": 0.9166666666666667,
+      "duplicate_meal_scores": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "meal_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "user_constraint_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "1.0_22": {
+    "day 1": {
+      "duplicate_day_score": 1.0,
+      "duplicate_meal_scores": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "meal_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "user_constraint_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "1.0_23": {
+    "day 1": {
+      "duplicate_day_score": 1.0,
+      "duplicate_meal_scores": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "meal_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "user_constraint_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "1.0_24": {
+    "day 1": {
+      "duplicate_day_score": 1.0,
+      "duplicate_meal_scores": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "meal_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "user_constraint_coverages": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "Average User Constraint Score": 1.0,
+  "Average Duplicate Day Score": 0.984375,
+  "Average Duplicate Meal Score": 0.9965277777777778,
+  "Average Meal Coverage Score": 1.0
+}

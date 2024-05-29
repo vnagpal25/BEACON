@@ -114,12 +114,14 @@ class MealRecommender:
         # return meal plan
         return {'meal_plan': meal_plan}
 
-    def WriteMealRecs(self, meal_plan=None):
+    def WriteMealRecs(self, meal_plan=None, save_path=None):
+        if save_path is None:
+          save_path = f'../recommendations/recommendation_{self.user}'
         if not meal_plan:
             meal_plan = self.recommendation
 
         # Write meal plan to json
-        with open(f'../recommendations/recommendation_{self.user}', 'w') as file:
+        with open(save_path, 'w') as file:
             json.dump(meal_plan, file)
 
     def EvaluateRecs(self):
