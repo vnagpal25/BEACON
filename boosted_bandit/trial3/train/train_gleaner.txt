@@ -1,0 +1,43 @@
+////// Learned from a dataset containing 14,740 positive (14,740.0 weighted sum) and 0 negative (0.0 wgt'ed) examples.
+////// The minimal (wgt'ed) coverage = 3.000, the maximal (wgt'ed) NEG coverage = 0.499, and the minimal (wgt'ed) precision = 0.001 (using m = 0.1)
+
+usePrologVariables: true.
+
+
+////////////////////////////////////////////////////////////////////////////////
+////
+////     Gleaner for: allPossibleMarkers
+////
+////////////////////////////////////////////////////////////////////////////////
+
+// Best in (weighted) recall bin #9, (0.45, 0.5], from 'outerLoop #1, null' and covering 702.0 wgt'ed positive and 0.0 wgt'ed negative examples:
+//    Wgt'ed recall = 0.488, precision = 1.000, and F1 = 0.656 - learned after 2 total and 0 acceptable nodes.  Node score = -230.82557228690584
+
+ FOR recommendation(A, B) IF (item(B, Anon287)) THEN output = 0.347175 ELSE output = 0.652010;
+
+
+////////////////////////////////////////////////////////////////////////////////
+////
+////     Gleaner for: outerLoop #1, null
+////
+////////////////////////////////////////////////////////////////////////////////
+
+// Best in (weighted) recall bin #9, (0.45, 0.5], from 'outerLoop #1, null' and covering 702.0 wgt'ed positive and 0.0 wgt'ed negative examples:
+//    Wgt'ed recall = 0.488, precision = 1.000, and F1 = 0.656 - learned after 2 total and 0 acceptable nodes.  Node score = -230.82557228690584
+
+ FOR recommendation(A, B) IF (item(B, Anon287)) THEN output = 0.347175 ELSE output = 0.652010;
+
+
+////////////////////////////////////////////////////////////////////////////////
+////
+////     Gleaner for: outerLoop #2, null
+////
+////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////
+////
+////     Gleaner for: outerLoop #3, null
+////
+////////////////////////////////////////////////////////////////////////////////
+

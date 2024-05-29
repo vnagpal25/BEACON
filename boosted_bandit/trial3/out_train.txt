@@ -1,0 +1,3308 @@
+args[0] = -l
+args[1] = -combine
+args[2] = -train
+args[4] = -target
+args[6] = -trees
+train
+
+% Starting a LEARNING run of bRDN.
+
+% Calling SETUP.
+% Running on host: VanshLaptop
+
+% Switching to VarIndicator = uppercase.
+
+% Unset'ing VarIndicator.
+
+Resetting the LazyGroundNthArgumentClauseIndex.
+
+% Calling ILPouterLoop from createRegressionOuterLooper.
+
+% getInputArgWithDefaultValue: args=[train/train_pos.txt, train/train_neg.txt, train/train_bk.txt, train/train_facts.txt]
+%  for N=0: args[N]=train/train_pos.txt
+
+% getInputArgWithDefaultValue: args=[train/train_pos.txt, train/train_neg.txt, train/train_bk.txt, train/train_facts.txt]
+%  for N=1: args[N]=train/train_neg.txt
+
+% getInputArgWithDefaultValue: args=[train/train_pos.txt, train/train_neg.txt, train/train_bk.txt, train/train_facts.txt]
+%  for N=2: args[N]=train/train_bk.txt
+
+% getInputArgWithDefaultValue: args=[train/train_pos.txt, train/train_neg.txt, train/train_bk.txt, train/train_facts.txt]
+%  for N=3: args[N]=train/train_facts.txt
+
+% Welcome to the WILL ILP/SRL systems.
+
+
+% Switching to VarIndicator = uppercase.
+
+% Unset'ing VarIndicator.
+% Reading background theory from dir: null
+% Load '../recs_bk.txt'.
+
+% Switching to VarIndicator = uppercase.
+
+***** Warning: % Since this is the first setting of the notation for variables, will keep:
+%   variableIndicator = uppercase *****
+
+
+***** Warning: % Since this is the first setting of the notation for variables, will keep:
+%   variableIndicator = uppercase *****
+
+% [ LazyGroundClauseIndex ]  Building full index for mode/1 with 1 assertions.
+
+%  Read the facts.
+%  Have read 93 facts.
+% Have read 1,058 examples from 'train' [train/train*].
+% Have read 381 examples from 'train' [train/train*].
+
+%  LearnOneClause initialized.
+
+% The outer looper has been created.
+
+% Initializing the ILP inner looper.
+
+% NEW target:                 recommendation(A, B)
+%  targetPred:                recommendation/2
+%  targetArgTypes:            signature = [const, const], types = [+user_name, +item_name]
+%  targets:                   [recommendation(A, B)]
+%  targetPredicates:          [recommendation/2]
+%  targetArgSpecs:            [[A[+user_name], B[+item_name]]]
+%  variablesInTargets:        [[A, B]]
+
+% Started collecting constants
+
+% Collecting the types of constants.
+
+% Looking at the training examples to see if any types of new constants can be inferred.
+% Time to collect constants: 12 milliseconds
+% Time to collect examples: 0 seconds
+
+% Read 1,058 pos examples and 381 neg examples.
+% Time to init learnOneClause: 17 milliseconds
+% Old dirnull
+Setting model dir
+
+% Have 1,058 'raw' positive examples and kept 1,058.
+% Have 381 'raw' negative examples and kept 381.
+
+% processing backup's for recommendation
+%  POS EX = 1,058
+%  NEG EX = 381
+
+% Memory usage by WILLSetup (just counts # targets?):
+%  |backupPosExamples| = 1
+%  |backupNegExamples| = 1
+%  |predicatesAsFacts| = 0
+%  |addedToFactBase|   = 0
+train/models/
+File: train/advice.txt doesnt exist.Hence no advice loaded
+% Learning 20 trees in this iteration for recommendation
+
+% Learn model for: recommendation
+% Kept 1,058 of the 1,058 positive examples.
+% Kept 381 of the 381 negative examples.
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.19466552954260863
+Set score:0.0025
+% Dataset size: 1,439
+Computing probabilities
+prob time:2 milliseconds
+No hidden examples for : recommendation
+Time to build dataset: 3 milliseconds
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.19466552954263083
+Set score:0.0025
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Have these 8 positive seeds: 118 150 163 280 428 1004 1263 1271
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% LearnOneClause Parameters:
+%   Targets (1):
+%    recommendation(+user_name, +item_name)
+%  Modes (4):
+%    item(+item_name, +value),
+%    item(+item_name, -value),
+%    user(+user_name, +value),
+%    user(+user_name, -value)
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]' score=-Infinity
+% [ LazyGroundNthArgumentClauseIndex ]  Argument 0:  Building full index for item/2.
+
+% Skipping over this 'waitHere': There is no fact nor clause nor built-in predicate matching: 'user/2'.
+  Possibly a typo?  If not, add to the BK file:   okIfUnknown: user/2.
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 1 bad extensions.
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% Gleaner: New best node found (score = -230.825572): recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]' score=-230.82557228691627
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 1 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 1 bad extensions.
+%     Score = -230.825573 (regressionFit = 230.825571, penalties=2.24E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Expanding node at Level 0 with score = 1.797693e+308.
+% Will extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+Comparing variance: 0.24792209478818214 to score=0.0025 #egs=702.0
+Comparing variance: 0.07704784330476581 to score=0.0025 #egs=737.0
+%   Creating a TRUE-branch interior node with wgtedCountTrueBranchPos = 702.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.247922)
+%         ILP node to extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+%      Insert tree-structured search node (@ level = 1 and with score = -0.247922) into the LAST position (#1) in the search queue.
+%   Creating a FALSE-branch interior node with wgtedCountFalseBranchPos = 737.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.077048)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 1 and with score = -0.077048) into the LAST position (#2) in the search queue.
+
+% Time for loop #1: 83 milliseconds.
+% Internal node max length = 2
+% Max tree depth in lits   = 12
+% Max tree depth in nodes  = 6
+% Max number of clauses    = 8
+
+% On cycle #1, the best clause found is:
+%      recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% This clause covers 702 positive examples, of which 702 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+
+% Working on expanding this node: 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]'
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Have these 10 positive seeds: 76 185 262 265 282 371 426 474 579 609
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Consider expanding [#1 of outerLoop #2, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-230.82557228691627
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.24E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #2, bodyLen=2] 'recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 2 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=3.2500000000000006E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -230.8256):
+%  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+Created a leaf under (recommendation(A, B) :- item(B, Anon61))
+
+% Have these 10 positive seeds: 12 236 242 258 270 323 351 391 441 566
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #3, bodyLen=0] 'recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 0 items to OPEN for evaluation and possible insertion.
+% Have created 0 valid-on-seeds descendants and have picked up 2 bad extensions.
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -Infinity):
+%  null
+Created a leaf under (recommendation(A, B) :- item(B, Anon61))
+
+% ******************************************
+
+%  Have stopped ILP's outer loop because the tree-structured queue is empty.
+
+% ******************************************
+
+%%%%%  WILL-Produced Tree #1 @ 2:17:45 5/29/24.  [Using 3,672,112 memory cells.]  %%%%%
+
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.4037329806835533;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.7740241047060206;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.4037329806835533) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.7740241047060206) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.4037329806835533) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.7740241047060206) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+% Saving model in: train/models/bRDNs/recommendation.model.ckpt
+% Time taken to learn 1 trees is 184 milliseconds.
+
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.07704784330476577
+Set score:0.0025
+% Only 1439 out of 1439 converged.
+% Kept 1,058 of the 1,058 positive examples.
+% Kept 381 of the 381 negative examples.
+% Dataset size: 1,439
+Computing probabilities
+prob time:5 milliseconds
+No hidden examples for : recommendation
+Time to build dataset: 41 milliseconds
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.18362432107736243
+Set score:0.0025
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Have these 10 positive seeds: 34 113 417 448 468 511 518 629 690 749
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 1 bad extensions.
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% Gleaner: New best node found (score = -230.825572): recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]' score=-230.82557228690584
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 1 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 1 bad extensions.
+%     Score = -230.825573 (regressionFit = 230.825571, penalties=2.24E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Expanding node at Level 0 with score = 1.797693e+308.
+% Will extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+Comparing variance: 0.2479220947881833 to score=0.0025 #egs=702.0
+Comparing variance: 0.07704784330475054 to score=0.0025 #egs=737.0
+%   Creating a TRUE-branch interior node with wgtedCountTrueBranchPos = 702.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.247922)
+%         ILP node to extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+%      Insert tree-structured search node (@ level = 1 and with score = -0.247922) into the LAST position (#1) in the search queue.
+%   Creating a FALSE-branch interior node with wgtedCountFalseBranchPos = 737.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.077048)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 1 and with score = -0.077048) into the LAST position (#2) in the search queue.
+
+% Time for loop #1: 22 milliseconds.
+% Internal node max length = 2
+% Max tree depth in lits   = 12
+% Max tree depth in nodes  = 6
+% Max number of clauses    = 8
+
+% On cycle #1, the best clause found is:
+%      recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% This clause covers 702 positive examples, of which 702 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+
+% Working on expanding this node: 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]'
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Have these 10 positive seeds: 3 134 315 327 392 441 495 535 553 673
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Consider expanding [#1 of outerLoop #2, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-230.82557228690584
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.24E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #2, bodyLen=2] 'recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 2 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=3.2500000000000006E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -230.8256):
+%  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+Created a leaf under (recommendation(A, B) :- item(B, Anon287))
+
+% Have these 9 positive seeds: 123 211 324 404 453 536 546 569 575
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #3, bodyLen=0] 'recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 0 items to OPEN for evaluation and possible insertion.
+% Have created 0 valid-on-seeds descendants and have picked up 2 bad extensions.
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -Infinity):
+%  null
+Created a leaf under (recommendation(A, B) :- item(B, Anon287))
+
+% ******************************************
+
+%  Have stopped ILP's outer loop because the tree-structured queue is empty.
+
+% ******************************************
+
+%%%%%  WILL-Produced Tree #2 @ 2:17:45 5/29/24.  [Using 3,966,248 memory cells.]  %%%%%
+
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.3471748982019919;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.6520101653703603;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.3471748982019919) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.6520101653703603) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.3471748982019919) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.6520101653703603) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+% Saving model in: train/models/bRDNs/recommendation.model.ckpt
+% Time taken to learn 2 trees is 306 milliseconds.
+
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.07704784330475045
+Set score:0.0025
+% Only 1439 out of 1439 converged.
+% Kept 1,058 of the 1,058 positive examples.
+% Kept 381 of the 381 negative examples.
+% Dataset size: 1,439
+Computing probabilities
+prob time:8 milliseconds
+No hidden examples for : recommendation
+Time to build dataset: 21 milliseconds
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.17273256755834035
+Set score:0.0025
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Have these 10 positive seeds: 52 70 276 445 721 1077 1167 1301 1307 1384
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 1 bad extensions.
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% Gleaner: New best node found (score = -230.825572): recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]' score=-230.82557228691184
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 1 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 1 bad extensions.
+%     Score = -230.825573 (regressionFit = 230.825571, penalties=2.24E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Expanding node at Level 0 with score = 1.797693e+308.
+% Will extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+Comparing variance: 0.24792209478819383 to score=0.0025 #egs=702.0
+Comparing variance: 0.07704784330474865 to score=0.0025 #egs=737.0
+%   Creating a TRUE-branch interior node with wgtedCountTrueBranchPos = 702.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.247922)
+%         ILP node to extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+%      Insert tree-structured search node (@ level = 1 and with score = -0.247922) into the LAST position (#1) in the search queue.
+%   Creating a FALSE-branch interior node with wgtedCountFalseBranchPos = 737.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.077048)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 1 and with score = -0.077048) into the LAST position (#2) in the search queue.
+
+% Time for loop #1: 18 milliseconds.
+% Internal node max length = 2
+% Max tree depth in lits   = 12
+% Max tree depth in nodes  = 6
+% Max number of clauses    = 8
+
+% On cycle #1, the best clause found is:
+%      recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% This clause covers 702 positive examples, of which 702 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+
+% Working on expanding this node: 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]'
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Have these 9 positive seeds: 14 103 107 117 200 256 350 398 620
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Consider expanding [#1 of outerLoop #2, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-230.82557228691184
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.24E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #2, bodyLen=2] 'recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 2 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=3.2500000000000006E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -230.8256):
+%  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+Created a leaf under (recommendation(A, B) :- item(B, Anon513))
+
+% Have these 10 positive seeds: 25 68 213 262 291 446 517 598 607 733
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #3, bodyLen=0] 'recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 0 items to OPEN for evaluation and possible insertion.
+% Have created 0 valid-on-seeds descendants and have picked up 2 bad extensions.
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -Infinity):
+%  null
+Created a leaf under (recommendation(A, B) :- item(B, Anon513))
+
+% ******************************************
+
+%  Have stopped ILP's outer loop because the tree-structured queue is empty.
+
+% ******************************************
+
+%%%%%  WILL-Produced Tree #3 @ 2:17:45 5/29/24.  [Using 4,201,840 memory cells.]  %%%%%
+
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.28618456899518613;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.5082920595102455;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.28618456899518613) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.5082920595102455) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.28618456899518613) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.5082920595102455) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+% Saving model in: train/models/bRDNs/recommendation.model.ckpt
+% Time taken to learn 3 trees is 398 milliseconds.
+
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.07704784330474868
+Set score:0.0025
+% Only 1439 out of 1439 converged.
+% Kept 1,058 of the 1,058 positive examples.
+% Kept 381 of the 381 negative examples.
+% Dataset size: 1,439
+Computing probabilities
+prob time:11 milliseconds
+No hidden examples for : recommendation
+Time to build dataset: 22 milliseconds
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.1663922333444784
+Set score:0.0025
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Have these 8 positive seeds: 99 342 508 536 549 919 928 1139
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 1 bad extensions.
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% Gleaner: New best node found (score = -230.825572): recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]' score=-230.82557228691763
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 1 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 1 bad extensions.
+%     Score = -230.825573 (regressionFit = 230.825571, penalties=2.24E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Expanding node at Level 0 with score = 1.797693e+308.
+% Will extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+Comparing variance: 0.24792209478819097 to score=0.0025 #egs=702.0
+Comparing variance: 0.07704784330475924 to score=0.0025 #egs=737.0
+%   Creating a TRUE-branch interior node with wgtedCountTrueBranchPos = 702.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.247922)
+%         ILP node to extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+%      Insert tree-structured search node (@ level = 1 and with score = -0.247922) into the LAST position (#1) in the search queue.
+%   Creating a FALSE-branch interior node with wgtedCountFalseBranchPos = 737.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.077048)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 1 and with score = -0.077048) into the LAST position (#2) in the search queue.
+
+% Time for loop #1: 13 milliseconds.
+% Internal node max length = 2
+% Max tree depth in lits   = 12
+% Max tree depth in nodes  = 6
+% Max number of clauses    = 8
+
+% On cycle #1, the best clause found is:
+%      recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% This clause covers 702 positive examples, of which 702 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+
+% Working on expanding this node: 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]'
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Have these 10 positive seeds: 65 159 278 375 378 394 414 416 494 589
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Consider expanding [#1 of outerLoop #2, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-230.82557228691763
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.24E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #2, bodyLen=2] 'recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 2 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=3.2500000000000006E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -230.8256):
+%  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+Created a leaf under (recommendation(A, B) :- item(B, Anon739))
+
+% Have these 9 positive seeds: 19 45 76 80 230 246 561 618 636
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #3, bodyLen=0] 'recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 0 items to OPEN for evaluation and possible insertion.
+% Have created 0 valid-on-seeds descendants and have picked up 2 bad extensions.
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -Infinity):
+%  null
+Created a leaf under (recommendation(A, B) :- item(B, Anon739))
+
+% ******************************************
+
+%  Have stopped ILP's outer loop because the tree-structured queue is empty.
+
+% ******************************************
+
+%%%%%  WILL-Produced Tree #4 @ 2:17:45 5/29/24.  [Using 4,215,088 memory cells.]  %%%%%
+
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.22756870727742204;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.38234399054885576;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.22756870727742204) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.38234399054885576) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.22756870727742204) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.38234399054885576) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+% Saving model in: train/models/bRDNs/recommendation.model.ckpt
+% Time taken to learn 4 trees is 483 milliseconds.
+
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.07704784330475925
+Set score:0.0025
+% Only 1439 out of 1439 converged.
+% Kept 1,058 of the 1,058 positive examples.
+% Kept 381 of the 381 negative examples.
+% Dataset size: 1,439
+Computing probabilities
+prob time:13 milliseconds
+No hidden examples for : recommendation
+Time to build dataset: 24 milliseconds
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.16360830141581476
+Set score:0.0025
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Have these 8 positive seeds: 29 133 423 469 533 744 1060 1083
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 1 bad extensions.
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% Gleaner: New best node found (score = -230.825572): recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]' score=-230.82557228691533
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 1 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 1 bad extensions.
+%     Score = -230.825573 (regressionFit = 230.825571, penalties=2.24E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Expanding node at Level 0 with score = 1.797693e+308.
+% Will extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+Comparing variance: 0.24792209478819185 to score=0.0025 #egs=702.0
+Comparing variance: 0.07704784330475527 to score=0.0025 #egs=737.0
+%   Creating a TRUE-branch interior node with wgtedCountTrueBranchPos = 702.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.247922)
+%         ILP node to extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+%      Insert tree-structured search node (@ level = 1 and with score = -0.247922) into the LAST position (#1) in the search queue.
+%   Creating a FALSE-branch interior node with wgtedCountFalseBranchPos = 737.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.077048)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 1 and with score = -0.077048) into the LAST position (#2) in the search queue.
+
+% Time for loop #1: 14 milliseconds.
+% Internal node max length = 2
+% Max tree depth in lits   = 12
+% Max tree depth in nodes  = 6
+% Max number of clauses    = 8
+
+% On cycle #1, the best clause found is:
+%      recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% This clause covers 702 positive examples, of which 702 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+
+% Working on expanding this node: 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]'
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Have these 10 positive seeds: 44 54 127 191 214 254 302 307 309 310
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Consider expanding [#1 of outerLoop #2, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-230.82557228691533
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.24E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #2, bodyLen=2] 'recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 2 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=3.2500000000000006E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -230.8256):
+%  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+Created a leaf under (recommendation(A, B) :- item(B, Anon965))
+
+% Have these 10 positive seeds: 19 22 88 136 147 215 267 296 392 464
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #3, bodyLen=0] 'recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 0 items to OPEN for evaluation and possible insertion.
+% Have created 0 valid-on-seeds descendants and have picked up 2 bad extensions.
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -Infinity):
+%  null
+Created a leaf under (recommendation(A, B) :- item(B, Anon965))
+
+% ******************************************
+
+%  Have stopped ILP's outer loop because the tree-structured queue is empty.
+
+% ******************************************
+
+%%%%%  WILL-Produced Tree #5 @ 2:17:45 5/29/24.  [Using 4,219,752 memory cells.]  %%%%%
+
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.1763114951956613;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.28950632285331923;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.1763114951956613) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.28950632285331923) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.1763114951956613) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.28950632285331923) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+% Saving model in: train/models/bRDNs/recommendation.model.ckpt
+% Time taken to learn 5 trees is 570 milliseconds.
+
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.07704784330475527
+Set score:0.0025
+% Only 1439 out of 1439 converged.
+% Kept 1,058 of the 1,058 positive examples.
+% Kept 381 of the 381 negative examples.
+% Dataset size: 1,439
+Computing probabilities
+prob time:10 milliseconds
+No hidden examples for : recommendation
+Time to build dataset: 27 milliseconds
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.16243937482324222
+Set score:0.0025
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Have these 10 positive seeds: 24 150 259 409 809 949 1070 1093 1232 1237
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 1 bad extensions.
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% Gleaner: New best node found (score = -230.825572): recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]' score=-230.82557228691567
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 1 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 1 bad extensions.
+%     Score = -230.825573 (regressionFit = 230.825571, penalties=2.24E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Expanding node at Level 0 with score = 1.797693e+308.
+% Will extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+Comparing variance: 0.24792209478819097 to score=0.0025 #egs=702.0
+Comparing variance: 0.0770478433047566 to score=0.0025 #egs=737.0
+%   Creating a TRUE-branch interior node with wgtedCountTrueBranchPos = 702.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.247922)
+%         ILP node to extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+%      Insert tree-structured search node (@ level = 1 and with score = -0.247922) into the LAST position (#1) in the search queue.
+%   Creating a FALSE-branch interior node with wgtedCountFalseBranchPos = 737.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.077048)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 1 and with score = -0.077048) into the LAST position (#2) in the search queue.
+
+% Time for loop #1: 12 milliseconds.
+% Internal node max length = 2
+% Max tree depth in lits   = 12
+% Max tree depth in nodes  = 6
+% Max number of clauses    = 8
+
+% On cycle #1, the best clause found is:
+%      recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% This clause covers 702 positive examples, of which 702 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+
+% Working on expanding this node: 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]'
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Have these 10 positive seeds: 24 76 100 143 184 224 288 314 335 417
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Consider expanding [#1 of outerLoop #2, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-230.82557228691567
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.24E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #2, bodyLen=2] 'recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 2 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=3.2500000000000006E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -230.8256):
+%  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+Created a leaf under (recommendation(A, B) :- item(B, Anon1191))
+
+% Have these 10 positive seeds: 11 34 96 162 188 272 373 384 459 468
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #3, bodyLen=0] 'recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 0 items to OPEN for evaluation and possible insertion.
+% Have created 0 valid-on-seeds descendants and have picked up 2 bad extensions.
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -Infinity):
+%  null
+Created a leaf under (recommendation(A, B) :- item(B, Anon1191))
+
+% ******************************************
+
+%  Have stopped ILP's outer loop because the tree-structured queue is empty.
+
+% ******************************************
+
+%%%%%  WILL-Produced Tree #6 @ 2:17:45 5/29/24.  [Using 4,236,712 memory cells.]  %%%%%
+
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.13438900804522222;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.2245809973788009;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.13438900804522222) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.2245809973788009) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.13438900804522222) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.2245809973788009) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+% Saving model in: train/models/bRDNs/recommendation.model.ckpt
+% Time taken to learn 6 trees is 654 milliseconds.
+
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.07704784330475659
+Set score:0.0025
+% Only 1439 out of 1439 converged.
+% Kept 1,058 of the 1,058 positive examples.
+% Kept 381 of the 381 negative examples.
+% Dataset size: 1,439
+Computing probabilities
+prob time:11 milliseconds
+No hidden examples for : recommendation
+Time to build dataset: 22 milliseconds
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.16190001323148706
+Set score:0.0025
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Have these 4 positive seeds: 344 898 1060 1103
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 1 bad extensions.
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% Gleaner: New best node found (score = -230.825572): recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]' score=-230.8255722869148
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 1 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 1 bad extensions.
+%     Score = -230.825573 (regressionFit = 230.825571, penalties=2.24E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Expanding node at Level 0 with score = 1.797693e+308.
+% Will extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+Comparing variance: 0.24792209478819405 to score=0.0025 #egs=702.0
+Comparing variance: 0.07704784330475246 to score=0.0025 #egs=737.0
+%   Creating a TRUE-branch interior node with wgtedCountTrueBranchPos = 702.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.247922)
+%         ILP node to extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+%      Insert tree-structured search node (@ level = 1 and with score = -0.247922) into the LAST position (#1) in the search queue.
+%   Creating a FALSE-branch interior node with wgtedCountFalseBranchPos = 737.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.077048)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 1 and with score = -0.077048) into the LAST position (#2) in the search queue.
+
+% Time for loop #1: 11 milliseconds.
+% Internal node max length = 2
+% Max tree depth in lits   = 12
+% Max tree depth in nodes  = 6
+% Max number of clauses    = 8
+
+% On cycle #1, the best clause found is:
+%      recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% This clause covers 702 positive examples, of which 702 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+
+% Working on expanding this node: 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]'
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Have these 10 positive seeds: 209 234 261 403 454 464 509 526 534 588
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Consider expanding [#1 of outerLoop #2, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-230.8255722869148
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.24E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #2, bodyLen=2] 'recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 2 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=3.2500000000000006E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -230.8256):
+%  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+Created a leaf under (recommendation(A, B) :- item(B, Anon1417))
+
+% Have these 10 positive seeds: 16 92 112 133 229 327 372 414 448 481
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #3, bodyLen=0] 'recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 0 items to OPEN for evaluation and possible insertion.
+% Have created 0 valid-on-seeds descendants and have picked up 2 bad extensions.
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -Infinity):
+%  null
+Created a leaf under (recommendation(A, B) :- item(B, Anon1417))
+
+% ******************************************
+
+%  Have stopped ILP's outer loop because the tree-structured queue is empty.
+
+% ******************************************
+
+%%%%%  WILL-Produced Tree #7 @ 2:17:46 5/29/24.  [Using 4,243,592 memory cells.]  %%%%%
+
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.10150865444468038;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.1788124157523499;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.10150865444468038) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.1788124157523499) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.10150865444468038) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.1788124157523499) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+% Saving model in: train/models/bRDNs/recommendation.model.ckpt
+% Time taken to learn 7 trees is 737 milliseconds.
+
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.07704784330475248
+Set score:0.0025
+% Only 1439 out of 1439 converged.
+% Kept 1,058 of the 1,058 positive examples.
+% Kept 381 of the 381 negative examples.
+% Dataset size: 1,439
+Computing probabilities
+prob time:11 milliseconds
+No hidden examples for : recommendation
+Time to build dataset: 30 milliseconds
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.16160769576947875
+Set score:0.0025
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Have these 9 positive seeds: 76 132 225 454 564 656 775 1004 1317
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 1 bad extensions.
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% Gleaner: New best node found (score = -230.825572): recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]' score=-230.82557228691633
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 1 variant children.  Sending 0 items to OPEN for evaluation and possible insertion.
+% Have created 0 valid-on-seeds descendants and have picked up 1 bad extensions.
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Expanding node at Level 0 with score = 1.797693e+308.
+% Will extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+Comparing variance: 0.247922094788194 to score=0.0025 #egs=702.0
+Comparing variance: 0.07704784330475457 to score=0.0025 #egs=737.0
+%   Creating a TRUE-branch interior node with wgtedCountTrueBranchPos = 702.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.247922)
+%         ILP node to extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+%      Insert tree-structured search node (@ level = 1 and with score = -0.247922) into the LAST position (#1) in the search queue.
+%   Creating a FALSE-branch interior node with wgtedCountFalseBranchPos = 737.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.077048)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 1 and with score = -0.077048) into the LAST position (#2) in the search queue.
+
+% Time for loop #1: 10 milliseconds.
+% Internal node max length = 2
+% Max tree depth in lits   = 12
+% Max tree depth in nodes  = 6
+% Max number of clauses    = 8
+
+% On cycle #1, the best clause found is:
+%      recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% This clause covers 702 positive examples, of which 702 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+
+% Working on expanding this node: 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]'
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Have these 10 positive seeds: 86 115 139 153 245 402 443 464 545 600
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Consider expanding [#1 of outerLoop #2, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-230.82557228691633
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.24E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #2, bodyLen=2] 'recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 2 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=3.2500000000000006E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -230.8256):
+%  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+Created a leaf under (recommendation(A, B) :- item(B, Anon1643))
+
+% Have these 10 positive seeds: 151 373 411 430 536 537 550 552 567 581
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #3, bodyLen=0] 'recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 0 items to OPEN for evaluation and possible insertion.
+% Have created 0 valid-on-seeds descendants and have picked up 2 bad extensions.
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -Infinity):
+%  null
+Created a leaf under (recommendation(A, B) :- item(B, Anon1643))
+
+% ******************************************
+
+%  Have stopped ILP's outer loop because the tree-structured queue is empty.
+
+% ******************************************
+
+%%%%%  WILL-Produced Tree #8 @ 2:17:46 5/29/24.  [Using 4,267,752 memory cells.]  %%%%%
+
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.07632763542570221;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.1456523030163616;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.07632763542570221) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.1456523030163616) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.07632763542570221) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.1456523030163616) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+% Saving model in: train/models/bRDNs/recommendation.model.ckpt
+% Time taken to learn 8 trees is 828 milliseconds.
+
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.07704784330475459
+Set score:0.0025
+% Only 1439 out of 1439 converged.
+% Kept 1,058 of the 1,058 positive examples.
+% Kept 381 of the 381 negative examples.
+% Dataset size: 1,439
+Computing probabilities
+prob time:14 milliseconds
+No hidden examples for : recommendation
+Time to build dataset: 34 milliseconds
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.16141790903553244
+Set score:0.0025
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Have these 8 positive seeds: 65 263 269 492 903 940 1005 1309
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 1 bad extensions.
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% Gleaner: New best node found (score = -230.825572): recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]' score=-230.8255722869139
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 1 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 1 bad extensions.
+%     Score = -230.825573 (regressionFit = 230.825571, penalties=2.24E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Expanding node at Level 0 with score = 1.797693e+308.
+% Will extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+Comparing variance: 0.24792209478819105 to score=0.0025 #egs=702.0
+Comparing variance: 0.07704784330475413 to score=0.0025 #egs=737.0
+%   Creating a TRUE-branch interior node with wgtedCountTrueBranchPos = 702.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.247922)
+%         ILP node to extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+%      Insert tree-structured search node (@ level = 1 and with score = -0.247922) into the LAST position (#1) in the search queue.
+%   Creating a FALSE-branch interior node with wgtedCountFalseBranchPos = 737.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.077048)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 1 and with score = -0.077048) into the LAST position (#2) in the search queue.
+
+% Time for loop #1: 16 milliseconds.
+% Internal node max length = 2
+% Max tree depth in lits   = 12
+% Max tree depth in nodes  = 6
+% Max number of clauses    = 8
+
+% On cycle #1, the best clause found is:
+%      recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% This clause covers 702 positive examples, of which 702 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+
+% Working on expanding this node: 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]'
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Have these 10 positive seeds: 66 70 134 182 250 279 357 373 469 499
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Consider expanding [#1 of outerLoop #2, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-230.8255722869139
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.24E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #2, bodyLen=2] 'recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 2 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=3.2500000000000006E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -230.8256):
+%  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+Created a leaf under (recommendation(A, B) :- item(B, Anon1853))
+
+% Have these 6 positive seeds: 23 316 396 637 652 725
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #3, bodyLen=0] 'recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 0 items to OPEN for evaluation and possible insertion.
+% Have created 0 valid-on-seeds descendants and have picked up 2 bad extensions.
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -Infinity):
+%  null
+Created a leaf under (recommendation(A, B) :- item(B, Anon1853))
+
+% ******************************************
+
+%  Have stopped ILP's outer loop because the tree-structured queue is empty.
+
+% ******************************************
+
+%%%%%  WILL-Produced Tree #9 @ 2:17:46 5/29/24.  [Using 4,276,544 memory cells.]  %%%%%
+
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.0572824232195412;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.1208930609913549;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.0572824232195412) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.1208930609913549) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.0572824232195412) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.1208930609913549) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+% Saving model in: train/models/bRDNs/recommendation.model.ckpt
+% Time taken to learn 9 trees is 931 milliseconds.
+
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.07704784330475413
+Set score:0.0025
+% Only 1439 out of 1439 converged.
+% Kept 1,058 of the 1,058 positive examples.
+% Kept 381 of the 381 negative examples.
+% Dataset size: 1,439
+Computing probabilities
+prob time:21 milliseconds
+No hidden examples for : recommendation
+Time to build dataset: 36 milliseconds
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.16127448611800071
+Set score:0.0025
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Have these 10 positive seeds: 18 138 184 203 230 245 851 1035 1145 1377
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 1 bad extensions.
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% Gleaner: New best node found (score = -230.825572): recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]' score=-230.82557228691206
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 1 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 1 bad extensions.
+%     Score = -230.825573 (regressionFit = 230.825571, penalties=2.24E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Expanding node at Level 0 with score = 1.797693e+308.
+% Will extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+Comparing variance: 0.24792209478818789 to score=0.0025 #egs=702.0
+Comparing variance: 0.07704784330475462 to score=0.0025 #egs=737.0
+%   Creating a TRUE-branch interior node with wgtedCountTrueBranchPos = 702.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.247922)
+%         ILP node to extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+%      Insert tree-structured search node (@ level = 1 and with score = -0.247922) into the LAST position (#1) in the search queue.
+%   Creating a FALSE-branch interior node with wgtedCountFalseBranchPos = 737.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.077048)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 1 and with score = -0.077048) into the LAST position (#2) in the search queue.
+
+% Time for loop #1: 10 milliseconds.
+% Internal node max length = 2
+% Max tree depth in lits   = 12
+% Max tree depth in nodes  = 6
+% Max number of clauses    = 8
+
+% On cycle #1, the best clause found is:
+%      recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% This clause covers 702 positive examples, of which 702 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+
+% Working on expanding this node: 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]'
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Have these 9 positive seeds: 41 47 208 221 241 350 467 558 675
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Consider expanding [#1 of outerLoop #2, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-230.82557228691206
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.24E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #2, bodyLen=2] 'recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 2 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=3.2500000000000006E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -230.8256):
+%  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+Created a leaf under (recommendation(A, B) :- item(B, Anon2079))
+
+% Have these 10 positive seeds: 6 121 175 241 301 320 345 390 401 416
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #3, bodyLen=0] 'recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 0 items to OPEN for evaluation and possible insertion.
+% Have created 0 valid-on-seeds descendants and have picked up 2 bad extensions.
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -Infinity):
+%  null
+Created a leaf under (recommendation(A, B) :- item(B, Anon2079))
+
+% ******************************************
+
+%  Have stopped ILP's outer loop because the tree-structured queue is empty.
+
+% ******************************************
+
+%%%%%  WILL-Produced Tree #10 @ 2:17:46 5/29/24.  [Using 4,291,536 memory cells.]  %%%%%
+
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.04296397669372954;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.1018900488640003;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.04296397669372954) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.1018900488640003) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.04296397669372954) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.1018900488640003) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+% Saving model in: train/models/bRDNs/recommendation.model.ckpt
+% Saving model in: train/models/bRDNs/recommendation.model
+% Time taken to learn 10 trees is 1.029 seconds.
+
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.0770478433047546
+Set score:0.0025
+% Only 1439 out of 1439 converged.
+% Kept 1,058 of the 1,058 positive examples.
+% Kept 381 of the 381 negative examples.
+% Dataset size: 1,439
+Computing probabilities
+prob time:12 milliseconds
+No hidden examples for : recommendation
+Time to build dataset: 23 milliseconds
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.16115525207973946
+Set score:0.0025
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Have these 10 positive seeds: 9 203 216 239 320 378 531 673 868 876
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 1 bad extensions.
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% Gleaner: New best node found (score = -230.825572): recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]' score=-230.82557228691653
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 1 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 1 bad extensions.
+%     Score = -230.825573 (regressionFit = 230.825571, penalties=2.24E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Expanding node at Level 0 with score = 1.797693e+308.
+% Will extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+Comparing variance: 0.24792209478819408 to score=0.0025 #egs=702.0
+Comparing variance: 0.07704784330475478 to score=0.0025 #egs=737.0
+%   Creating a TRUE-branch interior node with wgtedCountTrueBranchPos = 702.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.247922)
+%         ILP node to extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+%      Insert tree-structured search node (@ level = 1 and with score = -0.247922) into the LAST position (#1) in the search queue.
+%   Creating a FALSE-branch interior node with wgtedCountFalseBranchPos = 737.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.077048)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 1 and with score = -0.077048) into the LAST position (#2) in the search queue.
+
+% Time for loop #1: 9 milliseconds.
+% Internal node max length = 2
+% Max tree depth in lits   = 12
+% Max tree depth in nodes  = 6
+% Max number of clauses    = 8
+
+% On cycle #1, the best clause found is:
+%      recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% This clause covers 702 positive examples, of which 702 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+
+% Working on expanding this node: 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]'
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Have these 10 positive seeds: 9 133 137 138 165 329 416 458 502 557
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Consider expanding [#1 of outerLoop #2, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-230.82557228691653
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.24E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #2, bodyLen=2] 'recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 2 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=3.2500000000000006E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -230.8256):
+%  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+Created a leaf under (recommendation(A, B) :- item(B, Anon2305))
+
+% Have these 10 positive seeds: 27 97 130 301 304 344 424 439 578 661
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #3, bodyLen=0] 'recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 0 items to OPEN for evaluation and possible insertion.
+% Have created 0 valid-on-seeds descendants and have picked up 2 bad extensions.
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -Infinity):
+%  null
+Created a leaf under (recommendation(A, B) :- item(B, Anon2305))
+
+% ******************************************
+
+%  Have stopped ILP's outer loop because the tree-structured queue is empty.
+
+% ******************************************
+
+%%%%%  WILL-Produced Tree Combined @ 2:17:46 5/29/24.  [Using 4,294,384 memory cells.]  %%%%%
+
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.032226137901164915;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.08695331136009851;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.032226137901164915) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.08695331136009851) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.032226137901164915) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.08695331136009851) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+% Saving model in: train/models/bRDNs/recommendation.model.ckpt
+% Time taken to learn 11 trees is 1.103 seconds.
+
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.07704784330475478
+Set score:0.0025
+% Only 1439 out of 1439 converged.
+% Kept 1,058 of the 1,058 positive examples.
+% Kept 381 of the 381 negative examples.
+% Dataset size: 1,439
+Computing probabilities
+prob time:14 milliseconds
+No hidden examples for : recommendation
+Time to build dataset: 24 milliseconds
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.16105153280339962
+Set score:0.0025
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Have these 10 positive seeds: 167 199 292 485 647 713 768 810 891 1042
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 1 bad extensions.
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% Gleaner: New best node found (score = -230.825572): recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]' score=-230.82557228691536
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 1 variant children.  Sending 0 items to OPEN for evaluation and possible insertion.
+% Have created 0 valid-on-seeds descendants and have picked up 1 bad extensions.
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Expanding node at Level 0 with score = 1.797693e+308.
+% Will extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+Comparing variance: 0.24792209478819344 to score=0.0025 #egs=702.0
+Comparing variance: 0.07704784330475384 to score=0.0025 #egs=737.0
+%   Creating a TRUE-branch interior node with wgtedCountTrueBranchPos = 702.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.247922)
+%         ILP node to extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+%      Insert tree-structured search node (@ level = 1 and with score = -0.247922) into the LAST position (#1) in the search queue.
+%   Creating a FALSE-branch interior node with wgtedCountFalseBranchPos = 737.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.077048)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 1 and with score = -0.077048) into the LAST position (#2) in the search queue.
+
+% Time for loop #1: 6 milliseconds.
+% Internal node max length = 2
+% Max tree depth in lits   = 12
+% Max tree depth in nodes  = 6
+% Max number of clauses    = 8
+
+% On cycle #1, the best clause found is:
+%      recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% This clause covers 702 positive examples, of which 702 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+
+% Working on expanding this node: 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]'
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Have these 8 positive seeds: 305 405 451 478 500 528 556 655
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Consider expanding [#1 of outerLoop #2, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-230.82557228691536
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.24E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #2, bodyLen=2] 'recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 2 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=3.2500000000000006E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -230.8256):
+%  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+Created a leaf under (recommendation(A, B) :- item(B, Anon2531))
+
+% Have these 8 positive seeds: 26 146 162 213 367 445 503 544
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #3, bodyLen=0] 'recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 0 items to OPEN for evaluation and possible insertion.
+% Have created 0 valid-on-seeds descendants and have picked up 2 bad extensions.
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -Infinity):
+%  null
+Created a leaf under (recommendation(A, B) :- item(B, Anon2531))
+
+% ******************************************
+
+%  Have stopped ILP's outer loop because the tree-structured queue is empty.
+
+% ******************************************
+
+%%%%%  WILL-Produced Tree #12 @ 2:17:46 5/29/24.  [Using 4,329,816 memory cells.]  %%%%%
+
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.02417951388770972;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.07497263183289625;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.02417951388770972) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.07497263183289625) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.02417951388770972) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.07497263183289625) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+% Saving model in: train/models/bRDNs/recommendation.model.ckpt
+% Time taken to learn 12 trees is 1.177 seconds.
+
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.07704784330475384
+Set score:0.0025
+% Only 1439 out of 1439 converged.
+% Kept 1,058 of the 1,058 positive examples.
+% Kept 381 of the 381 negative examples.
+% Dataset size: 1,439
+Computing probabilities
+prob time:17 milliseconds
+No hidden examples for : recommendation
+Time to build dataset: 30 milliseconds
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.1609599730313479
+Set score:0.0025
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Have these 9 positive seeds: 269 381 395 646 691 752 822 1080 1350
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 1 bad extensions.
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% Gleaner: New best node found (score = -230.825572): recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]' score=-230.8255722869144
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 1 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 1 bad extensions.
+%     Score = -230.825573 (regressionFit = 230.825571, penalties=2.24E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Expanding node at Level 0 with score = 1.797693e+308.
+% Will extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+Comparing variance: 0.24792209478819166 to score=0.0025 #egs=702.0
+Comparing variance: 0.07704784330475421 to score=0.0025 #egs=737.0
+%   Creating a TRUE-branch interior node with wgtedCountTrueBranchPos = 702.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.247922)
+%         ILP node to extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+%      Insert tree-structured search node (@ level = 1 and with score = -0.247922) into the LAST position (#1) in the search queue.
+%   Creating a FALSE-branch interior node with wgtedCountFalseBranchPos = 737.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.077048)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 1 and with score = -0.077048) into the LAST position (#2) in the search queue.
+
+% Time for loop #1: 7 milliseconds.
+% Internal node max length = 2
+% Max tree depth in lits   = 12
+% Max tree depth in nodes  = 6
+% Max number of clauses    = 8
+
+% On cycle #1, the best clause found is:
+%      recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% This clause covers 702 positive examples, of which 702 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+
+% Working on expanding this node: 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]'
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Have these 7 positive seeds: 162 173 368 386 473 540 660
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Consider expanding [#1 of outerLoop #2, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-230.8255722869144
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.24E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #2, bodyLen=2] 'recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 2 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=3.2500000000000006E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -230.8256):
+%  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+Created a leaf under (recommendation(A, B) :- item(B, Anon2741))
+
+% Have these 8 positive seeds: 80 300 449 514 517 596 685 701
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #3, bodyLen=0] 'recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 0 items to OPEN for evaluation and possible insertion.
+% Have created 0 valid-on-seeds descendants and have picked up 2 bad extensions.
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -Infinity):
+%  null
+Created a leaf under (recommendation(A, B) :- item(B, Anon2741))
+
+% ******************************************
+
+%  Have stopped ILP's outer loop because the tree-structured queue is empty.
+
+% ******************************************
+
+%%%%%  WILL-Produced Tree #13 @ 2:17:46 5/29/24.  [Using 4,332,224 memory cells.]  %%%%%
+
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.018149128191406544;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.06519681627395851;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.018149128191406544) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.06519681627395851) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.018149128191406544) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.06519681627395851) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+% Saving model in: train/models/bRDNs/recommendation.model.ckpt
+% Time taken to learn 13 trees is 1.267 seconds.
+
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.07704784330475421
+Set score:0.0025
+% Only 1439 out of 1439 converged.
+% Kept 1,058 of the 1,058 positive examples.
+% Kept 381 of the 381 negative examples.
+% Dataset size: 1,439
+Computing probabilities
+prob time:46 milliseconds
+No hidden examples for : recommendation
+Time to build dataset: 66 milliseconds
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.1608791738002106
+Set score:0.0025
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Have these 10 positive seeds: 56 65 265 314 358 475 559 722 913 1090
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 1 bad extensions.
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% Gleaner: New best node found (score = -230.825572): recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]' score=-230.82557228691655
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 1 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 1 bad extensions.
+%     Score = -230.825573 (regressionFit = 230.825571, penalties=2.24E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Expanding node at Level 0 with score = 1.797693e+308.
+% Will extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+Comparing variance: 0.24792209478819432 to score=0.0025 #egs=702.0
+Comparing variance: 0.0770478433047546 to score=0.0025 #egs=737.0
+%   Creating a TRUE-branch interior node with wgtedCountTrueBranchPos = 702.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.247922)
+%         ILP node to extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+%      Insert tree-structured search node (@ level = 1 and with score = -0.247922) into the LAST position (#1) in the search queue.
+%   Creating a FALSE-branch interior node with wgtedCountFalseBranchPos = 737.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.077048)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 1 and with score = -0.077048) into the LAST position (#2) in the search queue.
+
+% Time for loop #1: 12 milliseconds.
+% Internal node max length = 2
+% Max tree depth in lits   = 12
+% Max tree depth in nodes  = 6
+% Max number of clauses    = 8
+
+% On cycle #1, the best clause found is:
+%      recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% This clause covers 702 positive examples, of which 702 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+
+% Working on expanding this node: 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]'
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Have these 9 positive seeds: 18 32 60 70 85 125 336 349 537
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Consider expanding [#1 of outerLoop #2, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-230.82557228691655
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.24E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #2, bodyLen=2] 'recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 2 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=3.2500000000000006E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -230.8256):
+%  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+Created a leaf under (recommendation(A, B) :- item(B, Anon2967))
+
+% Have these 10 positive seeds: 104 164 247 276 402 445 579 598 643 651
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #3, bodyLen=0] 'recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 0 items to OPEN for evaluation and possible insertion.
+% Have created 0 valid-on-seeds descendants and have picked up 2 bad extensions.
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -Infinity):
+%  null
+Created a leaf under (recommendation(A, B) :- item(B, Anon2967))
+
+% ******************************************
+
+%  Have stopped ILP's outer loop because the tree-structured queue is empty.
+
+% ******************************************
+
+%%%%%  WILL-Produced Tree #14 @ 2:17:46 5/29/24.  [Using 4,334,744 memory cells.]  %%%%%
+
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.013627881855341828;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.057103124452742585;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.013627881855341828) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.057103124452742585) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.013627881855341828) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.057103124452742585) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+% Saving model in: train/models/bRDNs/recommendation.model.ckpt
+% Time taken to learn 14 trees is 1.398 seconds.
+
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.0770478433047546
+Set score:0.0025
+% Only 1439 out of 1439 converged.
+% Kept 1,058 of the 1,058 positive examples.
+% Kept 381 of the 381 negative examples.
+% Dataset size: 1,439
+Computing probabilities
+prob time:18 milliseconds
+No hidden examples for : recommendation
+Time to build dataset: 29 milliseconds
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.1608083331046245
+Set score:0.0025
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Have these 10 positive seeds: 38 190 224 240 308 309 325 491 617 716
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 1 bad extensions.
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% Gleaner: New best node found (score = -230.825572): recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]' score=-230.82557228691297
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 1 variant children.  Sending 0 items to OPEN for evaluation and possible insertion.
+% Have created 0 valid-on-seeds descendants and have picked up 1 bad extensions.
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Expanding node at Level 0 with score = 1.797693e+308.
+% Will extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+Comparing variance: 0.24792209478818925 to score=0.0025 #egs=702.0
+Comparing variance: 0.07704784330475455 to score=0.0025 #egs=737.0
+%   Creating a TRUE-branch interior node with wgtedCountTrueBranchPos = 702.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.247922)
+%         ILP node to extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+%      Insert tree-structured search node (@ level = 1 and with score = -0.247922) into the LAST position (#1) in the search queue.
+%   Creating a FALSE-branch interior node with wgtedCountFalseBranchPos = 737.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.077048)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 1 and with score = -0.077048) into the LAST position (#2) in the search queue.
+
+% Time for loop #1: 6 milliseconds.
+% Internal node max length = 2
+% Max tree depth in lits   = 12
+% Max tree depth in nodes  = 6
+% Max number of clauses    = 8
+
+% On cycle #1, the best clause found is:
+%      recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% This clause covers 702 positive examples, of which 702 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+
+% Working on expanding this node: 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]'
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Have these 6 positive seeds: 22 108 207 370 568 654
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Consider expanding [#1 of outerLoop #2, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-230.82557228691297
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.24E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #2, bodyLen=2] 'recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 2 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=3.2500000000000006E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -230.8256):
+%  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+Created a leaf under (recommendation(A, B) :- item(B, Anon3193))
+
+% Have these 9 positive seeds: 5 59 162 231 337 370 603 653 688
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #3, bodyLen=0] 'recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 0 items to OPEN for evaluation and possible insertion.
+% Have created 0 valid-on-seeds descendants and have picked up 2 bad extensions.
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -Infinity):
+%  null
+Created a leaf under (recommendation(A, B) :- item(B, Anon3193))
+
+% ******************************************
+
+%  Have stopped ILP's outer loop because the tree-structured queue is empty.
+
+% ******************************************
+
+%%%%%  WILL-Produced Tree #15 @ 2:17:46 5/29/24.  [Using 4,337,640 memory cells.]  %%%%%
+
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.010236357615736515;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.05031835114393479;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.010236357615736515) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.05031835114393479) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.010236357615736515) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.05031835114393479) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+% Saving model in: train/models/bRDNs/recommendation.model.ckpt
+% Time taken to learn 15 trees is 1.477 seconds.
+
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.07704784330475455
+Set score:0.0025
+% Only 1439 out of 1439 converged.
+% Kept 1,058 of the 1,058 positive examples.
+% Kept 381 of the 381 negative examples.
+% Dataset size: 1,439
+Computing probabilities
+prob time:26 milliseconds
+No hidden examples for : recommendation
+Time to build dataset: 37 milliseconds
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.16074674032002761
+Set score:0.0025
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Have these 10 positive seeds: 6 72 120 179 203 270 384 488 597 684
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 1 bad extensions.
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% Gleaner: New best node found (score = -230.825572): recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]' score=-230.82557228691658
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 1 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 1 bad extensions.
+%     Score = -230.825573 (regressionFit = 230.825571, penalties=2.24E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Expanding node at Level 0 with score = 1.797693e+308.
+% Will extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+Comparing variance: 0.2479220947881948 to score=0.0025 #egs=702.0
+Comparing variance: 0.07704784330475416 to score=0.0025 #egs=737.0
+%   Creating a TRUE-branch interior node with wgtedCountTrueBranchPos = 702.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.247922)
+%         ILP node to extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+%      Insert tree-structured search node (@ level = 1 and with score = -0.247922) into the LAST position (#1) in the search queue.
+%   Creating a FALSE-branch interior node with wgtedCountFalseBranchPos = 737.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.077048)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 1 and with score = -0.077048) into the LAST position (#2) in the search queue.
+
+% Time for loop #1: 13 milliseconds.
+% Internal node max length = 2
+% Max tree depth in lits   = 12
+% Max tree depth in nodes  = 6
+% Max number of clauses    = 8
+
+% On cycle #1, the best clause found is:
+%      recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% This clause covers 702 positive examples, of which 702 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+
+% Working on expanding this node: 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]'
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Have these 8 positive seeds: 51 196 255 317 506 536 572 584
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Consider expanding [#1 of outerLoop #2, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-230.82557228691658
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.24E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #2, bodyLen=2] 'recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 2 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=3.2500000000000006E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -230.8256):
+%  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+Created a leaf under (recommendation(A, B) :- item(B, Anon3403))
+
+% Have these 10 positive seeds: 78 97 175 250 308 418 420 464 469 506
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #3, bodyLen=0] 'recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 0 items to OPEN for evaluation and possible insertion.
+% Have created 0 valid-on-seeds descendants and have picked up 2 bad extensions.
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -Infinity):
+%  null
+Created a leaf under (recommendation(A, B) :- item(B, Anon3403))
+
+% ******************************************
+
+%  Have stopped ILP's outer loop because the tree-structured queue is empty.
+
+% ******************************************
+
+%%%%%  WILL-Produced Tree #16 @ 2:17:46 5/29/24.  [Using 4,340,672 memory cells.]  %%%%%
+
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.007691001337490908;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.044569846654719615;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.007691001337490908) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.044569846654719615) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.007691001337490908) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.044569846654719615) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+% Saving model in: train/models/bRDNs/recommendation.model.ckpt
+% Time taken to learn 16 trees is 1.587 seconds.
+
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.07704784330475416
+Set score:0.0025
+% Only 1439 out of 1439 converged.
+% Kept 1,058 of the 1,058 positive examples.
+% Kept 381 of the 381 negative examples.
+% Dataset size: 1,439
+Computing probabilities
+prob time:19 milliseconds
+No hidden examples for : recommendation
+Time to build dataset: 31 milliseconds
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.1606936286233053
+Set score:0.0025
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Have these 4 positive seeds: 154 482 818 942
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 1 bad extensions.
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% Gleaner: New best node found (score = -230.825572): recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]' score=-230.8255722869142
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 1 variant children.  Sending 0 items to OPEN for evaluation and possible insertion.
+% Have created 0 valid-on-seeds descendants and have picked up 1 bad extensions.
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Expanding node at Level 0 with score = 1.797693e+308.
+% Will extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+Comparing variance: 0.24792209478819144 to score=0.0025 #egs=702.0
+Comparing variance: 0.07704784330475413 to score=0.0025 #egs=737.0
+%   Creating a TRUE-branch interior node with wgtedCountTrueBranchPos = 702.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.247922)
+%         ILP node to extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+%      Insert tree-structured search node (@ level = 1 and with score = -0.247922) into the LAST position (#1) in the search queue.
+%   Creating a FALSE-branch interior node with wgtedCountFalseBranchPos = 737.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.077048)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 1 and with score = -0.077048) into the LAST position (#2) in the search queue.
+
+% Time for loop #1: 6 milliseconds.
+% Internal node max length = 2
+% Max tree depth in lits   = 12
+% Max tree depth in nodes  = 6
+% Max number of clauses    = 8
+
+% On cycle #1, the best clause found is:
+%      recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% This clause covers 702 positive examples, of which 702 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+
+% Working on expanding this node: 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]'
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Have these 10 positive seeds: 45 193 201 221 243 283 361 541 549 631
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Consider expanding [#1 of outerLoop #2, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-230.8255722869142
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.24E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #2, bodyLen=2] 'recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 2 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=3.2500000000000006E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -230.8256):
+%  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+Created a leaf under (recommendation(A, B) :- item(B, Anon3629))
+
+% Have these 7 positive seeds: 68 196 221 230 346 438 710
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #3, bodyLen=0] 'recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 0 items to OPEN for evaluation and possible insertion.
+% Have created 0 valid-on-seeds descendants and have picked up 2 bad extensions.
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -Infinity):
+%  null
+Created a leaf under (recommendation(A, B) :- item(B, Anon3629))
+
+% ******************************************
+
+%  Have stopped ILP's outer loop because the tree-structured queue is empty.
+
+% ******************************************
+
+%%%%%  WILL-Produced Tree #17 @ 2:17:46 5/29/24.  [Using 4,342,912 memory cells.]  %%%%%
+
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.005779860774348399;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.03965428609934089;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.005779860774348399) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.03965428609934089) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.005779860774348399) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.03965428609934089) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+% Saving model in: train/models/bRDNs/recommendation.model.ckpt
+% Time taken to learn 17 trees is 1.684 seconds.
+
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.07704784330475412
+Set score:0.0025
+% Only 1439 out of 1439 converged.
+% Kept 1,058 of the 1,058 positive examples.
+% Kept 381 of the 381 negative examples.
+% Dataset size: 1,439
+Computing probabilities
+prob time:33 milliseconds
+No hidden examples for : recommendation
+Time to build dataset: 43 milliseconds
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.16064816681806834
+Set score:0.0025
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Have these 10 positive seeds: 165 240 404 701 819 956 1080 1131 1203 1204
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 1 bad extensions.
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% Gleaner: New best node found (score = -230.825572): recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]' score=-230.82557228691223
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 1 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 1 bad extensions.
+%     Score = -230.825573 (regressionFit = 230.825571, penalties=2.24E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Expanding node at Level 0 with score = 1.797693e+308.
+% Will extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+Comparing variance: 0.24792209478818875 to score=0.0025 #egs=702.0
+Comparing variance: 0.07704784330475403 to score=0.0025 #egs=737.0
+%   Creating a TRUE-branch interior node with wgtedCountTrueBranchPos = 702.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.247922)
+%         ILP node to extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+%      Insert tree-structured search node (@ level = 1 and with score = -0.247922) into the LAST position (#1) in the search queue.
+%   Creating a FALSE-branch interior node with wgtedCountFalseBranchPos = 737.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.077048)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 1 and with score = -0.077048) into the LAST position (#2) in the search queue.
+
+% Time for loop #1: 9 milliseconds.
+% Internal node max length = 2
+% Max tree depth in lits   = 12
+% Max tree depth in nodes  = 6
+% Max number of clauses    = 8
+
+% On cycle #1, the best clause found is:
+%      recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% This clause covers 702 positive examples, of which 702 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+
+% Working on expanding this node: 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]'
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Have these 10 positive seeds: 54 104 138 151 321 334 365 367 411 430
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Consider expanding [#1 of outerLoop #2, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-230.82557228691223
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.24E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #2, bodyLen=2] 'recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 2 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=3.2500000000000006E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -230.8256):
+%  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+Created a leaf under (recommendation(A, B) :- item(B, Anon3839))
+
+% Have these 8 positive seeds: 178 283 338 340 385 413 692 707
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #3, bodyLen=0] 'recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 0 items to OPEN for evaluation and possible insertion.
+% Have created 0 valid-on-seeds descendants and have picked up 2 bad extensions.
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -Infinity):
+%  null
+Created a leaf under (recommendation(A, B) :- item(B, Anon3839))
+
+% ******************************************
+
+%  Have stopped ILP's outer loop because the tree-structured queue is empty.
+
+% ******************************************
+
+%%%%%  WILL-Produced Tree #18 @ 2:17:47 5/29/24.  [Using 4,396,344 memory cells.]  %%%%%
+
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.004344387281898935;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.03541723441646012;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.004344387281898935) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.03541723441646012) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.004344387281898935) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.03541723441646012) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+% Saving model in: train/models/bRDNs/recommendation.model.ckpt
+% Time taken to learn 18 trees is 1.801 seconds.
+
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.07704784330475403
+Set score:0.0025
+% Only 1439 out of 1439 converged.
+% Kept 1,058 of the 1,058 positive examples.
+% Kept 381 of the 381 negative examples.
+% Dataset size: 1,439
+Computing probabilities
+prob time:22 milliseconds
+No hidden examples for : recommendation
+Time to build dataset: 33 milliseconds
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.16060949538391997
+Set score:0.0025
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Have these 10 positive seeds: 69 105 491 714 801 862 928 936 1193 1220
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 1 bad extensions.
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% Gleaner: New best node found (score = -230.825572): recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]' score=-230.82557228691655
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 1 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 1 bad extensions.
+%     Score = -230.825573 (regressionFit = 230.825571, penalties=2.24E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Expanding node at Level 0 with score = 1.797693e+308.
+% Will extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+Comparing variance: 0.24792209478819469 to score=0.0025 #egs=702.0
+Comparing variance: 0.07704784330475425 to score=0.0025 #egs=737.0
+%   Creating a TRUE-branch interior node with wgtedCountTrueBranchPos = 702.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.247922)
+%         ILP node to extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+%      Insert tree-structured search node (@ level = 1 and with score = -0.247922) into the LAST position (#1) in the search queue.
+%   Creating a FALSE-branch interior node with wgtedCountFalseBranchPos = 737.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.077048)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 1 and with score = -0.077048) into the LAST position (#2) in the search queue.
+
+% Time for loop #1: 8 milliseconds.
+% Internal node max length = 2
+% Max tree depth in lits   = 12
+% Max tree depth in nodes  = 6
+% Max number of clauses    = 8
+
+% On cycle #1, the best clause found is:
+%      recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% This clause covers 702 positive examples, of which 702 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+
+% Working on expanding this node: 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]'
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Have these 10 positive seeds: 14 134 170 219 312 321 345 357 367 466
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Consider expanding [#1 of outerLoop #2, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-230.82557228691655
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.24E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #2, bodyLen=2] 'recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 2 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=3.2500000000000006E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -230.8256):
+%  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+Created a leaf under (recommendation(A, B) :- item(B, Anon4065))
+
+% Have these 9 positive seeds: 173 176 245 249 403 511 520 570 573
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #3, bodyLen=0] 'recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 0 items to OPEN for evaluation and possible insertion.
+% Have created 0 valid-on-seeds descendants and have picked up 2 bad extensions.
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -Infinity):
+%  null
+Created a leaf under (recommendation(A, B) :- item(B, Anon4065))
+
+% ******************************************
+
+%  Have stopped ILP's outer loop because the tree-structured queue is empty.
+
+% ******************************************
+
+%%%%%  WILL-Produced Tree #19 @ 2:17:47 5/29/24.  [Using 4,399,200 memory cells.]  %%%%%
+
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.003265873925659503;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.03173944990534392;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.003265873925659503) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.03173944990534392) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.003265873925659503) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.03173944990534392) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+% Saving model in: train/models/bRDNs/recommendation.model.ckpt
+% Time taken to learn 19 trees is 1.902 seconds.
+
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.07704784330475427
+Set score:0.0025
+% Only 1439 out of 1439 converged.
+% Kept 1,058 of the 1,058 positive examples.
+% Kept 381 of the 381 negative examples.
+% Dataset size: 1,439
+Computing probabilities
+prob time:47 milliseconds
+No hidden examples for : recommendation
+Time to build dataset: 59 milliseconds
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:0.16057676764611234
+Set score:0.0025
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Have these 10 positive seeds: 62 156 295 338 376 677 742 1105 1113 1333
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'recommendation(_, _).  [covers 1,439.0/1,439.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 1 bad extensions.
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% Gleaner: New best node found (score = -230.825572): recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]' score=-230.82557228691272
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 1 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 1 bad extensions.
+%     Score = -230.825573 (regressionFit = 230.825571, penalties=2.24E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+
+% Expanding node at Level 0 with score = 1.797693e+308.
+% Will extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+Comparing variance: 0.2479220947881893 to score=0.0025 #egs=702.0
+Comparing variance: 0.07704784330475417 to score=0.0025 #egs=737.0
+%   Creating a TRUE-branch interior node with wgtedCountTrueBranchPos = 702.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.247922)
+%         ILP node to extend: recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+%      Insert tree-structured search node (@ level = 1 and with score = -0.247922) into the LAST position (#1) in the search queue.
+%   Creating a FALSE-branch interior node with wgtedCountFalseBranchPos = 737.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-0.077048)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 1 and with score = -0.077048) into the LAST position (#2) in the search queue.
+
+% Time for loop #1: 12 milliseconds.
+% Internal node max length = 2
+% Max tree depth in lits   = 12
+% Max tree depth in nodes  = 6
+% Max number of clauses    = 8
+
+% On cycle #1, the best clause found is:
+%      recommendation(_, A) :- item(A, _).  [covers 702.0/1,439.0 pos, 0.0/0.0 neg]
+% This clause covers 702 positive examples, of which 702 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+
+% Working on expanding this node: 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]'
+%     Score = -230.825572 (regressionFit = 230.825571, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Have these 10 positive seeds: 84 230 373 405 536 555 611 642 649 686
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Consider expanding [#1 of outerLoop #2, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-230.82557228691272
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.24E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #2, bodyLen=2] 'recommendation(_, A) :- item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 2 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=3.2500000000000006E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _), item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -230.8256):
+%  recommendation(_, A) :- item(A, _).  [covers 702.0/702.0 pos, 0.0/0.0 neg]
+Created a leaf under (recommendation(A, B) :- item(B, Anon4291))
+
+% Have these 8 positive seeds: 130 142 230 421 511 516 649 720
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #3, bodyLen=0] 'recommendation(_, _).  [covers 737.0/737.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 0 items to OPEN for evaluation and possible insertion.
+% Have created 0 valid-on-seeds descendants and have picked up 2 bad extensions.
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -Infinity):
+%  null
+Created a leaf under (recommendation(A, B) :- item(B, Anon4291))
+
+% ******************************************
+
+%  Have stopped ILP's outer loop because the tree-structured queue is empty.
+
+% ******************************************
+
+%%%%%  WILL-Produced Tree #20 @ 2:17:47 5/29/24.  [Using 4,401,568 memory cells.]  %%%%%
+
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.0024553667987760176;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.028527499191934362;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.0024553667987760176) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.028527499191934362) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.0024553667987760176) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.028527499191934362) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+% Saving model in: train/models/bRDNs/recommendation.model.ckpt
+% Saving model in: train/models/bRDNs/recommendation.model
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%  Final call for computing score for recommendation.  %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+stepLength_tree1(1.0).
+stepLength_tree2(1.0).
+stepLength_tree3(1.0).
+stepLength_tree4(1.0).
+stepLength_tree5(1.0).
+stepLength_tree6(1.0).
+stepLength_tree7(1.0).
+stepLength_tree8(1.0).
+stepLength_tree9(1.0).
+stepLength_tree10(1.0).
+stepLength_tree11(1.0).
+stepLength_tree12(1.0).
+stepLength_tree13(1.0).
+stepLength_tree14(1.0).
+stepLength_tree15(1.0).
+stepLength_tree16(1.0).
+stepLength_tree17(1.0).
+stepLength_tree18(1.0).
+stepLength_tree19(1.0).
+stepLength_tree20(1.0).
+
+logPrior(-1.8).
+recommendation(A, B, Total) :- // A general accessor. 
+   recommendation(A, B, 1000000, Total), !.
+recommendation(A, B, Total) :- waitHere("This should not fail", recommendation(A, B, Total)).
+
+recommendation(A, B, TreesToUse, Total) :- // A tree-limited accessor (e.g., for tuning the number of trees to use).
+   logPrior(LogPrior),
+   getScore_recommendation_tree1(A, B, TreesToUse, Total1),
+   getScore_recommendation_tree2(A, B, TreesToUse, Total2),
+   getScore_recommendation_tree3(A, B, TreesToUse, Total3),
+   getScore_recommendation_tree4(A, B, TreesToUse, Total4),
+   getScore_recommendation_tree5(A, B, TreesToUse, Total5),
+   getScore_recommendation_tree6(A, B, TreesToUse, Total6),
+   getScore_recommendation_tree7(A, B, TreesToUse, Total7),
+   getScore_recommendation_tree8(A, B, TreesToUse, Total8),
+   getScore_recommendation_tree9(A, B, TreesToUse, Total9),
+   getScore_recommendation_tree10(A, B, TreesToUse, Total10),
+   getScore_recommendation_tree11(A, B, TreesToUse, Total11),
+   getScore_recommendation_tree12(A, B, TreesToUse, Total12),
+   getScore_recommendation_tree13(A, B, TreesToUse, Total13),
+   getScore_recommendation_tree14(A, B, TreesToUse, Total14),
+   getScore_recommendation_tree15(A, B, TreesToUse, Total15),
+   getScore_recommendation_tree16(A, B, TreesToUse, Total16),
+   getScore_recommendation_tree17(A, B, TreesToUse, Total17),
+   getScore_recommendation_tree18(A, B, TreesToUse, Total18),
+   getScore_recommendation_tree19(A, B, TreesToUse, Total19),
+   getScore_recommendation_tree20(A, B, TreesToUse, Total20),
+   Total is LogPrior + Total1 + Total2 + Total3 + Total4 + Total5 + Total6 + Total7 + Total8 + Total9 + Total10 + Total11 + Total12 + Total13 + Total14 + Total15 + Total16 + Total17 + Total18 + Total19 + Total20,
+   !.
+recommendation(A, B, TreesToUse, Total) :- waitHere("This should not fail", recommendation(A, B, TreesToUse, Total)).
+
+getScore_recommendation_tree1(A, B, TreesToUse, 0.0) :- 1 > TreesToUse, !.
+getScore_recommendation_tree1(A, B, TreesToUse, Total1) :- recommendation_tree1(A, B, Total), stepLength_tree1(StepLen), Total1 is Total * StepLen.
+
+getScore_recommendation_tree2(A, B, TreesToUse, 0.0) :- 2 > TreesToUse, !.
+getScore_recommendation_tree2(A, B, TreesToUse, Total2) :- recommendation_tree2(A, B, Total), stepLength_tree2(StepLen), Total2 is Total * StepLen.
+
+getScore_recommendation_tree3(A, B, TreesToUse, 0.0) :- 3 > TreesToUse, !.
+getScore_recommendation_tree3(A, B, TreesToUse, Total3) :- recommendation_tree3(A, B, Total), stepLength_tree3(StepLen), Total3 is Total * StepLen.
+
+getScore_recommendation_tree4(A, B, TreesToUse, 0.0) :- 4 > TreesToUse, !.
+getScore_recommendation_tree4(A, B, TreesToUse, Total4) :- recommendation_tree4(A, B, Total), stepLength_tree4(StepLen), Total4 is Total * StepLen.
+
+getScore_recommendation_tree5(A, B, TreesToUse, 0.0) :- 5 > TreesToUse, !.
+getScore_recommendation_tree5(A, B, TreesToUse, Total5) :- recommendation_tree5(A, B, Total), stepLength_tree5(StepLen), Total5 is Total * StepLen.
+
+getScore_recommendation_tree6(A, B, TreesToUse, 0.0) :- 6 > TreesToUse, !.
+getScore_recommendation_tree6(A, B, TreesToUse, Total6) :- recommendation_tree6(A, B, Total), stepLength_tree6(StepLen), Total6 is Total * StepLen.
+
+getScore_recommendation_tree7(A, B, TreesToUse, 0.0) :- 7 > TreesToUse, !.
+getScore_recommendation_tree7(A, B, TreesToUse, Total7) :- recommendation_tree7(A, B, Total), stepLength_tree7(StepLen), Total7 is Total * StepLen.
+
+getScore_recommendation_tree8(A, B, TreesToUse, 0.0) :- 8 > TreesToUse, !.
+getScore_recommendation_tree8(A, B, TreesToUse, Total8) :- recommendation_tree8(A, B, Total), stepLength_tree8(StepLen), Total8 is Total * StepLen.
+
+getScore_recommendation_tree9(A, B, TreesToUse, 0.0) :- 9 > TreesToUse, !.
+getScore_recommendation_tree9(A, B, TreesToUse, Total9) :- recommendation_tree9(A, B, Total), stepLength_tree9(StepLen), Total9 is Total * StepLen.
+
+getScore_recommendation_tree10(A, B, TreesToUse, 0.0) :- 10 > TreesToUse, !.
+getScore_recommendation_tree10(A, B, TreesToUse, Total10) :- recommendation_tree10(A, B, Total), stepLength_tree10(StepLen), Total10 is Total * StepLen.
+
+getScore_recommendation_tree11(A, B, TreesToUse, 0.0) :- 11 > TreesToUse, !.
+getScore_recommendation_tree11(A, B, TreesToUse, Total11) :- recommendation_tree11(A, B, Total), stepLength_tree11(StepLen), Total11 is Total * StepLen.
+
+getScore_recommendation_tree12(A, B, TreesToUse, 0.0) :- 12 > TreesToUse, !.
+getScore_recommendation_tree12(A, B, TreesToUse, Total12) :- recommendation_tree12(A, B, Total), stepLength_tree12(StepLen), Total12 is Total * StepLen.
+
+getScore_recommendation_tree13(A, B, TreesToUse, 0.0) :- 13 > TreesToUse, !.
+getScore_recommendation_tree13(A, B, TreesToUse, Total13) :- recommendation_tree13(A, B, Total), stepLength_tree13(StepLen), Total13 is Total * StepLen.
+
+getScore_recommendation_tree14(A, B, TreesToUse, 0.0) :- 14 > TreesToUse, !.
+getScore_recommendation_tree14(A, B, TreesToUse, Total14) :- recommendation_tree14(A, B, Total), stepLength_tree14(StepLen), Total14 is Total * StepLen.
+
+getScore_recommendation_tree15(A, B, TreesToUse, 0.0) :- 15 > TreesToUse, !.
+getScore_recommendation_tree15(A, B, TreesToUse, Total15) :- recommendation_tree15(A, B, Total), stepLength_tree15(StepLen), Total15 is Total * StepLen.
+
+getScore_recommendation_tree16(A, B, TreesToUse, 0.0) :- 16 > TreesToUse, !.
+getScore_recommendation_tree16(A, B, TreesToUse, Total16) :- recommendation_tree16(A, B, Total), stepLength_tree16(StepLen), Total16 is Total * StepLen.
+
+getScore_recommendation_tree17(A, B, TreesToUse, 0.0) :- 17 > TreesToUse, !.
+getScore_recommendation_tree17(A, B, TreesToUse, Total17) :- recommendation_tree17(A, B, Total), stepLength_tree17(StepLen), Total17 is Total * StepLen.
+
+getScore_recommendation_tree18(A, B, TreesToUse, 0.0) :- 18 > TreesToUse, !.
+getScore_recommendation_tree18(A, B, TreesToUse, Total18) :- recommendation_tree18(A, B, Total), stepLength_tree18(StepLen), Total18 is Total * StepLen.
+
+getScore_recommendation_tree19(A, B, TreesToUse, 0.0) :- 19 > TreesToUse, !.
+getScore_recommendation_tree19(A, B, TreesToUse, Total19) :- recommendation_tree19(A, B, Total), stepLength_tree19(StepLen), Total19 is Total * StepLen.
+
+getScore_recommendation_tree20(A, B, TreesToUse, 0.0) :- 20 > TreesToUse, !.
+getScore_recommendation_tree20(A, B, TreesToUse, Total20) :- recommendation_tree20(A, B, Total), stepLength_tree20(StepLen), Total20 is Total * StepLen.
+
+flattenedLiteralsInThisSetOfTrees(recommendation, 1, [
+   item(a, underscore)]).
+%      addToQueueOfTreeStructuredLearningTasks (level=0; score=1.797693135e+308)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 0 and with score = 1.797693135e+308) into the LAST position (#1) in the search queue.
+Variance:65.08100613053814
+Set score:0.0025
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Have these 10 positive seeds: 116 536 2825 2853 7606 10428 11409 19947 21026 21377
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 28,780.0/28,780.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 28,780.0/28,780.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'recommendation(_, _).  [covers 28,780.0/28,780.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 1 bad extensions.
+%     Score = -1,846,604.568457 (regressionFit = 1,846,604.568455, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 14,040.0/28,780.0 pos, 0.0/0.0 neg]
+% Gleaner: New best node found (score = -1,846,604.568457): recommendation(_, A) :- item(A, _).  [covers 14,040.0/28,780.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 14,040.0/28,780.0 pos, 0.0/0.0 neg]' score=-1846604.5684565685
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 1 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 1 bad extensions.
+%     Score = -1,846,604.568458 (regressionFit = 1,846,604.568455, penalties=2.24E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _).  [covers 14,040.0/28,780.0 pos, 0.0/0.0 neg]
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 14,040.0/28,780.0 pos, 0.0/0.0 neg]
+
+% The best node found: recommendation(_, A) :- item(A, _).  [covers 14,040.0/28,780.0 pos, 0.0/0.0 neg]
+
+% Expanding node at Level 0 with score = 1.797693e+308.
+% Will extend: recommendation(_, A) :- item(A, _).  [covers 14,040.0/28,780.0 pos, 0.0/0.0 neg]
+Comparing variance: 99.16883791528097 to score=0.0025 #egs=14040.0
+Comparing variance: 30.819137321899156 to score=0.0025 #egs=14740.0
+%   Creating a TRUE-branch interior node with wgtedCountTrueBranchPos = 14,040.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-99.168838)
+%         ILP node to extend: recommendation(_, A) :- item(A, _).  [covers 14,040.0/28,780.0 pos, 0.0/0.0 neg]
+%      Insert tree-structured search node (@ level = 1 and with score = -99.168838) into the LAST position (#1) in the search queue.
+%   Creating a FALSE-branch interior node with wgtedCountFalseBranchPos = 14,740.0
+%      addToQueueOfTreeStructuredLearningTasks (level=1; score=-30.819137)
+%         ILP node to extend: null
+%      Insert tree-structured search node (@ level = 1 and with score = -30.819137) into the LAST position (#2) in the search queue.
+
+% Time for loop #1: 110 milliseconds.
+% Internal node max length = 2
+% Max tree depth in lits   = 12
+% Max tree depth in nodes  = 6
+% Max number of clauses    = 8
+
+% On cycle #1, the best clause found is:
+%      recommendation(_, A) :- item(A, _).  [covers 14,040.0/28,780.0 pos, 0.0/0.0 neg]
+% This clause covers 14040 positive examples, of which 14040 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+
+% Working on expanding this node: 'recommendation(_, A) :- item(A, _).  [covers 14,040.0/14,040.0 pos, 0.0/0.0 neg]'
+%     Score = -1,846,604.568457 (regressionFit = 1,846,604.568455, penalties=1.23E-6) for clause:  recommendation(_, A) :- item(A, _).  [covers 14,040.0/14,040.0 pos, 0.0/0.0 neg]
+
+% Have these 10 positive seeds: 371 1243 2269 2521 3155 3920 4119 5400 5653 9047
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% Consider expanding [#1 of outerLoop #2, bodyLen=1] 'recommendation(_, A) :- item(A, _).  [covers 14,040.0/14,040.0 pos, 0.0/0.0 neg]' score=-1846604.5684565685
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.24E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _).  [covers 14,040.0/14,040.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #2, bodyLen=2] 'recommendation(_, A) :- item(A, _), item(A, _).  [covers 14,040.0/14,040.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 2, |OPEN| = 0.  Pruned 2 variant children.  Sending 1 items to OPEN for evaluation and possible insertion.
+% Have created 1 valid-on-seeds descendants and have picked up 2 bad extensions.
+%     Score = -Infinity (regressionFit = Infinity, penalties=3.2500000000000006E-6) for clause:  recommendation(_, A) :- item(A, _), item(A, _), item(A, _).  [covers 14,040.0/14,040.0 pos, 0.0/0.0 neg]
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -1,846,604.5685):
+%  recommendation(_, A) :- item(A, _).  [covers 14,040.0/14,040.0 pos, 0.0/0.0 neg]
+Created a leaf under (recommendation(A, B) :- item(B, Anon4517))
+
+% Have these 8 positive seeds: 487 2154 4345 4495 5611 7550 10734 12781
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = recommendation(A, B)
+%     Score = -Infinity (regressionFit = Infinity, penalties=2.2E-7) for clause:  recommendation(_, _).  [covers 14,740.0/14,740.0 pos, 0.0/0.0 neg]
+% Most-general root: recommendation(_, _).  [covers 14,740.0/14,740.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #3, bodyLen=0] 'recommendation(_, _).  [covers 14,740.0/14,740.0 pos, 0.0/0.0 neg]' score=-Infinity
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 0 variant children.  Sending 0 items to OPEN for evaluation and possible insertion.
+% Have created 0 valid-on-seeds descendants and have picked up 2 bad extensions.
+
+% The best node found: null
+
+% No acceptable clause was learned on this cycle of the ILP inner loop (LearnOneClause).
+% The closest-to-acceptable node found (score = -Infinity):
+%  null
+Created a leaf under (recommendation(A, B) :- item(B, Anon4517))
+
+% ******************************************
+
+%  Have stopped ILP's outer loop because the tree-structured queue is empty.
+
+% ******************************************
+
+%%%%%  WILL-Produced Tree Combined @ 2:17:47 5/29/24.  [Using 4,246,352 memory cells.]  %%%%%
+
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 1.9753998577528862;  // std dev = 9.958, 14,040.000 (wgt'ed) examples reached here.  /* #neg=6,380 #pos=7,660 */
+%   else return 3.8924580203236516;  // std dev = 5.551, 14,740.000 (wgt'ed) examples reached here.  /* #neg=1,240 #pos=13,500 */
+
+
+% Clauses:
+
+recommendation(A, B, 1.9753998577528862) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 3.8924580203236516) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 1.9753998577528862) :-  /* #neg=6,380 #pos=7,660 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 3.8924580203236516) :-  /* #neg=1,240 #pos=13,500 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+% Time taken to learn model for 'recommendation': 2.297 seconds.
+(recommendation(_, A, 1.9753998577528862) :-  /* #neg=6,380 #pos=7,660 */ item(A, _), !)
+(recommendation(_, _, 3.8924580203236516) :-  /* #neg=1,240 #pos=13,500 */ !)
+% Saving model in: train/models/bRDNs/recommendation.model
+cached groundings hit: 0
+Misses: 0
+
+% Total learning time (20 trees): 2.466 seconds.

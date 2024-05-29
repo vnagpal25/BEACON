@@ -1,0 +1,766 @@
+usePrologVariables: true.
+
+% maxTreeDepthInNodes                 = 6
+% maxTreeDepthInLiterals              = 12
+% maxNumberOfLiteralsAtAnInteriorNode = 2
+% maxFreeBridgersInBody               = 1
+% maxNumberOfClauses                  = 8
+% maxNodesToConsider                  = 10
+% maxNodesToCreate                    = 10,000
+% maxAcceptableNodeScoreToStop        = 0.003
+% negPosRatio                         = 2.000
+% testNegPosRatio                     = -1.000
+% # of pos examples                   = 1,439
+% # of neg examples                   = 0
+
+
+
+%%%%%  WILL-Produced Tree #1 @ 2:17:45 5/29/24.  [Using 3,672,112 memory cells.]  %%%%%
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.4037329806835533;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.7740241047060206;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.4037329806835533) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.7740241047060206) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.4037329806835533) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.7740241047060206) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+%%%%%  WILL-Produced Tree #2 @ 2:17:45 5/29/24.  [Using 3,966,248 memory cells.]  %%%%%
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.3471748982019919;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.6520101653703603;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.3471748982019919) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.6520101653703603) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.3471748982019919) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.6520101653703603) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+%%%%%  WILL-Produced Tree #3 @ 2:17:45 5/29/24.  [Using 4,201,840 memory cells.]  %%%%%
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.28618456899518613;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.5082920595102455;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.28618456899518613) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.5082920595102455) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.28618456899518613) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.5082920595102455) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+%%%%%  WILL-Produced Tree #4 @ 2:17:45 5/29/24.  [Using 4,215,088 memory cells.]  %%%%%
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.22756870727742204;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.38234399054885576;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.22756870727742204) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.38234399054885576) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.22756870727742204) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.38234399054885576) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+%%%%%  WILL-Produced Tree #5 @ 2:17:45 5/29/24.  [Using 4,219,752 memory cells.]  %%%%%
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.1763114951956613;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.28950632285331923;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.1763114951956613) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.28950632285331923) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.1763114951956613) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.28950632285331923) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+%%%%%  WILL-Produced Tree #6 @ 2:17:45 5/29/24.  [Using 4,236,712 memory cells.]  %%%%%
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.13438900804522222;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.2245809973788009;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.13438900804522222) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.2245809973788009) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.13438900804522222) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.2245809973788009) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+%%%%%  WILL-Produced Tree #7 @ 2:17:46 5/29/24.  [Using 4,243,592 memory cells.]  %%%%%
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.10150865444468038;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.1788124157523499;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.10150865444468038) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.1788124157523499) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.10150865444468038) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.1788124157523499) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+%%%%%  WILL-Produced Tree #8 @ 2:17:46 5/29/24.  [Using 4,267,752 memory cells.]  %%%%%
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.07632763542570221;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.1456523030163616;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.07632763542570221) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.1456523030163616) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.07632763542570221) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.1456523030163616) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+%%%%%  WILL-Produced Tree #9 @ 2:17:46 5/29/24.  [Using 4,276,544 memory cells.]  %%%%%
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.0572824232195412;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.1208930609913549;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.0572824232195412) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.1208930609913549) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.0572824232195412) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.1208930609913549) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+%%%%%  WILL-Produced Tree #10 @ 2:17:46 5/29/24.  [Using 4,291,536 memory cells.]  %%%%%
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.04296397669372954;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.1018900488640003;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.04296397669372954) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.1018900488640003) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.04296397669372954) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.1018900488640003) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+%%%%%  WILL-Produced Tree Combined @ 2:17:46 5/29/24.  [Using 4,294,384 memory cells.]  %%%%%
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.032226137901164915;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.08695331136009851;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.032226137901164915) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.08695331136009851) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.032226137901164915) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.08695331136009851) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+%%%%%  WILL-Produced Tree #12 @ 2:17:46 5/29/24.  [Using 4,329,816 memory cells.]  %%%%%
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.02417951388770972;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.07497263183289625;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.02417951388770972) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.07497263183289625) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.02417951388770972) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.07497263183289625) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+%%%%%  WILL-Produced Tree #13 @ 2:17:46 5/29/24.  [Using 4,332,224 memory cells.]  %%%%%
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.018149128191406544;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.06519681627395851;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.018149128191406544) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.06519681627395851) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.018149128191406544) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.06519681627395851) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+%%%%%  WILL-Produced Tree #14 @ 2:17:46 5/29/24.  [Using 4,334,744 memory cells.]  %%%%%
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.013627881855341828;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.057103124452742585;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.013627881855341828) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.057103124452742585) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.013627881855341828) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.057103124452742585) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+%%%%%  WILL-Produced Tree #15 @ 2:17:46 5/29/24.  [Using 4,337,640 memory cells.]  %%%%%
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.010236357615736515;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.05031835114393479;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.010236357615736515) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.05031835114393479) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.010236357615736515) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.05031835114393479) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+%%%%%  WILL-Produced Tree #16 @ 2:17:46 5/29/24.  [Using 4,340,672 memory cells.]  %%%%%
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.007691001337490908;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.044569846654719615;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.007691001337490908) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.044569846654719615) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.007691001337490908) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.044569846654719615) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+%%%%%  WILL-Produced Tree #17 @ 2:17:46 5/29/24.  [Using 4,342,912 memory cells.]  %%%%%
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.005779860774348399;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.03965428609934089;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.005779860774348399) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.03965428609934089) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.005779860774348399) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.03965428609934089) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+%%%%%  WILL-Produced Tree #18 @ 2:17:47 5/29/24.  [Using 4,396,344 memory cells.]  %%%%%
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.004344387281898935;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.03541723441646012;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.004344387281898935) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.03541723441646012) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.004344387281898935) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.03541723441646012) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+%%%%%  WILL-Produced Tree #19 @ 2:17:47 5/29/24.  [Using 4,399,200 memory cells.]  %%%%%
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.003265873925659503;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.03173944990534392;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.003265873925659503) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.03173944990534392) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.003265873925659503) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.03173944990534392) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+%%%%%  WILL-Produced Tree #20 @ 2:17:47 5/29/24.  [Using 4,401,568 memory cells.]  %%%%%
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 0.0024553667987760176;  // std dev = 0.498, 702.000 (wgt'ed) examples reached here.  /* #neg=319 #pos=383 */
+%   else return 0.028527499191934362;  // std dev = 0.278, 737.000 (wgt'ed) examples reached here.  /* #neg=62 #pos=675 */
+
+
+% Clauses:
+
+recommendation(A, B, 0.0024553667987760176) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 0.028527499191934362) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 0.0024553667987760176) :-  /* #neg=319 #pos=383 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 0.028527499191934362) :-  /* #neg=62 #pos=675 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%  Final call for computing score for recommendation.  %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+stepLength_tree1(1.0).
+stepLength_tree2(1.0).
+stepLength_tree3(1.0).
+stepLength_tree4(1.0).
+stepLength_tree5(1.0).
+stepLength_tree6(1.0).
+stepLength_tree7(1.0).
+stepLength_tree8(1.0).
+stepLength_tree9(1.0).
+stepLength_tree10(1.0).
+stepLength_tree11(1.0).
+stepLength_tree12(1.0).
+stepLength_tree13(1.0).
+stepLength_tree14(1.0).
+stepLength_tree15(1.0).
+stepLength_tree16(1.0).
+stepLength_tree17(1.0).
+stepLength_tree18(1.0).
+stepLength_tree19(1.0).
+stepLength_tree20(1.0).
+
+logPrior(-1.8).
+recommendation(A, B, Total) :- // A general accessor. 
+   recommendation(A, B, 1000000, Total), !.
+recommendation(A, B, Total) :- waitHere("This should not fail", recommendation(A, B, Total)).
+
+recommendation(A, B, TreesToUse, Total) :- // A tree-limited accessor (e.g., for tuning the number of trees to use).
+   logPrior(LogPrior),
+   getScore_recommendation_tree1(A, B, TreesToUse, Total1),
+   getScore_recommendation_tree2(A, B, TreesToUse, Total2),
+   getScore_recommendation_tree3(A, B, TreesToUse, Total3),
+   getScore_recommendation_tree4(A, B, TreesToUse, Total4),
+   getScore_recommendation_tree5(A, B, TreesToUse, Total5),
+   getScore_recommendation_tree6(A, B, TreesToUse, Total6),
+   getScore_recommendation_tree7(A, B, TreesToUse, Total7),
+   getScore_recommendation_tree8(A, B, TreesToUse, Total8),
+   getScore_recommendation_tree9(A, B, TreesToUse, Total9),
+   getScore_recommendation_tree10(A, B, TreesToUse, Total10),
+   getScore_recommendation_tree11(A, B, TreesToUse, Total11),
+   getScore_recommendation_tree12(A, B, TreesToUse, Total12),
+   getScore_recommendation_tree13(A, B, TreesToUse, Total13),
+   getScore_recommendation_tree14(A, B, TreesToUse, Total14),
+   getScore_recommendation_tree15(A, B, TreesToUse, Total15),
+   getScore_recommendation_tree16(A, B, TreesToUse, Total16),
+   getScore_recommendation_tree17(A, B, TreesToUse, Total17),
+   getScore_recommendation_tree18(A, B, TreesToUse, Total18),
+   getScore_recommendation_tree19(A, B, TreesToUse, Total19),
+   getScore_recommendation_tree20(A, B, TreesToUse, Total20),
+   Total is LogPrior + Total1 + Total2 + Total3 + Total4 + Total5 + Total6 + Total7 + Total8 + Total9 + Total10 + Total11 + Total12 + Total13 + Total14 + Total15 + Total16 + Total17 + Total18 + Total19 + Total20,
+   !.
+recommendation(A, B, TreesToUse, Total) :- waitHere("This should not fail", recommendation(A, B, TreesToUse, Total)).
+
+getScore_recommendation_tree1(A, B, TreesToUse, 0.0) :- 1 > TreesToUse, !.
+getScore_recommendation_tree1(A, B, TreesToUse, Total1) :- recommendation_tree1(A, B, Total), stepLength_tree1(StepLen), Total1 is Total * StepLen.
+
+getScore_recommendation_tree2(A, B, TreesToUse, 0.0) :- 2 > TreesToUse, !.
+getScore_recommendation_tree2(A, B, TreesToUse, Total2) :- recommendation_tree2(A, B, Total), stepLength_tree2(StepLen), Total2 is Total * StepLen.
+
+getScore_recommendation_tree3(A, B, TreesToUse, 0.0) :- 3 > TreesToUse, !.
+getScore_recommendation_tree3(A, B, TreesToUse, Total3) :- recommendation_tree3(A, B, Total), stepLength_tree3(StepLen), Total3 is Total * StepLen.
+
+getScore_recommendation_tree4(A, B, TreesToUse, 0.0) :- 4 > TreesToUse, !.
+getScore_recommendation_tree4(A, B, TreesToUse, Total4) :- recommendation_tree4(A, B, Total), stepLength_tree4(StepLen), Total4 is Total * StepLen.
+
+getScore_recommendation_tree5(A, B, TreesToUse, 0.0) :- 5 > TreesToUse, !.
+getScore_recommendation_tree5(A, B, TreesToUse, Total5) :- recommendation_tree5(A, B, Total), stepLength_tree5(StepLen), Total5 is Total * StepLen.
+
+getScore_recommendation_tree6(A, B, TreesToUse, 0.0) :- 6 > TreesToUse, !.
+getScore_recommendation_tree6(A, B, TreesToUse, Total6) :- recommendation_tree6(A, B, Total), stepLength_tree6(StepLen), Total6 is Total * StepLen.
+
+getScore_recommendation_tree7(A, B, TreesToUse, 0.0) :- 7 > TreesToUse, !.
+getScore_recommendation_tree7(A, B, TreesToUse, Total7) :- recommendation_tree7(A, B, Total), stepLength_tree7(StepLen), Total7 is Total * StepLen.
+
+getScore_recommendation_tree8(A, B, TreesToUse, 0.0) :- 8 > TreesToUse, !.
+getScore_recommendation_tree8(A, B, TreesToUse, Total8) :- recommendation_tree8(A, B, Total), stepLength_tree8(StepLen), Total8 is Total * StepLen.
+
+getScore_recommendation_tree9(A, B, TreesToUse, 0.0) :- 9 > TreesToUse, !.
+getScore_recommendation_tree9(A, B, TreesToUse, Total9) :- recommendation_tree9(A, B, Total), stepLength_tree9(StepLen), Total9 is Total * StepLen.
+
+getScore_recommendation_tree10(A, B, TreesToUse, 0.0) :- 10 > TreesToUse, !.
+getScore_recommendation_tree10(A, B, TreesToUse, Total10) :- recommendation_tree10(A, B, Total), stepLength_tree10(StepLen), Total10 is Total * StepLen.
+
+getScore_recommendation_tree11(A, B, TreesToUse, 0.0) :- 11 > TreesToUse, !.
+getScore_recommendation_tree11(A, B, TreesToUse, Total11) :- recommendation_tree11(A, B, Total), stepLength_tree11(StepLen), Total11 is Total * StepLen.
+
+getScore_recommendation_tree12(A, B, TreesToUse, 0.0) :- 12 > TreesToUse, !.
+getScore_recommendation_tree12(A, B, TreesToUse, Total12) :- recommendation_tree12(A, B, Total), stepLength_tree12(StepLen), Total12 is Total * StepLen.
+
+getScore_recommendation_tree13(A, B, TreesToUse, 0.0) :- 13 > TreesToUse, !.
+getScore_recommendation_tree13(A, B, TreesToUse, Total13) :- recommendation_tree13(A, B, Total), stepLength_tree13(StepLen), Total13 is Total * StepLen.
+
+getScore_recommendation_tree14(A, B, TreesToUse, 0.0) :- 14 > TreesToUse, !.
+getScore_recommendation_tree14(A, B, TreesToUse, Total14) :- recommendation_tree14(A, B, Total), stepLength_tree14(StepLen), Total14 is Total * StepLen.
+
+getScore_recommendation_tree15(A, B, TreesToUse, 0.0) :- 15 > TreesToUse, !.
+getScore_recommendation_tree15(A, B, TreesToUse, Total15) :- recommendation_tree15(A, B, Total), stepLength_tree15(StepLen), Total15 is Total * StepLen.
+
+getScore_recommendation_tree16(A, B, TreesToUse, 0.0) :- 16 > TreesToUse, !.
+getScore_recommendation_tree16(A, B, TreesToUse, Total16) :- recommendation_tree16(A, B, Total), stepLength_tree16(StepLen), Total16 is Total * StepLen.
+
+getScore_recommendation_tree17(A, B, TreesToUse, 0.0) :- 17 > TreesToUse, !.
+getScore_recommendation_tree17(A, B, TreesToUse, Total17) :- recommendation_tree17(A, B, Total), stepLength_tree17(StepLen), Total17 is Total * StepLen.
+
+getScore_recommendation_tree18(A, B, TreesToUse, 0.0) :- 18 > TreesToUse, !.
+getScore_recommendation_tree18(A, B, TreesToUse, Total18) :- recommendation_tree18(A, B, Total), stepLength_tree18(StepLen), Total18 is Total * StepLen.
+
+getScore_recommendation_tree19(A, B, TreesToUse, 0.0) :- 19 > TreesToUse, !.
+getScore_recommendation_tree19(A, B, TreesToUse, Total19) :- recommendation_tree19(A, B, Total), stepLength_tree19(StepLen), Total19 is Total * StepLen.
+
+getScore_recommendation_tree20(A, B, TreesToUse, 0.0) :- 20 > TreesToUse, !.
+getScore_recommendation_tree20(A, B, TreesToUse, Total20) :- recommendation_tree20(A, B, Total), stepLength_tree20(StepLen), Total20 is Total * StepLen.
+
+flattenedLiteralsInThisSetOfTrees(recommendation, 1, [
+   item(a, underscore)]).
+
+%%%%%  WILL-Produced Tree Combined @ 2:17:47 5/29/24.  [Using 4,246,352 memory cells.]  %%%%%
+
+% FOR recommendation(A, B):
+%   if ( item(B, C) )
+%   then return 1.9753998577528862;  // std dev = 9.958, 14,040.000 (wgt'ed) examples reached here.  /* #neg=6,380 #pos=7,660 */
+%   else return 3.8924580203236516;  // std dev = 5.551, 14,740.000 (wgt'ed) examples reached here.  /* #neg=1,240 #pos=13,500 */
+
+
+% Clauses:
+
+recommendation(A, B, 1.9753998577528862) :- 
+     item(B, C), 
+     !. // Clause #1.
+
+recommendation(A, B, 3.8924580203236516) :- !. // Clause #2.
+
+
+% The flattened versions of these clauses:
+
+flattened_recommendation(underscore, a, 1.9753998577528862) :-  /* #neg=6,380 #pos=7,660 */ 
+   item(a, underscore),
+   !. // Flattened version of clause #1.
+
+flattened_recommendation(underscore, underscore, 3.8924580203236516) :-  /* #neg=1,240 #pos=13,500 */ 
+   !. // Flattened version of clause #2.
+
+
+% The unique flattened literals:
+%   item(a, underscore)
