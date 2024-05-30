@@ -8,3 +8,6 @@ code/__pycache__/meal_recommender.cpython-39.pyc
 code/__pycache__/user_constraints.cpython-39.pyc
 code/__pycache__/user_constraints.cpython-311.pyc
 *.jar
+boosted_bandit
+recommendations
+user_input_data
