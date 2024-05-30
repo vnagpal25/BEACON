@@ -33,7 +33,6 @@ class MealRecommender:
 
         self.score_breakdown = None
 
-
     def ReadInputs(self):
         root = root_dir()
 
@@ -45,6 +44,10 @@ class MealRecommender:
         with open(f'{root}/items_data/taco_bell.json', 'r') as file:
             tb_recipes = json.load(file)
             recipes = tb_recipes['recipe-ids']
+
+        with open(f'../items_data/mcdonalds.json', 'r') as file:
+            mcd_recipes = json.load(file)
+            recipes = recipes | mcd_recipes['recipe-ids']
 
         # Read R3 dataset
         with open('../items_data/recipe_repn.json', 'r') as file:
@@ -116,7 +119,7 @@ class MealRecommender:
 
     def WriteMealRecs(self, meal_plan=None, save_path=None):
         if save_path is None:
-          save_path = f'../recommendations/recommendation_{self.user}'
+            save_path = f'../recommendations/recommendation_{self.user}'
         if not meal_plan:
             meal_plan = self.recommendation
 
@@ -132,7 +135,7 @@ class MealRecommender:
             self.dup_meal_score, self.dup_day_score, \
             self.coverage_score, self.user_constraint_score, self.score_breakdown, self.rec_features = goodness_calculator.EvaluateMealRec(meal_plan=self.recommendation['meal_plan'], time_period=self.time_period,
                                                                                                                                            meal_configs=self.meal_configs, rec_constraints=self.recommendation_constraints,
-                                                                                                                                           bev_names=self.GetBeverageNames(), recipe_names=self.recipe_info,
+                                                                                                                                           bev_names=self.GetBeverageNames(), recipe_info=self.recipe_info,
                                                                                                                                            user_compatibilities=self.user_compatibilities)
         self.recommendation['goodness'] = self.goodness_score
         self.recommendation['features'] = self.rec_features
@@ -152,23 +155,22 @@ class MealRecommender:
         for id, recipe in self.recipe_set.items():
             recipe_names[id] = (recipe['recipe_name'], {'hasDairy': recipe['hasDairy'],
                                                         'hasMeat': recipe['hasMeat'],
-                                                        'hasNuts': recipe['hasNuts']})
+                                                        'hasNuts': recipe['hasNuts']}, recipe['food_role'])
         return recipe_names
 
     def get_configs(self):
-      for j in range(self.time_period):
-          # holds list of meals for day j
-          meals = []
+        for j in range(self.time_period):
+            # holds list of meals for day j
+            meals = []
 
-          # iterates over meal configuration for each day
-          for meal_info in self.recommendation_constraints:
-              meal_info = meal_info['meal_type']
+            # iterates over meal configuration for each day
+            for meal_info in self.recommendation_constraints:
+                meal_info = meal_info['meal_type']
 
-              # Final Parsing on User Input
-              meal_name = meal_info['meal_name']
-              meal_time = meal_info['time']
+                # Final Parsing on User Input
+                meal_name = meal_info['meal_name']
+                meal_time = meal_info['time']
 
-              meal_config = meal_info['meal_config']
-              meal_config = MealConfig(meal_config)
-              self.meal_configs[meal_name] = meal_config
-
+                meal_config = meal_info['meal_config']
+                meal_config = MealConfig(meal_config)
+                self.meal_configs[meal_name] = meal_config

@@ -20,7 +20,8 @@ class User_Constraints:
     config_score = 0
 
     def __init__(self):
-        print("Class initiated")
+        ...
+        # print("Class initiated")
 
     def set_num_constraints(self, num_constraints: int):
         """Define the number of user-defined constraints.

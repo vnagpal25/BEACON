@@ -13,7 +13,8 @@ class Coverage:
     coverage = 0
 
     def __init__(self):
-        print("Class initiated")
+        ...
+        # print("Class initiated")
 
     def set_meal_config(self, meal_config: list):
         """Define the meal configuration.
@@ -70,7 +71,8 @@ class Coverage:
                 raise Exception("Each weight can only be 0 or 1.")
 
             if (
-                len(roles[i]) != len(self.meal_config) and self.meal_config != []
+                len(roles[i]) != len(
+                    self.meal_config) and self.meal_config != []
             ):  # if provided weights don't match the meal config size
                 raise Exception(
                     "The food roles list must match the size of the meal configuration."
@@ -118,12 +120,11 @@ class Coverage:
                         meal_index
                     ]  # if {'Beverage': 'cake'} is recommended, penalize coverage_score for the weight that is assigned to 'Beverage'
             else:
-                coverage_score += 0  # coverage is not affected if a role is not included in the recommendation
+                # coverage is not affected if a role is not included in the recommendation
+                coverage_score += 0
 
             self.coverage = coverage_score
 
     def get_coverage(self):
         """Return the coverage score."""
         return self.coverage
-
-    

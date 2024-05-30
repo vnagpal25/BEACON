@@ -18,9 +18,6 @@ def partition(arr, num_pos, num_neg):
     # Shuffle the array
     random.shuffle(arr)
 
-    # Determine the size of each partition
-    partition_size = len(arr) // 3
-
     # Create the three partitions
     pos = arr[:num_pos]
     neg = arr[num_pos: num_pos + num_neg]

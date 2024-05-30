@@ -597,7 +597,7 @@
     "37": {
       "recipe_name": "quarter-pounder",
       "food_role": [
-        "Main Course",
+        "Main Course"
       ],
       "ingredients": [
         {
@@ -2499,7 +2499,7 @@
     "42": {
       "recipe_name": "breakfast-burrito",
       "food_role": [
-        "Main Course",
+        "Main Course"
       ],
       "ingredients": [
         {

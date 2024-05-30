@@ -10,6 +10,7 @@ import shutil
 import os
 from meal_recommender import MealRecommender
 import statistics
+import csv
 
 
 def load_r3():
@@ -29,7 +30,51 @@ def load_r3():
     return beverages, mcdonalds, taco_bell, treat_data
 
 
-def get_highest_prob_items(items_probs, num_users):
+def get_highest_prob_foods(items_probs, num_users):
+    beverages_r3, mcdonalds, taco_bell, treat_data = load_r3()
+    food_r3 = mcdonalds | taco_bell | treat_data
+
+    user_items = {i: {'Main Course': [], 'Side': [], 'Dessert': []}
+                  for i in range(1, num_users + 1)}
+
+    for user, item, prob in items_probs:
+        # get item roles
+        item_roles = food_r3[item]['food_role']
+        for role in item_roles:
+            if role == 'Beverage':
+              continue
+            user_items[int(user)][role].append((item, float(prob)))
+
+    rec_user_items = {i: {'Main Course': [], 'Side': [],
+                          'Dessert': []} for i in range(1, num_users + 1)}
+
+    for user, role_dict in user_items.items():
+        for role, role_items in role_dict.items():
+            highest_prob = 0
+            for item, prob in role_items:
+                if prob > highest_prob:
+                    highest_prob = prob
+            highest_items = [item for item,
+                             prob in role_items if prob == highest_prob]
+            rec_user_items[user][role] = highest_items
+
+    for user, role_dict in rec_user_items.items():
+        empty = []
+        non_empty = []
+        for key, val in role_dict.items():
+            if len(val) == 0:
+                empty.append(key)
+            else:
+                non_empty.append(key)
+
+        for empty_role in empty:
+            role_dict[empty_role] = random.choice(
+                [rec_user_items[user][non_empty_role] for non_empty_role in non_empty])
+
+    return rec_user_items
+
+
+def get_highest_prob_bevs(items_probs, num_users):
     user_items = {i: [] for i in range(1, num_users + 1)}
 
     for user, item, prob in items_probs:
@@ -60,10 +105,16 @@ def gen_bandit_recs(trial_num, num_users):
     items_and_probs = [tuple(re.findall(pattern, rec)) for rec in all_recs]
 
     # get a list of the higest probability beverages and items
-    rec_user_bevs = get_highest_prob_items([rec for i, rec in enumerate(
+    # rec_user_bevs = get_highest_prob_items([rec for i, rec in enumerate(
+    #     items_and_probs) if 'bev' in all_recs[i]], num_users)
+
+    rec_user_bevs = get_highest_prob_bevs([rec for i, rec in enumerate(
         items_and_probs) if 'bev' in all_recs[i]], num_users)
 
-    rec_user_foods = get_highest_prob_items([rec for i, rec in enumerate(
+    # rec_user_foods = get_highest_prob_items([rec for i, rec in enumerate(
+    #     items_and_probs) if 'food' in all_recs[i]], num_users)
+
+    rec_user_foods = get_highest_prob_foods([rec for i, rec in enumerate(
         items_and_probs) if 'food' in all_recs[i]], num_users)
 
     src_dir = '../recommendations/trial0'
@@ -90,13 +141,13 @@ def gen_bandit_recs(trial_num, num_users):
                     meal["Beverage"] = random.choice(bevs)
 
                 if "Main Course" in meal:
-                    meal["Main Course"] = random.choice(foods)
+                    meal["Main Course"] = random.choice(foods['Main Course'])
 
                 if "Side" in meal:
-                    meal["Side"] = random.choice(foods)
+                    meal["Side"] = random.choice(foods['Side'])
 
                 if "Dessert" in meal:
-                    meal["Dessert"] = random.choice(foods)
+                    meal["Dessert"] = random.choice(foods['Dessert'])
 
         rec = {"meal_plan": rec}
         with open(f"../recommendations/trial{trial_num}/bandit_recs/recommendation_user_{i}.json", "w") as file:
@@ -179,13 +230,19 @@ def evaluate_recs(goodness_scores, file_path):
     avg_duplicate_meal_score = statistics.mean(duplicate_meal_scores)
     avg_meal_coverage_score = statistics.mean(meal_coverages)
 
-    goodness_scores |= {"Average User Constraint Score": avg_user_constraint_score,
-                        "Average Duplicate Day Score": avg_duplicate_day_score,
-                        "Average Duplicate Meal Score": avg_duplicate_meal_score,
-                        "Average Meal Coverage Score": avg_meal_coverage_score}
+    summary_dict = {"Average User Constraint Score": avg_user_constraint_score,
+                    "Average Duplicate Day Score (not calculated )": avg_duplicate_day_score,
+                    "Average Duplicate Meal Score": avg_duplicate_meal_score,
+                    "Average Meal Coverage Score": avg_meal_coverage_score,
+                    'Goodness Score': statistics.mean(
+                        [avg_user_constraint_score, avg_duplicate_meal_score, avg_meal_coverage_score])}
+
+    goodness_scores |= summary_dict
 
     with open(file_path, 'w') as file:
         json.dump(goodness_scores, file)
+
+    return summary_dict
 
 
 def main():
@@ -231,14 +288,38 @@ def main():
         bandit_goodness[f"{user_reco_evaluator.recommendation['goodness']}_{i}"] = user_reco_evaluator.score_breakdown
         print('------------')
 
-    evaluate_recs(
+    bandit_summary = evaluate_recs(
         bandit_goodness, f'../recommendations/trial{bandit_trial_num}/eval/bandit_res.json')
 
-    evaluate_recs(
+    random_summary = evaluate_recs(
         random_goodness, f'../recommendations/trial{bandit_trial_num}/eval/random_res.json')
 
-    evaluate_recs(
+    sequential_summary = evaluate_recs(
         sequential_goodness, f'../recommendations/trial{bandit_trial_num}/eval/sequential_res.json')
+
+    results = {'bandit': bandit_summary, 'random': random_summary,
+               'sequential': sequential_summary}
+
+    csv_file = f'../recommendations/trial{bandit_trial_num}/eval/results.csv'
+
+    # Extract the field names (column names) from the first dictionary
+    fieldnames = list(next(iter(results.values())).keys())
+
+    # Insert 'row_label' at the beginning of the fieldnames list for the row labels
+    fieldnames.insert(0, 'row_label')
+
+    # Write to CSV file
+    with open(csv_file, mode='w', newline='') as file:
+        writer = csv.DictWriter(file, fieldnames=fieldnames)
+
+        # Write the header
+        writer.writeheader()
+
+        # Write the data
+        for row_label, row_data in results.items():
+            # Add the row label to the row data
+            row_data_with_label = {'row_label': row_label, **row_data}
+            writer.writerow(row_data_with_label)
 
 
 if __name__ == "__main__":

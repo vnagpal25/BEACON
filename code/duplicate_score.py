@@ -48,8 +48,8 @@ class DuplicateScore:
             meal_scores.extend(self.score_ds[day_str]['duplicate_meal_scores'])
             day_scores.append(self.score_ds[day_str]['duplicate_day_score'])
 
-        # customize based off of user preference
-        pprint.pp(self.score_ds)
+        # # customize based off of user preference
+        # pprint.pp(self.score_ds)
 
         # return both meal scores and day scores, aggregate based off of user preference (include in weighted sum)
         return statistics.mean(day_scores), statistics.mean(meal_scores), self.score_ds
