@@ -113,7 +113,7 @@ def gen_pairs(users, dairy_opinions, meat_opinions, nut_opinions):
     return pos_pairs, neg_pairs
 
 
-def save_users(users, dairy_opinions, meat_opinions, nut_opinions, trial_num):
+def save_users(users, dairy_opinions, meat_opinions, nut_opinions, trial_num, num_days):
     pos_dairy, neg_dairy, _ = dairy_opinions
     pos_meat, neg_meat, _ = meat_opinions
     pos_nuts, neg_nuts, _ = nut_opinions
@@ -146,6 +146,8 @@ def save_users(users, dairy_opinions, meat_opinions, nut_opinions, trial_num):
             elif user in neg_nuts:
                 sample_user["user_compatibilities"]['nutsPreference'] = -1
 
+            sample_user['time_period'] = num_days
+            
         with open(f'{dest_dir}/user_{user}.json', 'w') as write_file:
             json.dump(sample_user, write_file, indent=2)
 
@@ -230,7 +232,7 @@ def test_bandit(bandit_trial_path):
 
 
 def main():
-    num_users, num_pos, num_neg = map(int, sys.argv[1:])
+    num_users, num_pos, num_neg, num_days = map(int, sys.argv[1:])
     users = list(range(1, num_users + 1))
 
     dairy_opinions = partition(users, num_pos, num_neg)
@@ -255,7 +257,7 @@ def main():
     bandit_trial_path, trial_num = save_facts_pairs(
         train_facts, train_neg, train_pos, test_facts, test_neg, test_pos)
 
-    save_users(users, dairy_opinions, meat_opinions, nut_opinions, trial_num)
+    save_users(users, dairy_opinions, meat_opinions, nut_opinions, trial_num, num_days)
 
     # Logging info
     with open(f'{bandit_trial_path}/config.json', 'w') as file:

@@ -42,7 +42,7 @@ def get_highest_prob_foods(items_probs, num_users):
         item_roles = food_r3[item]['food_role']
         for role in item_roles:
             if role == 'Beverage':
-              continue
+                continue
             user_items[int(user)][role].append((item, float(prob)))
 
     rec_user_items = {i: {'Main Course': [], 'Side': [],
@@ -129,16 +129,27 @@ def gen_bandit_recs(trial_num, num_users):
     for i in range(1, num_users + 1):
         bevs = rec_user_bevs[i]
         foods = rec_user_foods[i]
-        rec = [{"day 1": [{"meal_name": "breakfast", "meal_time": "9:00", "Beverage": "", "Main Course": ""},
-                          {"meal_name": "lunch", "meal_time": "13:00",
-                              "Beverage": "", "Main Course": "", "Side": ""},
-                          {"meal_name": "dinner", "meal_time": "20:00", "Beverage": "", "Main Course": "", "Dessert": "", "Side": ""}]}]
+
+        with open(f"../user_input_data/trial{trial_num}/user_{i}.json", 'r') as file:
+            user_info = json.load(file)
+            num_days = user_info['time_period']
+
+        rec = [{f"day {day_num}": [{"meal_name": "breakfast", "meal_time": "9:00", "Beverage": "", "Main Course": ""},
+                                   {"meal_name": "lunch", "meal_time": "13:00",
+                                    "Beverage": "", "Main Course": "", "Side": ""},
+                                   {"meal_name": "dinner", "meal_time": "20:00", "Beverage": "", "Main Course": "", "Dessert": "", "Side": ""}]} for day_num in range(1, num_days + 1)]
 
         for j, day in enumerate(rec, 1):
             day_rec = day[f'day {j}']
             for meal in day_rec:
                 if "Beverage" in meal:
-                    meal["Beverage"] = random.choice(bevs)
+                    try:
+                        meal["Beverage"] = random.choice(bevs)
+                    except:
+                        print(i, rec_user_bevs)
+                        beverages, _, _, _ = load_r3()
+                        meal["Beverage"] = random.choice(
+                            list(beverages.keys()))
 
                 if "Main Course" in meal:
                     meal["Main Course"] = random.choice(foods['Main Course'])
@@ -175,10 +186,15 @@ def gen_sequential_recs(trial_num, num_users):
     food_num = 0
 
     for i in range(1, num_users + 1):
-        rec = [{"day 1": [{"meal_name": "breakfast", "meal_time": "9:00", "Beverage": "", "Main Course": ""},
-                          {"meal_name": "lunch", "meal_time": "13:00",
-                           "Beverage": "", "Main Course": "", "Side": ""},
-                          {"meal_name": "dinner", "meal_time": "20:00", "Beverage": "", "Main Course": "", "Dessert": "", "Side": ""}]}]
+        with open(f"../user_input_data/trial{trial_num}/user_{i}.json", 'r') as file:
+            user_info = json.load(file)
+            num_days = user_info['time_period']
+
+        rec = [{f"day {day_num}": [{"meal_name": "breakfast", "meal_time": "9:00", "Beverage": "", "Main Course": ""},
+                                   {"meal_name": "lunch", "meal_time": "13:00",
+                                    "Beverage": "", "Main Course": "", "Side": ""},
+                                   {"meal_name": "dinner", "meal_time": "20:00", "Beverage": "", "Main Course": "", "Dessert": "", "Side": ""}]} for day_num in range(1, num_days + 1)]
+
         for j, day in enumerate(rec, 1):
             day_rec = day[f'day {j}']
             for meal in day_rec:
@@ -218,24 +234,28 @@ def evaluate_recs(goodness_scores, file_path):
     duplicate_day_scores = []
     duplicate_meal_scores = []
 
-    for day in goodness_scores.values():
-        day = day['day 1']
-        user_constraint_coverages.extend(day['user_constraint_coverages'])
-        meal_coverages.extend(day['meal_coverages'])
-        duplicate_day_scores.append(day['duplicate_day_score'])
-        duplicate_meal_scores.extend(day['duplicate_meal_scores'])
+    for user_day in goodness_scores.values():
+        for day in user_day.values():
+            user_constraint_coverages.extend(day['user_constraint_coverages'])
+            meal_coverages.extend(day['meal_coverages'])
+            duplicate_day_scores.append(day['duplicate_day_score'])
+            duplicate_meal_scores.extend(day['duplicate_meal_scores'])
 
     avg_user_constraint_score = statistics.mean(user_constraint_coverages)
     avg_duplicate_day_score = statistics.mean(duplicate_day_scores)
     avg_duplicate_meal_score = statistics.mean(duplicate_meal_scores)
     avg_meal_coverage_score = statistics.mean(meal_coverages)
 
-    summary_dict = {"Average User Constraint Score": avg_user_constraint_score,
-                    "Average Duplicate Day Score (not calculated )": avg_duplicate_day_score,
-                    "Average Duplicate Meal Score": avg_duplicate_meal_score,
-                    "Average Meal Coverage Score": avg_meal_coverage_score,
-                    'Goodness Score': statistics.mean(
-                        [avg_user_constraint_score, avg_duplicate_meal_score, avg_meal_coverage_score])}
+    # future extension, combinatorially generate if more scores are added to the metric
+    summary_dict = {"score_uc": avg_user_constraint_score,
+                    "score_dm": avg_duplicate_meal_score,
+                    "score_mc": avg_meal_coverage_score,
+                    'score_uc_dm_mc': statistics.mean(
+                        [avg_user_constraint_score, avg_duplicate_meal_score, avg_meal_coverage_score]),
+                    "score_uc_dm": statistics.mean([avg_user_constraint_score, avg_duplicate_meal_score]),
+                    "score_uc_mc": statistics.mean([avg_user_constraint_score, avg_meal_coverage_score]),
+                    "score_dm_mc": statistics.mean([avg_duplicate_meal_score, avg_meal_coverage_score]),
+                    "score_dd (n/a)": avg_duplicate_day_score}
 
     goodness_scores |= summary_dict
 

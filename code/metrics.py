@@ -191,9 +191,9 @@ class Metric:
             for meal in day_plan:
                 meal = meal.copy()
                 del meal['Beverage']
-
+                
+                
                 score, roles = constraint_calculator.calc_config(meal)
-
                 day_constraints.append(score)
                 constraint_scores.append(score)
 
