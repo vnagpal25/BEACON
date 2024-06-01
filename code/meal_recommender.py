@@ -135,7 +135,7 @@ class MealRecommender:
             self.dup_meal_score, self.dup_day_score, \
             self.coverage_score, self.user_constraint_score, self.score_breakdown, self.rec_features = goodness_calculator.EvaluateMealRec(meal_plan=self.recommendation['meal_plan'], time_period=self.time_period,
                                                                                                                                            meal_configs=self.meal_configs, rec_constraints=self.recommendation_constraints,
-                                                                                                                                           bev_names=self.GetBeverageNames(), recipe_info=self.recipe_info,
+                                                                                                                                           bev_info=self.GetBeverageNames(), recipe_info=self.recipe_info,
                                                                                                                                            user_compatibilities=self.user_compatibilities)
         self.recommendation['goodness'] = self.goodness_score
         self.recommendation['features'] = self.rec_features
@@ -147,7 +147,10 @@ class MealRecommender:
     def GetBeverageNames(self):
         beverage_names = {}
         for id, drink in self.beverage_set.items():
-            beverage_names[id] = drink['name']
+            beverage_names[id] = (drink['name'],
+                                  {'hasDairy': drink['hasDairy'],
+                                   'hasMeat': drink['hasMeat'],
+                                   'hasNuts': drink['hasNuts']})
         return beverage_names
 
     def GetRecipeInfo(self):

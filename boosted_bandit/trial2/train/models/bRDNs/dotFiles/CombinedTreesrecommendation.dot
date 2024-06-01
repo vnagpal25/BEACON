@@ -1,7 +1,0 @@
-digraph G{ 
-1[label = "[item(B, Anon4549)]"];
-1 -> 2[label="True"];
-1 -> 3[label="False"];
-2[shape = box,label = "3.494(0.971)"];
-3[shape = box,label = "4.462(0.989)"];
-}

@@ -1,7 +1,0 @@
-setParam: stringsAreCaseSensitive = true.
-
-usePrologVariables: true.
-
-
-(recommendation(_, A, 0.003265873925659503) :-  /* #neg=319 #pos=383 */ item(A, _)).
-recommendation(_, _, 0.03173944990534392) /* #neg=62 #pos=675 */ .

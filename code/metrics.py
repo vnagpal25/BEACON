@@ -2,6 +2,8 @@ from coverage import Coverage
 from duplicate_score import DuplicateScore
 from user_constraints import User_Constraints
 
+import pdb
+
 
 class Metric:
     def __init__(self, config_weight=0, duplicate_meal_score_weight=0, duplicate_day_score_weight=0, coverages_weight=0, constraint_weight=0):
@@ -20,7 +22,7 @@ class Metric:
         self.user_constraint_score = 0
         self.config_quality_score = 0
 
-    def EvaluateMealRec(self, time_period=None, meal_plan=None, meal_configs=None, rec_constraints=None, bev_names=None, recipe_info=None, user_compatibilities=None):
+    def EvaluateMealRec(self, time_period=None, meal_plan=None, meal_configs=None, rec_constraints=None, bev_info=None, recipe_info=None, user_compatibilities=None):
         for i, day_plan in enumerate(meal_plan, 1):
             day_str = f'day {i}'
             day_plan = day_plan[day_str]
@@ -36,10 +38,10 @@ class Metric:
         self.DuplicateScoreCalc(meal_plan)
 
         self.CoverageScoreCalc(
-            meal_plan, meal_configs, bev_names, recipe_info)
+            meal_plan, meal_configs, bev_info, recipe_info)
 
         self.ConstraintsScoreCalc(
-            meal_plan, user_compatibilities, recipe_info)
+            meal_plan, user_compatibilities, bev_info, recipe_info)
 
         score_weights = [self.config_score_weight,  self.duplicate_meal_score_weight,
                          self.duplicate_day_score_weight, self.coverages_weight,
@@ -149,10 +151,13 @@ class Metric:
 
         self.coverage_score = sum(coverages)/len(coverages)
 
-    def ConstraintsScoreCalc(self, meal_plan_, user_compatibilities, recipes_info):
+    def ConstraintsScoreCalc(self, meal_plan_, user_compatibilities, bev_info, recipes_info):
         constraint_calculator = User_Constraints()
-        constraint_calculator.set_num_constraints(3)
         # User calibration
+        curr_constraints = constraint_calculator.get_constraints()
+        for constraint in list(curr_constraints):
+          constraint_calculator.remove_constraint(constraint)
+        
         for feature, compt in user_compatibilities.items():
             if feature == 'dairyPreference':
                 constraint_calculator.add_new_constraint('hasDairy', compt)
@@ -163,13 +168,13 @@ class Metric:
             else:
                 print("Shouldn't be executed")
 
-        curr_features = constraint_calculator.get_constraints()
-        if 'HasDairy' in curr_features:
-            constraint_calculator.remove_constraint('HasDairy')
-        if 'HasMeat' in curr_features:
-            constraint_calculator.remove_constraint('HasMeat')
-        if 'HasNuts' in curr_features:
-            constraint_calculator.remove_constraint('HasNuts')
+        # curr_features = constraint_calculator.get_constraints()
+        # if 'HasDairy' in curr_features:
+        #     constraint_calculator.remove_constraint('HasDairy')
+        # if 'HasMeat' in curr_features:
+        #     constraint_calculator.remove_constraint('HasMeat')
+        # if 'HasNuts' in curr_features:
+        #     constraint_calculator.remove_constraint('HasNuts')
 
         # take 1 day recommendations(parse all jsons) and label each one with 3 features in a spreadsheet
 
@@ -180,6 +185,14 @@ class Metric:
                 if compt:
                     compt_features.append(feature)
             constraint_calculator.add_annotated_food_item(id, compt_features)
+
+        for id, (_, features_dict) in bev_info.items():
+            compt_features = []
+            for feature, compt in features_dict.items():
+                if compt:
+                    compt_features.append(feature)
+            constraint_calculator.add_annotated_food_item(id, compt_features)
+
         features = {'hasDairy': 0, 'hasMeat': 0, 'hasNuts': 0}
         # calculate constraint scores for recommendation
         constraint_scores = []
@@ -190,13 +203,12 @@ class Metric:
             day_constraints = []
             for meal in day_plan:
                 meal = meal.copy()
-                del meal['Beverage']
-                
-                
+
                 score, roles = constraint_calculator.calc_config(meal)
                 day_constraints.append(score)
                 constraint_scores.append(score)
-
+                # if score == 1.0:
+                #     pdb.set_trace()
                 for role in roles:
                     features[role] += 1
 
