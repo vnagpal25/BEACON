@@ -12,6 +12,8 @@ import json
 import shutil
 import re
 import subprocess
+import argparse
+from colorama import Fore, init
 
 
 def partition(arr, num_pos, num_neg):
@@ -24,6 +26,55 @@ def partition(arr, num_pos, num_neg):
     remaining = arr[num_pos + num_neg:]
 
     return pos, neg, remaining
+
+
+def exhaustive_partition():
+    """
+    dairy meat nuts
+    0     0    0
+    0     0    1
+    0     0   -1
+    0     1     0
+    0     1     1
+    0     1     -1
+    0     -1    0
+    0     -1    1
+    0     -1    -1
+    1     0     0
+    1     0     1
+    1     0     -1
+    1     1     0
+    1     1     1
+    1     1     -1
+    1     -1    0
+    1     -1    1
+    1      -1   -1
+    -1    0     0
+    -1    0     1
+    -1    0     -1
+    -1    1     0
+    -1    1     1
+    -1    1     -1
+    -1    -1     0
+    -1    -1      1
+    -1    -1     -1
+    """
+    # generating user opinion lists based on above exhaustive configuration (pos 1, neg -1, neutral 0)
+    dairy_opinions = [0] * 9 + [1] * 9 + [-1] * 9
+    meat_opinions = [0, 0, 0, 1, 1, 1, -1, -1, -1] * 3
+    nut_opinions = [0, 1, -1] * 9
+
+    # splitting opinion lists into positive_list, negative_list, and neutral_list
+    user_dairy_opinions = [i+1 for i, el in enumerate(dairy_opinions) if el == 1], [i+1 for i, el in enumerate(
+        dairy_opinions) if el == -1], [i+1 for i, el in enumerate(dairy_opinions) if el == 0]
+
+    user_meat_opinions = [i+1 for i, el in enumerate(meat_opinions) if el == 1], [i+1 for i, el in enumerate(
+        meat_opinions) if el == -1], [i+1 for i, el in enumerate(meat_opinions) if el == 0]
+
+    user_nut_opinions = [i+1 for i, el in enumerate(nut_opinions) if el == 1], [i+1 for i, el in enumerate(
+        nut_opinions) if el == -1], [i+1 for i, el in enumerate(nut_opinions) if el == 0]
+
+    return user_dairy_opinions, user_meat_opinions, user_nut_opinions
 
 
 def load_r3():
@@ -147,7 +198,7 @@ def save_users(users, dairy_opinions, meat_opinions, nut_opinions, trial_num, nu
                 sample_user["user_compatibilities"]['nutsPreference'] = -1
 
             sample_user['time_period'] = num_days
-            
+
         with open(f'{dest_dir}/user_{user}.json', 'w') as write_file:
             json.dump(sample_user, write_file, indent=2)
 
@@ -232,12 +283,34 @@ def test_bandit(bandit_trial_path):
 
 
 def main():
-    num_users, num_pos, num_neg, num_days = map(int, sys.argv[1:])
-    users = list(range(1, num_users + 1))
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--num_users')
+    parser.add_argument('--num_pos')
+    parser.add_argument('--num_neg')
+    parser.add_argument('--num_days')
+    parser.add_argument('--user_gen_mode')
+    args = parser.parse_args()
 
-    dairy_opinions = partition(users, num_pos, num_neg)
-    meat_opinions = partition(users, num_pos, num_neg)
-    nut_opinions = partition(users, num_pos, num_neg)
+    num_users = int(args.num_users) if args.num_users is not None else None
+    num_pos = int(args.num_pos) if args.num_users is not None else None
+    num_neg = int(args.num_neg) if args.num_users is not None else None
+    num_days = int(args.num_days) if args.num_users is not None else None
+    mode = args.user_gen_mode
+
+    if mode not in ('random', 'exhaustive'):
+        print('mode needs to be either "random" or "exhaustive"')
+
+    # num_users, num_pos, num_neg, num_days = map(int, sys.argv[1:])
+    dairy_opinions, meat_opinions, nut_opinions = None, None, None
+    if mode == 'random':
+        users = list(range(1, num_users + 1))
+        dairy_opinions = partition(users, num_pos, num_neg)
+        meat_opinions = partition(users, num_pos, num_neg)
+        nut_opinions = partition(users, num_pos, num_neg)
+    elif mode == 'exhaustive':
+        # TODO, exhaustively generate users (27) and opinions
+        users = list(range(1, 28))
+        dairy_opinions, meat_opinions, nut_opinions = exhaustive_partition()
 
     user_facts, food_facts = gen_facts(
         dairy_opinions, meat_opinions, nut_opinions)
@@ -257,7 +330,8 @@ def main():
     bandit_trial_path, trial_num = save_facts_pairs(
         train_facts, train_neg, train_pos, test_facts, test_neg, test_pos)
 
-    save_users(users, dairy_opinions, meat_opinions, nut_opinions, trial_num, num_days)
+    save_users(users, dairy_opinions, meat_opinions,
+               nut_opinions, trial_num, num_days)
 
     # Logging info
     with open(f'{bandit_trial_path}/config.json', 'w') as file:
@@ -273,6 +347,11 @@ def main():
 
     # Test Bandit
     test_bandit(bandit_trial_path)
+
+    # recommendation to user to generate recommendations
+    init(convert=True)
+    print(
+          'To generate recommendations, run this command: ' + Fore.GREEN + f'python gen_recs.py {trial_num}')
 
 
 if __name__ == "__main__":
