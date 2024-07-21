@@ -16,6 +16,17 @@ import argparse
 from colorama import Fore, init
 
 
+def usage():
+    print("Usage: python train_bandit.py --num_users <positive integer> --num_pos <positive integer> --num_neg <positive integer> --num_days <positive integer> --user_gen_mode <string>")
+    print("Description of each argument:")
+    print("--num_users: Number of users being simulated")
+    print("--num_pos: Number of users that will have a positive preference to each food feature.")
+    print("--num_neg: Number of users that will have a negative preference to each food feature")
+    print("--num_days: Number of days that will be in the recommendation")
+    print("--user_gen_mode: Mode of user generation: random or exhaustive.")
+    sys.exit(1)
+
+
 def partition(arr, num_pos, num_neg):
     # Shuffle the array
     random.shuffle(arr)
@@ -284,13 +295,21 @@ def test_bandit(bandit_trial_path):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--num_users')
-    parser.add_argument('--num_pos')
-    parser.add_argument('--num_neg')
-    parser.add_argument('--num_days')
-    parser.add_argument('--user_gen_mode')
+    parser.add_argument('--num_users', type=int,
+                        help='Number of users being simulated')
+    parser.add_argument('--num_pos', type=int,
+                        help='Num of users with a positive preference to a food feature')
+    parser.add_argument('--num_neg', type=int,
+                        help='Num of users with a negative preference to a food feature')
+    parser.add_argument('--num_days', type=int, required=True,
+                        help='Number of days in recommendation')
+    parser.add_argument('--user_gen_mode', type=str, required=True,
+                        help='User generation mode: random or exhaustive')
     args = parser.parse_args()
 
+    have_all_nums = args.num_users and args.num_pos and args.num_neg
+    if not args.num_days or not args.user_gen_mode:
+      usage()
     num_users = int(args.num_users) if args.num_users is not None else None
     num_pos = int(args.num_pos) if args.num_users is not None else None
     num_neg = int(args.num_neg) if args.num_users is not None else None
@@ -351,7 +370,7 @@ def main():
     # recommendation to user to generate recommendations
     init(convert=True)
     print(
-          'To generate recommendations, run this command: ' + Fore.GREEN + f'python gen_recs.py {trial_num}')
+        'To generate recommendations, run this command: ' + Fore.GREEN + f'python gen_recs.py {trial_num}')
 
 
 if __name__ == "__main__":
