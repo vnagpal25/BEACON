@@ -145,6 +145,22 @@ def gen_bandit_recs(trial_num, num_users):
         items_and_probs) if 'food' in all_recs[i]], num_users)
 
     src_dir = '../recommendations/trial0'
+    
+    if not os.path.isdir(src_dir):
+      os.makedirs(src_dir)
+    
+    if not os.path.isdir(os.path.join(src_dir, 'bandit_recs')):
+      os.makedirs(os.path.join(src_dir, 'bandit_recs'))
+      
+    if not os.path.isdir(os.path.join(src_dir, 'eval')):
+      os.makedirs(os.path.join(src_dir, 'eval'))
+
+    if not os.path.isdir(os.path.join(src_dir, 'random_recs')):
+      os.makedirs(os.path.join(src_dir, 'random_recs'))
+
+    if not os.path.isdir(os.path.join(src_dir, 'sequential_recs')):
+      os.makedirs(os.path.join(src_dir, 'sequential_recs'))
+    
     dest_dir = f'../recommendations/trial{trial_num}'
 
     if os.path.exists(dest_dir):

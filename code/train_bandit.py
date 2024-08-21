@@ -207,6 +207,8 @@ def save_users(users, dairy_opinions, meat_opinions, nut_opinions, trial_num, nu
     pos_nuts, neg_nuts, _ = nut_opinions
 
     src_dir = '../user_input_data/trial0'
+    if not os.path.isdir(src_dir):
+      os.makedirs(src_dir)
     dest_dir = f'../user_input_data/trial{trial_num}'
 
     if os.path.exists(dest_dir):
