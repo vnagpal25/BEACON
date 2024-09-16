@@ -7965,6 +7965,26 @@
     },
     "47": {
       "recipe_name": "baklava",
+      "data_provenance": {
+        "source_url": "https://natashaskitchen.com/baklava-recipe/",
+        "last_system_access": ""
+      },
+      "macronutrients": {
+        "Calories": "255kcal",
+        "Fat": "18g",
+        "Saturated Fat": "6g",
+        "Cholesterol": "20mg",
+        "Sodium": "74mg",
+        "Potassium": "83mg",
+        "Carbohydrates": "21g",
+        "Fiber": "1g",
+        "Sugar": "11g",
+        "Protein": "3g",
+        "Vitamin A": "240IU",
+        "Vitamin C": "0.6mg",
+        "Calcium": "20mg",
+        "Iron": "1mg"
+      },
       "food_role": [
         "Dessert"
       ],
@@ -8466,6 +8486,25 @@
     },
     "48": {
       "recipe_name": "German Rhubarb Cake with Meringue Topping (Omas Rhabarberkuchen mit Baiser)",
+      "data_provenance": {
+        "source_url": "https://www.allrecipes.com/recipe/263339/german-rhubarb-meringue-cake/",
+        "last_system_access": ""
+      },
+      "macronutrients": {
+        "Calories": "278kcal",
+        "Total Fat": "10g",
+        "Saturated Fat": "6g",
+        "Cholesterol": "57mg",
+        "Sodium": "145mg",
+        "Total Carbohydrate": "44g",
+        "Dietary Fiber": "1g",
+        "Total Sugars": "31g",
+        "Protein": "4g",
+        "Vitamin C": "3mg",
+        "Calcium": "96mg",
+        "Iron": "1mg",
+        "Potassium": "152mg"
+      },
       "food_role": [
         "Dessert"
       ],
@@ -8996,6 +9035,25 @@
     },
     "49": {
       "recipe_name": "honey-vanilla-almond-cake",
+      "data_provenance": {
+        "source_url": "https://www.seriouseats.com/honey-vanilla-almond-cake-recipe",
+        "last_system_access": ""
+      },
+      "macronutrients": {
+        "Calories": "186kcal",
+        "Total Fat": "11g",
+        "Saturated Fat": "2g",
+        "Cholesterol": "64mg",
+        "Sodium": "268mg",
+        "Total Carbohydrate": "18g",
+        "Dietary Fiber": "2g",
+        "Total Sugars": "15g",
+        "Protein": "6g",
+        "Vitamin C": "0mg",
+        "Calcium": "57mg",
+        "Iron": "1mg",
+        "Potassium": "155mg"
+      },
       "food_role": [
         "Dessert"
       ],
@@ -9379,6 +9437,25 @@
     },
     "50": {
       "recipe_name": "caramel-nut-tart",
+      "data_provenance": {
+        "source_url": "https://www.simplyrecipes.com/recipes/caramelized_nut_tart/",
+        "last_system_access": ""
+      },
+      "macronutrients": {
+        "Calories": "502kcal",
+        "Total Fat": "33g",
+        "Saturated Fat": "12g",
+        "Cholesterol": "48mg",
+        "Sodium": "88mg",
+        "Total Carbohydrate": "49g",
+        "Dietary Fiber": "3g",
+        "Total Sugars": "31g",
+        "Protein": "6g",
+        "Vitamin C": "0mg",
+        "Calcium": "50mg",
+        "Iron": "2mg",
+        "Potassium": "163mg"
+      },
       "food_role": [
         "Dessert"
       ],
