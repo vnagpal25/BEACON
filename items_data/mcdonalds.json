@@ -2,6 +2,26 @@
   "recipe-ids": {
     "36": {
       "recipe_name": "apple-pie",
+      "data_provenance": {
+        "source_url": "https://copykat.com/mcdonalds-hot-apple-pie/",
+        "last_system_access": ""
+      },
+      "macronutrients": {
+        "Calories": "417kcal",
+        "Carbohydrates": "38g",
+        "Protein": "4g",
+        "Fat": "27g",
+        "Saturated Fat": "8g",
+        "Cholesterol": "11mg",
+        "Sodium": "264mg",
+        "Potassium": "92mg",
+        "Fiber": "2g",
+        "Sugar": "9g",
+        "Vitamin A": "155IU",
+        "Vitamin C": "2.3mg",
+        "Calcium": "14mg",
+        "Iron": "1.7mg"
+      },
       "food_role": [
         "Dessert",
         "Side"
@@ -596,6 +616,29 @@
     },
     "37": {
       "recipe_name": "quarter-pounder",
+      "data_provenance": {
+        "source_url": "https://copykat.com/mcdonalds-quarter-pounder/",
+        "last_system_access": ""
+      },
+      "macronutrients": {
+        "Calories": "675kcal",
+        "Carbohydrates": "26g",
+        "Protein": "38g",
+        "Fat": "45g",
+        "Saturated Fat": "20g",
+        "Polyunsaturated Fat": "2g",
+        "Monounsaturated Fat": "17g",
+        "Trans Fat": "2g",
+        "Cholesterol": "149mg",
+        "Sodium": "1540mg",
+        "Potassium": "580mg",
+        "Fiber": "1g",
+        "Sugar": "6g",
+        "Vitamin A": "464IU",
+        "Vitamin C": "2mg",
+        "Calcium": "552mg",
+        "Iron": "5mg"
+      },
       "food_role": [
         "Main Course"
       ],
@@ -885,6 +928,29 @@
     },
     "38": {
       "recipe_name": "blt-quarter-punder",
+      "data_provenance": {
+        "source_url": "https://copykat.com/mcdonalds-smoky-blt-quarter-pounder-with-cheese/",
+        "last_system_access": ""
+      },
+      "macronutrients": {
+        "Calories": "792kcal",
+        "Carbohydrates": "26g",
+        "Protein": "44g",
+        "Fat": "56g",
+        "Saturated Fat": "22g",
+        "Polyunsaturated Fat": "6g",
+        "Monounsaturated Fat": "21g",
+        "Trans Fat": "2g",
+        "Cholesterol": "168mg",
+        "Sodium": "1734mg",
+        "Potassium": "737mg",
+        "Fiber": "2g",
+        "Sugar": "6g",
+        "Vitamin A": "897IU",
+        "Vitamin C": "7mg",
+        "Calcium": "544mg",
+        "Iron": "5mg"
+      },
       "food_role": [
         "Main Course",
         "Side"
@@ -1284,6 +1350,21 @@
     },
     "39": {
       "recipe_name": "sweet-tea",
+      "data_provenance": {
+        "source_url": "https://copykat.com/mcdonalds-sweet-tea/",
+        "last_system_access": ""
+      },
+      "macronutrients": {
+        "Calories": "258kcal",
+        "Carbohydrates": "66g",
+        "Protein": "0g",
+        "Fat": "0g",
+        "Saturated Fat": "0g",
+        "Cholesterol": "0mg",
+        "Sodium": "0mg",
+        "Sugar": "66g",
+        "Iron": "0mg"
+      },
       "food_role": [
         "Beverage"
       ],
@@ -1490,6 +1571,29 @@
     },
     "40": {
       "recipe_name": "McDonald’s Bacon Ranch McCrispy",
+      "data_provenance": {
+        "source_url": "https://copykat.com/mcdonalds-bacon-ranch-mccrispy/",
+        "last_system_access": ""
+      },
+      "macronutrients": {
+        "Calories": "565kcal",
+        "Carbohydrates": "45g",
+        "Protein": "30g",
+        "Fat": "30g",
+        "Saturated Fat": "9g",
+        "Polyunsaturated Fat": "8g",
+        "Monounsaturated Fat": "10g",
+        "Trans Fat": "0.1g",
+        "Cholesterol": "96mg",
+        "Sodium": "1005mg",
+        "Potassium": "612mg",
+        "Fiber": "3g",
+        "Sugar": "9g",
+        "Vitamin A": "945IU",
+        "Vitamin C": "13mg",
+        "Calcium": "221mg",
+        "Iron": "3mg"
+      },
       "food_role": [
         "Main Course",
         "Side"
@@ -2156,6 +2260,24 @@
     },
     "41": {
       "recipe_name": "big-mac",
+      "data_provenance": {
+        "source_url": "https://copykat.com/copycat-mcdonalds-big-mac-recipe/",
+        "last_system_access": ""
+      },
+      "macronutrients": {
+        "Calories": "445kcal",
+        "Carbohydrates": "1g",
+        "Protein": "27g",
+        "Fat": "36g",
+        "Saturated Fat": "15g",
+        "Cholesterol": "123mg",
+        "Sodium": "720mg",
+        "Potassium": "395mg",
+        "Sugar": "0g",
+        "Vitamin A": "270IU",
+        "Calcium": "244mg",
+        "Iron": "2.8mg"
+      },
       "food_role": [
         "Main Course"
       ],
@@ -2498,6 +2620,26 @@
     },
     "42": {
       "recipe_name": "breakfast-burrito",
+      "data_provenance": {
+        "source_url": "https://copykat.com/mcdonalds-breakfast-burrito/",
+        "last_system_access": ""
+      },
+      "macronutrients": {
+        "Calories": "269kcal",
+        "Carbohydrates": "3g",
+        "Protein": "15g",
+        "Fat": "21g",
+        "Saturated Fat": "8g",
+        "Cholesterol": "196mg",
+        "Sodium": "740mg",
+        "Potassium": "255mg",
+        "Fiber": "0g",
+        "Sugar": "1g",
+        "Vitamin A": "485IU",
+        "Vitamin C": "1.9mg",
+        "Calcium": "213mg",
+        "Iron": "1.5mg"
+      },
       "food_role": [
         "Main Course"
       ],
@@ -2827,6 +2969,23 @@
     },
     "43": {
       "recipe_name": "caramel-cappucino",
+      "data_provenance": {
+        "source_url": "https://copykat.com/mcdonalds-mccafe-caramel-cappuccino/",
+        "last_system_access": ""
+      },
+      "macronutrients": {
+        "Calories": "212kcal",
+        "Carbohydrates": "29g",
+        "Protein": "5g",
+        "Fat": "8g",
+        "Saturated Fat": "4g",
+        "Cholesterol": "21mg",
+        "Sodium": "129mg",
+        "Potassium": "307mg",
+        "Sugar": "26g",
+        "Vitamin A": "260IU",
+        "Calcium": "179mg"
+      },
       "food_role": [
         "Beverage"
       ],
@@ -3112,6 +3271,28 @@
     },
     "44": {
       "recipe_name": "maple-oatmeal",
+      "data_provenance": {
+        "source_url": "https://copykat.com/mcdonalds-fruit-and-maple-oatmeal/",
+        "last_system_access": ""
+      },
+      "macronutrients": {
+        "Calories": "348kcal",
+        "Carbohydrates": "70g",
+        "Protein": "8g",
+        "Fat": "6g",
+        "Saturated Fat": "3g",
+        "Polyunsaturated Fat": "1g",
+        "Monounsaturated Fat": "2g",
+        "Cholesterol": "11mg",
+        "Sodium": "617mg",
+        "Potassium": "337mg",
+        "Fiber": "5g",
+        "Sugar": "36g",
+        "Vitamin A": "122IU",
+        "Vitamin C": "2mg",
+        "Calcium": "93mg",
+        "Iron": "2mg"
+      },
       "food_role": [
         "Main Course"
       ],
@@ -3407,6 +3588,25 @@
     },
     "45": {
       "recipe_name": "egg-mcmuffin",
+      "data_provenance": {
+        "source_url": "https://copykat.com/mcdonalds-egg-mcmuffin/",
+        "last_system_access": ""
+      },
+      "macronutrients": {
+        "Calories": "420kcal",
+        "Carbohydrates": "28g",
+        "Protein": "20g",
+        "Fat": "25g",
+        "Saturated Fat": "13g",
+        "Cholesterol": "229mg",
+        "Sodium": "1037mg",
+        "Potassium": "261mg",
+        "Fiber": "2g",
+        "Sugar": "1g",
+        "Vitamin A": "786IU",
+        "Calcium": "277mg",
+        "Iron": "2mg"
+      },
       "food_role": [
         "Main Course"
       ],
@@ -3850,6 +4050,29 @@
     },
     "46": {
       "recipe_name": "mcgriddle",
+      "data_provenance": {
+        "source_url": "https://copykat.com/mcdonalds-mcgriddle/",
+        "last_system_access": ""
+      },
+      "macronutrients": {
+        "Calories": "517kcal",
+        "Carbohydrates": "35g",
+        "Protein": "20g",
+        "Fat": "33g",
+        "Saturated Fat": "11g",
+        "Polyunsaturated Fat": "5g",
+        "Monounsaturated Fat": "15g",
+        "Trans Fat": "0.3g",
+        "Cholesterol": "251mg",
+        "Sodium": "1540mg",
+        "Potassium": "298mg",
+        "Fiber": "1g",
+        "Sugar": "1g",
+        "Vitamin A": "609IU",
+        "Vitamin C": "1mg",
+        "Calcium": "358mg",
+        "Iron": "2mg"
+      },
       "food_role": [
         "Main Course"
       ],
