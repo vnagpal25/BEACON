@@ -1380,7 +1380,17 @@
         "last_system_access": ""
       },
       "macronutrients": {
-        "Calories": "450kcal"
+        "Calories": "470kcal",
+        "Calories from Fat": "230kcal",
+        "Total Fat": "25g",
+        "Saturated Fat": "12g",
+        "Trans Fat": "0.5g",
+        "Cholesterol": "50mg",
+        "Sodium": "990mg",
+        "Carbohydrates": "37g",
+        "Fiber": "4g",
+        "Sugars": "2g",
+        "Protein": "19g"
       },
       "food_role": [
         "Main Course",
@@ -4241,7 +4251,17 @@
         "last_system_access": ""
       },
       "macronutrients": {
-        "Calories": "212kcal"
+        "Calories": "740kcal",
+        "Calories from Fat": "340kcal",
+        "Total Fat": "38g",
+        "Saturated Fat": "7g",
+        "Trans Fat": "0g",
+        "Cholesterol": "25mg",
+        "Sodium": "1050mg",
+        "Carbohydrates": "82g",
+        "Fiber": "15g",
+        "Sugars": "5g",
+        "Protein": "16g"
       },
       "food_role": [
         "Main Course"
