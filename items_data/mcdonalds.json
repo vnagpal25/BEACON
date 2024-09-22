@@ -4,23 +4,65 @@
       "recipe_name": "apple-pie",
       "data_provenance": {
         "source_url": "https://copykat.com/mcdonalds-hot-apple-pie/",
-        "last_system_access": ""
+        "last_system_access": "2024-09-22 14:30:32.965810"
       },
       "macronutrients": {
-        "Calories": "417kcal",
-        "Carbohydrates": "38g",
-        "Protein": "4g",
-        "Fat": "27g",
-        "Saturated Fat": "8g",
-        "Cholesterol": "11mg",
-        "Sodium": "264mg",
-        "Potassium": "92mg",
-        "Fiber": "2g",
-        "Sugar": "9g",
-        "Vitamin A": "155IU",
-        "Vitamin C": "2.3mg",
-        "Calcium": "14mg",
-        "Iron": "1.7mg"
+        "Calories": {
+          "measure": "417",
+          "unit": "kcal"
+        },
+        "Carbohydrates": {
+          "measure": "38",
+          "unit": "g"
+        },
+        "Protein": {
+          "measure": "4",
+          "unit": "g"
+        },
+        "Fat": {
+          "measure": "27",
+          "unit": "g"
+        },
+        "Saturated Fat": {
+          "measure": "8",
+          "unit": "g"
+        },
+        "Cholesterol": {
+          "measure": "11",
+          "unit": "mg"
+        },
+        "Sodium": {
+          "measure": "264",
+          "unit": "mg"
+        },
+        "Potassium": {
+          "measure": "92",
+          "unit": "mg"
+        },
+        "Fiber": {
+          "measure": "2",
+          "unit": "g"
+        },
+        "Sugar": {
+          "measure": "9",
+          "unit": "g"
+        },
+        "Vitamin A": {
+          "measure": "155",
+          "unit": "IU"
+        },
+        "Vitamin C": {
+          "measure": "2.3",
+          "unit": "mg"
+        },
+        "Calcium": {
+          "measure": "14",
+          "unit": "mg"
+        },
+        "Iron": {
+          "measure": "1.7",
+          "unit": "mg"
+        }
       },
       "food_role": [
         "Dessert",
@@ -618,26 +660,77 @@
       "recipe_name": "quarter-pounder",
       "data_provenance": {
         "source_url": "https://copykat.com/mcdonalds-quarter-pounder/",
-        "last_system_access": ""
+        "last_system_access": "2024-09-22 14:30:32.965810"
       },
       "macronutrients": {
-        "Calories": "675kcal",
-        "Carbohydrates": "26g",
-        "Protein": "38g",
-        "Fat": "45g",
-        "Saturated Fat": "20g",
-        "Polyunsaturated Fat": "2g",
-        "Monounsaturated Fat": "17g",
-        "Trans Fat": "2g",
-        "Cholesterol": "149mg",
-        "Sodium": "1540mg",
-        "Potassium": "580mg",
-        "Fiber": "1g",
-        "Sugar": "6g",
-        "Vitamin A": "464IU",
-        "Vitamin C": "2mg",
-        "Calcium": "552mg",
-        "Iron": "5mg"
+        "Calories": {
+          "measure": "675",
+          "unit": "kcal"
+        },
+        "Carbohydrates": {
+          "measure": "26",
+          "unit": "g"
+        },
+        "Protein": {
+          "measure": "38",
+          "unit": "g"
+        },
+        "Fat": {
+          "measure": "45",
+          "unit": "g"
+        },
+        "Saturated Fat": {
+          "measure": "20",
+          "unit": "g"
+        },
+        "Polyunsaturated Fat": {
+          "measure": "2",
+          "unit": "g"
+        },
+        "Monounsaturated Fat": {
+          "measure": "17",
+          "unit": "g"
+        },
+        "Trans Fat": {
+          "measure": "2",
+          "unit": "g"
+        },
+        "Cholesterol": {
+          "measure": "149",
+          "unit": "mg"
+        },
+        "Sodium": {
+          "measure": "1540",
+          "unit": "mg"
+        },
+        "Potassium": {
+          "measure": "580",
+          "unit": "mg"
+        },
+        "Fiber": {
+          "measure": "1",
+          "unit": "g"
+        },
+        "Sugar": {
+          "measure": "6",
+          "unit": "g"
+        },
+        "Vitamin A": {
+          "measure": "464",
+          "unit": "IU"
+        },
+        "Vitamin C": {
+          "measure": "2",
+          "unit": "mg"
+        },
+        "Calcium": {
+          "measure": "552",
+          "unit": "mg"
+        },
+        "Iron": {
+          "measure": "5",
+          "unit": "mg"
+        }
       },
       "food_role": [
         "Main Course"
@@ -930,26 +1023,77 @@
       "recipe_name": "blt-quarter-punder",
       "data_provenance": {
         "source_url": "https://copykat.com/mcdonalds-smoky-blt-quarter-pounder-with-cheese/",
-        "last_system_access": ""
+        "last_system_access": "2024-09-22 14:30:32.965810"
       },
       "macronutrients": {
-        "Calories": "792kcal",
-        "Carbohydrates": "26g",
-        "Protein": "44g",
-        "Fat": "56g",
-        "Saturated Fat": "22g",
-        "Polyunsaturated Fat": "6g",
-        "Monounsaturated Fat": "21g",
-        "Trans Fat": "2g",
-        "Cholesterol": "168mg",
-        "Sodium": "1734mg",
-        "Potassium": "737mg",
-        "Fiber": "2g",
-        "Sugar": "6g",
-        "Vitamin A": "897IU",
-        "Vitamin C": "7mg",
-        "Calcium": "544mg",
-        "Iron": "5mg"
+        "Calories": {
+          "measure": "792",
+          "unit": "kcal"
+        },
+        "Carbohydrates": {
+          "measure": "26",
+          "unit": "g"
+        },
+        "Protein": {
+          "measure": "44",
+          "unit": "g"
+        },
+        "Fat": {
+          "measure": "56",
+          "unit": "g"
+        },
+        "Saturated Fat": {
+          "measure": "22",
+          "unit": "g"
+        },
+        "Polyunsaturated Fat": {
+          "measure": "6",
+          "unit": "g"
+        },
+        "Monounsaturated Fat": {
+          "measure": "21",
+          "unit": "g"
+        },
+        "Trans Fat": {
+          "measure": "2",
+          "unit": "g"
+        },
+        "Cholesterol": {
+          "measure": "168",
+          "unit": "mg"
+        },
+        "Sodium": {
+          "measure": "1734",
+          "unit": "mg"
+        },
+        "Potassium": {
+          "measure": "737",
+          "unit": "mg"
+        },
+        "Fiber": {
+          "measure": "2",
+          "unit": "g"
+        },
+        "Sugar": {
+          "measure": "6",
+          "unit": "g"
+        },
+        "Vitamin A": {
+          "measure": "897",
+          "unit": "IU"
+        },
+        "Vitamin C": {
+          "measure": "7",
+          "unit": "mg"
+        },
+        "Calcium": {
+          "measure": "544",
+          "unit": "mg"
+        },
+        "Iron": {
+          "measure": "5",
+          "unit": "mg"
+        }
       },
       "food_role": [
         "Main Course",
@@ -1352,18 +1496,45 @@
       "recipe_name": "sweet-tea",
       "data_provenance": {
         "source_url": "https://copykat.com/mcdonalds-sweet-tea/",
-        "last_system_access": ""
+        "last_system_access": "2024-09-22 14:30:32.965810"
       },
       "macronutrients": {
-        "Calories": "258kcal",
-        "Carbohydrates": "66g",
-        "Protein": "0g",
-        "Fat": "0g",
-        "Saturated Fat": "0g",
-        "Cholesterol": "0mg",
-        "Sodium": "0mg",
-        "Sugar": "66g",
-        "Iron": "0mg"
+        "Calories": {
+          "measure": "258",
+          "unit": "kcal"
+        },
+        "Carbohydrates": {
+          "measure": "66",
+          "unit": "g"
+        },
+        "Protein": {
+          "measure": "0",
+          "unit": "g"
+        },
+        "Fat": {
+          "measure": "0",
+          "unit": "g"
+        },
+        "Saturated Fat": {
+          "measure": "0",
+          "unit": "g"
+        },
+        "Cholesterol": {
+          "measure": "0",
+          "unit": "mg"
+        },
+        "Sodium": {
+          "measure": "0",
+          "unit": "mg"
+        },
+        "Sugar": {
+          "measure": "66",
+          "unit": "g"
+        },
+        "Iron": {
+          "measure": "0",
+          "unit": "mg"
+        }
       },
       "food_role": [
         "Beverage"
@@ -1570,29 +1741,80 @@
       ]
     },
     "40": {
-      "recipe_name": "McDonald’s Bacon Ranch McCrispy",
+      "recipe_name": "McDonald\u00e2\u20ac\u2122s Bacon Ranch McCrispy",
       "data_provenance": {
         "source_url": "https://copykat.com/mcdonalds-bacon-ranch-mccrispy/",
-        "last_system_access": ""
+        "last_system_access": "2024-09-22 14:30:32.965810"
       },
       "macronutrients": {
-        "Calories": "565kcal",
-        "Carbohydrates": "45g",
-        "Protein": "30g",
-        "Fat": "30g",
-        "Saturated Fat": "9g",
-        "Polyunsaturated Fat": "8g",
-        "Monounsaturated Fat": "10g",
-        "Trans Fat": "0.1g",
-        "Cholesterol": "96mg",
-        "Sodium": "1005mg",
-        "Potassium": "612mg",
-        "Fiber": "3g",
-        "Sugar": "9g",
-        "Vitamin A": "945IU",
-        "Vitamin C": "13mg",
-        "Calcium": "221mg",
-        "Iron": "3mg"
+        "Calories": {
+          "measure": "565",
+          "unit": "kcal"
+        },
+        "Carbohydrates": {
+          "measure": "45",
+          "unit": "g"
+        },
+        "Protein": {
+          "measure": "30",
+          "unit": "g"
+        },
+        "Fat": {
+          "measure": "30",
+          "unit": "g"
+        },
+        "Saturated Fat": {
+          "measure": "9",
+          "unit": "g"
+        },
+        "Polyunsaturated Fat": {
+          "measure": "8",
+          "unit": "g"
+        },
+        "Monounsaturated Fat": {
+          "measure": "10",
+          "unit": "g"
+        },
+        "Trans Fat": {
+          "measure": "0.1",
+          "unit": "g"
+        },
+        "Cholesterol": {
+          "measure": "96",
+          "unit": "mg"
+        },
+        "Sodium": {
+          "measure": "1005",
+          "unit": "mg"
+        },
+        "Potassium": {
+          "measure": "612",
+          "unit": "mg"
+        },
+        "Fiber": {
+          "measure": "3",
+          "unit": "g"
+        },
+        "Sugar": {
+          "measure": "9",
+          "unit": "g"
+        },
+        "Vitamin A": {
+          "measure": "945",
+          "unit": "IU"
+        },
+        "Vitamin C": {
+          "measure": "13",
+          "unit": "mg"
+        },
+        "Calcium": {
+          "measure": "221",
+          "unit": "mg"
+        },
+        "Iron": {
+          "measure": "3",
+          "unit": "mg"
+        }
       },
       "food_role": [
         "Main Course",
@@ -2059,7 +2281,7 @@
           }
         },
         {
-          "original_text": "Pour the vegetable oil into a deep, heavy-bottomed pot until it reaches a depth of 4 inches. Bring the oil to 350°F over medium-high heat.",
+          "original_text": "Pour the vegetable oil into a deep, heavy-bottomed pot until it reaches a depth of 4 inches. Bring the oil to 350\u00c2\u00b0F over medium-high heat.",
           "input_condition": [
             "have_vegetable_oil"
           ],
@@ -2068,7 +2290,7 @@
               "action_name": "Heat vegetable oil",
               "output_quality": [
                 "Vegetable oil should be poured into a deep, heavy-bottomed pot until it reaches a depth of 4 inches.",
-                "Oil should be heated to 350°F over medium-high heat."
+                "Oil should be heated to 350\u00c2\u00b0F over medium-high heat."
               ],
               "background_knowledge": {
                 "tool": [
@@ -2126,7 +2348,7 @@
           }
         },
         {
-          "original_text": "Fry the chicken breasts, 2 at a time, for 7 to 8 minutes, or until the chicken has browned and reaches an internal temperature of 165°F. Drain the chicken on a clean wire rack.",
+          "original_text": "Fry the chicken breasts, 2 at a time, for 7 to 8 minutes, or until the chicken has browned and reaches an internal temperature of 165\u00c2\u00b0F. Drain the chicken on a clean wire rack.",
           "input_condition": [
             "breaded_chicken"
           ],
@@ -2134,7 +2356,7 @@
             {
               "action_name": "Fry the chicken",
               "output_quality": [
-                "Chicken breasts should be fried 2 at a time for 7 to 8 minutes, or until browned and reaches an internal temperature of 165°F.",
+                "Chicken breasts should be fried 2 at a time for 7 to 8 minutes, or until browned and reaches an internal temperature of 165\u00c2\u00b0F.",
                 "Drain the fried chicken on a clean wire rack."
               ],
               "background_knowledge": {
@@ -2262,21 +2484,57 @@
       "recipe_name": "big-mac",
       "data_provenance": {
         "source_url": "https://copykat.com/copycat-mcdonalds-big-mac-recipe/",
-        "last_system_access": ""
+        "last_system_access": "2024-09-22 14:30:32.965810"
       },
       "macronutrients": {
-        "Calories": "445kcal",
-        "Carbohydrates": "1g",
-        "Protein": "27g",
-        "Fat": "36g",
-        "Saturated Fat": "15g",
-        "Cholesterol": "123mg",
-        "Sodium": "720mg",
-        "Potassium": "395mg",
-        "Sugar": "0g",
-        "Vitamin A": "270IU",
-        "Calcium": "244mg",
-        "Iron": "2.8mg"
+        "Calories": {
+          "measure": "445",
+          "unit": "kcal"
+        },
+        "Carbohydrates": {
+          "measure": "1",
+          "unit": "g"
+        },
+        "Protein": {
+          "measure": "27",
+          "unit": "g"
+        },
+        "Fat": {
+          "measure": "36",
+          "unit": "g"
+        },
+        "Saturated Fat": {
+          "measure": "15",
+          "unit": "g"
+        },
+        "Cholesterol": {
+          "measure": "123",
+          "unit": "mg"
+        },
+        "Sodium": {
+          "measure": "720",
+          "unit": "mg"
+        },
+        "Potassium": {
+          "measure": "395",
+          "unit": "mg"
+        },
+        "Sugar": {
+          "measure": "0",
+          "unit": "g"
+        },
+        "Vitamin A": {
+          "measure": "270",
+          "unit": "IU"
+        },
+        "Calcium": {
+          "measure": "244",
+          "unit": "mg"
+        },
+        "Iron": {
+          "measure": "2.8",
+          "unit": "mg"
+        }
       },
       "food_role": [
         "Main Course"
@@ -2496,7 +2754,7 @@
           }
         },
         {
-          "original_text": "Heat a griddle to 350°F. Place the patties on the griddle and cook for 3 to 4 minutes on one side, adding an extra dash of salt and pepper while cooking. Flip the burgers and cook for an additional 3 to 4 minutes, until the juices from the meat run clear.",
+          "original_text": "Heat a griddle to 350\u00c2\u00b0F. Place the patties on the griddle and cook for 3 to 4 minutes on one side, adding an extra dash of salt and pepper while cooking. Flip the burgers and cook for an additional 3 to 4 minutes, until the juices from the meat run clear.",
           "input_condition": [
             "shaped_patties"
           ],
@@ -2504,7 +2762,7 @@
             {
               "action_name": "Cook patties on the griddle",
               "output_quality": [
-                "Cook patties on a preheated griddle at 350°F.",
+                "Cook patties on a preheated griddle at 350\u00c2\u00b0F.",
                 "Cook for 3 to 4 minutes on one side, adding salt and pepper while cooking.",
                 "Flip the burgers and cook for an additional 3 to 4 minutes."
               ],
@@ -2622,23 +2880,65 @@
       "recipe_name": "breakfast-burrito",
       "data_provenance": {
         "source_url": "https://copykat.com/mcdonalds-breakfast-burrito/",
-        "last_system_access": ""
+        "last_system_access": "2024-09-22 14:30:32.965810"
       },
       "macronutrients": {
-        "Calories": "269kcal",
-        "Carbohydrates": "3g",
-        "Protein": "15g",
-        "Fat": "21g",
-        "Saturated Fat": "8g",
-        "Cholesterol": "196mg",
-        "Sodium": "740mg",
-        "Potassium": "255mg",
-        "Fiber": "0g",
-        "Sugar": "1g",
-        "Vitamin A": "485IU",
-        "Vitamin C": "1.9mg",
-        "Calcium": "213mg",
-        "Iron": "1.5mg"
+        "Calories": {
+          "measure": "269",
+          "unit": "kcal"
+        },
+        "Carbohydrates": {
+          "measure": "3",
+          "unit": "g"
+        },
+        "Protein": {
+          "measure": "15",
+          "unit": "g"
+        },
+        "Fat": {
+          "measure": "21",
+          "unit": "g"
+        },
+        "Saturated Fat": {
+          "measure": "8",
+          "unit": "g"
+        },
+        "Cholesterol": {
+          "measure": "196",
+          "unit": "mg"
+        },
+        "Sodium": {
+          "measure": "740",
+          "unit": "mg"
+        },
+        "Potassium": {
+          "measure": "255",
+          "unit": "mg"
+        },
+        "Fiber": {
+          "measure": "0",
+          "unit": "g"
+        },
+        "Sugar": {
+          "measure": "1",
+          "unit": "g"
+        },
+        "Vitamin A": {
+          "measure": "485",
+          "unit": "IU"
+        },
+        "Vitamin C": {
+          "measure": "1.9",
+          "unit": "mg"
+        },
+        "Calcium": {
+          "measure": "213",
+          "unit": "mg"
+        },
+        "Iron": {
+          "measure": "1.5",
+          "unit": "mg"
+        }
       },
       "food_role": [
         "Main Course"
@@ -2971,20 +3271,53 @@
       "recipe_name": "caramel-cappucino",
       "data_provenance": {
         "source_url": "https://copykat.com/mcdonalds-mccafe-caramel-cappuccino/",
-        "last_system_access": ""
+        "last_system_access": "2024-09-22 14:30:32.965810"
       },
       "macronutrients": {
-        "Calories": "212kcal",
-        "Carbohydrates": "29g",
-        "Protein": "5g",
-        "Fat": "8g",
-        "Saturated Fat": "4g",
-        "Cholesterol": "21mg",
-        "Sodium": "129mg",
-        "Potassium": "307mg",
-        "Sugar": "26g",
-        "Vitamin A": "260IU",
-        "Calcium": "179mg"
+        "Calories": {
+          "measure": "212",
+          "unit": "kcal"
+        },
+        "Carbohydrates": {
+          "measure": "29",
+          "unit": "g"
+        },
+        "Protein": {
+          "measure": "5",
+          "unit": "g"
+        },
+        "Fat": {
+          "measure": "8",
+          "unit": "g"
+        },
+        "Saturated Fat": {
+          "measure": "4",
+          "unit": "g"
+        },
+        "Cholesterol": {
+          "measure": "21",
+          "unit": "mg"
+        },
+        "Sodium": {
+          "measure": "129",
+          "unit": "mg"
+        },
+        "Potassium": {
+          "measure": "307",
+          "unit": "mg"
+        },
+        "Sugar": {
+          "measure": "26",
+          "unit": "g"
+        },
+        "Vitamin A": {
+          "measure": "260",
+          "unit": "IU"
+        },
+        "Calcium": {
+          "measure": "179",
+          "unit": "mg"
+        }
       },
       "food_role": [
         "Beverage"
@@ -3273,25 +3606,73 @@
       "recipe_name": "maple-oatmeal",
       "data_provenance": {
         "source_url": "https://copykat.com/mcdonalds-fruit-and-maple-oatmeal/",
-        "last_system_access": ""
+        "last_system_access": "2024-09-22 14:30:32.965810"
       },
       "macronutrients": {
-        "Calories": "348kcal",
-        "Carbohydrates": "70g",
-        "Protein": "8g",
-        "Fat": "6g",
-        "Saturated Fat": "3g",
-        "Polyunsaturated Fat": "1g",
-        "Monounsaturated Fat": "2g",
-        "Cholesterol": "11mg",
-        "Sodium": "617mg",
-        "Potassium": "337mg",
-        "Fiber": "5g",
-        "Sugar": "36g",
-        "Vitamin A": "122IU",
-        "Vitamin C": "2mg",
-        "Calcium": "93mg",
-        "Iron": "2mg"
+        "Calories": {
+          "measure": "348",
+          "unit": "kcal"
+        },
+        "Carbohydrates": {
+          "measure": "70",
+          "unit": "g"
+        },
+        "Protein": {
+          "measure": "8",
+          "unit": "g"
+        },
+        "Fat": {
+          "measure": "6",
+          "unit": "g"
+        },
+        "Saturated Fat": {
+          "measure": "3",
+          "unit": "g"
+        },
+        "Polyunsaturated Fat": {
+          "measure": "1",
+          "unit": "g"
+        },
+        "Monounsaturated Fat": {
+          "measure": "2",
+          "unit": "g"
+        },
+        "Cholesterol": {
+          "measure": "11",
+          "unit": "mg"
+        },
+        "Sodium": {
+          "measure": "617",
+          "unit": "mg"
+        },
+        "Potassium": {
+          "measure": "337",
+          "unit": "mg"
+        },
+        "Fiber": {
+          "measure": "5",
+          "unit": "g"
+        },
+        "Sugar": {
+          "measure": "36",
+          "unit": "g"
+        },
+        "Vitamin A": {
+          "measure": "122",
+          "unit": "IU"
+        },
+        "Vitamin C": {
+          "measure": "2",
+          "unit": "mg"
+        },
+        "Calcium": {
+          "measure": "93",
+          "unit": "mg"
+        },
+        "Iron": {
+          "measure": "2",
+          "unit": "mg"
+        }
       },
       "food_role": [
         "Main Course"
@@ -3590,22 +3971,61 @@
       "recipe_name": "egg-mcmuffin",
       "data_provenance": {
         "source_url": "https://copykat.com/mcdonalds-egg-mcmuffin/",
-        "last_system_access": ""
+        "last_system_access": "2024-09-22 14:30:32.965810"
       },
       "macronutrients": {
-        "Calories": "420kcal",
-        "Carbohydrates": "28g",
-        "Protein": "20g",
-        "Fat": "25g",
-        "Saturated Fat": "13g",
-        "Cholesterol": "229mg",
-        "Sodium": "1037mg",
-        "Potassium": "261mg",
-        "Fiber": "2g",
-        "Sugar": "1g",
-        "Vitamin A": "786IU",
-        "Calcium": "277mg",
-        "Iron": "2mg"
+        "Calories": {
+          "measure": "420",
+          "unit": "kcal"
+        },
+        "Carbohydrates": {
+          "measure": "28",
+          "unit": "g"
+        },
+        "Protein": {
+          "measure": "20",
+          "unit": "g"
+        },
+        "Fat": {
+          "measure": "25",
+          "unit": "g"
+        },
+        "Saturated Fat": {
+          "measure": "13",
+          "unit": "g"
+        },
+        "Cholesterol": {
+          "measure": "229",
+          "unit": "mg"
+        },
+        "Sodium": {
+          "measure": "1037",
+          "unit": "mg"
+        },
+        "Potassium": {
+          "measure": "261",
+          "unit": "mg"
+        },
+        "Fiber": {
+          "measure": "2",
+          "unit": "g"
+        },
+        "Sugar": {
+          "measure": "1",
+          "unit": "g"
+        },
+        "Vitamin A": {
+          "measure": "786",
+          "unit": "IU"
+        },
+        "Calcium": {
+          "measure": "277",
+          "unit": "mg"
+        },
+        "Iron": {
+          "measure": "2",
+          "unit": "mg"
+        }
       },
       "food_role": [
         "Main Course"
@@ -4052,26 +4472,77 @@
       "recipe_name": "mcgriddle",
       "data_provenance": {
         "source_url": "https://copykat.com/mcdonalds-mcgriddle/",
-        "last_system_access": ""
+        "last_system_access": "2024-09-22 14:30:32.965810"
       },
       "macronutrients": {
-        "Calories": "517kcal",
-        "Carbohydrates": "35g",
-        "Protein": "20g",
-        "Fat": "33g",
-        "Saturated Fat": "11g",
-        "Polyunsaturated Fat": "5g",
-        "Monounsaturated Fat": "15g",
-        "Trans Fat": "0.3g",
-        "Cholesterol": "251mg",
-        "Sodium": "1540mg",
-        "Potassium": "298mg",
-        "Fiber": "1g",
-        "Sugar": "1g",
-        "Vitamin A": "609IU",
-        "Vitamin C": "1mg",
-        "Calcium": "358mg",
-        "Iron": "2mg"
+        "Calories": {
+          "measure": "517",
+          "unit": "kcal"
+        },
+        "Carbohydrates": {
+          "measure": "35",
+          "unit": "g"
+        },
+        "Protein": {
+          "measure": "20",
+          "unit": "g"
+        },
+        "Fat": {
+          "measure": "33",
+          "unit": "g"
+        },
+        "Saturated Fat": {
+          "measure": "11",
+          "unit": "g"
+        },
+        "Polyunsaturated Fat": {
+          "measure": "5",
+          "unit": "g"
+        },
+        "Monounsaturated Fat": {
+          "measure": "15",
+          "unit": "g"
+        },
+        "Trans Fat": {
+          "measure": "0.3",
+          "unit": "g"
+        },
+        "Cholesterol": {
+          "measure": "251",
+          "unit": "mg"
+        },
+        "Sodium": {
+          "measure": "1540",
+          "unit": "mg"
+        },
+        "Potassium": {
+          "measure": "298",
+          "unit": "mg"
+        },
+        "Fiber": {
+          "measure": "1",
+          "unit": "g"
+        },
+        "Sugar": {
+          "measure": "1",
+          "unit": "g"
+        },
+        "Vitamin A": {
+          "measure": "609",
+          "unit": "IU"
+        },
+        "Vitamin C": {
+          "measure": "1",
+          "unit": "mg"
+        },
+        "Calcium": {
+          "measure": "358",
+          "unit": "mg"
+        },
+        "Iron": {
+          "measure": "2",
+          "unit": "mg"
+        }
       },
       "food_role": [
         "Main Course"
@@ -4080,7 +4551,7 @@
         {
           "name": "pancake mix",
           "quantity": {
-            "measure": "1 ½",
+            "measure": "1 \u00c2\u00bd",
             "unit": "cups"
           },
           "allergies": {
@@ -4112,7 +4583,7 @@
         {
           "name": "pancake syrup",
           "quantity": {
-            "measure": "⅓",
+            "measure": "\u00e2\u2026\u201c",
             "unit": "cup"
           },
           "allergies": {

@@ -4,26 +4,77 @@
       "recipe_name": "cheesy-gordita-crunch-copycat",
       "data_provenance": {
         "source_url": "https://kitchendivas.com/taco-bell-cheesy-gordita-crunch/",
-        "last_system_access": ""
+        "last_system_access": "2024-09-22 14:30:32.965810"
       },
       "macronutrients": {
-        "Calories": "456kcal",
-        "Carbohydrates": "3g",
-        "Protein": "23g",
-        "Fat": "39g",
-        "Saturated Fat": "17g",
-        "Polyunsaturated Fat": "5g",
-        "Monounsaturated Fat": "13g",
-        "Trans Fat": "1g",
-        "Cholesterol": "107mg",
-        "Sodium": "523mg",
-        "Potassium": "369mg",
-        "Fiber": "1g",
-        "Sugar": "2g",
-        "Vitamin A": "935IU",
-        "Vitamin C": "5mg",
-        "Calcium": "321mg",
-        "Iron": "2mg"
+        "Calories": {
+          "measure": "456",
+          "unit": "kcal"
+        },
+        "Carbohydrates": {
+          "measure": "3",
+          "unit": "g"
+        },
+        "Protein": {
+          "measure": "23",
+          "unit": "g"
+        },
+        "Fat": {
+          "measure": "39",
+          "unit": "g"
+        },
+        "Saturated Fat": {
+          "measure": "17",
+          "unit": "g"
+        },
+        "Polyunsaturated Fat": {
+          "measure": "5",
+          "unit": "g"
+        },
+        "Monounsaturated Fat": {
+          "measure": "13",
+          "unit": "g"
+        },
+        "Trans Fat": {
+          "measure": "1",
+          "unit": "g"
+        },
+        "Cholesterol": {
+          "measure": "107",
+          "unit": "mg"
+        },
+        "Sodium": {
+          "measure": "523",
+          "unit": "mg"
+        },
+        "Potassium": {
+          "measure": "369",
+          "unit": "mg"
+        },
+        "Fiber": {
+          "measure": "1",
+          "unit": "g"
+        },
+        "Sugar": {
+          "measure": "2",
+          "unit": "g"
+        },
+        "Vitamin A": {
+          "measure": "935",
+          "unit": "IU"
+        },
+        "Vitamin C": {
+          "measure": "5",
+          "unit": "mg"
+        },
+        "Calcium": {
+          "measure": "321",
+          "unit": "mg"
+        },
+        "Iron": {
+          "measure": "2",
+          "unit": "mg"
+        }
       },
       "food_role": [
         "Main Course"
@@ -193,7 +244,7 @@
         {
           "ingredient_name": "smoked paprika",
           "quantity": {
-            "measure": "½",
+            "measure": "\u00c2\u00bd",
             "unit": "teaspoon"
           },
           "allergies": {
@@ -209,7 +260,7 @@
         {
           "ingredient_name": "coriander",
           "quantity": {
-            "measure": "½",
+            "measure": "\u00c2\u00bd",
             "unit": "teaspoon"
           },
           "allergies": {
@@ -225,7 +276,7 @@
         {
           "ingredient_name": "garlic powder",
           "quantity": {
-            "measure": "½",
+            "measure": "\u00c2\u00bd",
             "unit": "teaspoon"
           },
           "allergies": {
@@ -241,7 +292,7 @@
         {
           "ingredient_name": "minced onion",
           "quantity": {
-            "measure": "½",
+            "measure": "\u00c2\u00bd",
             "unit": "teaspoon"
           },
           "allergies": {
@@ -257,7 +308,7 @@
         {
           "ingredient_name": "sugar",
           "quantity": {
-            "measure": "¼",
+            "measure": "\u00c2\u00bc",
             "unit": "teaspoon"
           },
           "allergies": {
@@ -273,7 +324,7 @@
         {
           "ingredient_name": "sour cream",
           "quantity": {
-            "measure": "½",
+            "measure": "\u00c2\u00bd",
             "unit": "cup"
           },
           "allergies": {
@@ -293,7 +344,7 @@
         {
           "ingredient_name": "mayonnaise",
           "quantity": {
-            "measure": "¼",
+            "measure": "\u00c2\u00bc",
             "unit": "cup"
           },
           "allergies": {
@@ -329,7 +380,7 @@
         {
           "ingredient_name": "garlic powder",
           "quantity": {
-            "measure": "½",
+            "measure": "\u00c2\u00bd",
             "unit": "teaspoon"
           },
           "allergies": {
@@ -361,7 +412,7 @@
         {
           "ingredient_name": "black pepper",
           "quantity": {
-            "measure": "¼",
+            "measure": "\u00c2\u00bc",
             "unit": "teaspoon"
           },
           "allergies": {
@@ -377,7 +428,7 @@
         {
           "ingredient_name": "onion powder",
           "quantity": {
-            "measure": "¼",
+            "measure": "\u00c2\u00bc",
             "unit": "teaspoon"
           },
           "allergies": {
@@ -393,7 +444,7 @@
         {
           "ingredient_name": "dried parsley",
           "quantity": {
-            "measure": "¼",
+            "measure": "\u00c2\u00bc",
             "unit": "teaspoon"
           },
           "allergies": {
@@ -409,7 +460,7 @@
         {
           "ingredient_name": "kosher salt",
           "quantity": {
-            "measure": "¼",
+            "measure": "\u00c2\u00bc",
             "unit": "teaspoon"
           },
           "allergies": {
@@ -687,23 +738,65 @@
       "recipe_name": "crunchwrap-supreme-copycat",
       "data_provenance": {
         "source_url": "https://www.spendwithpennies.com/copycat-crunchwrap-supreme/",
-        "last_system_access": ""
+        "last_system_access": "2024-09-22 14:30:32.965810"
       },
       "macronutrients": {
-        "Calories": "799kcal",
-        "Carbohydrates": "38g",
-        "Protein": "41g",
-        "Fat": "54g",
-        "Saturated Fat": "24g",
-        "Cholesterol": "154mg",
-        "Sodium": "1341mg",
-        "Potassium": "646mg",
-        "Fiber": "3g",
-        "Sugar": "7g",
-        "Vitamin A": "1396IU",
-        "Vitamin C": "7mg",
-        "Calcium": "516mg",
-        "Iron": "5mg"
+        "Calories": {
+          "measure": "799",
+          "unit": "kcal"
+        },
+        "Carbohydrates": {
+          "measure": "38",
+          "unit": "g"
+        },
+        "Protein": {
+          "measure": "41",
+          "unit": "g"
+        },
+        "Fat": {
+          "measure": "54",
+          "unit": "g"
+        },
+        "Saturated Fat": {
+          "measure": "24",
+          "unit": "g"
+        },
+        "Cholesterol": {
+          "measure": "154",
+          "unit": "mg"
+        },
+        "Sodium": {
+          "measure": "1341",
+          "unit": "mg"
+        },
+        "Potassium": {
+          "measure": "646",
+          "unit": "mg"
+        },
+        "Fiber": {
+          "measure": "3",
+          "unit": "g"
+        },
+        "Sugar": {
+          "measure": "7",
+          "unit": "g"
+        },
+        "Vitamin A": {
+          "measure": "1396",
+          "unit": "IU"
+        },
+        "Vitamin C": {
+          "measure": "7",
+          "unit": "mg"
+        },
+        "Calcium": {
+          "measure": "516",
+          "unit": "mg"
+        },
+        "Iron": {
+          "measure": "5",
+          "unit": "mg"
+        }
       },
       "food_role": [
         "Main Course"
@@ -1038,7 +1131,7 @@
           }
         },
         {
-          "original_text": "Add ⅓ cup of water and taco seasoning to the skillet.",
+          "original_text": "Add \u00e2\u2026\u201c cup of water and taco seasoning to the skillet.",
           "input_condition": [
             "have_water",
             "have_chill_powder",
@@ -1200,7 +1293,7 @@
           }
         },
         {
-          "original_text": "Add ¼ cup ground beef to the center of each tortilla. Top with cheese sauce. Add tostada shell, sour cream, lettuce, tomato, and cheese blend.",
+          "original_text": "Add \u00c2\u00bc cup ground beef to the center of each tortilla. Top with cheese sauce. Add tostada shell, sour cream, lettuce, tomato, and cheese blend.",
           "input_condition": [
             "have_cooked_ground_beef",
             "have_tortillas",
@@ -1213,7 +1306,7 @@
           ],
           "tasks": [
             {
-              "action_name": "Add ¼ cup ground beef to the center of each tortilla.",
+              "action_name": "Add \u00c2\u00bc cup ground beef to the center of each tortilla.",
               "output_quality": [
                 "Warm flour tortillas should have beef in center"
               ],
@@ -1377,20 +1470,53 @@
       "recipe_name": "quesadilla-copycat",
       "data_provenance": {
         "source_url": "https://cookingwithjanica.com/copycat-taco-bell-quesadilla-recipe/",
-        "last_system_access": ""
+        "last_system_access": "2024-09-22 14:30:32.965810"
       },
       "macronutrients": {
-        "Calories": "470kcal",
-        "Calories from Fat": "230kcal",
-        "Total Fat": "25g",
-        "Saturated Fat": "12g",
-        "Trans Fat": "0.5g",
-        "Cholesterol": "50mg",
-        "Sodium": "990mg",
-        "Carbohydrates": "37g",
-        "Fiber": "4g",
-        "Sugars": "2g",
-        "Protein": "19g"
+        "Calories": {
+          "measure": "470",
+          "unit": "kcal"
+        },
+        "Calories from Fat": {
+          "measure": "230",
+          "unit": "kcal"
+        },
+        "Saturated Fat": {
+          "measure": "12",
+          "unit": "g"
+        },
+        "Trans Fat": {
+          "measure": "0.5",
+          "unit": "g"
+        },
+        "Cholesterol": {
+          "measure": "50",
+          "unit": "mg"
+        },
+        "Sodium": {
+          "measure": "990",
+          "unit": "mg"
+        },
+        "Carbohydrates": {
+          "measure": "37",
+          "unit": "g"
+        },
+        "Fiber": {
+          "measure": "4",
+          "unit": "g"
+        },
+        "Protein": {
+          "measure": "19",
+          "unit": "g"
+        },
+        "Sugar": {
+          "measure": "2",
+          "unit": "g"
+        },
+        "Fat": {
+          "measure": "25",
+          "unit": "g"
+        }
       },
       "food_role": [
         "Main Course",
@@ -1762,18 +1888,45 @@
       "recipe_name": "bean-burrito-copycat",
       "data_provenance": {
         "source_url": "https://www.shelikesfood.com/copycat-taco-bell-bean-burrito-recipe/",
-        "last_system_access": ""
+        "last_system_access": "2024-09-22 14:30:32.965810"
       },
       "macronutrients": {
-        "Calories": "619kcal",
-        "Total Fat": "10.1g",
-        "Cholesterol": "18.8mg",
-        "Sodium": "556.4mg",
-        "Total Carbohydrate": "109.1g",
-        "Sugars": "3.2g",
-        "Protein": "20.2g",
-        "Vitamin A": "7%",
-        "Vitamin C": "1%"
+        "Calories": {
+          "measure": "619",
+          "unit": "kcal"
+        },
+        "Cholesterol": {
+          "measure": "18.8",
+          "unit": "mg"
+        },
+        "Sodium": {
+          "measure": "556.4",
+          "unit": "mg"
+        },
+        "Protein": {
+          "measure": "20.2",
+          "unit": "g"
+        },
+        "Vitamin A": {
+          "measure": "7",
+          "unit": "% dv"
+        },
+        "Vitamin C": {
+          "measure": "1",
+          "unit": "% dv"
+        },
+        "Carbohydrates": {
+          "measure": "109.1",
+          "unit": "g"
+        },
+        "Sugar": {
+          "measure": "3.2",
+          "unit": "g"
+        },
+        "Fat": {
+          "measure": "10.1",
+          "unit": "g"
+        }
       },
       "food_role": [
         "Main Course"
@@ -1995,7 +2148,7 @@
           }
         },
         {
-          "original_text": "Heat a large pan over medium heat and add your flour tortilla. You don’t need to use any cooking spray for this, you just want to heat the tortilla. Heat tortilla on both sides until hot. Remove tortilla from the pan and place on a plate or cutting board.",
+          "original_text": "Heat a large pan over medium heat and add your flour tortilla. You don\u00e2\u20ac\u2122t need to use any cooking spray for this, you just want to heat the tortilla. Heat tortilla on both sides until hot. Remove tortilla from the pan and place on a plate or cutting board.",
           "input_condition": [
             "have_large_pan",
             "have_flour_tortilla"
@@ -2076,7 +2229,7 @@
           }
         },
         {
-          "original_text": "If you want your cheese to be more melty, it’s important to move quickly while assembling your bean and cheese burrito so there isn’t much time for the refried beans or the tortilla to cool down.",
+          "original_text": "If you want your cheese to be more melty, it\u00e2\u20ac\u2122s important to move quickly while assembling your bean and cheese burrito so there isn\u00e2\u20ac\u2122t much time for the refried beans or the tortilla to cool down.",
           "input_condition": [
             "have_refried_beans",
             "have_flour_tortilla",
@@ -2177,26 +2330,77 @@
       "recipe_name": "black-bean-chalupa-copycat",
       "data_provenance": {
         "source_url": "https://ministryofcurry.com/black-bean-chalupas/",
-        "last_system_access": ""
+        "last_system_access": "2024-09-22 14:30:32.965810"
       },
       "macronutrients": {
-        "Calories": "257kcal",
-        "Carbohydrates": "15g",
-        "Protein": "7g",
-        "Fat": "19g",
-        "Saturated Fat": "4g",
-        "Polyunsaturated Fat": "9g",
-        "Monounsaturated Fat": "5g",
-        "Trans Fat": "1g",
-        "Cholesterol": "17mg",
-        "Sodium": "417mg",
-        "Potassium": "297mg",
-        "Fiber": "5g",
-        "Sugar": "3g",
-        "Vitamin A": "825IU",
-        "Vitamin C": "24mg",
-        "Calcium": "88mg",
-        "Iron": "1mg"
+        "Calories": {
+          "measure": "257",
+          "unit": "kcal"
+        },
+        "Carbohydrates": {
+          "measure": "15",
+          "unit": "g"
+        },
+        "Protein": {
+          "measure": "7",
+          "unit": "g"
+        },
+        "Fat": {
+          "measure": "19",
+          "unit": "g"
+        },
+        "Saturated Fat": {
+          "measure": "4",
+          "unit": "g"
+        },
+        "Polyunsaturated Fat": {
+          "measure": "9",
+          "unit": "g"
+        },
+        "Monounsaturated Fat": {
+          "measure": "5",
+          "unit": "g"
+        },
+        "Trans Fat": {
+          "measure": "1",
+          "unit": "g"
+        },
+        "Cholesterol": {
+          "measure": "17",
+          "unit": "mg"
+        },
+        "Sodium": {
+          "measure": "417",
+          "unit": "mg"
+        },
+        "Potassium": {
+          "measure": "297",
+          "unit": "mg"
+        },
+        "Fiber": {
+          "measure": "5",
+          "unit": "g"
+        },
+        "Sugar": {
+          "measure": "3",
+          "unit": "g"
+        },
+        "Vitamin A": {
+          "measure": "825",
+          "unit": "IU"
+        },
+        "Vitamin C": {
+          "measure": "24",
+          "unit": "mg"
+        },
+        "Calcium": {
+          "measure": "88",
+          "unit": "mg"
+        },
+        "Iron": {
+          "measure": "1",
+          "unit": "mg"
+        }
       },
       "food_role": [
         "Main Course"
@@ -2221,7 +2425,7 @@
         {
           "name": "yellow onion",
           "quantity": {
-            "measure": "½",
+            "measure": "\u00c2\u00bd",
             "unit": "cup"
           },
           "allergies": {
@@ -2237,7 +2441,7 @@
         {
           "name": "red pepper",
           "quantity": {
-            "measure": "½",
+            "measure": "\u00c2\u00bd",
             "unit": "cup"
           },
           "allergies": {
@@ -2301,7 +2505,7 @@
         {
           "name": "kosher salt",
           "quantity": {
-            "measure": "½",
+            "measure": "\u00c2\u00bd",
             "unit": "teaspoon"
           },
           "allergies": {
@@ -2337,7 +2541,7 @@
         {
           "name": "cilantro",
           "quantity": {
-            "measure": "¼",
+            "measure": "\u00c2\u00bc",
             "unit": "cup"
           },
           "allergies": {
@@ -2353,7 +2557,7 @@
         {
           "name": "mayonnaise",
           "quantity": {
-            "measure": "½",
+            "measure": "\u00c2\u00bd",
             "unit": "cup"
           },
           "allergies": {
@@ -2389,7 +2593,7 @@
         {
           "name": "white vinegar",
           "quantity": {
-            "measure": "½",
+            "measure": "\u00c2\u00bd",
             "unit": "tablespoon"
           },
           "allergies": {
@@ -2405,7 +2609,7 @@
         {
           "name": "black pepper",
           "quantity": {
-            "measure": "¼",
+            "measure": "\u00c2\u00bc",
             "unit": "teaspoon"
           },
           "allergies": {
@@ -2421,7 +2625,7 @@
         {
           "name": "ground cumin",
           "quantity": {
-            "measure": "¼",
+            "measure": "\u00c2\u00bc",
             "unit": "teaspoon"
           },
           "allergies": {
@@ -2437,7 +2641,7 @@
         {
           "name": "onion powder",
           "quantity": {
-            "measure": "¼",
+            "measure": "\u00c2\u00bc",
             "unit": "teaspoon"
           },
           "allergies": {
@@ -2453,7 +2657,7 @@
         {
           "name": "red chili powder",
           "quantity": {
-            "measure": "¼",
+            "measure": "\u00c2\u00bc",
             "unit": "teaspoon"
           },
           "allergies": {
@@ -2501,7 +2705,7 @@
         {
           "name": "tomatoes",
           "quantity": {
-            "measure": "½",
+            "measure": "\u00c2\u00bd",
             "unit": "cup"
           },
           "allergies": {
@@ -2517,7 +2721,7 @@
         {
           "name": "red onion",
           "quantity": {
-            "measure": "¼",
+            "measure": "\u00c2\u00bc",
             "unit": "cup"
           },
           "allergies": {
@@ -2533,7 +2737,7 @@
         {
           "name": "shredded Mexican cheese",
           "quantity": {
-            "measure": "½",
+            "measure": "\u00c2\u00bd",
             "unit": "cup"
           },
           "allergies": {
@@ -2776,7 +2980,7 @@
           }
         },
         {
-          "original_text": "Take one of the folded parathas and evenly spread about ¼ cup of bean filling in the middle. Spread lettuce, tomatoes, onions, and cheese on top. Drizzle 1 to 2 tablespoons of sauce on top and serve.",
+          "original_text": "Take one of the folded parathas and evenly spread about \u00c2\u00bc cup of bean filling in the middle. Spread lettuce, tomatoes, onions, and cheese on top. Drizzle 1 to 2 tablespoons of sauce on top and serve.",
           "input_condition": [
             "have_folded_paratha",
             "have_prepared_black_bean_filling",
@@ -2838,23 +3042,65 @@
       "recipe_name": "crunchy-taco",
       "data_provenance": {
         "source_url": "https://copykat.com/taco-bell-taco/",
-        "last_system_access": ""
+        "last_system_access": "2024-09-22 14:30:32.965810"
       },
       "macronutrients": {
-        "Calories": "236kcal",
-        "Carbohydrates": "10g",
-        "Protein": "12g",
-        "Fat": "15g",
-        "Saturated Fat": "6g",
-        "Cholesterol": "45mg",
-        "Sodium": "352mg",
-        "Potassium": "247mg",
-        "Fiber": "1g",
-        "Sugar": "1g",
-        "Vitamin A": "555IU",
-        "Vitamin C": "2.1mg",
-        "Calcium": "98mg",
-        "Iron": "1.6mg"
+        "Calories": {
+          "measure": "236",
+          "unit": "kcal"
+        },
+        "Carbohydrates": {
+          "measure": "10",
+          "unit": "g"
+        },
+        "Protein": {
+          "measure": "12",
+          "unit": "g"
+        },
+        "Fat": {
+          "measure": "15",
+          "unit": "g"
+        },
+        "Saturated Fat": {
+          "measure": "6",
+          "unit": "g"
+        },
+        "Cholesterol": {
+          "measure": "45",
+          "unit": "mg"
+        },
+        "Sodium": {
+          "measure": "352",
+          "unit": "mg"
+        },
+        "Potassium": {
+          "measure": "247",
+          "unit": "mg"
+        },
+        "Fiber": {
+          "measure": "1",
+          "unit": "g"
+        },
+        "Sugar": {
+          "measure": "1",
+          "unit": "g"
+        },
+        "Vitamin A": {
+          "measure": "555",
+          "unit": "IU"
+        },
+        "Vitamin C": {
+          "measure": "2.1",
+          "unit": "mg"
+        },
+        "Calcium": {
+          "measure": "98",
+          "unit": "mg"
+        },
+        "Iron": {
+          "measure": "1.6",
+          "unit": "mg"
+        }
       },
       "food_role": [
         "Main Course"
@@ -3405,26 +3651,77 @@
       "recipe_name": "soft-taco-beef",
       "data_provenance": {
         "source_url": "https://copykat.com/taco-bell-soft-taco/",
-        "last_system_access": ""
+        "last_system_access": "2024-09-22 14:30:32.965810"
       },
       "macronutrients": {
-        "Calories": "265kcal",
-        "Carbohydrates": "15g",
-        "Protein": "13g",
-        "Fat": "17g",
-        "Saturated Fat": "8g",
-        "Polyunsaturated Fat": "1g",
-        "Monounsaturated Fat": "6g",
-        "Trans Fat": "1g",
-        "Cholesterol": "53mg",
-        "Sodium": "346mg",
-        "Potassium": "300mg",
-        "Fiber": "2g",
-        "Sugar": "2g",
-        "Vitamin A": "650IU",
-        "Vitamin C": "3mg",
-        "Calcium": "125mg",
-        "Iron": "2mg"
+        "Calories": {
+          "measure": "265",
+          "unit": "kcal"
+        },
+        "Carbohydrates": {
+          "measure": "15",
+          "unit": "g"
+        },
+        "Protein": {
+          "measure": "13",
+          "unit": "g"
+        },
+        "Fat": {
+          "measure": "17",
+          "unit": "g"
+        },
+        "Saturated Fat": {
+          "measure": "8",
+          "unit": "g"
+        },
+        "Polyunsaturated Fat": {
+          "measure": "1",
+          "unit": "g"
+        },
+        "Monounsaturated Fat": {
+          "measure": "6",
+          "unit": "g"
+        },
+        "Trans Fat": {
+          "measure": "1",
+          "unit": "g"
+        },
+        "Cholesterol": {
+          "measure": "53",
+          "unit": "mg"
+        },
+        "Sodium": {
+          "measure": "346",
+          "unit": "mg"
+        },
+        "Potassium": {
+          "measure": "300",
+          "unit": "mg"
+        },
+        "Fiber": {
+          "measure": "2",
+          "unit": "g"
+        },
+        "Sugar": {
+          "measure": "2",
+          "unit": "g"
+        },
+        "Vitamin A": {
+          "measure": "650",
+          "unit": "IU"
+        },
+        "Vitamin C": {
+          "measure": "3",
+          "unit": "mg"
+        },
+        "Calcium": {
+          "measure": "125",
+          "unit": "mg"
+        },
+        "Iron": {
+          "measure": "2",
+          "unit": "mg"
+        }
       },
       "food_role": [
         "Main Course"
@@ -4248,20 +4545,53 @@
       "recipe_name": "nacho-bell-grande-beef",
       "data_provenance": {
         "source_url": "https://wedishitup.com/2530/copy-cat-nacho-bell-grande/",
-        "last_system_access": ""
+        "last_system_access": "2024-09-22 14:30:32.965810"
       },
       "macronutrients": {
-        "Calories": "740kcal",
-        "Calories from Fat": "340kcal",
-        "Total Fat": "38g",
-        "Saturated Fat": "7g",
-        "Trans Fat": "0g",
-        "Cholesterol": "25mg",
-        "Sodium": "1050mg",
-        "Carbohydrates": "82g",
-        "Fiber": "15g",
-        "Sugars": "5g",
-        "Protein": "16g"
+        "Calories": {
+          "measure": "740",
+          "unit": "kcal"
+        },
+        "Calories from Fat": {
+          "measure": "340",
+          "unit": "kcal"
+        },
+        "Saturated Fat": {
+          "measure": "7",
+          "unit": "g"
+        },
+        "Trans Fat": {
+          "measure": "0",
+          "unit": "g"
+        },
+        "Cholesterol": {
+          "measure": "25",
+          "unit": "mg"
+        },
+        "Sodium": {
+          "measure": "1050",
+          "unit": "mg"
+        },
+        "Carbohydrates": {
+          "measure": "82",
+          "unit": "g"
+        },
+        "Fiber": {
+          "measure": "15",
+          "unit": "g"
+        },
+        "Protein": {
+          "measure": "16",
+          "unit": "g"
+        },
+        "Sugar": {
+          "measure": "5",
+          "unit": "g"
+        },
+        "Fat": {
+          "measure": "38",
+          "unit": "g"
+        }
       },
       "food_role": [
         "Main Course"
@@ -4722,26 +5052,77 @@
       "recipe_name": "veggie-power-bowl",
       "data_provenance": {
         "source_url": "https://ameessavorydish.com/roasted-vegetable-power-bowl-with-creamy-avocado-dressing-thereciperedux/",
-        "last_system_access": ""
+        "last_system_access": "2024-09-22 14:30:32.965810"
       },
       "macronutrients": {
-        "Calories": "484kcal",
-        "Carbohydrates": "55g",
-        "Protein": "22g",
-        "Fat": "21g",
-        "Saturated Fat": "7g",
-        "Polyunsaturated Fat": "2g",
-        "Monounsaturated Fat": "9g",
-        "Trans Fat": "0.01g",
-        "Cholesterol": "35mg",
-        "Sodium": "1343mg",
-        "Potassium": "1104mg",
-        "Fiber": "12g",
-        "Sugar": "8g",
-        "Vitamin A": "1653IU",
-        "Vitamin C": "27mg",
-        "Calcium": "369mg",
-        "Iron": "4mg"
+        "Calories": {
+          "measure": "484",
+          "unit": "kcal"
+        },
+        "Carbohydrates": {
+          "measure": "55",
+          "unit": "g"
+        },
+        "Protein": {
+          "measure": "22",
+          "unit": "g"
+        },
+        "Fat": {
+          "measure": "21",
+          "unit": "g"
+        },
+        "Saturated Fat": {
+          "measure": "7",
+          "unit": "g"
+        },
+        "Polyunsaturated Fat": {
+          "measure": "2",
+          "unit": "g"
+        },
+        "Monounsaturated Fat": {
+          "measure": "9",
+          "unit": "g"
+        },
+        "Trans Fat": {
+          "measure": "0.01",
+          "unit": "g"
+        },
+        "Cholesterol": {
+          "measure": "35",
+          "unit": "mg"
+        },
+        "Sodium": {
+          "measure": "1343",
+          "unit": "mg"
+        },
+        "Potassium": {
+          "measure": "1104",
+          "unit": "mg"
+        },
+        "Fiber": {
+          "measure": "12",
+          "unit": "g"
+        },
+        "Sugar": {
+          "measure": "8",
+          "unit": "g"
+        },
+        "Vitamin A": {
+          "measure": "1653",
+          "unit": "IU"
+        },
+        "Vitamin C": {
+          "measure": "27",
+          "unit": "mg"
+        },
+        "Calcium": {
+          "measure": "369",
+          "unit": "mg"
+        },
+        "Iron": {
+          "measure": "4",
+          "unit": "mg"
+        }
       },
       "food_role": [
         "Main Course"
@@ -4838,7 +5219,7 @@
         {
           "name": "avocado",
           "quantity": {
-            "measure": "½",
+            "measure": "\u00c2\u00bd",
             "unit": ""
           },
           "allergies": {
@@ -4874,7 +5255,7 @@
         {
           "name": "ripe avocado",
           "quantity": {
-            "measure": "½",
+            "measure": "\u00c2\u00bd",
             "unit": ""
           },
           "allergies": {
@@ -4890,7 +5271,7 @@
         {
           "name": "plain non-fat Greek yogurt",
           "quantity": {
-            "measure": "½",
+            "measure": "\u00c2\u00bd",
             "unit": "cup"
           },
           "allergies": {
@@ -4956,7 +5337,7 @@
           "image": ""
         },
         {
-          "name": "pickled jalapeños",
+          "name": "pickled jalape\u00c3\u00b1os",
           "quantity": {
             "measure": "",
             "unit": "Optional"
@@ -5168,16 +5549,37 @@
       "recipe_name": "cheesy-bean-rice-burrito",
       "data_provenance": {
         "source_url": "https://meganvskitchen.com/cheesy-bean-and-rice-burrito/",
-        "last_system_access": ""
+        "last_system_access": "2024-09-22 14:30:32.965810"
       },
       "macronutrients": {
-        "Calories": "385kcal",
-        "Carbohydrates": "51g",
-        "Protein": "13.4g",
-        "Fat": "15.1g",
-        "Saturated Fat": "6.9g",
-        "Fiber": "3.2g",
-        "Sugar": "2.1g"
+        "Calories": {
+          "measure": "385",
+          "unit": "kcal"
+        },
+        "Carbohydrates": {
+          "measure": "51",
+          "unit": "g"
+        },
+        "Protein": {
+          "measure": "13.4",
+          "unit": "g"
+        },
+        "Fat": {
+          "measure": "15.1",
+          "unit": "g"
+        },
+        "Saturated Fat": {
+          "measure": "6.9",
+          "unit": "g"
+        },
+        "Fiber": {
+          "measure": "3.2",
+          "unit": "g"
+        },
+        "Sugar": {
+          "measure": "2.1",
+          "unit": "g"
+        }
       },
       "food_role": [
         "Main Course"
@@ -5186,7 +5588,7 @@
         {
           "name": "sour cream",
           "quantity": {
-            "measure": "¼",
+            "measure": "\u00c2\u00bc",
             "unit": "cup"
           },
           "allergies": {
@@ -5206,7 +5608,7 @@
         {
           "name": "mayonnaise",
           "quantity": {
-            "measure": "¼",
+            "measure": "\u00c2\u00bc",
             "unit": "cup"
           },
           "allergies": {
@@ -5290,7 +5692,7 @@
         {
           "name": "garlic powder",
           "quantity": {
-            "measure": "½",
+            "measure": "\u00c2\u00bd",
             "unit": "teaspoon"
           },
           "allergies": {
@@ -5306,7 +5708,7 @@
         {
           "name": "onion powder",
           "quantity": {
-            "measure": "½",
+            "measure": "\u00c2\u00bd",
             "unit": "teaspoon"
           },
           "allergies": {
@@ -5322,7 +5724,7 @@
         {
           "name": "chipotle chili powder or regular chili powder",
           "quantity": {
-            "measure": "½",
+            "measure": "\u00c2\u00bd",
             "unit": "teaspoon"
           },
           "allergies": {
@@ -5374,7 +5776,7 @@
           }
         },
         {
-          "original_text": "Lay a tortilla flat, spread ¼ cup of refried beans, ⅓ cup of Spanish rice, ¼ cup of Mexican cheese, and ½ tablespoon* of jalapeno sauce down the middle. Roll into a burrito.",
+          "original_text": "Lay a tortilla flat, spread \u00c2\u00bc cup of refried beans, \u00e2\u2026\u201c cup of Spanish rice, \u00c2\u00bc cup of Mexican cheese, and \u00c2\u00bd tablespoon* of jalapeno sauce down the middle. Roll into a burrito.",
           "input_condition": [
             "have_tortilla",
             "have_refried_beans",
