@@ -73,12 +73,12 @@ class MealRecommender:
 
         with open(f'../items_data/mcdonalds.json', 'r') as file:
             mcd_recipes = json.load(file)
-            recipes = recipes | mcd_recipes['recipe-ids']
+            recipes.update(mcd_recipes['recipe-ids'])
 
         # Read R3 dataset
         with open('../items_data/recipe_repn.json', 'r') as file:
             orig_r3_recipes = json.load(file)
-            recipes = recipes | orig_r3_recipes['recipe-ids']
+            recipes.update(orig_r3_recipes['recipe-ids'])
 
         # Read Beverages dataset
         with open('../items_data/beverages.json', 'r') as file:

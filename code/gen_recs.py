@@ -40,7 +40,7 @@ import statistics
 import csv
 
 
-def load_r3():
+def load_r3() -> tuple[dict, dict, dict, dict]:
     # Loading data
     beverages = json.load(open('../items_data/beverages.json'))
     beverages = beverages['beverage_ids']
@@ -58,8 +58,10 @@ def load_r3():
 
 
 def get_highest_prob_foods(items_probs, num_users):
-    beverages_r3, mcdonalds, taco_bell, treat_data = load_r3()
-    food_r3 = mcdonalds | taco_bell | treat_data
+    _, mcdonalds, taco_bell, treat_data = load_r3()
+    food_r3 = taco_bell.copy()
+    food_r3.update(treat_data)
+    food_r3.update(mcdonalds)
 
     user_items = {i: {'Main Course': [], 'Side': [], 'Dessert': []}
                   for i in range(1, num_users + 1)}
@@ -220,7 +222,9 @@ def gen_random_recs(trial_num, num_users):
 
 def gen_sequential_recs(trial_num, num_users):
     beverages, mcdonalds, taco_bell, treat_data = load_r3()
-    food_items = mcdonalds | taco_bell | treat_data
+    food_items = mcdonalds.copy()
+    food_items.update(taco_bell)
+    food_items.update(treat_data)
 
     beverages = list(beverages.keys())
     food_items = list(food_items.keys())
@@ -300,7 +304,7 @@ def evaluate_recs(goodness_scores, file_path):
                     "score_dm_mc": statistics.mean([avg_duplicate_meal_score, avg_meal_coverage_score]),
                     "score_dd (n/a)": avg_duplicate_day_score}
 
-    goodness_scores |= summary_dict
+    goodness_scores.update(summary_dict)
 
     with open(file_path, 'w') as file:
         json.dump(goodness_scores, file)
