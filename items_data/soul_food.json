@@ -1,0 +1,367 @@
+{
+  "recipe-ids": {
+    "51": {
+      "recipe_name": "lite-fried-okra",
+      "data_provenance": {
+        "source_url": "https://www.myplate.gov/recipes/lite-fried-okra",
+        "last_system_access": "2024-11-13 14:30:32.965810"
+      },
+      "ingredients": [
+        {
+          "name": "okra",
+          "quantity": {
+            "amount": 2,
+            "unit": "cups"
+          },
+          "details": "fresh, sliced"
+        },
+        {
+          "name": "vegetable oil",
+          "quantity": {
+            "amount": 0.75,
+            "unit": "teaspoon"
+          }
+        },
+        {
+          "name": "salt",
+          "quantity": {
+            "amount": 0.125,
+            "unit": "teaspoon"
+          }
+        },
+        {
+          "name": "black pepper",
+          "quantity": {
+            "amount": 0.125,
+            "unit": "teaspoon"
+          }
+        },
+        {
+          "name": "cooking spray",
+          "details": "nonstick, as needed"
+        }
+      ],
+      "macronutrients": {
+        "Calories": {
+          "measure": "24",
+          "unit": "kcal"
+        },
+        "Total Fat": {
+          "measure": "1",
+          "unit": "g"
+        },
+        "Saturated Fat": {
+          "measure": "0",
+          "unit": "g"
+        },
+        "Monounsaturated Fat": {
+          "measure": "0",
+          "unit": "g"
+        },
+        "Polyunsaturated Fat": {
+          "measure": "0",
+          "unit": "g"
+        },
+        "Linoleic Acid": {
+          "measure": "0",
+          "unit": "g"
+        },
+        "α-Linolenic Acid": {
+          "measure": "0.1",
+          "unit": "g"
+        },
+        "Omega 3 - EPA": {
+          "measure": "0",
+          "unit": "mg"
+        },
+        "Omega 3 - DHA": {
+          "measure": "0",
+          "unit": "mg"
+        },
+        "Cholesterol": {
+          "measure": "0",
+          "unit": "mg"
+        },
+        "Carbohydrates": {
+          "measure": "4",
+          "unit": "g"
+        },
+        "Dietary Fiber": {
+          "measure": "2",
+          "unit": "g"
+        },
+        "Total Sugars": {
+          "measure": "1",
+          "unit": "g"
+        },
+        "Added Sugars included": {
+          "measure": "0",
+          "unit": "g"
+        },
+        "Protein": {
+          "measure": "1",
+          "unit": "g"
+        },
+        "Calcium": {
+          "measure": "41",
+          "unit": "mg"
+        },
+        "Potassium": {
+          "measure": "151",
+          "unit": "mg"
+        },
+        "Sodium": {
+          "measure": "79",
+          "unit": "mg"
+        },
+        "Copper": {
+          "measure": "56",
+          "unit": "mcg"
+        },
+        "Iron": {
+          "measure": "0",
+          "unit": "mg"
+        },
+        "Magnesium": {
+          "measure": "29",
+          "unit": "mg"
+        },
+        "Phosphorus": {
+          "measure": "31",
+          "unit": "mg"
+        },
+        "Selenium": {
+          "measure": "0",
+          "unit": "mcg"
+        },
+        "Zinc": {
+          "measure": "0",
+          "unit": "mg"
+        },
+        "Vitamin A": {
+          "measure": "18",
+          "unit": "mcg RAE"
+        },
+        "Vitamin B6": {
+          "measure": "0.1",
+          "unit": "mg"
+        },
+        "Vitamin B12": {
+          "measure": "0",
+          "unit": "mg"
+        },
+        "Vitamin C": {
+          "measure": "12",
+          "unit": "mg"
+        },
+        "Vitamin D": {
+          "measure": "0",
+          "unit": "mcg"
+        },
+        "Vitamin E": {
+          "measure": "0",
+          "unit": "mg"
+        },
+        "Vitamin K": {
+          "measure": "17",
+          "unit": "mcg"
+        },
+        "Folate": {
+          "measure": "30",
+          "unit": "mcg DFE"
+        },
+        "Thiamin": {
+          "measure": "0.1",
+          "unit": "mg"
+        },
+        "Riboflavin": {
+          "measure": "0",
+          "unit": "mg"
+        },
+        "Niacin": {
+          "measure": "1",
+          "unit": "mg"
+        },
+        "Choline": {
+          "measure": "6",
+          "unit": "mg"
+        }
+      },
+      "food_role": [
+        "Main Course",
+        "Side"
+      ],
+      "hasDairy": false,
+      "hasMeat": false,
+      "hasNuts": false,
+      "instructions": [
+        {
+          "original_text": "Wash hands with soap and water.",
+          "input_condition": [],
+          "task": [
+            {
+              "action_name": "Wash hands",
+              "output_quality": [
+                "Hands are clean"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Sink",
+                  "Soap"
+                ],
+                "failure": [
+                  "Hands are not clean"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "hands_clean"
+          ]
+        },
+        {
+          "original_text": "In a bowl, mix sliced okra, oil, salt, and pepper.",
+          "input_condition": [
+            "okra_sliced"
+          ],
+          "task": [
+            {
+              "action_name": "Combine ingredients in bowl",
+              "output_quality": [
+                "Ingredients are well mixed"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Mixing bowl",
+                  "Spoon"
+                ],
+                "failure": [
+                  "Ingredients not combined"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "okra_mixture_prepared"
+          ]
+        },
+        {
+          "original_text": "Coat a large fry pan with cooking spray.",
+          "input_condition": [],
+          "task": [
+            {
+              "action_name": "Spray pan with cooking spray",
+              "output_quality": [
+                "Pan is coated with cooking spray"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Cooking spray",
+                  "Fry pan"
+                ],
+                "failure": [
+                  "Pan not coated with cooking spray"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "pan_prepared"
+          ]
+        },
+        {
+          "original_text": "Heat over medium heat, and add okra mixture, turning often with a wooden spoon or spatula.",
+          "input_condition": [
+            "okra_mixture_prepared",
+            "pan_prepared"
+          ],
+          "task": [
+            {
+              "action_name": "Heat pan over medium heat",
+              "output_quality": [
+                "Pan is heated"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Stove",
+                  "Fry pan"
+                ],
+                "failure": [
+                  "Pan not heated properly"
+                ]
+              }
+            },
+            {
+              "action_name": "Add okra mixture to pan and stir",
+              "output_quality": [
+                "Okra mixture is evenly cooked"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Wooden spoon or spatula"
+                ],
+                "failure": [
+                  "Okra mixture not turned, uneven cooking"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "okra_cooking"
+          ]
+        },
+        {
+          "original_text": "Cook until okra is browned, about 10 minutes.",
+          "input_condition": [
+            "okra_cooking"
+          ],
+          "task": [
+            {
+              "action_name": "Cook okra for 10 minutes",
+              "output_quality": [
+                "Okra is browned and tender"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Timer"
+                ],
+                "failure": [
+                  "Okra not browned, undercooked or overcooked"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "okra_cooked"
+          ]
+        },
+        {
+          "original_text": "Serve with hot sauce or favorite relish.",
+          "input_condition": [
+            "okra_cooked"
+          ],
+          "task": [
+            {
+              "action_name": "Serve okra with sauce or relish",
+              "output_quality": [
+                "Okra is plated and ready to eat"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Serving plate",
+                  "Hot sauce or relish"
+                ],
+                "failure": [
+                  "Okra not served with accompaniments"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "okra_dish_served"
+          ]
+        }
+      ]
+    }
+  }
+}
