@@ -362,6 +362,348 @@
           ]
         }
       ]
+    },
+    "52": {
+      "recipe_name": "pumpkin-soup",
+      "data_provenance": {
+        "source_url": "https://www.myplate.gov/recipes/pumpkin-soup-0",
+        "last_system_access": "2024-11-13 14:30:32.965810"
+      },
+      "food_role": [
+        "Main Course",
+        "Side"
+      ],
+      "ingredients": [
+        {
+          "name": "water",
+          "quantity": {
+            "amount": 3,
+            "unit": "cups"
+          }
+        },
+        {
+          "name": "beef round roast",
+          "quantity": {
+            "amount": 0.25,
+            "unit": "pound"
+          },
+          "details": "thawed, sliced thinly"
+        },
+        {
+          "name": "low-sodium pumpkin",
+          "quantity": {
+            "amount": 30,
+            "unit": "ounces"
+          },
+          "details": "2 cans"
+        },
+        {
+          "name": "maple syrup",
+          "quantity": {
+            "amount": 2,
+            "unit": "tablespoons"
+          },
+          "alternative": "2 tablespoons brown sugar"
+        },
+        {
+          "name": "black pepper",
+          "quantity": {
+            "amount": 0.25,
+            "unit": "teaspoon"
+          }
+        },
+        {
+          "name": "cinnamon",
+          "quantity": {
+            "amount": 0.5,
+            "unit": "teaspoon"
+          },
+          "optional": true
+        },
+        {
+          "name": "onions",
+          "quantity": {
+            "amount": 0.25,
+            "unit": "cup"
+          },
+          "details": "diced"
+        }
+      ],
+      "macronutrients": {
+        "Calories": {
+          "measure": "133",
+          "unit": "kcal"
+        },
+        "Total Fat": {
+          "measure": "2",
+          "unit": "g"
+        },
+        "Saturated Fat": {
+          "measure": "1",
+          "unit": "g"
+        },
+        "Monounsaturated Fat": {
+          "measure": "0",
+          "unit": "g"
+        },
+        "Polyunsaturated Fat": {
+          "measure": "0",
+          "unit": "g"
+        },
+        "Linoleic Acid": {
+          "measure": "0",
+          "unit": "g"
+        },
+        "α-Linolenic Acid": {
+          "measure": "0",
+          "unit": "g"
+        },
+        "Omega 3 - EPA": {
+          "measure": "0",
+          "unit": "mg"
+        },
+        "Omega 3 - DHA": {
+          "measure": "0",
+          "unit": "mg"
+        },
+        "Cholesterol": {
+          "measure": "14",
+          "unit": "mg"
+        },
+        "Carbohydrates": {
+          "measure": "17",
+          "unit": "g"
+        },
+        "Dietary Fiber": {
+          "measure": "4",
+          "unit": "g"
+        },
+        "Total Sugars": {
+          "measure": "9",
+          "unit": "g"
+        },
+        "Added Sugars included": {
+          "measure": "4",
+          "unit": "g"
+        },
+        "Protein": {
+          "measure": "8",
+          "unit": "g"
+        },
+        "Calcium": {
+          "measure": "52",
+          "unit": "mg"
+        },
+        "Potassium": {
+          "measure": "345",
+          "unit": "mg"
+        },
+        "Sodium": {
+          "measure": "18",
+          "unit": "mg"
+        },
+        "Copper": {
+          "measure": "177",
+          "unit": "mcg"
+        },
+        "Iron": {
+          "measure": "2",
+          "unit": "mg"
+        },
+        "Magnesium": {
+          "measure": "38",
+          "unit": "mg"
+        },
+        "Phosphorus": {
+          "measure": "73",
+          "unit": "mg"
+        },
+        "Selenium": {
+          "measure": "4",
+          "unit": "mcg"
+        },
+        "Zinc": {
+          "measure": "1",
+          "unit": "mg"
+        },
+        "Vitamin A": {
+          "measure": "1102",
+          "unit": "mcg RAE"
+        },
+        "Vitamin B6": {
+          "measure": "0.1",
+          "unit": "mg"
+        },
+        "Vitamin B12": {
+          "measure": "0.2",
+          "unit": "mg"
+        },
+        "Vitamin C": {
+          "measure": "6",
+          "unit": "mg"
+        },
+        "Vitamin D": {
+          "measure": "0",
+          "unit": "mcg"
+        },
+        "Vitamin E": {
+          "measure": "2",
+          "unit": "mg"
+        },
+        "Vitamin K": {
+          "measure": "23",
+          "unit": "mcg"
+        },
+        "Folate": {
+          "measure": "19",
+          "unit": "mcg DFE"
+        },
+        "Thiamin": {
+          "measure": "0.1",
+          "unit": "mg"
+        },
+        "Riboflavin": {
+          "measure": "0.2",
+          "unit": "mg"
+        },
+        "Niacin": {
+          "measure": "1",
+          "unit": "mg"
+        },
+        "Choline": {
+          "measure": "27",
+          "unit": "mg"
+        }
+      },
+      "instructions": [
+        {
+          "original_text": "In a medium-sized pot, bring water to a boil.",
+          "input_condition": [],
+          "task": [
+            {
+              "action_name": "Boil water",
+              "output_quality": [
+                "Water is boiling"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Medium-sized pot",
+                  "Stove"
+                ],
+                "failure": [
+                  "Water does not reach boiling point"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "water_boiling"
+          ]
+        },
+        {
+          "original_text": "Add beef roast to boiling water. Boil for 5 to 10 minutes.",
+          "input_condition": [
+            "water_boiling"
+          ],
+          "task": [
+            {
+              "action_name": "Add beef roast to pot and boil",
+              "output_quality": [
+                "Beef is partially cooked"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Medium-sized pot",
+                  "Timer"
+                ],
+                "failure": [
+                  "Beef not cooked as expected"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "beef_boiled"
+          ]
+        },
+        {
+          "original_text": "Add pumpkin, maple syrup, and pepper to pot. If using cinnamon, add that too. Mix well.",
+          "input_condition": [
+            "beef_boiled"
+          ],
+          "task": [
+            {
+              "action_name": "Add ingredients and mix",
+              "output_quality": [
+                "Ingredients are combined evenly"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Mixing spoon"
+                ],
+                "failure": [
+                  "Ingredients not evenly mixed"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "soup_mixed"
+          ]
+        },
+        {
+          "original_text": "Lower heat and cook for about 10 minutes.",
+          "input_condition": [
+            "soup_mixed"
+          ],
+          "task": [
+            {
+              "action_name": "Simmer soup",
+              "output_quality": [
+                "Soup is fully cooked"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Timer",
+                  "Stove"
+                ],
+                "failure": [
+                  "Soup not cooked properly"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "soup_cooked"
+          ]
+        },
+        {
+          "original_text": "Put 2 teaspoons of onion on top of each bowl of soup. Serve hot.",
+          "input_condition": [
+            "soup_cooked"
+          ],
+          "task": [
+            {
+              "action_name": "Garnish and serve soup",
+              "output_quality": [
+                "Soup is garnished and ready to serve"
+              ],
+              "background_knowledge": {
+                "tool": [
+                  "Serving bowls",
+                  "Spoon"
+                ],
+                "failure": [
+                  "Garnish not added or soup not served hot"
+                ]
+              }
+            }
+          ],
+          "output_condition": [
+            "soup_served"
+          ]
+        }
+      ]
     }
   }
 }
