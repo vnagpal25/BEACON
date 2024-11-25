@@ -1,100 +1,108 @@
-import matplotlib.pyplot as plt
 import pandas as pd
-import numpy as np
-from matplotlib.lines import Line2D
+import matplotlib.pyplot as plt
 
-df = pd.read_csv(
-    'C:\\Users\\2002v\\Desktop\\Fall2024\\AI4S\\MealRec\\BEACON\\scores.csv')
-# print(df.head())
+# Read the CSV file
+df = pd.read_csv('./data/scores.csv')
 
+# Change values in the `Algorithm` column to their uppercase version
+df['Algorithm'] = df['Algorithm'].str.upper()
 
-def create_score_plots(df, score_columns):
-    """
-    Create three subplots for different time periods showing multiple scores
+# Set style for publication
+plt.style.use('seaborn-paper')
 
-    Parameters:
-    df: pandas DataFrame with columns [User_Config, time, Algorithm] + score columns
-    score_columns: list of score column names to plot
-    """
-    # Define style parameters
-    # Different markers for each score
-    markers = ['s', '^', '*', 'o', 'D', 'v', 'p']
-    colors = {'m2': 'red', 'm1': 'blue', 'm0': 'green'}
-    times = sorted(df['time'].unique())
-    configs = sorted(df['User_Config'].unique())
-    algorithms = sorted(df['Algorithm'].unique())
+# Increase the default font sizes
+plt.rcParams.update({
+    'font.size': 14,          # Increase base font size
+    'axes.labelsize': 16,     # Axis labels
+    'axes.titlesize': 18,     # Subplot titles
+    'xtick.labelsize': 14,    # X-axis tick labels
+    'ytick.labelsize': 14,    # Y-axis tick labels
+    'legend.fontsize': 14,    # Legend text
+    'legend.title_fontsize': 16  # Legend title
+})
 
-    # Create figure with three subplots - increased figure width to accommodate legend
-    fig, axes = plt.subplots(1, 3, figsize=(20, 6))
-    # fig.suptitle(
-    #     'Score Comparison Across Configurations and Algorithms', fontsize=14, y=1.05)
+# Create figure with three subplots side by side
+fig, axes = plt.subplots(1, 3, figsize=(20, 7))
+fig.subplots_adjust(wspace=0.2)
 
-    # Plot for each time period
-    for idx, config in enumerate(configs):
-        ax = axes[idx]
-        config_data = df[df['User_Config'] == config]
+# Define metrics to plot
+metrics = ['uc', 'dm', 'mc', 'uc_dm_mc']
 
-        # Plot each algorithm and score combination
-        for algorithm in algorithms:
-            alg_data = config_data[config_data['Algorithm'] == algorithm]
-            color = colors.get(algorithm.lower(), 'black')
+# Define colors for algorithms
+colors = {'M0': 'green', 'M1': 'blue', 'M2': 'red'}
 
-            # Plot each score
-            for score_idx, score in enumerate(score_columns):
-                y_values = alg_data[score].values
-                x_values = pd.Categorical(alg_data['time']).codes
+# Define markers for metrics
+markers = {'uc': 's', 'dm': '^', 'mc': '*', 'uc_dm_mc': 'o'}
 
-                ax.plot(x_values, y_values,
-                        label=f'{algorithm}-{score}',
-                        color=color,
-                        marker=markers[score_idx % len(markers)],
-                        linestyle='--',
-                        markersize=8)
+# Define line styles
+line_style = '--'
 
-        # Customize the subplot
-        ax.set_title(f'User Configuration: {config}')
-        ax.set_xticks(range(len(times)))
-        ax.set_xticklabels(times)
-        ax.set_xlabel('Time Frame')
+# Plot for each user configuration
+for idx, config in enumerate(['c1', 'c2', 'c3']):
+    ax = axes[idx]
+    config_data = df[df['User_Config'] == config]
+    
+    # Plot each algorithm
+    for alg in ['M0', 'M1', 'M2']:
+        alg_data = config_data[config_data['Algorithm'] == alg]
+        
+        # Plot each metric
+        for metric in metrics:
+            ax.plot(alg_data['time'], alg_data[metric], 
+                   marker=markers[metric],
+                   linestyle=line_style,
+                   color=colors[alg],
+                   label=f'{alg}-{metric}',
+                   markersize=10)
+    
+    # Customize the subplot
+    ax.set_title(f'User Configuration: {config}', fontsize=18, pad=10)
+    ax.set_xlabel('Time Frame')
+    ax.grid(True, linestyle='--', alpha=0.3)
+    ax.set_ylim(0.3, 1.05)
+    
+    # Only add y-label to the first subplot
+    if idx == 0:
         ax.set_ylabel('Score')
-        ax.grid(True, linestyle='--', alpha=0.7)
-        ax.set_ylim(0.3, 1.05)
+    
+    # Clean up x-ticks
+    ax.set_xticks(range(len(alg_data['time'].unique())))
+    ax.set_xticklabels(alg_data['time'].unique())
 
-    # Create custom legend handles
-    # Algorithm legend (colors)
-    algorithm_handles = [Line2D([0], [0], color=colors[alg.lower()], linestyle='--',
-                                marker='o', label=alg) for alg in algorithms]
+# Create custom legend
+# First legend for algorithms
+legend_elements_alg = [plt.Line2D([0], [0], color=color, label=alg, linestyle=line_style)
+                      for alg, color in colors.items()]
+# Second legend for metrics
+legend_elements_metrics = [plt.Line2D([0], [0], color='black', marker=marker, 
+                                    label=metric, linestyle='none', markersize=10)
+                         for metric, marker in markers.items()]
 
-    # Score legend (markers)
-    score_handles = [Line2D([0], [0], color='black', marker=markers[idx],
-                            linestyle='none', label=score)
-                     for idx, score in enumerate(score_columns)]
+# Place legends below the subplots
+fig.legend(legend_elements_alg, colors.keys(), 
+          title='Algorithms',
+          loc='center left',
+          bbox_to_anchor=(0.5, 0.08),
+          ncol=3,
+          frameon=True,
+          prop={'style': 'italic'})
 
-    # Add both legends with clear separation
-    fig.legend(handles=algorithm_handles,
-               loc='center right',
-               # Place algorithm legend slightly higher
-               bbox_to_anchor=(0.5, 0.08),
-               ncol=len(algorithms),
-               title='Algorithms',
-               fontsize=10)
+fig.legend(legend_elements_metrics, markers.keys(),
+          title='Metrics',
+          loc='center right',
+          bbox_to_anchor=(0.5, 0.08),
+          ncol=4,
+          frameon=True)
 
-    fig.legend(handles=score_handles,
-               loc='center left',
-               # Place score legend slightly lower
-               bbox_to_anchor=(0.5, 0.08),
-               ncol=min(len(score_columns), 4),  # Up to 4 scores per row
-               title='Metrics',
-               fontsize=10)
+# Adjust layout to make room for legends at the bottom
+plt.tight_layout()
+plt.subplots_adjust(bottom=0.25)
 
-    # Adjust layout with extra space at bottom for legend
-    plt.tight_layout()
-    fig.subplots_adjust(bottom=0.2)  # Make room for legend at bottom
+# Save the figure
+# plt.savefig('./figs/performance_comparison_mat.png', 
+plt.savefig('./reco_chart.png',
+            format='png', 
+            dpi=300, 
+            bbox_inches='tight')
 
-    return fig, axes
-
-
-score_columns = ['uc', 'dm', 'mc', 'uc_dm_mc']
-fig, axes = create_score_plots(df, score_columns)
-plt.savefig('reco_chart.png', bbox_inches='tight')
-# plt.show()
+plt.close()
